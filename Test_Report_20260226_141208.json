@@ -1,0 +1,2032 @@
+[
+    {
+        "status": "PASS",
+        "message": "Login Successful",
+        "time": "2026-02-26 14:11:45"
+    },
+    {
+        "status": "PASS",
+        "message": "Filters Applied Successfully",
+        "time": "2026-02-26 14:11:45"
+    },
+    {
+        "status": "PASS",
+        "message": "Tab 'Overview' clickable",
+        "time": "2026-02-26 14:11:46"
+    },
+    {
+        "status": "PASS",
+        "message": "Tab 'Chapters' clickable",
+        "time": "2026-02-26 14:11:46"
+    },
+    {
+        "status": "PASS",
+        "message": "Tab 'Questions' clickable",
+        "time": "2026-02-26 14:11:46"
+    },
+    {
+        "status": "PASS",
+        "message": "Tab 'Students' clickable",
+        "time": "2026-02-26 14:11:46"
+    },
+    {
+        "status": "PASS",
+        "message": "Exam Comparison visible",
+        "time": "2026-02-26 14:11:46"
+    },
+    {
+        "status": "PASS",
+        "message": "Class Average visible",
+        "time": "2026-02-26 14:11:46"
+    },
+    {
+        "status": "PASS",
+        "message": "Target section visible",
+        "time": "2026-02-26 14:11:46"
+    },
+    {
+        "status": "PASS",
+        "message": "Highlighted Students visible",
+        "time": "2026-02-26 14:11:46"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter list loaded",
+        "time": "2026-02-26 14:11:47"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format in 'Continuity & Differentiability'",
+        "time": "2026-02-26 14:11:47"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format in 'Relations & Functions'",
+        "time": "2026-02-26 14:11:47"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format in 'Matrices'",
+        "time": "2026-02-26 14:11:47"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format in 'Determinants'",
+        "time": "2026-02-26 14:11:47"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format in 'Application of Integrals'",
+        "time": "2026-02-26 14:11:47"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format in 'Linear Programming'",
+        "time": "2026-02-26 14:11:47"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format in 'Integrals'",
+        "time": "2026-02-26 14:11:48"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format in 'Application of Derivatives'",
+        "time": "2026-02-26 14:11:48"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format in 'Inverse Trigonometric Functions'",
+        "time": "2026-02-26 14:11:48"
+    },
+    {
+        "status": "PASS",
+        "message": "Questions loaded",
+        "time": "2026-02-26 14:11:48"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q1",
+        "time": "2026-02-26 14:11:48"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q1",
+        "time": "2026-02-26 14:11:49"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q1",
+        "time": "2026-02-26 14:11:49"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q1",
+        "time": "2026-02-26 14:11:49"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q1",
+        "time": "2026-02-26 14:11:49"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q1",
+        "time": "2026-02-26 14:11:49"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q1",
+        "time": "2026-02-26 14:11:49"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q2",
+        "time": "2026-02-26 14:11:49"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q2",
+        "time": "2026-02-26 14:11:49"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q2",
+        "time": "2026-02-26 14:11:49"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q2",
+        "time": "2026-02-26 14:11:49"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q2",
+        "time": "2026-02-26 14:11:49"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q2",
+        "time": "2026-02-26 14:11:49"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q2",
+        "time": "2026-02-26 14:11:49"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q3",
+        "time": "2026-02-26 14:11:49"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q3",
+        "time": "2026-02-26 14:11:49"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q3",
+        "time": "2026-02-26 14:11:49"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q3",
+        "time": "2026-02-26 14:11:49"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q3",
+        "time": "2026-02-26 14:11:49"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q3",
+        "time": "2026-02-26 14:11:49"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q3",
+        "time": "2026-02-26 14:11:49"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q4",
+        "time": "2026-02-26 14:11:50"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q4",
+        "time": "2026-02-26 14:11:50"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q4",
+        "time": "2026-02-26 14:11:50"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q4",
+        "time": "2026-02-26 14:11:50"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q4",
+        "time": "2026-02-26 14:11:50"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q4",
+        "time": "2026-02-26 14:11:50"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q4",
+        "time": "2026-02-26 14:11:50"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q5",
+        "time": "2026-02-26 14:11:50"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q5",
+        "time": "2026-02-26 14:11:50"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q5",
+        "time": "2026-02-26 14:11:50"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q5",
+        "time": "2026-02-26 14:11:50"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q5",
+        "time": "2026-02-26 14:11:50"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q5",
+        "time": "2026-02-26 14:11:50"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q5",
+        "time": "2026-02-26 14:11:50"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q6",
+        "time": "2026-02-26 14:11:50"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q6",
+        "time": "2026-02-26 14:11:50"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q6",
+        "time": "2026-02-26 14:11:50"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q6",
+        "time": "2026-02-26 14:11:50"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q6",
+        "time": "2026-02-26 14:11:50"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q6",
+        "time": "2026-02-26 14:11:50"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q6",
+        "time": "2026-02-26 14:11:50"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q7",
+        "time": "2026-02-26 14:11:51"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q7",
+        "time": "2026-02-26 14:11:51"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q7",
+        "time": "2026-02-26 14:11:51"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q7",
+        "time": "2026-02-26 14:11:51"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q7",
+        "time": "2026-02-26 14:11:51"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q7",
+        "time": "2026-02-26 14:11:51"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q7",
+        "time": "2026-02-26 14:11:51"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q8",
+        "time": "2026-02-26 14:11:51"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q8",
+        "time": "2026-02-26 14:11:51"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q8",
+        "time": "2026-02-26 14:11:51"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q8",
+        "time": "2026-02-26 14:11:51"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q8",
+        "time": "2026-02-26 14:11:51"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q8",
+        "time": "2026-02-26 14:11:51"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q8",
+        "time": "2026-02-26 14:11:51"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q9",
+        "time": "2026-02-26 14:11:51"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q9",
+        "time": "2026-02-26 14:11:51"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q9",
+        "time": "2026-02-26 14:11:51"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q9",
+        "time": "2026-02-26 14:11:51"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q9",
+        "time": "2026-02-26 14:11:51"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q9",
+        "time": "2026-02-26 14:11:51"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q9",
+        "time": "2026-02-26 14:11:51"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q10",
+        "time": "2026-02-26 14:11:51"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q10",
+        "time": "2026-02-26 14:11:52"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q10",
+        "time": "2026-02-26 14:11:52"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q10",
+        "time": "2026-02-26 14:11:52"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q10",
+        "time": "2026-02-26 14:11:52"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q10",
+        "time": "2026-02-26 14:11:52"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q10",
+        "time": "2026-02-26 14:11:52"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q11",
+        "time": "2026-02-26 14:11:52"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q11",
+        "time": "2026-02-26 14:11:52"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q11",
+        "time": "2026-02-26 14:11:52"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q11",
+        "time": "2026-02-26 14:11:52"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q11",
+        "time": "2026-02-26 14:11:52"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q11",
+        "time": "2026-02-26 14:11:52"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q11",
+        "time": "2026-02-26 14:11:52"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q12",
+        "time": "2026-02-26 14:11:52"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q12",
+        "time": "2026-02-26 14:11:52"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q12",
+        "time": "2026-02-26 14:11:52"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q12",
+        "time": "2026-02-26 14:11:52"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q12",
+        "time": "2026-02-26 14:11:52"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q12",
+        "time": "2026-02-26 14:11:52"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q12",
+        "time": "2026-02-26 14:11:52"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q13",
+        "time": "2026-02-26 14:11:52"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q13",
+        "time": "2026-02-26 14:11:53"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q13",
+        "time": "2026-02-26 14:11:53"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q13",
+        "time": "2026-02-26 14:11:53"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q13",
+        "time": "2026-02-26 14:11:53"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q13",
+        "time": "2026-02-26 14:11:53"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q13",
+        "time": "2026-02-26 14:11:53"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q14",
+        "time": "2026-02-26 14:11:53"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q14",
+        "time": "2026-02-26 14:11:53"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q14",
+        "time": "2026-02-26 14:11:53"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q14",
+        "time": "2026-02-26 14:11:53"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q14",
+        "time": "2026-02-26 14:11:53"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q14",
+        "time": "2026-02-26 14:11:53"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q14",
+        "time": "2026-02-26 14:11:53"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q15",
+        "time": "2026-02-26 14:11:53"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q15",
+        "time": "2026-02-26 14:11:53"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q15",
+        "time": "2026-02-26 14:11:53"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q15",
+        "time": "2026-02-26 14:11:53"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q15",
+        "time": "2026-02-26 14:11:53"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q15",
+        "time": "2026-02-26 14:11:53"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q15",
+        "time": "2026-02-26 14:11:53"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q16",
+        "time": "2026-02-26 14:11:53"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q16",
+        "time": "2026-02-26 14:11:54"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q16",
+        "time": "2026-02-26 14:11:54"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q16",
+        "time": "2026-02-26 14:11:54"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q16",
+        "time": "2026-02-26 14:11:54"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q16",
+        "time": "2026-02-26 14:11:54"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q16",
+        "time": "2026-02-26 14:11:54"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q17",
+        "time": "2026-02-26 14:11:54"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q17",
+        "time": "2026-02-26 14:11:54"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q17",
+        "time": "2026-02-26 14:11:54"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q17",
+        "time": "2026-02-26 14:11:54"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q17",
+        "time": "2026-02-26 14:11:54"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q17",
+        "time": "2026-02-26 14:11:54"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q17",
+        "time": "2026-02-26 14:11:54"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q18",
+        "time": "2026-02-26 14:11:54"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q18",
+        "time": "2026-02-26 14:11:54"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q18",
+        "time": "2026-02-26 14:11:54"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q18",
+        "time": "2026-02-26 14:11:54"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q18",
+        "time": "2026-02-26 14:11:54"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q18",
+        "time": "2026-02-26 14:11:54"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q18",
+        "time": "2026-02-26 14:11:54"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q19",
+        "time": "2026-02-26 14:11:54"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q19",
+        "time": "2026-02-26 14:11:54"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q19",
+        "time": "2026-02-26 14:11:55"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q19",
+        "time": "2026-02-26 14:11:55"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q19",
+        "time": "2026-02-26 14:11:55"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q19",
+        "time": "2026-02-26 14:11:55"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q19",
+        "time": "2026-02-26 14:11:55"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q20",
+        "time": "2026-02-26 14:11:55"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q20",
+        "time": "2026-02-26 14:11:55"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q20",
+        "time": "2026-02-26 14:11:55"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q20",
+        "time": "2026-02-26 14:11:55"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q20",
+        "time": "2026-02-26 14:11:55"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q20",
+        "time": "2026-02-26 14:11:55"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q20",
+        "time": "2026-02-26 14:11:55"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q21.1",
+        "time": "2026-02-26 14:11:55"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q21.1",
+        "time": "2026-02-26 14:11:55"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q21.1",
+        "time": "2026-02-26 14:11:55"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q21.1",
+        "time": "2026-02-26 14:11:55"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q21.1",
+        "time": "2026-02-26 14:11:55"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q21.1",
+        "time": "2026-02-26 14:11:55"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q21.1",
+        "time": "2026-02-26 14:11:55"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q21.2",
+        "time": "2026-02-26 14:11:55"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q21.2",
+        "time": "2026-02-26 14:11:55"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q21.2",
+        "time": "2026-02-26 14:11:55"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q21.2",
+        "time": "2026-02-26 14:11:55"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q21.2",
+        "time": "2026-02-26 14:11:55"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q21.2",
+        "time": "2026-02-26 14:11:55"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q21.2",
+        "time": "2026-02-26 14:11:56"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q22",
+        "time": "2026-02-26 14:11:56"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q22",
+        "time": "2026-02-26 14:11:56"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q22",
+        "time": "2026-02-26 14:11:56"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q22",
+        "time": "2026-02-26 14:11:56"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q22",
+        "time": "2026-02-26 14:11:56"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q22",
+        "time": "2026-02-26 14:11:56"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q22",
+        "time": "2026-02-26 14:11:56"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q23",
+        "time": "2026-02-26 14:11:56"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q23",
+        "time": "2026-02-26 14:11:56"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q23",
+        "time": "2026-02-26 14:11:56"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q23",
+        "time": "2026-02-26 14:11:56"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q23",
+        "time": "2026-02-26 14:11:56"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q23",
+        "time": "2026-02-26 14:11:56"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q23",
+        "time": "2026-02-26 14:11:56"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q24",
+        "time": "2026-02-26 14:11:56"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q24",
+        "time": "2026-02-26 14:11:56"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q24",
+        "time": "2026-02-26 14:11:56"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q24",
+        "time": "2026-02-26 14:11:56"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q24",
+        "time": "2026-02-26 14:11:56"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q24",
+        "time": "2026-02-26 14:11:56"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q24",
+        "time": "2026-02-26 14:11:56"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q25.1",
+        "time": "2026-02-26 14:11:56"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q25.1",
+        "time": "2026-02-26 14:11:56"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q25.1",
+        "time": "2026-02-26 14:11:56"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q25.1",
+        "time": "2026-02-26 14:11:56"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q25.1",
+        "time": "2026-02-26 14:11:56"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q25.1",
+        "time": "2026-02-26 14:11:56"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q25.1",
+        "time": "2026-02-26 14:11:56"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q25.2",
+        "time": "2026-02-26 14:11:56"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q25.2",
+        "time": "2026-02-26 14:11:56"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q25.2",
+        "time": "2026-02-26 14:11:56"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q25.2",
+        "time": "2026-02-26 14:11:56"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q25.2",
+        "time": "2026-02-26 14:11:57"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q25.2",
+        "time": "2026-02-26 14:11:57"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q25.2",
+        "time": "2026-02-26 14:11:57"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q26",
+        "time": "2026-02-26 14:11:57"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q26",
+        "time": "2026-02-26 14:11:57"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q26",
+        "time": "2026-02-26 14:11:57"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q26",
+        "time": "2026-02-26 14:11:57"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q26",
+        "time": "2026-02-26 14:11:57"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q26",
+        "time": "2026-02-26 14:11:57"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q26",
+        "time": "2026-02-26 14:11:57"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q27",
+        "time": "2026-02-26 14:11:57"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q27",
+        "time": "2026-02-26 14:11:57"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q27",
+        "time": "2026-02-26 14:11:57"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q27",
+        "time": "2026-02-26 14:11:57"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q27",
+        "time": "2026-02-26 14:11:57"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q27",
+        "time": "2026-02-26 14:11:57"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q27",
+        "time": "2026-02-26 14:11:57"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q28.1",
+        "time": "2026-02-26 14:11:57"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q28.1",
+        "time": "2026-02-26 14:11:57"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q28.1",
+        "time": "2026-02-26 14:11:57"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q28.1",
+        "time": "2026-02-26 14:11:57"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q28.1",
+        "time": "2026-02-26 14:11:57"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q28.1",
+        "time": "2026-02-26 14:11:57"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q28.1",
+        "time": "2026-02-26 14:11:57"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q28.2",
+        "time": "2026-02-26 14:11:57"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q28.2",
+        "time": "2026-02-26 14:11:57"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q28.2",
+        "time": "2026-02-26 14:11:57"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q28.2",
+        "time": "2026-02-26 14:11:57"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q28.2",
+        "time": "2026-02-26 14:11:58"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q28.2",
+        "time": "2026-02-26 14:11:58"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q28.2",
+        "time": "2026-02-26 14:11:58"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q29",
+        "time": "2026-02-26 14:11:58"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q29",
+        "time": "2026-02-26 14:11:58"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q29",
+        "time": "2026-02-26 14:11:58"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q29",
+        "time": "2026-02-26 14:11:58"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q29",
+        "time": "2026-02-26 14:11:58"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q29",
+        "time": "2026-02-26 14:11:58"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q29",
+        "time": "2026-02-26 14:11:58"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q30.1",
+        "time": "2026-02-26 14:11:58"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q30.1",
+        "time": "2026-02-26 14:11:58"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q30.1",
+        "time": "2026-02-26 14:11:58"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q30.1",
+        "time": "2026-02-26 14:11:58"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q30.1",
+        "time": "2026-02-26 14:11:58"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q30.1",
+        "time": "2026-02-26 14:11:58"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q30.1",
+        "time": "2026-02-26 14:11:58"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q30.2",
+        "time": "2026-02-26 14:11:58"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q30.2",
+        "time": "2026-02-26 14:11:58"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q30.2",
+        "time": "2026-02-26 14:11:58"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q30.2",
+        "time": "2026-02-26 14:11:58"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q30.2",
+        "time": "2026-02-26 14:11:58"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q30.2",
+        "time": "2026-02-26 14:11:58"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q30.2",
+        "time": "2026-02-26 14:11:58"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q31",
+        "time": "2026-02-26 14:11:58"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q31",
+        "time": "2026-02-26 14:11:59"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q31",
+        "time": "2026-02-26 14:11:59"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q31",
+        "time": "2026-02-26 14:11:59"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q31",
+        "time": "2026-02-26 14:11:59"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q31",
+        "time": "2026-02-26 14:11:59"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q31",
+        "time": "2026-02-26 14:11:59"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q32",
+        "time": "2026-02-26 14:11:59"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q32",
+        "time": "2026-02-26 14:11:59"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q32",
+        "time": "2026-02-26 14:11:59"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q32",
+        "time": "2026-02-26 14:11:59"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q32",
+        "time": "2026-02-26 14:11:59"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q32",
+        "time": "2026-02-26 14:11:59"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q32",
+        "time": "2026-02-26 14:11:59"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q33.1",
+        "time": "2026-02-26 14:11:59"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q33.1",
+        "time": "2026-02-26 14:11:59"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q33.1",
+        "time": "2026-02-26 14:11:59"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q33.1",
+        "time": "2026-02-26 14:11:59"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q33.1",
+        "time": "2026-02-26 14:11:59"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q33.1",
+        "time": "2026-02-26 14:11:59"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q33.1",
+        "time": "2026-02-26 14:11:59"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q33.2",
+        "time": "2026-02-26 14:11:59"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q33.2",
+        "time": "2026-02-26 14:12:00"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q33.2",
+        "time": "2026-02-26 14:12:00"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q33.2",
+        "time": "2026-02-26 14:12:00"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q33.2",
+        "time": "2026-02-26 14:12:00"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q33.2",
+        "time": "2026-02-26 14:12:00"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q33.2",
+        "time": "2026-02-26 14:12:00"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q34",
+        "time": "2026-02-26 14:12:00"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q34",
+        "time": "2026-02-26 14:12:00"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q34",
+        "time": "2026-02-26 14:12:00"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q34",
+        "time": "2026-02-26 14:12:00"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q34",
+        "time": "2026-02-26 14:12:00"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q34",
+        "time": "2026-02-26 14:12:00"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q34",
+        "time": "2026-02-26 14:12:00"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q35.1",
+        "time": "2026-02-26 14:12:00"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q35.1",
+        "time": "2026-02-26 14:12:00"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q35.1",
+        "time": "2026-02-26 14:12:00"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q35.1",
+        "time": "2026-02-26 14:12:00"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q35.1",
+        "time": "2026-02-26 14:12:00"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q35.1",
+        "time": "2026-02-26 14:12:00"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q35.1",
+        "time": "2026-02-26 14:12:00"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q35.2",
+        "time": "2026-02-26 14:12:00"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q35.2",
+        "time": "2026-02-26 14:12:01"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q35.2",
+        "time": "2026-02-26 14:12:01"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q35.2",
+        "time": "2026-02-26 14:12:01"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q35.2",
+        "time": "2026-02-26 14:12:01"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q35.2",
+        "time": "2026-02-26 14:12:01"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q35.2",
+        "time": "2026-02-26 14:12:01"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q36",
+        "time": "2026-02-26 14:12:01"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q36",
+        "time": "2026-02-26 14:12:01"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q36",
+        "time": "2026-02-26 14:12:01"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q36",
+        "time": "2026-02-26 14:12:01"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q36",
+        "time": "2026-02-26 14:12:01"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q36",
+        "time": "2026-02-26 14:12:01"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q36",
+        "time": "2026-02-26 14:12:01"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q37",
+        "time": "2026-02-26 14:12:01"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q37",
+        "time": "2026-02-26 14:12:01"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q37",
+        "time": "2026-02-26 14:12:01"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q37",
+        "time": "2026-02-26 14:12:01"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q37",
+        "time": "2026-02-26 14:12:01"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q37",
+        "time": "2026-02-26 14:12:01"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q37",
+        "time": "2026-02-26 14:12:01"
+    },
+    {
+        "status": "PASS",
+        "message": "Marks value present in Q38",
+        "time": "2026-02-26 14:12:01"
+    },
+    {
+        "status": "PASS",
+        "message": "Chapter visible in Q38",
+        "time": "2026-02-26 14:12:01"
+    },
+    {
+        "status": "PASS",
+        "message": "Concepts visible in Q38",
+        "time": "2026-02-26 14:12:02"
+    },
+    {
+        "status": "PASS",
+        "message": "Type visible in Q38",
+        "time": "2026-02-26 14:12:02"
+    },
+    {
+        "status": "PASS",
+        "message": "Full visible in Q38",
+        "time": "2026-02-26 14:12:02"
+    },
+    {
+        "status": "PASS",
+        "message": "Partial visible in Q38",
+        "time": "2026-02-26 14:12:02"
+    },
+    {
+        "status": "PASS",
+        "message": "Wrong visible in Q38",
+        "time": "2026-02-26 14:12:02"
+    },
+    {
+        "status": "PASS",
+        "message": "IMPROVED badge detected for Joshua Abraham",
+        "time": "2026-02-26 14:12:02"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Joshua Abraham",
+        "time": "2026-02-26 14:12:02"
+    },
+    {
+        "status": "PASS",
+        "message": "IMPROVED badge detected for Joshson Lourdu",
+        "time": "2026-02-26 14:12:02"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Joshson Lourdu",
+        "time": "2026-02-26 14:12:02"
+    },
+    {
+        "status": "PASS",
+        "message": "IMPROVED badge detected for Peddada Sri Arush",
+        "time": "2026-02-26 14:12:02"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Peddada Sri Arush",
+        "time": "2026-02-26 14:12:02"
+    },
+    {
+        "status": "PASS",
+        "message": "IMPROVED badge detected for Prithesh Murugaboopathy",
+        "time": "2026-02-26 14:12:03"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Prithesh Murugaboopathy",
+        "time": "2026-02-26 14:12:03"
+    },
+    {
+        "status": "PASS",
+        "message": "IMPROVED badge detected for Avilala Nikhil Raj",
+        "time": "2026-02-26 14:12:03"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Avilala Nikhil Raj",
+        "time": "2026-02-26 14:12:03"
+    },
+    {
+        "status": "PASS",
+        "message": "IMPROVED badge detected for Jayesh Verma",
+        "time": "2026-02-26 14:12:03"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Jayesh Verma",
+        "time": "2026-02-26 14:12:03"
+    },
+    {
+        "status": "PASS",
+        "message": "IMPROVED badge detected for Vedant Malhotra",
+        "time": "2026-02-26 14:12:03"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Vedant Malhotra",
+        "time": "2026-02-26 14:12:03"
+    },
+    {
+        "status": "PASS",
+        "message": "IMPROVED badge detected for Ria Mathew",
+        "time": "2026-02-26 14:12:03"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Ria Mathew",
+        "time": "2026-02-26 14:12:03"
+    },
+    {
+        "status": "PASS",
+        "message": "IMPROVED badge detected for P Vijaychandh",
+        "time": "2026-02-26 14:12:03"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for P Vijaychandh",
+        "time": "2026-02-26 14:12:03"
+    },
+    {
+        "status": "PASS",
+        "message": "IMPROVED badge detected for Nirvaan Nair",
+        "time": "2026-02-26 14:12:03"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Nirvaan Nair",
+        "time": "2026-02-26 14:12:03"
+    },
+    {
+        "status": "PASS",
+        "message": "IMPROVED badge detected for S Shreeram",
+        "time": "2026-02-26 14:12:03"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for S Shreeram",
+        "time": "2026-02-26 14:12:03"
+    },
+    {
+        "status": "PASS",
+        "message": "IMPROVED badge detected for Swastik Khare",
+        "time": "2026-02-26 14:12:03"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Swastik Khare",
+        "time": "2026-02-26 14:12:03"
+    },
+    {
+        "status": "PASS",
+        "message": "IMPROVED badge detected for Abhik Singh",
+        "time": "2026-02-26 14:12:03"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Abhik Singh",
+        "time": "2026-02-26 14:12:03"
+    },
+    {
+        "status": "PASS",
+        "message": "IMPROVED badge detected for Amogh Rai",
+        "time": "2026-02-26 14:12:03"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Amogh Rai",
+        "time": "2026-02-26 14:12:03"
+    },
+    {
+        "status": "FAIL",
+        "message": "Status badge NOT detected for Aarush Kumar",
+        "time": "2026-02-26 14:12:04"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Aarush Kumar",
+        "time": "2026-02-26 14:12:04"
+    },
+    {
+        "status": "FAIL",
+        "message": "Status badge NOT detected for Arjun Karthee",
+        "time": "2026-02-26 14:12:04"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Arjun Karthee",
+        "time": "2026-02-26 14:12:04"
+    },
+    {
+        "status": "FAIL",
+        "message": "Status badge NOT detected for Chethan .R",
+        "time": "2026-02-26 14:12:04"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Chethan .R",
+        "time": "2026-02-26 14:12:04"
+    },
+    {
+        "status": "FAIL",
+        "message": "Status badge NOT detected for Gunamay Dawar",
+        "time": "2026-02-26 14:12:04"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Gunamay Dawar",
+        "time": "2026-02-26 14:12:05"
+    },
+    {
+        "status": "FAIL",
+        "message": "Status badge NOT detected for Rajdeep Deshpande",
+        "time": "2026-02-26 14:12:05"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Rajdeep Deshpande",
+        "time": "2026-02-26 14:12:05"
+    },
+    {
+        "status": "FAIL",
+        "message": "Status badge NOT detected for Samarth Thazathe Vergiyil",
+        "time": "2026-02-26 14:12:05"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Samarth Thazathe Vergiyil",
+        "time": "2026-02-26 14:12:05"
+    },
+    {
+        "status": "FAIL",
+        "message": "Status badge NOT detected for Shubh Jayesh Laddha",
+        "time": "2026-02-26 14:12:05"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Shubh Jayesh Laddha",
+        "time": "2026-02-26 14:12:05"
+    },
+    {
+        "status": "PASS",
+        "message": "DECLINED badge detected for Saanvi Saurabh Jhalani",
+        "time": "2026-02-26 14:12:05"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Saanvi Saurabh Jhalani",
+        "time": "2026-02-26 14:12:05"
+    },
+    {
+        "status": "PASS",
+        "message": "DECLINED badge detected for Varshana Balaji",
+        "time": "2026-02-26 14:12:06"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Varshana Balaji",
+        "time": "2026-02-26 14:12:06"
+    },
+    {
+        "status": "PASS",
+        "message": "DECLINED badge detected for Abigali Varghese",
+        "time": "2026-02-26 14:12:06"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Abigali Varghese",
+        "time": "2026-02-26 14:12:06"
+    },
+    {
+        "status": "PASS",
+        "message": "DECLINED badge detected for Aarav Joshi",
+        "time": "2026-02-26 14:12:06"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Aarav Joshi",
+        "time": "2026-02-26 14:12:06"
+    },
+    {
+        "status": "PASS",
+        "message": "DECLINED badge detected for Aditi Sesham",
+        "time": "2026-02-26 14:12:06"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Aditi Sesham",
+        "time": "2026-02-26 14:12:06"
+    },
+    {
+        "status": "PASS",
+        "message": "DECLINED badge detected for Vikesh Raj Mishra",
+        "time": "2026-02-26 14:12:06"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Vikesh Raj Mishra",
+        "time": "2026-02-26 14:12:06"
+    },
+    {
+        "status": "PASS",
+        "message": "DECLINED badge detected for Anjishnu Mal",
+        "time": "2026-02-26 14:12:06"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Anjishnu Mal",
+        "time": "2026-02-26 14:12:06"
+    },
+    {
+        "status": "PASS",
+        "message": "DECLINED badge detected for Divyanshi Bilgrami",
+        "time": "2026-02-26 14:12:06"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Divyanshi Bilgrami",
+        "time": "2026-02-26 14:12:06"
+    },
+    {
+        "status": "PASS",
+        "message": "DECLINED badge detected for Sujai Aravindakannan",
+        "time": "2026-02-26 14:12:06"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Sujai Aravindakannan",
+        "time": "2026-02-26 14:12:06"
+    },
+    {
+        "status": "PASS",
+        "message": "DECLINED badge detected for Apurv Akshat Rajesh",
+        "time": "2026-02-26 14:12:06"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Apurv Akshat Rajesh",
+        "time": "2026-02-26 14:12:06"
+    },
+    {
+        "status": "PASS",
+        "message": "DECLINED badge detected for Amrita Kumari",
+        "time": "2026-02-26 14:12:06"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Amrita Kumari",
+        "time": "2026-02-26 14:12:06"
+    },
+    {
+        "status": "PASS",
+        "message": "DECLINED badge detected for Govind S Menon",
+        "time": "2026-02-26 14:12:06"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Govind S Menon",
+        "time": "2026-02-26 14:12:06"
+    },
+    {
+        "status": "PASS",
+        "message": "DECLINED badge detected for Sachpreet Verma",
+        "time": "2026-02-26 14:12:07"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Sachpreet Verma",
+        "time": "2026-02-26 14:12:07"
+    },
+    {
+        "status": "PASS",
+        "message": "DECLINED badge detected for Ritkriti Kumar",
+        "time": "2026-02-26 14:12:07"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Ritkriti Kumar",
+        "time": "2026-02-26 14:12:07"
+    },
+    {
+        "status": "PASS",
+        "message": "DECLINED badge detected for Balaji Saheth Gajula",
+        "time": "2026-02-26 14:12:07"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Balaji Saheth Gajula",
+        "time": "2026-02-26 14:12:07"
+    },
+    {
+        "status": "PASS",
+        "message": "DECLINED badge detected for Abhijit Karthik",
+        "time": "2026-02-26 14:12:07"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Abhijit Karthik",
+        "time": "2026-02-26 14:12:07"
+    },
+    {
+        "status": "PASS",
+        "message": "DECLINED badge detected for Aditya Ranjith",
+        "time": "2026-02-26 14:12:07"
+    },
+    {
+        "status": "PASS",
+        "message": "Valid % format for Aditya Ranjith",
+        "time": "2026-02-26 14:12:07"
+    },
+    {
+        "status": "PASS",
+        "message": "All Students Tested",
+        "time": "2026-02-26 14:12:08"
+    }
+]
