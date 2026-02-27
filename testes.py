@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import re
 import json
 import time
@@ -812,3 +813,43 @@ def main():
 
 if __name__ == "__main__":
     main()
+=======
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+import time
+
+driver = webdriver.Chrome()
+driver.maximize_window()
+
+# 👉 PUT YOUR REAL STUDENT PAGE URL HERE
+driver.get("https://example.com")
+
+wait = WebDriverWait(driver, 20)
+
+wait.until(EC.presence_of_element_located((By.XPATH, "//table")))
+
+rows = driver.find_elements(By.XPATH, "//table//tr")
+
+for row in rows:
+    try:
+        text = row.text.lower()
+
+        if "improved" in text:
+            print("Clicking Improve")
+            row.find_element(By.XPATH, ".//button[contains(text(),'Improve')]").click()
+            time.sleep(2)
+
+        elif "declined" in text:
+            print("Clicking Decline")
+            row.find_element(By.XPATH, ".//button[contains(text(),'Decline')]").click()
+            time.sleep(2)
+
+    except:
+        pass
+
+print("DONE")
+time.sleep(5)
+driver.quit()
+>>>>>>> b459d12 (saving local changes before pull)
