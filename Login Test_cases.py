@@ -8,7 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-LOGIN_URL = "https://classlens.inferentics.com/login"
+LOGIN_URL = "https://classlens.inferentics.com"
 
 USERNAME = "sajan"
 PASSWORD = "Operations123"
@@ -16,7 +16,7 @@ PASSWORD = "Operations123"
 VALUES = {
     "Class": "12",
     "Section": "M",
-    "Subject": "MATHS",
+    "Subject": "Maths",
     "Exam": "Midterm",
     "CompareLeft": "Midterm",
     "CompareRight": "Preboard 1",

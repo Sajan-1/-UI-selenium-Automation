@@ -1,0 +1,630 @@
+COMMAND: C:\Users\User\Downloads\-UI-selenium-Automation\venv\Scripts\python.exe C:\Users\User\AppData\Local\Temp\classlens_keep_all_wrapper_dk39v5_0.py C:\Users\User\Downloads\-UI-selenium-Automation\Overview Tab.py
+EXIT: 0
+DURATION: 60569.62s
+
+--- STDOUT ---
+
+╔════════════════════════════════════════════════════════════════════════╗
+║   ClassLens — Complete UI Test Suite v12.0  (Professional Edition)      ║
+║   Login · Navigation · Exam · Chapter Cards · ALL Students               ║
+║   Started: 2026-04-23 17:28:51                                       ║
+╚════════════════════════════════════════════════════════════════════════╝
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 1 – Login & Page Load
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-L-001] Login page loads
+         → https://classlens.inferentics.com/
+  ✅ [TC-L-002] Logo visible
+  ✅ [TC-L-003] Username/Password/Submit visible
+  ✅ [TC-L-004] Password field masked
+  ✅ [TC-L-005] Login succeeds
+         → https://classlens.inferentics.com/
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 2 – Form Selection & Navigation
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-N-001] Dropdown 'Class'='12'
+  ✅ [TC-N-002] Dropdown 'Section'='P'
+  ✅ [TC-N-003] Dropdown 'Subject'='Maths'
+  ✅ [TC-N-004] Dropdown 'Exam'='Midterm'
+  ✅ [TC-N-005] Dropdown 'CompareLeft'='Midterm'
+  ✅ [TC-N-006] Dropdown 'CompareRight'='Preboard 1'
+  ✅ [TC-N-007] Enter → Dashboard
+         → https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1
+  ✅ [TC-N-008] Overview tab clicked
+  ✅ [TC-N-009] Page header visible
+         → Overview of Section 12 P
+  ✅ [TC-N-010] Tab 'Overview' visible
+  ✅ [TC-N-011] Tab 'Chapters' visible
+  ✅ [TC-N-012] Tab 'Questions' visible
+  ✅ [TC-N-013] Tab 'Students' visible
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 3 – Exam Comparison Banner
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-EC-001] Exam Comparison heading visible
+         → Exam Comparison
+  ✅ [TC-EC-002] Sub-label 'Change in class average'
+         → Change in class average
+  ✅ [TC-EC-003] Orange banner rendered
+  ✅ [TC-EC-004] Midterm label visible
+  ✅ [TC-EC-005] Preboard label visible
+  ✅ [TC-EC-006] Left avg (Midterm) = 36.5%
+         → 36.5%
+  ✅ [TC-EC-007] Right avg (Preboard 1) = 30%
+         → 30%
+  ✅ [TC-EC-008] Trend badge: '-6.5 points decline'
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – Reteach
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Reteach
+  ✅ [TC-RT-001] 'Reteach' section panel found
+  ✅ [TC-RT-002] Chapter count badge
+         → 2 chapters
+  ✅ [TC-RT-003] Instruction 'Revise Thoroughly' visible
+         → Revise Thoroughly
+      No overflow button in Reteach panel — all chapters visible inline
+  ℹ️  [TC-RT-OVF] No chapter overflow found
+         → All chapters already visible inline
+  ✅ [TC-RT-004] Chapter cards found
+         → 2 cards: ['Application Of Derivatives', 'Integrals']
+
+    📚 Reteach — 2 chapters:
+      #1: Application Of Derivatives
+      #2: Integrals
+
+    ── Expanding: 'Application Of Derivatives'
+  ✅ [TC-RT-C01] Card 'Application Of Derivatives' expanded
+      metrics: avg=-1.9%  wt=35/ 80  [boxes=2 | box0=[Chapter Avg|-1.9%] | box1=[Avg Weightage|35/ 80]]
+  ✅ [TC-RT-C01-AVG]   Chapter Avg % = '-1.9%'
+         → -1.9%
+  ✅ [TC-RT-C01-WT]   Avg Weightage = '35/ 80'
+         → 35/ 80
+  ✅ [TC-RT-C01-BTN] 'View Chapter Details' button present
+
+    ── Expanding: 'Integrals'
+  ✅ [TC-RT-C02] Card 'Integrals' expanded
+      metrics: avg=+2.4%  wt=35/ 80  [boxes=2 | box0=[Chapter Avg|+2.4%] | box1=[Avg Weightage|35/ 80]]
+  ✅ [TC-RT-C02-AVG]   Chapter Avg % = '+2.4%'
+         → +2.4%
+  ✅ [TC-RT-C02-WT]   Avg Weightage = '35/ 80'
+         → 35/ 80
+  ✅ [TC-RT-C02-BTN] 'View Chapter Details' button present
+
+  ──────────────────────────────────────────────────────────────
+  📊  RETEACH — 2 CHAPTERS
+  ──────────────────────────────────────────────────────────────
+    #1   Application Of Derivatives           Avg:    -1.9%  Wt:      35/ 80
+    #2   Integrals                            Avg:    +2.4%  Wt:      35/ 80
+  ──────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – Brushup
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Brushup
+  ✅ [TC-BU-001] 'Brushup' section panel found
+  ✅ [TC-BU-002] Chapter count badge
+         → 5 chapters
+  ✅ [TC-BU-003] Instruction 'Review Specific Concepts' visible
+         → Review Specific Concepts
+      Found overflow in panel: '+1 more chapters'
+
+      clicking chapter overflow: '+1 more chapters'
+      JS layer 1: modal text found but parsed 0 chapters
+      Anchor fallback: 5 chapters for Brushup
+        # 1: Inverse Trigonometric Functions
+        # 2: Relations & Functions
+        # 3: Application of Integrals
+        # 4: Linear Programming
+        # 5: Continuity & Differentiability
+      modal closed. chapters: 5
+  ✅ [TC-BU-OVF] Overflow '+1 more chapters' clicked — modal read
+         → '+1 more chapters' → 5 chapters from modal
+  ✅ [TC-BU-MCH01] Modal chapter #1: Inverse Trigonometric Functions
+  ✅ [TC-BU-MCH02] Modal chapter #2: Relations & Functions
+  ✅ [TC-BU-MCH03] Modal chapter #3: Application of Integrals
+  ✅ [TC-BU-MCH04] Modal chapter #4: Linear Programming
+  ✅ [TC-BU-MCH05] Modal chapter #5: Continuity & Differentiability
+  ✅ [TC-BU-004] Chapter cards found
+         → 4 cards: ['Inverse Trigonometric Functions', 'Relations & Functions', 'Application Of Integrals', 'Linear Programming']
+
+    📚 Brushup — 4 chapters:
+      #1: Inverse Trigonometric Functions
+      #2: Relations & Functions
+      #3: Application Of Integrals
+      #4: Linear Programming
+
+    ── Expanding: 'Inverse Trigonometric Functions'
+  ✅ [TC-BU-C01] Card 'Inverse Trigonometric Functions' expanded
+      metrics: avg=-21.5%  wt=8/ 80  [boxes=2 | box0=[Chapter Avg|-21.5%] | box1=[Avg Weightage|8/ 80]]
+  ✅ [TC-BU-C01-AVG]   Chapter Avg % = '-21.5%'
+         → -21.5%
+  ✅ [TC-BU-C01-WT]   Avg Weightage = '8/ 80'
+         → 8/ 80
+  ✅ [TC-BU-C01-BTN] 'View Chapter Details' button present
+
+    ── Expanding: 'Relations & Functions'
+  ✅ [TC-BU-C02] Card 'Relations & Functions' expanded
+      metrics: avg=-5.1%  wt=8/ 80  [boxes=2 | box0=[Chapter Avg|-5.1%] | box1=[Avg Weightage|8/ 80]]
+  ✅ [TC-BU-C02-AVG]   Chapter Avg % = '-5.1%'
+         → -5.1%
+  ✅ [TC-BU-C02-WT]   Avg Weightage = '8/ 80'
+         → 8/ 80
+  ✅ [TC-BU-C02-BTN] 'View Chapter Details' button present
+
+    ── Expanding: 'Application Of Integrals'
+  ✅ [TC-BU-C03] Card 'Application Of Integrals' expanded
+      metrics: avg=-0.9%  wt=35/ 80  [boxes=2 | box0=[Chapter Avg|-0.9%] | box1=[Avg Weightage|35/ 80]]
+  ✅ [TC-BU-C03-AVG]   Chapter Avg % = '-0.9%'
+         → -0.9%
+  ✅ [TC-BU-C03-WT]   Avg Weightage = '35/ 80'
+         → 35/ 80
+  ✅ [TC-BU-C03-BTN] 'View Chapter Details' button present
+
+    ── Expanding: 'Linear Programming'
+  ✅ [TC-BU-C04] Card 'Linear Programming' expanded
+      metrics: avg=+1.4%  wt=5/ 80  [boxes=2 | box0=[Chapter Avg|+1.4%] | box1=[Avg Weightage|5/ 80]]
+  ✅ [TC-BU-C04-AVG]   Chapter Avg % = '+1.4%'
+         → +1.4%
+  ✅ [TC-BU-C04-WT]   Avg Weightage = '5/ 80'
+         → 5/ 80
+  ✅ [TC-BU-C04-BTN] 'View Chapter Details' button present
+
+  ──────────────────────────────────────────────────────────────
+  📊  BRUSHUP — 4 CHAPTERS
+  ──────────────────────────────────────────────────────────────
+    #1   Inverse Trigonometric Functions      Avg:   -21.5%  Wt:       8/ 80
+    #2   Relations & Functions                Avg:    -5.1%  Wt:       8/ 80
+    #3   Application Of Integrals             Avg:    -0.9%  Wt:      35/ 80
+    #4   Linear Programming                   Avg:    +1.4%  Wt:       5/ 80
+  ──────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – On Track
+══════════════════════════════════════════════════════════════════════
+
+  ▶ On Track
+  ✅ [TC-OT-001] 'On Track' section panel found
+  ✅ [TC-OT-002] Chapter count badge
+         → 2 chapters
+  ✅ [TC-OT-003] Instruction 'Significant Improvement' visible
+         → Significant Improvement
+      No overflow button in On Track panel — all chapters visible inline
+  ℹ️  [TC-OT-OVF] No chapter overflow found
+         → All chapters already visible inline
+  ✅ [TC-OT-004] Chapter cards found
+         → 2 cards: ['Determinants', 'Matrices']
+
+    📚 On Track — 2 chapters:
+      #1: Determinants
+      #2: Matrices
+
+    ── Expanding: 'Determinants'
+  ✅ [TC-OT-C01] Card 'Determinants' expanded
+      metrics: avg=+10.4%  wt=10/ 80  [boxes=2 | box0=[Chapter Avg|+10.4%] | box1=[Avg Weightage|10/ 80]]
+  ✅ [TC-OT-C01-AVG]   Chapter Avg % = '+10.4%'
+         → +10.4%
+  ✅ [TC-OT-C01-WT]   Avg Weightage = '10/ 80'
+         → 10/ 80
+  ✅ [TC-OT-C01-BTN] 'View Chapter Details' button present
+
+    ── Expanding: 'Matrices'
+  ✅ [TC-OT-C02] Card 'Matrices' expanded
+      metrics: avg=-5.7%  wt=10/ 80  [boxes=2 | box0=[Chapter Avg|-5.7%] | box1=[Avg Weightage|10/ 80]]
+  ✅ [TC-OT-C02-AVG]   Chapter Avg % = '-5.7%'
+         → -5.7%
+  ✅ [TC-OT-C02-WT]   Avg Weightage = '10/ 80'
+         → 10/ 80
+  ✅ [TC-OT-C02-BTN] 'View Chapter Details' button present
+
+  ──────────────────────────────────────────────────────────────
+  📊  ON TRACK — 2 CHAPTERS
+  ──────────────────────────────────────────────────────────────
+    #1   Determinants                         Avg:   +10.4%  Wt:      10/ 80
+    #2   Matrices                             Avg:    -5.7%  Wt:      10/ 80
+  ──────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 7 – Highlighted Students (Full Verification)
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-HS-000] Highlighted Students heading
+         → Highlighted Students
+  ✅ [TC-HS-SUB] Sub-text visible
+         → Students classified based on their preboard scores.
+
+══════════════════════════════════════════════════════════════════════
+    Weak
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Weak
+  ✅ [TC-HS-W-001] 'Weak' heading visible
+         → Weak
+  ⚠️  [TC-HS-W-002] Student count badge
+         → Not found
+  ✅ [TC-HS-W-PANEL] Section panel found
+
+    📋 Scraping visible students…
+      JS visible scrape error: Message: javascript error: (e.className || "").indexOf is not a function
+  (Session info: chrome=147.0.7727.103)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff7a9f6a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff7a9f6a950+14eb0]
+	chromedriver!(No symbol) [0x7ff7a9cdd6ed]
+	chromedriver!(No symbol) [0x7ff7a9ce5671]
+	chromedriver!(No symbol) [0x7ff7a9ce8b2f]
+	chromedriver!(No symbol) [0x7ff7a9d85c1d]
+	chromedriver!(No symbol) [0x7ff7a9d6002a]
+	chromedriver!(No symbol) [0x7ff7a9d8483b]
+	chromedriver!(No symbol) [0x7ff7a9d290e8]
+	chromedriver!(No symbol) [0x7ff7a9d29fc3]
+	chromedriver!GetHandleVerifier [0x7ff7aa280149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff7aa27a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff7aa29c012+346572]
+	chromedriver!GetHandleVerifier [0x7ff7a9f87cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff7a9f9087c+3addc]
+	chromedriver!GetHandleVerifier [0x7ff7a9f740e4+1e644]
+	chromedriver!GetHandleVerifier [0x7ff7a9f74296+1e7f6]
+	chromedriver!GetHandleVerifier [0x7ff7a9f58737+2c97]
+	KERNEL32!BaseThreadInitThunk [0x7ffa1194e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffa139ec3fc+2c]
+
+    ✅  3 visible students:
+      #1: Nehal Mital — 11.3%
+  ✅ [TC-HS-W-S01] Visible #1: Nehal Mital
+         → Score: 11.3%
+      #2: Tanya Tripathy — 13.8%
+  ✅ [TC-HS-W-S02] Visible #2: Tanya Tripathy
+         → Score: 13.8%
+      #3: S Prajith — 15.0%
+  ✅ [TC-HS-W-S03] Visible #3: S Prajith
+         → Score: 15.0%
+
+    🔍 Looking for '+N more students' button…
+      JS panel found: '+12 more students'
+  ✅ [TC-HS-W-OVF-001] Overflow button found
+         → '+12 more students'
+    ✅  Found: '+12 more students'
+
+    🔽  Clicking: '+12 more students'
+  ✅ [TC-HS-W-OVF-002] Clicked '+12 more students'
+         → attempt 2
+
+    🔍  Detecting modal popup…
+      JS layer 1: container h=771px, 15 students
+        # 1: Nehal Mital                              11.3%
+        # 2: Tanya Tripathy                           13.8%
+        # 3: S Prajith                                15.0%
+        # 4: Tenneti Aditya Bhavya Hamsini            16.3%
+        # 5: Adam Benzeer                             16.3%
+        # 6: Paavana S N                              16.9%
+        # 7: Mrinal Raj                               17.5%
+        # 8: Gautham Rajesh                           17.5%
+        # 9: Olive sara Sibey                         18.8%
+        #10: Abhinav Kumar                            23.8%
+        #11: Tanisha Nanda                            23.8%
+        #12: Yash Srivastava                          25.0%
+        #13: Serah Anju Daniel                        25.0%
+        #14: Vrishank Sai Ramadurgam                  25.6%
+        #15: Manya Badami Nagesh                      26.3%
+      Scrolling for more (have 15)...
+  ✅ [TC-HS-W-MODAL-001] Modal opened and read
+         → 15 students from modal
+  ✅ [TC-HS-W-M01] Modal #1: Nehal Mital
+         → Score: 11.3%  Class: Class 12P
+  ✅ [TC-HS-W-M02] Modal #2: Tanya Tripathy
+         → Score: 13.8%  Class: Class 12P
+  ✅ [TC-HS-W-M03] Modal #3: S Prajith
+         → Score: 15.0%  Class: Class 12P
+  ✅ [TC-HS-W-M04] Modal #4: Tenneti Aditya Bhavya Hamsini
+         → Score: 16.3%  Class: Class 12P
+  ✅ [TC-HS-W-M05] Modal #5: Adam Benzeer
+         → Score: 16.3%  Class: Class 12P
+  ✅ [TC-HS-W-M06] Modal #6: Paavana S N
+         → Score: 16.9%  Class: Class 12P
+  ✅ [TC-HS-W-M07] Modal #7: Mrinal Raj
+         → Score: 17.5%  Class: Class 12P
+  ✅ [TC-HS-W-M08] Modal #8: Gautham Rajesh
+         → Score: 17.5%  Class: Class 12P
+  ✅ [TC-HS-W-M09] Modal #9: Olive sara Sibey
+         → Score: 18.8%  Class: Class 12P
+  ✅ [TC-HS-W-M10] Modal #10: Abhinav Kumar
+         → Score: 23.8%  Class: Class 12P
+  ✅ [TC-HS-W-M11] Modal #11: Tanisha Nanda
+         → Score: 23.8%  Class: Class 12P
+  ✅ [TC-HS-W-M12] Modal #12: Yash Srivastava
+         → Score: 25.0%  Class: Class 12P
+  ✅ [TC-HS-W-M13] Modal #13: Serah Anju Daniel
+         → Score: 25.0%  Class: Class 12P
+  ✅ [TC-HS-W-M14] Modal #14: Vrishank Sai Ramadurgam
+         → Score: 25.6%  Class: Class 12P
+  ✅ [TC-HS-W-M15] Modal #15: Manya Badami Nagesh
+         → Score: 26.3%  Class: Class 12P
+  ✅ [TC-HS-W-MODAL-CLOSE] Modal closed
+
+  ────────────────────────────────────────────────────────────────────
+  📊  WEAK — 15 STUDENTS TOTAL
+  ────────────────────────────────────────────────────────────────────
+  #    Name                                        Score  Class         Src
+  ---- ---------------------------------------- --------  ------------  ---
+  1    Nehal Mital                                 11.3%  Class 12P     modal-js
+  2    Tanya Tripathy                              13.8%  Class 12P     modal-js
+  3    S Prajith                                   15.0%  Class 12P     modal-js
+  4    Tenneti Aditya Bhavya Hamsini               16.3%  Class 12P     modal-js
+  5    Adam Benzeer                                16.3%  Class 12P     modal-js
+  6    Paavana S N                                 16.9%  Class 12P     modal-js
+  7    Mrinal Raj                                  17.5%  Class 12P     modal-js
+  8    Gautham Rajesh                              17.5%  Class 12P     modal-js
+  9    Olive sara Sibey                            18.8%  Class 12P     modal-js
+  10   Abhinav Kumar                               23.8%  Class 12P     modal-js
+  11   Tanisha Nanda                               23.8%  Class 12P     modal-js
+  12   Yash Srivastava                             25.0%  Class 12P     modal-js
+  13   Serah Anju Daniel                           25.0%  Class 12P     modal-js
+  14   Vrishank Sai Ramadurgam                     25.6%  Class 12P     modal-js
+  15   Manya Badami Nagesh                         26.3%  Class 12P     modal-js
+  ────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+    Lagging
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Lagging
+  ✅ [TC-HS-L-001] 'Lagging' heading visible
+         → Lagging
+  ⚠️  [TC-HS-L-002] Student count badge
+         → Not found
+  ✅ [TC-HS-L-PANEL] Section panel found
+
+    📋 Scraping visible students…
+      JS visible scrape error: Message: javascript error: (e.className || "").indexOf is not a function
+  (Session info: chrome=147.0.7727.103)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff7a9f6a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff7a9f6a950+14eb0]
+	chromedriver!(No symbol) [0x7ff7a9cdd6ed]
+	chromedriver!(No symbol) [0x7ff7a9ce5671]
+	chromedriver!(No symbol) [0x7ff7a9ce8b2f]
+	chromedriver!(No symbol) [0x7ff7a9d85c1d]
+	chromedriver!(No symbol) [0x7ff7a9d6002a]
+	chromedriver!(No symbol) [0x7ff7a9d8483b]
+	chromedriver!(No symbol) [0x7ff7a9d290e8]
+	chromedriver!(No symbol) [0x7ff7a9d29fc3]
+	chromedriver!GetHandleVerifier [0x7ff7aa280149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff7aa27a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff7aa29c012+346572]
+	chromedriver!GetHandleVerifier [0x7ff7a9f87cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff7a9f9087c+3addc]
+	chromedriver!GetHandleVerifier [0x7ff7a9f740e4+1e644]
+	chromedriver!GetHandleVerifier [0x7ff7a9f74296+1e7f6]
+	chromedriver!GetHandleVerifier [0x7ff7a9f58737+2c97]
+	KERNEL32!BaseThreadInitThunk [0x7ffa1194e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffa139ec3fc+2c]
+
+    ✅  3 visible students:
+      #1: R Raghavi — 35.0%
+  ✅ [TC-HS-L-S01] Visible #1: R Raghavi
+         → Score: 35.0%
+      #2: Shivangi Mohapatra — 36.3%
+  ✅ [TC-HS-L-S02] Visible #2: Shivangi Mohapatra
+         → Score: 36.3%
+      #3: Rishabh Sharma — 37.5%
+  ✅ [TC-HS-L-S03] Visible #3: Rishabh Sharma
+         → Score: 37.5%
+
+    🔍 Looking for '+N more students' button…
+      JS panel found: '+3 more students'
+  ✅ [TC-HS-L-OVF-001] Overflow button found
+         → '+3 more students'
+    ✅  Found: '+3 more students'
+
+    🔽  Clicking: '+3 more students'
+  ✅ [TC-HS-L-OVF-002] Clicked '+3 more students'
+         → attempt 1
+
+    🔍  Detecting modal popup…
+      JS layer 1: container h=704px, 6 students
+        # 1: R Raghavi                                35.0%
+        # 2: Shivangi Mohapatra                       36.3%
+        # 3: Rishabh Sharma                           37.5%
+        # 4: Sareena Wadhwa                           37.5%
+        # 5: Radhika Kothedar                         41.3%
+        # 6: Pearl Ashish Chalakkel                   47.5%
+      Scrolling for more (have 6)...
+  ✅ [TC-HS-L-MODAL-001] Modal opened and read
+         → 6 students from modal
+  ✅ [TC-HS-L-M01] Modal #1: R Raghavi
+         → Score: 35.0%  Class: Class 12P
+  ✅ [TC-HS-L-M02] Modal #2: Shivangi Mohapatra
+         → Score: 36.3%  Class: Class 12P
+  ✅ [TC-HS-L-M03] Modal #3: Rishabh Sharma
+         → Score: 37.5%  Class: Class 12P
+  ✅ [TC-HS-L-M04] Modal #4: Sareena Wadhwa
+         → Score: 37.5%  Class: Class 12P
+  ✅ [TC-HS-L-M05] Modal #5: Radhika Kothedar
+         → Score: 41.3%  Class: Class 12P
+  ✅ [TC-HS-L-M06] Modal #6: Pearl Ashish Chalakkel
+         → Score: 47.5%  Class: Class 12P
+  ✅ [TC-HS-L-MODAL-CLOSE] Modal closed
+
+  ────────────────────────────────────────────────────────────────────
+  📊  LAGGING — 6 STUDENTS TOTAL
+  ────────────────────────────────────────────────────────────────────
+  #    Name                                        Score  Class         Src
+  ---- ---------------------------------------- --------  ------------  ---
+  1    R Raghavi                                   35.0%  Class 12P     modal-js
+  2    Shivangi Mohapatra                          36.3%  Class 12P     modal-js
+  3    Rishabh Sharma                              37.5%  Class 12P     modal-js
+  4    Sareena Wadhwa                              37.5%  Class 12P     modal-js
+  5    Radhika Kothedar                            41.3%  Class 12P     modal-js
+  6    Pearl Ashish Chalakkel                      47.5%  Class 12P     modal-js
+  ────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+    Performing Well
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Performing Well
+  ✅ [TC-HS-P-001] 'Performing Well' heading visible
+         → Performing Well
+  ⚠️  [TC-HS-P-002] Student count badge
+         → Not found
+  ✅ [TC-HS-P-PANEL] Section panel found
+
+    📋 Scraping visible students…
+      JS visible scrape error: Message: javascript error: (e.className || "").indexOf is not a function
+  (Session info: chrome=147.0.7727.103)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff7a9f6a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff7a9f6a950+14eb0]
+	chromedriver!(No symbol) [0x7ff7a9cdd6ed]
+	chromedriver!(No symbol) [0x7ff7a9ce5671]
+	chromedriver!(No symbol) [0x7ff7a9ce8b2f]
+	chromedriver!(No symbol) [0x7ff7a9d85c1d]
+	chromedriver!(No symbol) [0x7ff7a9d6002a]
+	chromedriver!(No symbol) [0x7ff7a9d8483b]
+	chromedriver!(No symbol) [0x7ff7a9d290e8]
+	chromedriver!(No symbol) [0x7ff7a9d29fc3]
+	chromedriver!GetHandleVerifier [0x7ff7aa280149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff7aa27a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff7aa29c012+346572]
+	chromedriver!GetHandleVerifier [0x7ff7a9f87cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff7a9f9087c+3addc]
+	chromedriver!GetHandleVerifier [0x7ff7a9f740e4+1e644]
+	chromedriver!GetHandleVerifier [0x7ff7a9f74296+1e7f6]
+	chromedriver!GetHandleVerifier [0x7ff7a9f58737+2c97]
+	KERNEL32!BaseThreadInitThunk [0x7ffa1194e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffa139ec3fc+2c]
+
+    ✅  3 visible students:
+      #1: Aishani Tarafdar — 66.3%
+  ✅ [TC-HS-P-S01] Visible #1: Aishani Tarafdar
+         → Score: 66.3%
+      #2: Maulishka Kohli — 54.4%
+  ✅ [TC-HS-P-S02] Visible #2: Maulishka Kohli
+         → Score: 54.4%
+      #3: Madhav Iyli — 50.6%
+  ✅ [TC-HS-P-S03] Visible #3: Madhav Iyli
+         → Score: 50.6%
+
+    🔍 Looking for '+N more students' button…
+      JS panel found: '+2 more students'
+  ✅ [TC-HS-P-OVF-001] Overflow button found
+         → '+2 more students'
+    ✅  Found: '+2 more students'
+
+    🔽  Clicking: '+2 more students'
+  ✅ [TC-HS-P-OVF-002] Clicked '+2 more students'
+         → attempt 1
+
+    🔍  Detecting modal popup…
+      JS layer 1: container h=624px, 5 students
+        # 1: Aishani Tarafdar                         66.3%
+        # 2: Maulishka Kohli                          54.4%
+        # 3: Madhav Iyli                              50.6%
+        # 4: Sarthak Keshri                           50.6%
+        # 5: Srisha S                                 50.6%
+      Scrolling for more (have 5)...
+  ✅ [TC-HS-P-MODAL-001] Modal opened and read
+         → 5 students from modal
+  ✅ [TC-HS-P-M01] Modal #1: Aishani Tarafdar
+         → Score: 66.3%  Class: Class 12P
+  ✅ [TC-HS-P-M02] Modal #2: Maulishka Kohli
+         → Score: 54.4%  Class: Class 12P
+  ✅ [TC-HS-P-M03] Modal #3: Madhav Iyli
+         → Score: 50.6%  Class: Class 12P
+  ✅ [TC-HS-P-M04] Modal #4: Sarthak Keshri
+         → Score: 50.6%  Class: Class 12P
+  ✅ [TC-HS-P-M05] Modal #5: Srisha S
+         → Score: 50.6%  Class: Class 12P
+  ✅ [TC-HS-P-MODAL-CLOSE] Modal closed
+
+  ────────────────────────────────────────────────────────────────────
+  📊  PERFORMING WELL — 5 STUDENTS TOTAL
+  ────────────────────────────────────────────────────────────────────
+  #    Name                                        Score  Class         Src
+  ---- ---------------------------------------- --------  ------------  ---
+  1    Aishani Tarafdar                            66.3%  Class 12P     modal-js
+  2    Maulishka Kohli                             54.4%  Class 12P     modal-js
+  3    Madhav Iyli                                 50.6%  Class 12P     modal-js
+  4    Sarthak Keshri                              50.6%  Class 12P     modal-js
+  5    Srisha S                                    50.6%  Class 12P     modal-js
+  ────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  FINAL SUMMARY
+══════════════════════════════════════════════════════════════════════
+  ✅  Passed   : 131
+  ❌  Failed   : 0
+  ⚠️   Warnings : 3
+  📊  Pass Rate: 97.8%  (131/134)
+
+  ━━━━  CHAPTER CARDS SUMMARY  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  RETEACH — 2 chapters
+    #1   Application Of Derivatives           Avg:    -1.9%  Wt:      35/ 80
+    #2   Integrals                            Avg:    +2.4%  Wt:      35/ 80
+
+  BRUSHUP — 5 chapters
+    #1   Inverse Trigonometric Functions      Avg:   -21.5%  Wt:       8/ 80
+    #2   Relations & Functions                Avg:    -5.1%  Wt:       8/ 80
+    #3   Application Of Integrals             Avg:    -0.9%  Wt:      35/ 80
+    #4   Linear Programming                   Avg:    +1.4%  Wt:       5/ 80
+
+  ON TRACK — 2 chapters
+    #1   Determinants                         Avg:   +10.4%  Wt:      10/ 80
+    #2   Matrices                             Avg:    -5.7%  Wt:      10/ 80
+
+  ━━━━  STUDENT SUMMARY  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  WEAK —  — 15 captured
+  #    Name                                        Score  Class       
+  ---- ---------------------------------------- --------  ------------
+  1    Nehal Mital                                 11.3%  Class 12P   
+  2    Tanya Tripathy                              13.8%  Class 12P   
+  3    S Prajith                                   15.0%  Class 12P   
+  4    Tenneti Aditya Bhavya Hamsini               16.3%  Class 12P   
+  5    Adam Benzeer                                16.3%  Class 12P   
+  6    Paavana S N                                 16.9%  Class 12P   
+  7    Mrinal Raj                                  17.5%  Class 12P   
+  8    Gautham Rajesh                              17.5%  Class 12P   
+  9    Olive sara Sibey                            18.8%  Class 12P   
+  10   Abhinav Kumar                               23.8%  Class 12P   
+  11   Tanisha Nanda                               23.8%  Class 12P   
+  12   Yash Srivastava                             25.0%  Class 12P   
+  13   Serah Anju Daniel                           25.0%  Class 12P   
+  14   Vrishank Sai Ramadurgam                     25.6%  Class 12P   
+  15   Manya Badami Nagesh                         26.3%  Class 12P   
+
+  LAGGING —  — 6 captured
+  #    Name                                        Score  Class       
+  ---- ---------------------------------------- --------  ------------
+  1    R Raghavi                                   35.0%  Class 12P   
+  2    Shivangi Mohapatra                          36.3%  Class 12P   
+  3    Rishabh Sharma                              37.5%  Class 12P   
+  4    Sareena Wadhwa                              37.5%  Class 12P   
+  5    Radhika Kothedar                            41.3%  Class 12P   
+  6    Pearl Ashish Chalakkel                      47.5%  Class 12P   
+
+  PERFORMING WELL —  — 5 captured
+  #    Name                                        Score  Class       
+  ---- ---------------------------------------- --------  ------------
+  1    Aishani Tarafdar                            66.3%  Class 12P   
+  2    Maulishka Kohli                             54.4%  Class 12P   
+  3    Madhav Iyli                                 50.6%  Class 12P   
+  4    Sarthak Keshri                              50.6%  Class 12P   
+  5    Srisha S                                    50.6%  Class 12P   
+
+  📦 JSON  → C:\Users\User\Downloads\-UI-selenium-Automation\classlens_full_data_v12.json
+  📄 HTML  → C:\Users\User\Downloads\-UI-selenium-Automation\classlens_full_report_v12.html
+
+  🌐 file:///C:/Users/User/Downloads/-UI-selenium-Automation/classlens_full_report_v12.html
+
+👉  Press ENTER to close browser…
+🏁  Done.
+
+
+--- STDERR ---
+

@@ -1,0 +1,31 @@
+COMMAND: C:\Users\User\Downloads\-UI-selenium-Automation\venv\Scripts\python.exe C:\Users\User\AppData\Local\Temp\classlens_keep_all_wrapper_s9tekjt8.py C:\Users\User\Downloads\-UI-selenium-Automation\student Tab.py
+EXIT: 1
+DURATION: 0.67s
+
+--- STDOUT ---
+
+
+--- STDERR ---
+C:\Users\User\Downloads\-UI-selenium-Automation\student Tab.py:2207: SyntaxWarning: "\-" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\-"? A raw string is also an option.
+  if (/[+\-]?\d+(?:\.\d+)?%/.test(t)) score += 4;
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Temp\classlens_keep_all_wrapper_s9tekjt8.py", line 35, in <module>
+    runpy.run_path(script_path, run_name="__main__")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\User\Downloads\-UI-selenium-Automation\student Tab.py", line 40, in <module>
+    from webdriver_manager.chrome import ChromeDriverManager
+ModuleNotFoundError: No module named 'webdriver_manager'
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Temp\classlens_keep_all_wrapper_s9tekjt8.py", line 35, in <module>
+    runpy.run_path(script_path, run_name="__main__")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\User\Downloads\-UI-selenium-Automation\student Tab.py", line 40, in <module>
+    from webdriver_manager.chrome import ChromeDriverManager
+ModuleNotFoundError: No module named 'webdriver_manager'
+

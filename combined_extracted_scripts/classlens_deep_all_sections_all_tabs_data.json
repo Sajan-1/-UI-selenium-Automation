@@ -1,0 +1,1679 @@
+[
+  {
+    "section": "C",
+    "status": "PASS",
+    "checks": [
+      {
+        "section": "C",
+        "tab": "Overview",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 685, \"percentage_count\": 8, \"question_label_count\": 0, \"card_like_count\": 153}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_C_Overview_162906.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_C_Overview_162906.html",
+        "elapsed": 1.9111766815185547
+      },
+      {
+        "section": "C",
+        "tab": "Overview",
+        "check": "Overview summary/exam data visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 685, 'percentage_count': 8, 'question_label_count': 0, 'card_like_count': 153}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "C",
+        "tab": "Chapters",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 555, \"percentage_count\": 9, \"question_label_count\": 0, \"card_like_count\": 153, \"chapter_keywords\": 1}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_C_Chapters_162908.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_C_Chapters_162908.html",
+        "elapsed": 1.7318565845489502
+      },
+      {
+        "section": "C",
+        "tab": "Chapters",
+        "check": "Chapter categories/cards visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 555, 'percentage_count': 9, 'question_label_count': 0, 'card_like_count': 153, 'chapter_keywords': 1}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "C",
+        "tab": "Chapters",
+        "check": "Chapter card expansion attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "5",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "C",
+        "tab": "Questions",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 2474, \"percentage_count\": 0, \"question_label_count\": 44, \"card_like_count\": 153, \"question_keywords\": 2}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_C_Questions_162912.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_C_Questions_162912.html",
+        "elapsed": 1.800682544708252
+      },
+      {
+        "section": "C",
+        "tab": "Questions",
+        "check": "Questions list/panel visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 2474, 'percentage_count': 0, 'question_label_count': 44, 'card_like_count': 153, 'question_keywords': 2}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "C",
+        "tab": "Questions",
+        "check": "Question detail click attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "8",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "C",
+        "tab": "Students",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 548, \"percentage_count\": 11, \"question_label_count\": 0, \"card_like_count\": 153, \"student_keywords\": 2}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_C_Students_162918.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_C_Students_162918.html",
+        "elapsed": 1.7378342151641846
+      },
+      {
+        "section": "C",
+        "tab": "Students",
+        "check": "Students panels/list visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 548, 'percentage_count': 11, 'question_label_count': 0, 'card_like_count': 153, 'student_keywords': 2}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "C",
+        "tab": "Students",
+        "check": "Student/modal/card click attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "6",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      }
+    ],
+    "error": "",
+    "elapsed": 26.915326356887817
+  },
+  {
+    "section": "H",
+    "status": "PASS",
+    "checks": [
+      {
+        "section": "H",
+        "tab": "Overview",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 1301, \"percentage_count\": 8, \"question_label_count\": 0, \"card_like_count\": 205}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_H_Overview_162939.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_H_Overview_162939.html",
+        "elapsed": 1.978092908859253
+      },
+      {
+        "section": "H",
+        "tab": "Overview",
+        "check": "Overview summary/exam data visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 1301, 'percentage_count': 8, 'question_label_count': 0, 'card_like_count': 205}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "H",
+        "tab": "Chapters",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 564, \"percentage_count\": 9, \"question_label_count\": 0, \"card_like_count\": 205, \"chapter_keywords\": 1}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_H_Chapters_162941.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_H_Chapters_162941.html",
+        "elapsed": 1.7194254398345947
+      },
+      {
+        "section": "H",
+        "tab": "Chapters",
+        "check": "Chapter categories/cards visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 564, 'percentage_count': 9, 'question_label_count': 0, 'card_like_count': 205, 'chapter_keywords': 1}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "H",
+        "tab": "Chapters",
+        "check": "Chapter card expansion attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "5",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "H",
+        "tab": "Questions",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 2516, \"percentage_count\": 0, \"question_label_count\": 44, \"card_like_count\": 205, \"question_keywords\": 2}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_H_Questions_162945.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_H_Questions_162945.html",
+        "elapsed": 1.817474603652954
+      },
+      {
+        "section": "H",
+        "tab": "Questions",
+        "check": "Questions list/panel visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 2516, 'percentage_count': 0, 'question_label_count': 44, 'card_like_count': 205, 'question_keywords': 2}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "H",
+        "tab": "Questions",
+        "check": "Question detail click attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "8",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "H",
+        "tab": "Students",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 1180, \"percentage_count\": 43, \"question_label_count\": 0, \"card_like_count\": 205, \"student_keywords\": 2}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_H_Students_162951.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_H_Students_162951.html",
+        "elapsed": 1.7584264278411865
+      },
+      {
+        "section": "H",
+        "tab": "Students",
+        "check": "Students panels/list visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 1180, 'percentage_count': 43, 'question_label_count': 0, 'card_like_count': 205, 'student_keywords': 2}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "H",
+        "tab": "Students",
+        "check": "Student/modal/card click attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "6",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      }
+    ],
+    "error": "",
+    "elapsed": 26.8543381690979
+  },
+  {
+    "section": "I",
+    "status": "PASS",
+    "checks": [
+      {
+        "section": "I",
+        "tab": "Overview",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 1416, \"percentage_count\": 12, \"question_label_count\": 0, \"card_like_count\": 205}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_I_Overview_163011.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_I_Overview_163011.html",
+        "elapsed": 1.7470459938049316
+      },
+      {
+        "section": "I",
+        "tab": "Overview",
+        "check": "Overview summary/exam data visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 1416, 'percentage_count': 12, 'question_label_count': 0, 'card_like_count': 205}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "I",
+        "tab": "Chapters",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 565, \"percentage_count\": 9, \"question_label_count\": 0, \"card_like_count\": 205, \"chapter_keywords\": 1}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_I_Chapters_163013.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_I_Chapters_163013.html",
+        "elapsed": 1.7111992835998535
+      },
+      {
+        "section": "I",
+        "tab": "Chapters",
+        "check": "Chapter categories/cards visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 565, 'percentage_count': 9, 'question_label_count': 0, 'card_like_count': 205, 'chapter_keywords': 1}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "I",
+        "tab": "Chapters",
+        "check": "Chapter card expansion attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "5",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "I",
+        "tab": "Questions",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 2516, \"percentage_count\": 0, \"question_label_count\": 44, \"card_like_count\": 205, \"question_keywords\": 2}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_I_Questions_163018.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_I_Questions_163018.html",
+        "elapsed": 1.7967021465301514
+      },
+      {
+        "section": "I",
+        "tab": "Questions",
+        "check": "Questions list/panel visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 2516, 'percentage_count': 0, 'question_label_count': 44, 'card_like_count': 205, 'question_keywords': 2}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "I",
+        "tab": "Questions",
+        "check": "Question detail click attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "8",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "I",
+        "tab": "Students",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 1094, \"percentage_count\": 34, \"question_label_count\": 0, \"card_like_count\": 205, \"student_keywords\": 2}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_I_Students_163023.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_I_Students_163023.html",
+        "elapsed": 1.7329509258270264
+      },
+      {
+        "section": "I",
+        "tab": "Students",
+        "check": "Students panels/list visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 1094, 'percentage_count': 34, 'question_label_count': 0, 'card_like_count': 205, 'student_keywords': 2}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "I",
+        "tab": "Students",
+        "check": "Student/modal/card click attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "6",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      }
+    ],
+    "error": "",
+    "elapsed": 26.223658323287964
+  },
+  {
+    "section": "J",
+    "status": "PASS",
+    "checks": [
+      {
+        "section": "J",
+        "tab": "Overview",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 1424, \"percentage_count\": 12, \"question_label_count\": 0, \"card_like_count\": 211}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_J_Overview_163045.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_J_Overview_163045.html",
+        "elapsed": 1.7549464702606201
+      },
+      {
+        "section": "J",
+        "tab": "Overview",
+        "check": "Overview summary/exam data visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 1424, 'percentage_count': 12, 'question_label_count': 0, 'card_like_count': 211}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "J",
+        "tab": "Chapters",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 565, \"percentage_count\": 9, \"question_label_count\": 0, \"card_like_count\": 211, \"chapter_keywords\": 1}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_J_Chapters_163046.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_J_Chapters_163046.html",
+        "elapsed": 1.7073335647583008
+      },
+      {
+        "section": "J",
+        "tab": "Chapters",
+        "check": "Chapter categories/cards visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 565, 'percentage_count': 9, 'question_label_count': 0, 'card_like_count': 211, 'chapter_keywords': 1}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "J",
+        "tab": "Chapters",
+        "check": "Chapter card expansion attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "5",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "J",
+        "tab": "Questions",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 2516, \"percentage_count\": 0, \"question_label_count\": 44, \"card_like_count\": 211, \"question_keywords\": 2}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_J_Questions_163051.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_J_Questions_163051.html",
+        "elapsed": 1.8539197444915771
+      },
+      {
+        "section": "J",
+        "tab": "Questions",
+        "check": "Questions list/panel visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 2516, 'percentage_count': 0, 'question_label_count': 44, 'card_like_count': 211, 'question_keywords': 2}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "J",
+        "tab": "Questions",
+        "check": "Question detail click attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "8",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "J",
+        "tab": "Students",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 1066, \"percentage_count\": 38, \"question_label_count\": 0, \"card_like_count\": 211, \"student_keywords\": 2}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_J_Students_163057.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_J_Students_163057.html",
+        "elapsed": 1.7444281578063965
+      },
+      {
+        "section": "J",
+        "tab": "Students",
+        "check": "Students panels/list visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 1066, 'percentage_count': 38, 'question_label_count': 0, 'card_like_count': 211, 'student_keywords': 2}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "J",
+        "tab": "Students",
+        "check": "Student/modal/card click attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "6",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      }
+    ],
+    "error": "",
+    "elapsed": 27.17912983894348
+  },
+  {
+    "section": "K",
+    "status": "PASS",
+    "checks": [
+      {
+        "section": "K",
+        "tab": "Overview",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 1381, \"percentage_count\": 12, \"question_label_count\": 0, \"card_like_count\": 200}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_K_Overview_163118.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_K_Overview_163118.html",
+        "elapsed": 1.7715237140655518
+      },
+      {
+        "section": "K",
+        "tab": "Overview",
+        "check": "Overview summary/exam data visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 1381, 'percentage_count': 12, 'question_label_count': 0, 'card_like_count': 200}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "K",
+        "tab": "Chapters",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 567, \"percentage_count\": 9, \"question_label_count\": 0, \"card_like_count\": 200, \"chapter_keywords\": 1}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_K_Chapters_163120.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_K_Chapters_163120.html",
+        "elapsed": 1.7564740180969238
+      },
+      {
+        "section": "K",
+        "tab": "Chapters",
+        "check": "Chapter categories/cards visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 567, 'percentage_count': 9, 'question_label_count': 0, 'card_like_count': 200, 'chapter_keywords': 1}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "K",
+        "tab": "Chapters",
+        "check": "Chapter card expansion attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "5",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "K",
+        "tab": "Questions",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 2516, \"percentage_count\": 0, \"question_label_count\": 44, \"card_like_count\": 200, \"question_keywords\": 2}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_K_Questions_163124.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_K_Questions_163124.html",
+        "elapsed": 1.830956220626831
+      },
+      {
+        "section": "K",
+        "tab": "Questions",
+        "check": "Questions list/panel visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 2516, 'percentage_count': 0, 'question_label_count': 44, 'card_like_count': 200, 'question_keywords': 2}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "K",
+        "tab": "Questions",
+        "check": "Question detail click attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "8",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "K",
+        "tab": "Students",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 1027, \"percentage_count\": 34, \"question_label_count\": 0, \"card_like_count\": 200, \"student_keywords\": 2}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_K_Students_163130.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_K_Students_163130.html",
+        "elapsed": 1.7908689975738525
+      },
+      {
+        "section": "K",
+        "tab": "Students",
+        "check": "Students panels/list visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 1027, 'percentage_count': 34, 'question_label_count': 0, 'card_like_count': 200, 'student_keywords': 2}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "K",
+        "tab": "Students",
+        "check": "Student/modal/card click attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "6",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      }
+    ],
+    "error": "",
+    "elapsed": 27.222916841506958
+  },
+  {
+    "section": "L",
+    "status": "PASS",
+    "checks": [
+      {
+        "section": "L",
+        "tab": "Overview",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 1387, \"percentage_count\": 12, \"question_label_count\": 0, \"card_like_count\": 211}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_L_Overview_163152.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_L_Overview_163152.html",
+        "elapsed": 1.7704839706420898
+      },
+      {
+        "section": "L",
+        "tab": "Overview",
+        "check": "Overview summary/exam data visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 1387, 'percentage_count': 12, 'question_label_count': 0, 'card_like_count': 211}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "L",
+        "tab": "Chapters",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 566, \"percentage_count\": 9, \"question_label_count\": 0, \"card_like_count\": 211, \"chapter_keywords\": 1}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_L_Chapters_163153.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_L_Chapters_163153.html",
+        "elapsed": 1.7150475978851318
+      },
+      {
+        "section": "L",
+        "tab": "Chapters",
+        "check": "Chapter categories/cards visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 566, 'percentage_count': 9, 'question_label_count': 0, 'card_like_count': 211, 'chapter_keywords': 1}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "L",
+        "tab": "Chapters",
+        "check": "Chapter card expansion attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "5",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "L",
+        "tab": "Questions",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 2516, \"percentage_count\": 0, \"question_label_count\": 44, \"card_like_count\": 211, \"question_keywords\": 2}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_L_Questions_163158.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_L_Questions_163158.html",
+        "elapsed": 1.8272812366485596
+      },
+      {
+        "section": "L",
+        "tab": "Questions",
+        "check": "Questions list/panel visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 2516, 'percentage_count': 0, 'question_label_count': 44, 'card_like_count': 211, 'question_keywords': 2}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "L",
+        "tab": "Questions",
+        "check": "Question detail click attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "8",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "L",
+        "tab": "Students",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 1198, \"percentage_count\": 40, \"question_label_count\": 0, \"card_like_count\": 211, \"student_keywords\": 2}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_L_Students_163204.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_L_Students_163204.html",
+        "elapsed": 1.7632827758789062
+      },
+      {
+        "section": "L",
+        "tab": "Students",
+        "check": "Students panels/list visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 1198, 'percentage_count': 40, 'question_label_count': 0, 'card_like_count': 211, 'student_keywords': 2}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "L",
+        "tab": "Students",
+        "check": "Student/modal/card click attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "6",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      }
+    ],
+    "error": "",
+    "elapsed": 27.127620697021484
+  },
+  {
+    "section": "M",
+    "status": "PASS",
+    "checks": [
+      {
+        "section": "M",
+        "tab": "Overview",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 1353, \"percentage_count\": 9, \"question_label_count\": 0, \"card_like_count\": 189}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_M_Overview_163225.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_M_Overview_163225.html",
+        "elapsed": 1.8135056495666504
+      },
+      {
+        "section": "M",
+        "tab": "Overview",
+        "check": "Overview summary/exam data visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 1353, 'percentage_count': 9, 'question_label_count': 0, 'card_like_count': 189}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "M",
+        "tab": "Chapters",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 569, \"percentage_count\": 9, \"question_label_count\": 0, \"card_like_count\": 189, \"chapter_keywords\": 1}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_M_Chapters_163226.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_M_Chapters_163226.html",
+        "elapsed": 1.7593529224395752
+      },
+      {
+        "section": "M",
+        "tab": "Chapters",
+        "check": "Chapter categories/cards visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 569, 'percentage_count': 9, 'question_label_count': 0, 'card_like_count': 189, 'chapter_keywords': 1}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "M",
+        "tab": "Chapters",
+        "check": "Chapter card expansion attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "5",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "M",
+        "tab": "Questions",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 2516, \"percentage_count\": 0, \"question_label_count\": 44, \"card_like_count\": 189, \"question_keywords\": 2}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_M_Questions_163231.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_M_Questions_163231.html",
+        "elapsed": 1.7587530612945557
+      },
+      {
+        "section": "M",
+        "tab": "Questions",
+        "check": "Questions list/panel visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 2516, 'percentage_count': 0, 'question_label_count': 44, 'card_like_count': 189, 'question_keywords': 2}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "M",
+        "tab": "Questions",
+        "check": "Question detail click attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "8",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "M",
+        "tab": "Students",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 758, \"percentage_count\": 20, \"question_label_count\": 0, \"card_like_count\": 189, \"student_keywords\": 2}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_M_Students_163237.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_M_Students_163237.html",
+        "elapsed": 1.7535481452941895
+      },
+      {
+        "section": "M",
+        "tab": "Students",
+        "check": "Students panels/list visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 758, 'percentage_count': 20, 'question_label_count': 0, 'card_like_count': 189, 'student_keywords': 2}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "M",
+        "tab": "Students",
+        "check": "Student/modal/card click attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "6",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      }
+    ],
+    "error": "",
+    "elapsed": 26.656977653503418
+  },
+  {
+    "section": "N",
+    "status": "PASS",
+    "checks": [
+      {
+        "section": "N",
+        "tab": "Overview",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 1426, \"percentage_count\": 12, \"question_label_count\": 0, \"card_like_count\": 212}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_N_Overview_163257.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_N_Overview_163257.html",
+        "elapsed": 1.7367181777954102
+      },
+      {
+        "section": "N",
+        "tab": "Overview",
+        "check": "Overview summary/exam data visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 1426, 'percentage_count': 12, 'question_label_count': 0, 'card_like_count': 212}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "N",
+        "tab": "Chapters",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 562, \"percentage_count\": 9, \"question_label_count\": 0, \"card_like_count\": 212, \"chapter_keywords\": 1}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_N_Chapters_163259.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_N_Chapters_163259.html",
+        "elapsed": 1.726067304611206
+      },
+      {
+        "section": "N",
+        "tab": "Chapters",
+        "check": "Chapter categories/cards visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 562, 'percentage_count': 9, 'question_label_count': 0, 'card_like_count': 212, 'chapter_keywords': 1}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "N",
+        "tab": "Chapters",
+        "check": "Chapter card expansion attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "5",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "N",
+        "tab": "Questions",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 2516, \"percentage_count\": 0, \"question_label_count\": 44, \"card_like_count\": 212, \"question_keywords\": 2}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_N_Questions_163304.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_N_Questions_163304.html",
+        "elapsed": 1.7938141822814941
+      },
+      {
+        "section": "N",
+        "tab": "Questions",
+        "check": "Questions list/panel visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 2516, 'percentage_count': 0, 'question_label_count': 44, 'card_like_count': 212, 'question_keywords': 2}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "N",
+        "tab": "Questions",
+        "check": "Question detail click attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "8",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "N",
+        "tab": "Students",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 1154, \"percentage_count\": 38, \"question_label_count\": 0, \"card_like_count\": 212, \"student_keywords\": 2}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_N_Students_163309.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_N_Students_163309.html",
+        "elapsed": 1.7660462856292725
+      },
+      {
+        "section": "N",
+        "tab": "Students",
+        "check": "Students panels/list visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 1154, 'percentage_count': 38, 'question_label_count': 0, 'card_like_count': 212, 'student_keywords': 2}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "N",
+        "tab": "Students",
+        "check": "Student/modal/card click attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "6",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      }
+    ],
+    "error": "",
+    "elapsed": 26.42789387702942
+  },
+  {
+    "section": "O",
+    "status": "PASS",
+    "checks": [
+      {
+        "section": "O",
+        "tab": "Overview",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 1432, \"percentage_count\": 12, \"question_label_count\": 0, \"card_like_count\": 208}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_O_Overview_163331.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_O_Overview_163331.html",
+        "elapsed": 1.751688003540039
+      },
+      {
+        "section": "O",
+        "tab": "Overview",
+        "check": "Overview summary/exam data visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 1432, 'percentage_count': 12, 'question_label_count': 0, 'card_like_count': 208}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "O",
+        "tab": "Chapters",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 566, \"percentage_count\": 9, \"question_label_count\": 0, \"card_like_count\": 208, \"chapter_keywords\": 1}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_O_Chapters_163332.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_O_Chapters_163332.html",
+        "elapsed": 1.7056448459625244
+      },
+      {
+        "section": "O",
+        "tab": "Chapters",
+        "check": "Chapter categories/cards visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 566, 'percentage_count': 9, 'question_label_count': 0, 'card_like_count': 208, 'chapter_keywords': 1}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "O",
+        "tab": "Chapters",
+        "check": "Chapter card expansion attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "5",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "O",
+        "tab": "Questions",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 2516, \"percentage_count\": 0, \"question_label_count\": 44, \"card_like_count\": 208, \"question_keywords\": 2}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_O_Questions_163337.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_O_Questions_163337.html",
+        "elapsed": 1.7984817028045654
+      },
+      {
+        "section": "O",
+        "tab": "Questions",
+        "check": "Questions list/panel visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 2516, 'percentage_count': 0, 'question_label_count': 44, 'card_like_count': 208, 'question_keywords': 2}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "O",
+        "tab": "Questions",
+        "check": "Question detail click attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "8",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "O",
+        "tab": "Students",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 1035, \"percentage_count\": 34, \"question_label_count\": 0, \"card_like_count\": 208, \"student_keywords\": 2}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_O_Students_163343.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_O_Students_163343.html",
+        "elapsed": 1.8104431629180908
+      },
+      {
+        "section": "O",
+        "tab": "Students",
+        "check": "Students panels/list visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 1035, 'percentage_count': 34, 'question_label_count': 0, 'card_like_count': 208, 'student_keywords': 2}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "O",
+        "tab": "Students",
+        "check": "Student/modal/card click attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "6",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      }
+    ],
+    "error": "",
+    "elapsed": 26.981396198272705
+  },
+  {
+    "section": "P",
+    "status": "PASS",
+    "checks": [
+      {
+        "section": "P",
+        "tab": "Overview",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 1399, \"percentage_count\": 12, \"question_label_count\": 0, \"card_like_count\": 206}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_P_Overview_163404.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_P_Overview_163404.html",
+        "elapsed": 1.8103971481323242
+      },
+      {
+        "section": "P",
+        "tab": "Overview",
+        "check": "Overview summary/exam data visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 1399, 'percentage_count': 12, 'question_label_count': 0, 'card_like_count': 206}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "P",
+        "tab": "Chapters",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 565, \"percentage_count\": 9, \"question_label_count\": 0, \"card_like_count\": 206, \"chapter_keywords\": 1}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_P_Chapters_163406.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_P_Chapters_163406.html",
+        "elapsed": 1.7265141010284424
+      },
+      {
+        "section": "P",
+        "tab": "Chapters",
+        "check": "Chapter categories/cards visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 565, 'percentage_count': 9, 'question_label_count': 0, 'card_like_count': 206, 'chapter_keywords': 1}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "P",
+        "tab": "Chapters",
+        "check": "Chapter card expansion attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "5",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "P",
+        "tab": "Questions",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 2516, \"percentage_count\": 0, \"question_label_count\": 44, \"card_like_count\": 206, \"question_keywords\": 2}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_P_Questions_163410.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_P_Questions_163410.html",
+        "elapsed": 1.8097999095916748
+      },
+      {
+        "section": "P",
+        "tab": "Questions",
+        "check": "Questions list/panel visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 2516, 'percentage_count': 0, 'question_label_count': 44, 'card_like_count': 206, 'question_keywords': 2}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "P",
+        "tab": "Questions",
+        "check": "Question detail click attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "8",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "P",
+        "tab": "Students",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 1024, \"percentage_count\": 33, \"question_label_count\": 0, \"card_like_count\": 206, \"student_keywords\": 2}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_P_Students_163416.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_P_Students_163416.html",
+        "elapsed": 1.7779533863067627
+      },
+      {
+        "section": "P",
+        "tab": "Students",
+        "check": "Students panels/list visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 1024, 'percentage_count': 33, 'question_label_count': 0, 'card_like_count': 206, 'student_keywords': 2}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "P",
+        "tab": "Students",
+        "check": "Student/modal/card click attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "6",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      }
+    ],
+    "error": "",
+    "elapsed": 26.93454933166504
+  },
+  {
+    "section": "Q",
+    "status": "PASS",
+    "checks": [
+      {
+        "section": "Q",
+        "tab": "Overview",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 1404, \"percentage_count\": 11, \"question_label_count\": 0, \"card_like_count\": 197}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_Q_Overview_163437.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_Q_Overview_163437.html",
+        "elapsed": 1.7395970821380615
+      },
+      {
+        "section": "Q",
+        "tab": "Overview",
+        "check": "Overview summary/exam data visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 1404, 'percentage_count': 11, 'question_label_count': 0, 'card_like_count': 197}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "Q",
+        "tab": "Chapters",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 566, \"percentage_count\": 9, \"question_label_count\": 0, \"card_like_count\": 197, \"chapter_keywords\": 1}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_Q_Chapters_163439.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_Q_Chapters_163439.html",
+        "elapsed": 1.822493553161621
+      },
+      {
+        "section": "Q",
+        "tab": "Chapters",
+        "check": "Chapter categories/cards visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 566, 'percentage_count': 9, 'question_label_count': 0, 'card_like_count': 197, 'chapter_keywords': 1}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "Q",
+        "tab": "Chapters",
+        "check": "Chapter card expansion attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "5",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "Q",
+        "tab": "Questions",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 2516, \"percentage_count\": 0, \"question_label_count\": 44, \"card_like_count\": 197, \"question_keywords\": 2}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_Q_Questions_163444.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_Q_Questions_163444.html",
+        "elapsed": 1.8754210472106934
+      },
+      {
+        "section": "Q",
+        "tab": "Questions",
+        "check": "Questions list/panel visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 2516, 'percentage_count': 0, 'question_label_count': 44, 'card_like_count': 197, 'question_keywords': 2}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "Q",
+        "tab": "Questions",
+        "check": "Question detail click attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "8",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "Q",
+        "tab": "Students",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 863, \"percentage_count\": 25, \"question_label_count\": 0, \"card_like_count\": 197, \"student_keywords\": 2}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_Q_Students_163449.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_Q_Students_163449.html",
+        "elapsed": 1.747391939163208
+      },
+      {
+        "section": "Q",
+        "tab": "Students",
+        "check": "Students panels/list visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 863, 'percentage_count': 25, 'question_label_count': 0, 'card_like_count': 197, 'student_keywords': 2}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "Q",
+        "tab": "Students",
+        "check": "Student/modal/card click attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "6",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      }
+    ],
+    "error": "",
+    "elapsed": 27.19092321395874
+  },
+  {
+    "section": "R",
+    "status": "PASS",
+    "checks": [
+      {
+        "section": "R",
+        "tab": "Overview",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 706, \"percentage_count\": 10, \"question_label_count\": 0, \"card_like_count\": 168}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_R_Overview_163511.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_R_Overview_163511.html",
+        "elapsed": 1.7490816116333008
+      },
+      {
+        "section": "R",
+        "tab": "Overview",
+        "check": "Overview summary/exam data visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 706, 'percentage_count': 10, 'question_label_count': 0, 'card_like_count': 168}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "R",
+        "tab": "Chapters",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 555, \"percentage_count\": 9, \"question_label_count\": 0, \"card_like_count\": 168, \"chapter_keywords\": 1}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_R_Chapters_163512.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_R_Chapters_163512.html",
+        "elapsed": 1.7259900569915771
+      },
+      {
+        "section": "R",
+        "tab": "Chapters",
+        "check": "Chapter categories/cards visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 555, 'percentage_count': 9, 'question_label_count': 0, 'card_like_count': 168, 'chapter_keywords': 1}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "R",
+        "tab": "Chapters",
+        "check": "Chapter card expansion attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "5",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "R",
+        "tab": "Questions",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 2474, \"percentage_count\": 0, \"question_label_count\": 44, \"card_like_count\": 168, \"question_keywords\": 2}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_R_Questions_163517.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_R_Questions_163517.html",
+        "elapsed": 1.815741777420044
+      },
+      {
+        "section": "R",
+        "tab": "Questions",
+        "check": "Questions list/panel visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 2474, 'percentage_count': 0, 'question_label_count': 44, 'card_like_count': 168, 'question_keywords': 2}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "R",
+        "tab": "Questions",
+        "check": "Question detail click attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "8",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "R",
+        "tab": "Students",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 785, \"percentage_count\": 24, \"question_label_count\": 0, \"card_like_count\": 168, \"student_keywords\": 2}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_R_Students_163523.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_R_Students_163523.html",
+        "elapsed": 1.7433686256408691
+      },
+      {
+        "section": "R",
+        "tab": "Students",
+        "check": "Students panels/list visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 785, 'percentage_count': 24, 'question_label_count': 0, 'card_like_count': 168, 'student_keywords': 2}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "R",
+        "tab": "Students",
+        "check": "Student/modal/card click attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "6",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      }
+    ],
+    "error": "",
+    "elapsed": 26.776565551757812
+  },
+  {
+    "section": "ZZ",
+    "status": "FAIL",
+    "checks": [
+      {
+        "section": "ZZ",
+        "tab": "Overview",
+        "check": "Tab opens and renders content",
+        "status": "FAIL",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 219, \"percentage_count\": 0, \"question_label_count\": 0, \"card_like_count\": 28}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_ZZ_Overview_163544.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_ZZ_Overview_163544.html",
+        "elapsed": 1.7532846927642822
+      },
+      {
+        "section": "ZZ",
+        "tab": "Overview",
+        "check": "Overview summary/exam data visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 219, 'percentage_count': 0, 'question_label_count': 0, 'card_like_count': 28}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "ZZ",
+        "tab": "Chapters",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 310, \"percentage_count\": 0, \"question_label_count\": 0, \"card_like_count\": 28, \"chapter_keywords\": 1}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_ZZ_Chapters_163546.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_ZZ_Chapters_163546.html",
+        "elapsed": 1.6732418537139893
+      },
+      {
+        "section": "ZZ",
+        "tab": "Chapters",
+        "check": "Chapter categories/cards visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 310, 'percentage_count': 0, 'question_label_count': 0, 'card_like_count': 28, 'chapter_keywords': 1}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "ZZ",
+        "tab": "Chapters",
+        "check": "Chapter card expansion attempts",
+        "status": "WARN",
+        "detail": "",
+        "value": "0",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "ZZ",
+        "tab": "Questions",
+        "check": "Tab opens and renders content",
+        "status": "FAIL",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 287, \"percentage_count\": 0, \"question_label_count\": 0, \"card_like_count\": 28, \"question_keywords\": 2}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_ZZ_Questions_163547.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_ZZ_Questions_163547.html",
+        "elapsed": 1.6601781845092773
+      },
+      {
+        "section": "ZZ",
+        "tab": "Questions",
+        "check": "Questions list/panel visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 287, 'percentage_count': 0, 'question_label_count': 0, 'card_like_count': 28, 'question_keywords': 2}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "ZZ",
+        "tab": "Questions",
+        "check": "Question detail click attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "8",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "ZZ",
+        "tab": "Students",
+        "check": "Tab opens and renders content",
+        "status": "PASS",
+        "detail": "",
+        "value": "{\"visible_text_chars\": 301, \"percentage_count\": 0, \"question_label_count\": 0, \"card_like_count\": 28, \"student_keywords\": 2}",
+        "screenshot": "combined_extracted_scripts\\screenshots\\section_ZZ_Students_163553.png",
+        "html_snapshot": "combined_extracted_scripts\\html_snapshots\\section_ZZ_Students_163553.html",
+        "elapsed": 1.7172942161560059
+      },
+      {
+        "section": "ZZ",
+        "tab": "Students",
+        "check": "Students panels/list visible",
+        "status": "PASS",
+        "detail": "",
+        "value": "{'visible_text_chars': 301, 'percentage_count': 0, 'question_label_count': 0, 'card_like_count': 28, 'student_keywords': 2}",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      },
+      {
+        "section": "ZZ",
+        "tab": "Students",
+        "check": "Student/modal/card click attempts",
+        "status": "PASS",
+        "detail": "",
+        "value": "6",
+        "screenshot": "",
+        "html_snapshot": "",
+        "elapsed": 0.0
+      }
+    ],
+    "error": "",
+    "elapsed": 23.856847047805786
+  }
+]

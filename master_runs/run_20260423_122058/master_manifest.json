@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-04-23T12:21:05",
+  "run_dir": "C:\\Users\\User\\Downloads\\-UI-selenium-Automation\\master_runs\\run_20260423_122058",
+  "results": [
+    {
+      "script": "script_01_complete_ui_test_suite_v12.py",
+      "exit_code": 1
+    },
+    {
+      "script": "script_02_chapters_all_sections_final_merged_v4.py",
+      "exit_code": 1
+    },
+    {
+      "script": "script_03_all_sections_question_audit_engine.py",
+      "exit_code": 1
+    },
+    {
+      "script": "script_04_all_sections_scraper_v8.py",
+      "exit_code": 1
+    }
+  ],
+  "scripts": [
+    {
+      "source_file": "Pasted text(12).txt",
+      "output_file": "script_01_complete_ui_test_suite_v12.py",
+      "title": "Complete UI Test Suite v12.0",
+      "purpose": "Login, navigation, exam comparison, chapter cards, highlighted students, enterprise HTML reporting",
+      "sha256": "d25788ad6112498bf6010f485835869c35bd3a90abcf0443c9ceabaaf4d4cbc8",
+      "line_count": 3958
+    },
+    {
+      "source_file": "Pasted text (2)(3).txt",
+      "output_file": "script_02_chapters_all_sections_final_merged_v4.py",
+      "title": "Chapters Tab All Sections FINAL MERGED v4",
+      "purpose": "All-sections chapter validation, header accuracy badge checks, Excel-style curriculum mapping, consistency tests",
+      "sha256": "88566f749faf395e3797765303d083e5a0fca77664b12b0b2706f9524c4edc63",
+      "line_count": 2662
+    },
+    {
+      "source_file": "Pasted text (3)(2).txt",
+      "output_file": "script_03_all_sections_question_audit_engine.py",
+      "title": "All-Sections Question Audit Engine",
+      "purpose": "Questions-tab auditing across sections, chapter/concept/type validation, detailed console and HTML reporting",
+      "sha256": "442069919d07ada78e5fa190c1fea3c175b05c43e4736834eaf199bfb849393d",
+      "line_count": 1549
+    },
+    {
+      "source_file": "Pasted text (4)(2).txt",
+      "output_file": "script_04_all_sections_scraper_v8.py",
+      "title": "All-Sections Scraper v8",
+      "purpose": "Student extraction, exam comparison, learning-gap extraction, rich reporting",
+      "sha256": "320cd3ec8453b1b7d25a9aaa4b1a82cd0e1be03cb642cd3fa692042314a98312",
+      "line_count": 2280
+    }
+  ]
+}

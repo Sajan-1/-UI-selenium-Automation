@@ -1,0 +1,89 @@
+{
+  "run_ts": "2026-05-05 11:45:12",
+  "config": {
+    "Class": "12",
+    "Section": "ZZ",
+    "Subject": "Maths",
+    "Exam": "Midterm",
+    "CompareLeft": "Midterm",
+    "CompareRight": "Preboard 1"
+  },
+  "exam": {
+    "left_pct": "",
+    "right_pct": "",
+    "trend": ""
+  },
+  "chapters": {
+    "Reteach": {
+      "badge": "",
+      "cards": [],
+      "overflow_clicked": [],
+      "modal_chapters": [],
+      "tests": []
+    },
+    "Brushup": {
+      "badge": "",
+      "cards": [],
+      "overflow_clicked": [],
+      "modal_chapters": [],
+      "tests": []
+    },
+    "On Track": {
+      "badge": "",
+      "cards": [],
+      "overflow_clicked": [],
+      "modal_chapters": [],
+      "tests": []
+    }
+  },
+  "students": {
+    "Weak": {
+      "badge": "",
+      "total": 0,
+      "visible": [],
+      "modal": [],
+      "all": [],
+      "overflow_txt": "",
+      "modal_opened": false,
+      "tests": []
+    },
+    "Lagging": {
+      "badge": "",
+      "total": 0,
+      "visible": [],
+      "modal": [],
+      "all": [],
+      "overflow_txt": "",
+      "modal_opened": false,
+      "tests": []
+    },
+    "Performing Well": {
+      "badge": "",
+      "total": 0,
+      "visible": [],
+      "modal": [],
+      "all": [],
+      "overflow_txt": "",
+      "modal_opened": false,
+      "tests": []
+    }
+  },
+  "login_tests": [
+    {
+      "tc_id": "TC-L-REUSE",
+      "desc": "Login reused from active overview session",
+      "status": "INFO",
+      "detail": "ZZ",
+      "ts": "12:03:52"
+    }
+  ],
+  "nav_tests": [],
+  "exam_tests": [],
+  "summary": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0,
+    "warnings": 0,
+    "pass_rate": "0.0%"
+  }
+}

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\User\Downloads\-UI-selenium-Automation\original_scripts\script_02_chapters_all_sections_final_merged_v4.py", line 1498, in <module>
+    print(f"\n{BLD}{C}{'\u2550'*72}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 11-82: character maps to <undefined>

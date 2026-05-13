@@ -1,0 +1,192 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ClassLens Professional Dashboard</title><style>
+:root{--bg:#eef2f7;--ink:#0f172a;--muted:#64748b;--line:#d7dee9;--card:#fff;--brand:#1d4ed8;--ok:#166534;--bad:#991b1b;--warn:#92400e}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Segoe UI,Roboto,Arial,sans-serif}a{color:var(--brand);font-weight:800;text-decoration:none}.wrap{max-width:1340px;margin:0 auto;padding:30px}.hero{border-radius:30px;padding:34px;background:radial-gradient(circle at top left,#3b82f6 0,#172554 34%,#0f172a 100%);color:white;box-shadow:0 30px 80px rgba(15,23,42,.25)}.eyebrow{margin:0 0 8px;text-transform:uppercase;letter-spacing:.16em;font-weight:900;font-size:12px;color:#93c5fd}.hero h1{margin:0;font-size:38px;line-height:1.08}.hero p{color:#dbeafe}.metrics{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-top:24px}.metric{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.09);border-radius:18px;padding:15px}.metric span{display:block;color:#bfdbfe;text-transform:uppercase;font-size:11px;font-weight:900}.metric b{display:block;font-size:29px;margin-top:7px}.toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:18px 0}.toolbar input,.toolbar select{height:42px;border:1px solid var(--line);border-radius:12px;padding:0 12px;background:white;color:var(--ink);font-weight:700}.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px;margin:18px 0;box-shadow:0 14px 40px rgba(15,23,42,.07)}.section-head{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}h2{font-size:24px;margin:0}h3{font-size:16px;margin:0 0 10px}.muted{color:var(--muted);font-size:13px}.status{display:inline-flex;min-width:86px;justify-content:center;border-radius:999px;padding:8px 12px;font-size:12px;font-weight:950;border:1px solid}.status.pass{background:#dcfce7;color:var(--ok);border-color:#86efac}.status.fail{background:#fee2e2;color:var(--bad);border-color:#fecaca}.status.warn{background:#fef3c7;color:var(--warn);border-color:#fde68a}.status.info{background:#dbeafe;color:#1e40af;border-color:#bfdbfe}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:16px}table{width:100%;border-collapse:collapse;font-size:13px}th{background:#f8fafc;text-align:left;text-transform:uppercase;color:#334155;font-size:12px}th,td{padding:12px;border-bottom:1px solid var(--line);vertical-align:top}.check{width:54px;text-align:center}input[type=checkbox]{width:18px;height:18px;accent-color:var(--brand)}.btn{display:inline-flex;background:#eff6ff;border:1px solid #bfdbfe;color:#1d4ed8;border-radius:12px;padding:10px 13px;margin:4px 8px 4px 0}.link-row{margin:12px 0}.split{display:grid;grid-template-columns:1.35fr .65fr;gap:14px;margin:14px 0}.panel{background:#f8fafc;border:1px solid var(--line);border-radius:16px;padding:16px}.panel ul{margin:0;padding-left:18px}.panel li{margin:6px 0}.panel dl{display:grid;grid-template-columns:125px 1fr;gap:8px 12px;margin:0}.panel dt{color:var(--muted);font-weight:900}.panel dd{margin:0;font-weight:800}summary{cursor:pointer;margin:16px 0 10px;color:#1e3a8a;font-weight:950}pre{white-space:pre-wrap;overflow:auto;max-height:580px;background:#08111f;color:#dbeafe;border-radius:16px;padding:16px;font-size:12px;line-height:1.45}code{white-space:pre-wrap}.footer{text-align:center;color:var(--muted);font-size:12px;margin:26px 0 8px}@media(max-width:1000px){.metrics{grid-template-columns:repeat(2,1fr)}.split{grid-template-columns:1fr}.section-head{flex-direction:column}}@media(max-width:560px){.wrap{padding:14px}.hero{padding:22px}.metrics{grid-template-columns:1fr}}
+</style></head><body><main class="wrap"><section class="hero"><p class="eyebrow">ClassLens QA Automation</p><h1>Professional Test Dashboard</h1><p>Generated 2026-05-05 11:28:35. This report provides an executive overview, searchable script sections, clickable child reports, checkable test evidence, and console-output traceability.</p><p><strong>Login user:</strong> <code>sajan</code> <strong>Password:</strong> <code>********</code></p><div class="metrics"><div class="metric"><span>Overall</span><b>FAIL</b></div><div class="metric"><span>Scripts</span><b>4</b></div><div class="metric"><span>Passed</span><b>0</b></div><div class="metric"><span>Failed</span><b>4</b></div><div class="metric"><span>Evidence Pass</span><b>0</b></div><div class="metric"><span>Warn / Fail</span><b>0</b></div></div></section><div class="toolbar"><input id="q" oninput="filterCards()" placeholder="Search scripts..."><select id="status" onchange="filterCards()"><option value="">All statuses</option><option value="PASS">PASS</option><option value="FAIL">FAIL</option></select></div><section class="card"><div class="section-head"><div><p class="eyebrow">Overview</p><h2>Run Index</h2><p class="muted">Click a script to jump to its details. Child reports open in a new browser tab.</p></div><span class="status fail">FAIL</span></div><div class="table-wrap"><table><thead><tr><th>Script</th><th>Status</th><th>Duration</th><th>Exit</th><th>Evidence</th><th>Reports</th></tr></thead><tbody><tr><td><a href="#script-1">1. script1_full_ui_suite_v12.py</a></td><td><span class="status fail">FAIL</span></td><td>0:00:00</td><td>1</td><td>0</td><td><span class="muted">No child HTML report detected</span></td></tr><tr><td><a href="#script-2">2. script2_all_sections_scraper_v8.py</a></td><td><span class="status fail">FAIL</span></td><td>0:00:05</td><td>1</td><td>0</td><td><a class="btn" target="_blank" href="classlens_all_sections_report.html">Open child report 2.1</a></td></tr><tr><td><a href="#script-3">3. script3_question_audit_engine.py</a></td><td><span class="status fail">FAIL</span></td><td>0:00:00</td><td>1</td><td>0</td><td><span class="muted">No child HTML report detected</span></td></tr><tr><td><a href="#script-4">4. script4_chapters_all_sections_final_v4.py</a></td><td><span class="status fail">FAIL</span></td><td>0:00:03</td><td>1</td><td>0</td><td><span class="muted">No child HTML report detected</span></td></tr></tbody></table></div><p class="muted">Credential patch status: No credential constants required patching, or they were already correct.. Original uploaded lines are preserved in this file.</p></section>
+<section class="card script-card" id="script-1" data-status="FAIL" data-name="script1_full_ui_suite_v12.py">
+  <div class="section-head"><div><p class="eyebrow">Script 1</p><h2>script1_full_ui_suite_v12.py</h2><p class="muted">Started 2026-05-05 11:28:26 - Ended 2026-05-05 11:28:26 - Duration 0:00:00</p></div><span class="status fail">FAIL</span></div>
+  <div class="link-row"><span class="muted">No child HTML report detected</span></div>
+  <div class="split"><div class="panel"><h3>Executive Summary</h3><ul><li>return codecs.charmap_encode(input,self.errors,encoding_table)[0]</li><li>UnicodeEncodeError: &#x27;charmap&#x27; codec can&#x27;t encode characters in position 2-75: character maps to &lt;undefined&gt;</li></ul></div><div class="panel"><h3>Run Metadata</h3><dl><dt>Exit code</dt><dd>1</dd><dt>Evidence rows</dt><dd>0</dd><dt>Child reports</dt><dd>0</dd></dl></div></div>
+  <details open><summary>Checkable Test Evidence</summary><div class="table-wrap"><table><thead><tr><th>Check</th><th>Status</th><th>Evidence</th></tr></thead><tbody><tr><td class="check"><input type="checkbox"></td><td><span class="status info">INFO</span></td><td>No structured PASS / FAIL / WARN evidence was detected in console output.</td></tr></tbody></table></div></details>
+  <details><summary>Console Output Tail</summary><pre>Traceback (most recent call last):
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\combined_extracted_scripts\script1_full_ui_suite_v12.py&quot;, line 3958, in &lt;module&gt;
+    main()
+    ~~~~^^
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\combined_extracted_scripts\script1_full_ui_suite_v12.py&quot;, line 3871, in main
+    print(&quot;\n\u2554&quot; + &quot;\u2550&quot;*72 + &quot;\u2557&quot;)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\encodings\cp1252.py&quot;, line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: &#x27;charmap&#x27; codec can&#x27;t encode characters in position 2-75: character maps to &lt;undefined&gt;
+</pre></details>
+</section>
+<section class="card script-card" id="script-2" data-status="FAIL" data-name="script2_all_sections_scraper_v8.py">
+  <div class="section-head"><div><p class="eyebrow">Script 2</p><h2>script2_all_sections_scraper_v8.py</h2><p class="muted">Started 2026-05-05 11:28:26 - Ended 2026-05-05 11:28:31 - Duration 0:00:05</p></div><span class="status fail">FAIL</span></div>
+  <div class="link-row"><a class="btn" target="_blank" href="classlens_all_sections_report.html">Open child report 2.1</a></div>
+  <div class="split"><div class="panel"><h3>Executive Summary</h3><ul><li>C:\Users\User\Downloads\-UI-selenium-Automation\combined_extracted_scripts\script2_all_sections_scraper_v8.py:2207: SyntaxWarning: &quot;\-&quot; is an invalid escape sequence. Such sequences will not work in the future. Did you mean &quot;\\-&quot;? A raw string is also an option.</li><li>login(driver, wait)</li><li>File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\combined_extracted_scripts\script2_all_sections_scraper_v8.py&quot;, line 206, in login</li><li>console.print(Rule(&quot;[bold blue]\U0001f510  Login[/bold blue]&quot;, style=&quot;blue&quot;))</li><li>return codecs.charmap_encode(input,self.errors,encoding_table)[0]</li><li>UnicodeEncodeError: &#x27;charmap&#x27; codec can&#x27;t encode character &#x27;\U0001f510&#x27; in position 0: character maps to &lt;undefined&gt;</li><li>f&quot;[bold red]\u2718 ERROR:[/bold red]\n[red]{e}[/red]&quot;,</li><li>return codecs.charmap_encode(input,self.errors,encoding_table)[0]</li><li>UnicodeEncodeError: &#x27;charmap&#x27; codec can&#x27;t encode character &#x27;\U0001f510&#x27; in position 0: character maps to &lt;undefined&gt;</li><li>build_html_report(all_data, sections)</li></ul></div><div class="panel"><h3>Run Metadata</h3><dl><dt>Exit code</dt><dd>1</dd><dt>Evidence rows</dt><dd>0</dd><dt>Child reports</dt><dd>1</dd></dl></div></div>
+  <details open><summary>Checkable Test Evidence</summary><div class="table-wrap"><table><thead><tr><th>Check</th><th>Status</th><th>Evidence</th></tr></thead><tbody><tr><td class="check"><input type="checkbox"></td><td><span class="status info">INFO</span></td><td>No structured PASS / FAIL / WARN evidence was detected in console output.</td></tr></tbody></table></div></details>
+  <details><summary>Console Output Tail</summary><pre>C:\Users\User\Downloads\-UI-selenium-Automation\combined_extracted_scripts\script2_all_sections_scraper_v8.py:2207: SyntaxWarning: &quot;\-&quot; is an invalid escape sequence. Such sequences will not work in the future. Did you mean &quot;\\-&quot;? A raw string is also an option.
+  if (/[+\-]?\d+(?:\.\d+)?%/.test(t)) score += 4;
++-----------------------------------------------------------------------------+
+|                                                                             |
+|                     ClassLens All-Sections Scraper  v8                      |
+|                                                                             |
++---- Robust gap extractor · Never hard-reloads · In-app navigation only -----+
+                                                                               
+Config: Class=12  Subject=Maths  Exam=Midterm  Section=AUTO-ALL                
+                                                                               
+---------------------------------- ---------------------------------- ---------------------------------- Traceback (most recent call last):
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\combined_extracted_scripts\script2_all_sections_scraper_v8.py&quot;, line 1840, in main
+    login(driver, wait)
+    ~~~~~^^^^^^^^^^^^^^
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\combined_extracted_scripts\script2_all_sections_scraper_v8.py&quot;, line 206, in login
+    console.print(Rule(&quot;[bold blue]\U0001f510  Login[/bold blue]&quot;, style=&quot;blue&quot;))
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\venv\Lib\site-packages\rich\console.py&quot;, line 1704, in print
+    with self:
+         ^^^^
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\venv\Lib\site-packages\rich\console.py&quot;, line 864, in __exit__
+    self._exit_buffer()
+    ~~~~~~~~~~~~~~~~~^^
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\venv\Lib\site-packages\rich\console.py&quot;, line 820, in _exit_buffer
+    self._check_buffer()
+    ~~~~~~~~~~~~~~~~~~^^
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\venv\Lib\site-packages\rich\console.py&quot;, line 2055, in _check_buffer
+    self._write_buffer()
+    ~~~~~~~~~~~~~~~~~~^^
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\venv\Lib\site-packages\rich\console.py&quot;, line 2091, in _write_buffer
+    legacy_windows_render(buffer, LegacyWindowsTerm(self.file))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\venv\Lib\site-packages\rich\_windows_renderer.py&quot;, line 17, in legacy_windows_render
+    term.write_styled(text, style)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\venv\Lib\site-packages\rich\_win32_console.py&quot;, line 441, in write_styled
+    self.write_text(text)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\venv\Lib\site-packages\rich\_win32_console.py&quot;, line 402, in write_text
+    self.write(text)
+    ~~~~~~~~~~^^^^^^
+  File &quot;C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\encodings\cp1252.py&quot;, line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: &#x27;charmap&#x27; codec can&#x27;t encode character &#x27;\U0001f510&#x27; in position 0: character maps to &lt;undefined&gt;
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\combined_extracted_scripts\script2_all_sections_scraper_v8.py&quot;, line 1891, in main
+    console.print(Panel(
+    ~~~~~~~~~~~~~^^^^^^^
+        f&quot;[bold red]\u2718 ERROR:[/bold red]\n[red]{e}[/red]&quot;,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        title=&quot;[bold red]Exception[/bold red]&quot;,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        border_style=&quot;red&quot;, padding=(1, 2)))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\venv\Lib\site-packages\rich\console.py&quot;, line 1704, in print
+    with self:
+         ^^^^
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\venv\Lib\site-packages\rich\console.py&quot;, line 864, in __exit__
+    self._exit_buffer()
+    ~~~~~~~~~~~~~~~~~^^
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\venv\Lib\site-packages\rich\console.py&quot;, line 820, in _exit_buffer
+    self._check_buffer()
+    ~~~~~~~~~~~~~~~~~~^^
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\venv\Lib\site-packages\rich\console.py&quot;, line 2055, in _check_buffer
+    self._write_buffer()
+    ~~~~~~~~~~~~~~~~~~^^
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\venv\Lib\site-packages\rich\console.py&quot;, line 2091, in _write_buffer
+    legacy_windows_render(buffer, LegacyWindowsTerm(self.file))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\venv\Lib\site-packages\rich\_windows_renderer.py&quot;, line 17, in legacy_windows_render
+    term.write_styled(text, style)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\venv\Lib\site-packages\rich\_win32_console.py&quot;, line 441, in write_styled
+    self.write_text(text)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\venv\Lib\site-packages\rich\_win32_console.py&quot;, line 402, in write_text
+    self.write(text)
+    ~~~~~~~~~~^^^^^^
+  File &quot;C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\encodings\cp1252.py&quot;, line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: &#x27;charmap&#x27; codec can&#x27;t encode character &#x27;\U0001f510&#x27; in position 0: character maps to &lt;undefined&gt;
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\combined_extracted_scripts\script2_all_sections_scraper_v8.py&quot;, line 2280, in &lt;module&gt;
+    main()
+    ~~~~^^
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\combined_extracted_scripts\script2_all_sections_scraper_v8.py&quot;, line 1897, in main
+    build_html_report(all_data, sections)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\combined_extracted_scripts\script2_all_sections_scraper_v8.py&quot;, line 1813, in build_html_report
+    console.print(f&quot;\n  [bold green]\U0001f4c4  Report \u2192 {REPORT_FILE}[/bold green]&quot;)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\venv\Lib\site-packages\rich\console.py&quot;, line 1704, in print
+    with self:
+         ^^^^
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\venv\Lib\site-packages\rich\console.py&quot;, line 864, in __exit__
+    self._exit_buffer()
+    ~~~~~~~~~~~~~~~~~^^
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\venv\Lib\site-packages\rich\console.py&quot;, line 820, in _exit_buffer
+    self._check_buffer()
+    ~~~~~~~~~~~~~~~~~~^^
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\venv\Lib\site-packages\rich\console.py&quot;, line 2055, in _check_buffer
+    self._write_buffer()
+    ~~~~~~~~~~~~~~~~~~^^
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\venv\Lib\site-packages\rich\console.py&quot;, line 2091, in _write_buffer
+    legacy_windows_render(buffer, LegacyWindowsTerm(self.file))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\venv\Lib\site-packages\rich\_windows_renderer.py&quot;, line 17, in legacy_windows_render
+    term.write_styled(text, style)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\venv\Lib\site-packages\rich\_win32_console.py&quot;, line 441, in write_styled
+    self.write_text(text)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\venv\Lib\site-packages\rich\_win32_console.py&quot;, line 402, in write_text
+    self.write(text)
+    ~~~~~~~~~~^^^^^^
+  File &quot;C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\encodings\cp1252.py&quot;, line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: &#x27;charmap&#x27; codec can&#x27;t encode character &#x27;\U0001f510&#x27; in position 0: character maps to &lt;undefined&gt;
+</pre></details>
+</section>
+<section class="card script-card" id="script-3" data-status="FAIL" data-name="script3_question_audit_engine.py">
+  <div class="section-head"><div><p class="eyebrow">Script 3</p><h2>script3_question_audit_engine.py</h2><p class="muted">Started 2026-05-05 11:28:31 - Ended 2026-05-05 11:28:32 - Duration 0:00:00</p></div><span class="status fail">FAIL</span></div>
+  <div class="link-row"><span class="muted">No child HTML report detected</span></div>
+  <div class="split"><div class="panel"><h3>Executive Summary</h3><ul><li>return codecs.charmap_encode(input,self.errors,encoding_table)[0]</li><li>UnicodeEncodeError: &#x27;charmap&#x27; codec can&#x27;t encode characters in position 7-70: character maps to &lt;undefined&gt;</li></ul></div><div class="panel"><h3>Run Metadata</h3><dl><dt>Exit code</dt><dd>1</dd><dt>Evidence rows</dt><dd>0</dd><dt>Child reports</dt><dd>0</dd></dl></div></div>
+  <details open><summary>Checkable Test Evidence</summary><div class="table-wrap"><table><thead><tr><th>Check</th><th>Status</th><th>Evidence</th></tr></thead><tbody><tr><td class="check"><input type="checkbox"></td><td><span class="status info">INFO</span></td><td>No structured PASS / FAIL / WARN evidence was detected in console output.</td></tr></tbody></table></div></details>
+  <details><summary>Console Output Tail</summary><pre>
+Traceback (most recent call last):
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\combined_extracted_scripts\script3_question_audit_engine.py&quot;, line 1549, in &lt;module&gt;
+    main()
+    ~~~~^^
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\combined_extracted_scripts\script3_question_audit_engine.py&quot;, line 1515, in main
+    print_banner()
+    ~~~~~~~~~~~~^^
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\combined_extracted_scripts\script3_question_audit_engine.py&quot;, line 168, in print_banner
+    print(c(C.CYAN, &quot;  \u2554\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2557&quot;))
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\encodings\cp1252.py&quot;, line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: &#x27;charmap&#x27; codec can&#x27;t encode characters in position 7-70: character maps to &lt;undefined&gt;
+</pre></details>
+</section>
+<section class="card script-card" id="script-4" data-status="FAIL" data-name="script4_chapters_all_sections_final_v4.py">
+  <div class="section-head"><div><p class="eyebrow">Script 4</p><h2>script4_chapters_all_sections_final_v4.py</h2><p class="muted">Started 2026-05-05 11:28:32 - Ended 2026-05-05 11:28:35 - Duration 0:00:03</p></div><span class="status fail">FAIL</span></div>
+  <div class="link-row"><span class="muted">No child HTML report detected</span></div>
+  <div class="split"><div class="panel"><h3>Executive Summary</h3><ul><li>return codecs.charmap_encode(input,self.errors,encoding_table)[0]</li><li>UnicodeEncodeError: &#x27;charmap&#x27; codec can&#x27;t encode characters in position 11-82: character maps to &lt;undefined&gt;</li></ul></div><div class="panel"><h3>Run Metadata</h3><dl><dt>Exit code</dt><dd>1</dd><dt>Evidence rows</dt><dd>0</dd><dt>Child reports</dt><dd>0</dd></dl></div></div>
+  <details open><summary>Checkable Test Evidence</summary><div class="table-wrap"><table><thead><tr><th>Check</th><th>Status</th><th>Evidence</th></tr></thead><tbody><tr><td class="check"><input type="checkbox"></td><td><span class="status info">INFO</span></td><td>No structured PASS / FAIL / WARN evidence was detected in console output.</td></tr></tbody></table></div></details>
+  <details><summary>Console Output Tail</summary><pre>Traceback (most recent call last):
+  File &quot;C:\Users\User\Downloads\-UI-selenium-Automation\combined_extracted_scripts\script4_chapters_all_sections_final_v4.py&quot;, line 1498, in &lt;module&gt;
+    print(f&quot;\n{BLD}{C}{&#x27;\u2550&#x27;*72}&quot;)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\encodings\cp1252.py&quot;, line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: &#x27;charmap&#x27; codec can&#x27;t encode characters in position 11-82: character maps to &lt;undefined&gt;
+</pre></details>
+</section><p class="footer">Professional dashboard layer added without deleting original uploaded lines.</p></main><script>function filterCards(){const q=document.getElementById('q').value.toLowerCase();const s=document.getElementById('status').value;document.querySelectorAll('.script-card').forEach(c=>{const okName=c.dataset.name.toLowerCase().includes(q);const okStatus=!s||c.dataset.status===s;c.style.display=(okName&&okStatus)?'block':'none';});}</script></body></html>

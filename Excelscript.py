@@ -23,7 +23,7 @@ PASSWORD = "Operations123"
 VALUES = {
     "Class": "12",
     "Section": "N",
-    "Subject": "MATHS",
+    "Subject": "Maths",
     "Exam": "Midterm",
     "CompareLeft": "Midterm",
     "CompareRight": "Preboard 1",
