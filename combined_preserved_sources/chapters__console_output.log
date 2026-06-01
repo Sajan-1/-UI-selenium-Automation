@@ -2573,3 +2573,1273 @@
     [92m✔[0m [92m[PASS][0m  [Preboard 1] Struggling students count  [2m5 students[0m
     [92m✔[0m [92m[PASS][0m  [Preboard 1] Weak Concepts count  [2m0 concepts[0m
     [92m✔[0m [92m[PASS][0m  [Preboard 1] Weakest Concepts list ≥ 1 item  [2m3 items: ['2\nProperties of Determinants\nNew', '2\nProperties of Determinants', 'Properties of Determinants'][0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mPreboard 1:[0m  Accuracy=[92m[1m73.4%[0m  Struggling=[93m[1m5[0m  WeakConcepts=[96m0[0m
+        Weakest : ['2\nProperties of Determinants\nNew', '2\nProperties of Determinants', 'Properties of Determinants']
+        Strongest: ['Adjoint & Inverse\n78%\nImproved\nDeterminant of a Matrix\n78%\nImproved', 'Adjoint & Inverse\n78%\nImproved', 'Adjoint & Inverse', '78%\nImproved 78% [Improved]', 'Determinant of a Matrix\n78%\nImproved', 'Determinant of a Matrix', '↗ 10.1%\nIMPROVED', '↗ 10.1% [IMPROVED]']
+    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['Improved', 'New', 'IMPROVED'][0m
+
+      [96m┌─ HEADER ACCURACY BADGE ──────────────────────────────────────┐[0m
+      [96m│[0m Preboard 1 accuracy : [91m[1mNOT FOUND[0m
+      [96m└────────────────────────────────────────────────────────────┘[0m
+
+      [93m┌─ WHY SECTION ─────────────────────────────────────────────┐[0m
+      [93m│[0m Heading : Why this chapter improved
+      [93m│[0m Text    : Good improvement of 10.1% in this chapter. Students have strengthened …
+      [93m│[0m Change %: [92m[1m+10.1%[0m
+      [93m└───────────────────────────────────────────────────────┘[0m
+
+  [1m[92m▲  [97mContinuity & Differentiability[0m  [92m+8.2%[0m
+  ─────────────────────────────────────────────────────────────────
+    [92m✔[0m [92m[PASS][0m  Loc 1 · Card list badge % readable  [2m+8.2%[0m
+    [92m✔[0m [92m[PASS][0m  Card clickable / detail panel opens
+    [92m✔[0m [92m[PASS][0m  Loc 2 · IMPROVED/DECLINED chip % readable  [2m+8.2%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 3 · Change in chapter average badge  [2m+8.2%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 4 · Why-text % (change or accuracy)  [2mchange%=+8.2%[0m
+    [91m✘[0m [91m[FAIL][0m  Header accuracy badge readable  [2mNOT FOUND[0m
+    [92m✔[0m [92m[PASS][0m  ✦ 4-Way Consistency Loc1==Loc2==Loc3==Loc4  [2mL1=+8.2%  L2=+8.2%  L3=+8.2%  L4=+8.2%[0m
+    [92m✔[0m [92m[PASS][0m  'Why this chapter' heading present  [2mWhy this chapter improved[0m
+    [92m✔[0m [92m[PASS][0m  Explanation body text present  [2mSlight improvement of 8.2% as students are making progress. …[0m
+    [92m✔[0m [92m[PASS][0m  Midterm panel visible
+    [92m✔[0m [92m[PASS][0m  Preboard 1 panel visible
+    [92m✔[0m [92m[PASS][0m  ACCURACY label present
+    [92m✔[0m [92m[PASS][0m  Weakest Concepts section
+    [92m✔[0m [92m[PASS][0m  Strongest Concepts section
+    [92m✔[0m [92m[PASS][0m  Struggling students label
+    [92m✔[0m [92m[PASS][0m  Weak Concepts label
+    [92m✔[0m [92m[PASS][0m  IMPROVED/DECLINED chip
+    [92m✔[0m [92m[PASS][0m  Change in chapter average
+        Midterm: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Midterm: weakest=[]
+        Midterm: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Midterm] Accuracy % readable  [2m65.4%[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Struggling students count  [2m9 students[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weak Concepts count  [2m0 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weakest Concepts list ≥ 1 item  [2m6 items: ['1\nContinuity', 'Continuity', '2\nSecond Order Derivative'][0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mMidterm:[0m  Accuracy=[92m[1m65.4%[0m  Struggling=[93m[1m9[0m  WeakConcepts=[96m0[0m
+        Weakest : ['1\nContinuity', 'Continuity', '2\nSecond Order Derivative', 'Second Order Derivative', '3\nParametric & Implicit Differentiation', 'Parametric & Implicit Differentiation']
+        Strongest: ['Rules of Differentiations\n79%', 'Rules of Differentiations 79%', 'Exponential & Logarithmic Functions/Logarithmic Properties\n75%', 'Exponential & Logarithmic Functions/Logarithmic Properties 75%', 'Preboard 1\nOct 11, 2025', 'Preboard 1', 'Oct 11, 2025', '73.6%\nACCURACY 73.6%']
+        Preboard 1: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Preboard 1: weakest=[]
+        Preboard 1: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Accuracy % readable  [2m73.6%[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Struggling students count  [2m5 students[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weak Concepts count  [2m0 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weakest Concepts list ≥ 1 item  [2m6 items: ['1\nDerivatives of Inverse Trig Functions\nNew', '1\nDerivatives of Inverse Trig Functions', 'Derivatives of Inverse Trig Functions'][0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mPreboard 1:[0m  Accuracy=[92m[1m73.6%[0m  Struggling=[93m[1m5[0m  WeakConcepts=[96m0[0m
+        Weakest : ['1\nDerivatives of Inverse Trig Functions\nNew', '1\nDerivatives of Inverse Trig Functions', 'Derivatives of Inverse Trig Functions', '2\nSecond Order Derivative', 'Second Order Derivative', '3\nExponential & Logarithmic Functions/Logarithmic Properties']
+        Strongest: ['Continuity\n80%\nImproved', 'Continuity', '80%\nImproved 80% [Improved]', 'Parametric & Implicit Differentiation\n78%\nImproved', 'Parametric & Implicit Differentiation', '78%\nImproved 78% [Improved]', '↗ 8.2%\nIMPROVED', '↗ 8.2% [IMPROVED]']
+    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['Improved', 'New', 'IMPROVED'][0m
+
+      [96m┌─ HEADER ACCURACY BADGE ──────────────────────────────────────┐[0m
+      [96m│[0m Preboard 1 accuracy : [91m[1mNOT FOUND[0m
+      [96m└────────────────────────────────────────────────────────────┘[0m
+
+      [93m┌─ WHY SECTION ─────────────────────────────────────────────┐[0m
+      [93m│[0m Heading : Why this chapter improved
+      [93m│[0m Text    : Slight improvement of 8.2% as students are making progress. Students h…
+      [93m│[0m Change %: [92m[1m+8.2%[0m
+      [93m└───────────────────────────────────────────────────────┘[0m
+
+  [1m[92m▲  [97mIntegrals[0m  [92m+3.7%[0m
+  ─────────────────────────────────────────────────────────────────
+    [92m✔[0m [92m[PASS][0m  Loc 1 · Card list badge % readable  [2m+3.7%[0m
+    [92m✔[0m [92m[PASS][0m  Card clickable / detail panel opens
+    [92m✔[0m [92m[PASS][0m  Loc 2 · IMPROVED/DECLINED chip % readable  [2m+3.7%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 3 · Change in chapter average badge  [2m+3.7%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 4 · Why-text % (change or accuracy)  [2mchange%=+3.7%[0m
+    [91m✘[0m [91m[FAIL][0m  Header accuracy badge readable  [2mNOT FOUND[0m
+    [92m✔[0m [92m[PASS][0m  ✦ 4-Way Consistency Loc1==Loc2==Loc3==Loc4  [2mL1=+3.7%  L2=+3.7%  L3=+3.7%  L4=+3.7%[0m
+    [92m✔[0m [92m[PASS][0m  'Why this chapter' heading present  [2mWhy this chapter improved[0m
+    [92m✔[0m [92m[PASS][0m  Explanation body text present  [2mSlight improvement of 3.7% as students are making progress. …[0m
+    [92m✔[0m [92m[PASS][0m  Midterm panel visible
+    [92m✔[0m [92m[PASS][0m  Preboard 1 panel visible
+    [92m✔[0m [92m[PASS][0m  ACCURACY label present
+    [92m✔[0m [92m[PASS][0m  Weakest Concepts section
+    [92m✔[0m [92m[PASS][0m  Strongest Concepts section
+    [92m✔[0m [92m[PASS][0m  Struggling students label
+    [92m✔[0m [92m[PASS][0m  Weak Concepts label
+    [92m✔[0m [92m[PASS][0m  IMPROVED/DECLINED chip
+    [92m✔[0m [92m[PASS][0m  Change in chapter average
+        Midterm: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Midterm: weakest=[]
+        Midterm: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Midterm] Accuracy % readable  [2m46.5%[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Struggling students count  [2m17 students[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weak Concepts count  [2m2 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weakest Concepts list ≥ 1 item  [2m6 items: ['1\nPartial Fractions', 'Partial Fractions', '2\nIntegration by Parts'][0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mMidterm:[0m  Accuracy=[92m[1m46.5%[0m  Struggling=[93m[1m17[0m  WeakConcepts=[96m2[0m
+        Weakest : ['1\nPartial Fractions', 'Partial Fractions', '2\nIntegration by Parts', 'Integration by Parts', '3\nProperties of Definite Integrals', 'Properties of Definite Integrals']
+        Strongest: ['Definite Integrals\n64%', 'Definite Integrals 64%', 'Integration by Substitution\n64%', 'Integration by Substitution 64%', 'Rules of integrals\n64%', 'Rules of integrals 64%', 'Preboard 1\nOct 11, 2025', 'Preboard 1']
+        Preboard 1: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Preboard 1: weakest=[]
+        Preboard 1: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Accuracy % readable  [2m50.2%[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Struggling students count  [2m13 students[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weak Concepts count  [2m1 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weakest Concepts list ≥ 1 item  [2m5 items: ['1\nIntegration by Substitution\n2\nRules of integrals', '1\nIntegration by Substitution', 'Integration by Substitution'][0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mPreboard 1:[0m  Accuracy=[92m[1m50.2%[0m  Struggling=[93m[1m13[0m  WeakConcepts=[96m1[0m
+        Weakest : ['1\nIntegration by Substitution\n2\nRules of integrals', '1\nIntegration by Substitution', 'Integration by Substitution', '2\nRules of integrals', 'Rules of integrals']
+        Strongest: ['Indefinite Integrals (Anti derivatives)\n63%\nNew', 'Indefinite Integrals (Anti derivatives)', '63%\nNew 63% [New]', 'Partial Fractions\n53%\nImproved', 'Partial Fractions', '53%\nImproved 53% [Improved]', '↗ 3.7%\nIMPROVED', '↗ 3.7% [IMPROVED]']
+    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['Improved', 'New', 'IMPROVED'][0m
+
+      [96m┌─ HEADER ACCURACY BADGE ──────────────────────────────────────┐[0m
+      [96m│[0m Preboard 1 accuracy : [91m[1mNOT FOUND[0m
+      [96m└────────────────────────────────────────────────────────────┘[0m
+
+      [93m┌─ WHY SECTION ─────────────────────────────────────────────┐[0m
+      [93m│[0m Heading : Why this chapter improved
+      [93m│[0m Text    : Slight improvement of 3.7% as students are making progress. Students h…
+      [93m│[0m Change %: [92m[1m+3.7%[0m
+      [93m└───────────────────────────────────────────────────────┘[0m
+
+  [1m[92m▲  [97mLinear Programming[0m  [92m+3.3%[0m
+  ─────────────────────────────────────────────────────────────────
+    [92m✔[0m [92m[PASS][0m  Loc 1 · Card list badge % readable  [2m+3.3%[0m
+    [92m✔[0m [92m[PASS][0m  Card clickable / detail panel opens
+    [92m✔[0m [92m[PASS][0m  Loc 2 · IMPROVED/DECLINED chip % readable  [2m+3.3%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 3 · Change in chapter average badge  [2m+3.3%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 4 · Why-text % (change or accuracy)  [2mchange%=+3.3%[0m
+    [91m✘[0m [91m[FAIL][0m  Header accuracy badge readable  [2mNOT FOUND[0m
+    [92m✔[0m [92m[PASS][0m  ✦ 4-Way Consistency Loc1==Loc2==Loc3==Loc4  [2mL1=+3.3%  L2=+3.3%  L3=+3.3%  L4=+3.3%[0m
+    [92m✔[0m [92m[PASS][0m  'Why this chapter' heading present  [2mWhy this chapter improved[0m
+    [92m✔[0m [92m[PASS][0m  Explanation body text present  [2mSlight improvement of 3.3% as students are making progress. …[0m
+    [92m✔[0m [92m[PASS][0m  Midterm panel visible
+    [92m✔[0m [92m[PASS][0m  Preboard 1 panel visible
+    [92m✔[0m [92m[PASS][0m  ACCURACY label present
+    [92m✔[0m [92m[PASS][0m  Weakest Concepts section
+    [92m✔[0m [92m[PASS][0m  Strongest Concepts section
+    [92m✔[0m [92m[PASS][0m  Struggling students label
+    [92m✔[0m [92m[PASS][0m  Weak Concepts label
+    [92m✔[0m [92m[PASS][0m  IMPROVED/DECLINED chip
+    [92m✔[0m [92m[PASS][0m  Change in chapter average
+        Midterm: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Midterm: weakest=[]
+        Midterm: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Midterm] Accuracy % readable  [2m64.8%[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Struggling students count  [2m6 students[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weak Concepts count  [2m0 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weakest Concepts list ≥ 1 item  [2m2 items: ['1\nGraphical method of solution for problems in two variables', 'Graphical method of solution for problems in two variables'][0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mMidterm:[0m  Accuracy=[92m[1m64.8%[0m  Struggling=[93m[1m6[0m  WeakConcepts=[96m0[0m
+        Weakest : ['1\nGraphical method of solution for problems in two variables', 'Graphical method of solution for problems in two variables']
+        Strongest: ['Feasible Region\n65%', 'Feasible Region 65%', 'Preboard 1\nOct 11, 2025', 'Preboard 1', 'Oct 11, 2025', '68.1%\nACCURACY 68.1%', 'ACCURACY', 'Struggling students\n7\nWeak Concepts\n0']
+        Preboard 1: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Preboard 1: weakest=[]
+        Preboard 1: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Accuracy % readable  [2m68.1%[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Struggling students count  [2m7 students[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weak Concepts count  [2m0 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weakest Concepts list ≥ 1 item  [2m4 items: ['1\nGraphical method of solution for problems in two variables\nImproved', '1\nGraphical method of solution for problems in two variables', 'Graphical method of solution for problems in two variables'][0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mPreboard 1:[0m  Accuracy=[92m[1m68.1%[0m  Struggling=[93m[1m7[0m  WeakConcepts=[96m0[0m
+        Weakest : ['1\nGraphical method of solution for problems in two variables\nImproved', '1\nGraphical method of solution for problems in two variables', 'Graphical method of solution for problems in two variables', 'Improved']
+        Strongest: ['Objective Function\n69%\nNew', 'Objective Function', '69%\nNew 69% [New]', '↗ 3.3%\nIMPROVED', '↗ 3.3% [IMPROVED]', 'Premium Feature', 'Remediation Plan for this chapter', "Make sure you don't have to worry about this chapter again!"]
+    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['Improved', 'New', 'IMPROVED'][0m
+
+      [96m┌─ HEADER ACCURACY BADGE ──────────────────────────────────────┐[0m
+      [96m│[0m Preboard 1 accuracy : [91m[1mNOT FOUND[0m
+      [96m└────────────────────────────────────────────────────────────┘[0m
+
+      [93m┌─ WHY SECTION ─────────────────────────────────────────────┐[0m
+      [93m│[0m Heading : Why this chapter improved
+      [93m│[0m Text    : Slight improvement of 3.3% as students are making progress. Students h…
+      [93m│[0m Change %: [92m[1m+3.3%[0m
+      [93m└───────────────────────────────────────────────────────┘[0m
+
+  [1m[91m▼  [97mApplication of Integrals[0m  [91m-3.6%[0m
+  ─────────────────────────────────────────────────────────────────
+    [92m✔[0m [92m[PASS][0m  Loc 1 · Card list badge % readable  [2m-3.6%[0m
+    [92m✔[0m [92m[PASS][0m  Card clickable / detail panel opens
+    [92m✔[0m [92m[PASS][0m  Loc 2 · IMPROVED/DECLINED chip % readable  [2m-3.6%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 3 · Change in chapter average badge  [2m-3.6%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 4 · Why-text % (change or accuracy)  [2mchange%=-3.6%[0m
+    [91m✘[0m [91m[FAIL][0m  Header accuracy badge readable  [2mNOT FOUND[0m
+    [92m✔[0m [92m[PASS][0m  ✦ 4-Way Consistency Loc1==Loc2==Loc3==Loc4  [2mL1=-3.6%  L2=-3.6%  L3=-3.6%  L4=-3.6%[0m
+    [92m✔[0m [92m[PASS][0m  'Why this chapter' heading present  [2mWhy this chapter declined[0m
+    [92m✔[0m [92m[PASS][0m  Explanation body text present  [2mThere was a slight decline of 3.6% in this chapter. Struggli…[0m
+    [92m✔[0m [92m[PASS][0m  Midterm panel visible
+    [92m✔[0m [92m[PASS][0m  Preboard 1 panel visible
+    [92m✔[0m [92m[PASS][0m  ACCURACY label present
+    [92m✔[0m [92m[PASS][0m  Weakest Concepts section
+    [92m✔[0m [92m[PASS][0m  Strongest Concepts section
+    [92m✔[0m [92m[PASS][0m  Struggling students label
+    [92m✔[0m [92m[PASS][0m  Weak Concepts label
+    [92m✔[0m [92m[PASS][0m  IMPROVED/DECLINED chip
+    [92m✔[0m [92m[PASS][0m  Change in chapter average
+        Midterm: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Midterm: weakest=[]
+        Midterm: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Midterm] Accuracy % readable  [2m57.8%[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Struggling students count  [2m8 students[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weak Concepts count  [2m0 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weakest Concepts list ≥ 1 item  [2m2 items: ['1\nArea under Curves', 'Area under Curves'][0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mMidterm:[0m  Accuracy=[92m[1m57.8%[0m  Struggling=[93m[1m8[0m  WeakConcepts=[96m0[0m
+        Weakest : ['1\nArea under Curves', 'Area under Curves']
+        Strongest: ['No Strongest Concepts Available', 'Preboard 1\nOct 11, 2025', 'Preboard 1', 'Oct 11, 2025', '54.2%\nACCURACY 54.2%', 'ACCURACY', 'Struggling students\n11\nWeak Concepts\n0', 'Struggling students\n11']
+        Preboard 1: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Preboard 1: weakest=[]
+        Preboard 1: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Accuracy % readable  [2m54.2%[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Struggling students count  [2m11 students[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weak Concepts count  [2m0 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weakest Concepts list ≥ 1 item  [2m2 items: ['1\nArea under Curves', 'Area under Curves'][0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mPreboard 1:[0m  Accuracy=[92m[1m54.2%[0m  Struggling=[93m[1m11[0m  WeakConcepts=[96m0[0m
+        Weakest : ['1\nArea under Curves', 'Area under Curves']
+        Strongest: ['No Strongest Concepts Available', '↘ 3.6%\nDECLINED', '↘ 3.6% [DECLINED]', 'Premium Feature', 'Remediation Plan for this chapter', "Make sure you don't have to worry about this chapter again!", 'Create Lesson Plans\nAccess Teaching Materials', 'Create Lesson Plans']
+    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['DECLINED'][0m
+
+      [96m┌─ HEADER ACCURACY BADGE ──────────────────────────────────────┐[0m
+      [96m│[0m Preboard 1 accuracy : [91m[1mNOT FOUND[0m
+      [96m└────────────────────────────────────────────────────────────┘[0m
+
+      [93m┌─ WHY SECTION ─────────────────────────────────────────────┐[0m
+      [93m│[0m Heading : Why this chapter declined
+      [93m│[0m Text    : There was a slight decline of 3.6% in this chapter. Struggling student…
+      [93m│[0m Change %: [91m[1m-3.6%[0m
+      [93m└───────────────────────────────────────────────────────┘[0m
+
+  [1m[91m▼  [97mMatrices[0m  [91m-7.9%[0m
+  ─────────────────────────────────────────────────────────────────
+    [92m✔[0m [92m[PASS][0m  Loc 1 · Card list badge % readable  [2m-7.9%[0m
+    [92m✔[0m [92m[PASS][0m  Card clickable / detail panel opens
+    [92m✔[0m [92m[PASS][0m  Loc 2 · IMPROVED/DECLINED chip % readable  [2m-7.9%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 3 · Change in chapter average badge  [2m-7.9%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 4 · Why-text % (change or accuracy)  [2mchange%=-7.9%[0m
+    [91m✘[0m [91m[FAIL][0m  Header accuracy badge readable  [2mNOT FOUND[0m
+    [92m✔[0m [92m[PASS][0m  ✦ 4-Way Consistency Loc1==Loc2==Loc3==Loc4  [2mL1=-7.9%  L2=-7.9%  L3=-7.9%  L4=-7.9%[0m
+    [92m✔[0m [92m[PASS][0m  'Why this chapter' heading present  [2mWhy this chapter declined[0m
+    [92m✔[0m [92m[PASS][0m  Explanation body text present  [2mThere was a slight decline of 7.9% in this chapter. 'Transpo…[0m
+    [92m✔[0m [92m[PASS][0m  Midterm panel visible
+    [92m✔[0m [92m[PASS][0m  Preboard 1 panel visible
+    [92m✔[0m [92m[PASS][0m  ACCURACY label present
+    [92m✔[0m [92m[PASS][0m  Weakest Concepts section
+    [92m✔[0m [92m[PASS][0m  Strongest Concepts section
+    [92m✔[0m [92m[PASS][0m  Struggling students label
+    [92m✔[0m [92m[PASS][0m  Weak Concepts label
+    [92m✔[0m [92m[PASS][0m  IMPROVED/DECLINED chip
+    [92m✔[0m [92m[PASS][0m  Change in chapter average
+        Midterm: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Midterm: weakest=[]
+        Midterm: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Midterm] Accuracy % readable  [2m72%[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Struggling students count  [2m5 students[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weak Concepts count  [2m0 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weakest Concepts list ≥ 1 item  [2m5 items: ['1\nMatrix Operations\n2\nInverse Matrices', '1\nMatrix Operations', 'Matrix Operations'][0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mMidterm:[0m  Accuracy=[92m[1m72%[0m  Struggling=[93m[1m5[0m  WeakConcepts=[96m0[0m
+        Weakest : ['1\nMatrix Operations\n2\nInverse Matrices', '1\nMatrix Operations', 'Matrix Operations', '2\nInverse Matrices', 'Inverse Matrices']
+        Strongest: ['Transpose, Symmetric & Skew-symmetric\n81%', 'Transpose, Symmetric & Skew-symmetric 81%', 'Basics & Types of Matrices\n76%', 'Basics & Types of Matrices 76%', 'Preboard 1\nOct 11, 2025', 'Preboard 1', 'Oct 11, 2025', '64.1%\nACCURACY 64.1%']
+        Preboard 1: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Preboard 1: weakest=[]
+        Preboard 1: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Accuracy % readable  [2m64.1%[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Struggling students count  [2m5 students[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weak Concepts count  [2m0 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weakest Concepts list ≥ 1 item  [2m2 items: ['1\nTranspose, Symmetric & Skew-symmetric', 'Transpose, Symmetric & Skew-symmetric'][0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mPreboard 1:[0m  Accuracy=[92m[1m64.1%[0m  Struggling=[93m[1m5[0m  WeakConcepts=[96m0[0m
+        Weakest : ['1\nTranspose, Symmetric & Skew-symmetric', 'Transpose, Symmetric & Skew-symmetric']
+        Strongest: ['Matrix Operations\n81%\nImproved', 'Matrix Operations', '81%\nImproved 81% [Improved]', '↘ 7.9%\nDECLINED', '↘ 7.9% [DECLINED]', 'Premium Feature', 'Remediation Plan for this chapter', "Make sure you don't have to worry about this chapter again!"]
+    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['Improved', 'DECLINED'][0m
+
+      [96m┌─ HEADER ACCURACY BADGE ──────────────────────────────────────┐[0m
+      [96m│[0m Preboard 1 accuracy : [91m[1mNOT FOUND[0m
+      [96m└────────────────────────────────────────────────────────────┘[0m
+
+      [93m┌─ WHY SECTION ─────────────────────────────────────────────┐[0m
+      [93m│[0m Heading : Why this chapter declined
+      [93m│[0m Text    : There was a slight decline of 7.9% in this chapter. 'Transpose, Symmet…
+      [93m│[0m Change %: [91m[1m-7.9%[0m
+      [93m└───────────────────────────────────────────────────────┘[0m
+
+  [1m[91m▼  [97mInverse Trigonometric Functions[0m  [91m-10.4%[0m
+  ─────────────────────────────────────────────────────────────────
+    [92m✔[0m [92m[PASS][0m  Loc 1 · Card list badge % readable  [2m-10.4%[0m
+    [92m✔[0m [92m[PASS][0m  Card clickable / detail panel opens
+    [92m✔[0m [92m[PASS][0m  Loc 2 · IMPROVED/DECLINED chip % readable  [2m-10.4%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 3 · Change in chapter average badge  [2m-10.4%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 4 · Why-text % (change or accuracy)  [2mchange%=-10.4%[0m
+    [91m✘[0m [91m[FAIL][0m  Header accuracy badge readable  [2mNOT FOUND[0m
+    [92m✔[0m [92m[PASS][0m  ✦ 4-Way Consistency Loc1==Loc2==Loc3==Loc4  [2mL1=-10.4%  L2=-10.4%  L3=-10.4%  L4=-10.4%[0m
+    [92m✔[0m [92m[PASS][0m  'Why this chapter' heading present  [2mWhy this chapter declined[0m
+    [92m✔[0m [92m[PASS][0m  Explanation body text present  [2mPerformance declined by 10.4% compared to Midterm. Strugglin…[0m
+    [92m✔[0m [92m[PASS][0m  Midterm panel visible
+    [92m✔[0m [92m[PASS][0m  Preboard 1 panel visible
+    [92m✔[0m [92m[PASS][0m  ACCURACY label present
+    [92m✔[0m [92m[PASS][0m  Weakest Concepts section
+    [92m✔[0m [92m[PASS][0m  Strongest Concepts section
+    [92m✔[0m [92m[PASS][0m  Struggling students label
+    [92m✔[0m [92m[PASS][0m  Weak Concepts label
+    [92m✔[0m [92m[PASS][0m  IMPROVED/DECLINED chip
+    [92m✔[0m [92m[PASS][0m  Change in chapter average
+        Midterm: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Midterm: weakest=[]
+        Midterm: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Midterm] Accuracy % readable  [2m82.3%[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Struggling students count  [2m4 students[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weak Concepts count  [2m0 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weakest Concepts list ≥ 1 item  [2m2 items: ['1\nPrincipal Values (Domain and Range)', 'Principal Values (Domain and Range)'][0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mMidterm:[0m  Accuracy=[92m[1m82.3%[0m  Struggling=[93m[1m4[0m  WeakConcepts=[96m0[0m
+        Weakest : ['1\nPrincipal Values (Domain and Range)', 'Principal Values (Domain and Range)']
+        Strongest: ['Algebra of Inverse Trig Functions\n87%', 'Algebra of Inverse Trig Functions 87%', 'Preboard 1\nOct 11, 2025', 'Preboard 1', 'Oct 11, 2025', '71.9%\nACCURACY 71.9%', 'ACCURACY', 'Struggling students\n10\nWeak Concepts\n0']
+        Preboard 1: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Preboard 1: weakest=[]
+        Preboard 1: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Accuracy % readable  [2m71.9%[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Struggling students count  [2m10 students[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weak Concepts count  [2m0 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weakest Concepts list ≥ 1 item  [2m2 items: ['1\nAlgebra of Inverse Trig Functions', 'Algebra of Inverse Trig Functions'][0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mPreboard 1:[0m  Accuracy=[92m[1m71.9%[0m  Struggling=[93m[1m10[0m  WeakConcepts=[96m0[0m
+        Weakest : ['1\nAlgebra of Inverse Trig Functions', 'Algebra of Inverse Trig Functions']
+        Strongest: ['Principal Values (Domain and Range)\n84%\nImproved', 'Principal Values (Domain and Range)', '84%\nImproved 84% [Improved]', '↘ 10.4%\nDECLINED', '↘ 10.4% [DECLINED]', 'Premium Feature', 'Remediation Plan for this chapter', "Make sure you don't have to worry about this chapter again!"]
+    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['Improved', 'DECLINED'][0m
+
+      [96m┌─ HEADER ACCURACY BADGE ──────────────────────────────────────┐[0m
+      [96m│[0m Preboard 1 accuracy : [91m[1mNOT FOUND[0m
+      [96m└────────────────────────────────────────────────────────────┘[0m
+
+      [93m┌─ WHY SECTION ─────────────────────────────────────────────┐[0m
+      [93m│[0m Heading : Why this chapter declined
+      [93m│[0m Text    : Performance declined by 10.4% compared to Midterm. Struggling students…
+      [93m│[0m Change %: [91m[1m-10.4%[0m
+      [93m└───────────────────────────────────────────────────────┘[0m
+
+[1m[96m════════════════════════════════════════════════════════════════════════
+  PHASE 6  ▶  [97mSEARCH BOX FUNCTIONALITY
+════════════════════════════════════════════════════════════════════════[0m
+    [92m✔[0m [92m[PASS][0m  Search input element present  [2mSearch chapter...[0m
+    [92m✔[0m [92m[PASS][0m  Search 'Application' → target visible
+    [92m✔[0m [92m[PASS][0m  Search filters non-matching
+    [91m✘[0m [91m[FAIL][0m  Search cleared → all restored  [2mmissing 2[0m
+    [92m✔[0m [92m[PASS][0m  No-match query → cards hidden
+
+[1m[96m════════════════════════════════════════════════════════════════════════
+  PHASE 7  ▶  [97mSTATIC UI LABELS
+════════════════════════════════════════════════════════════════════════[0m
+    [92m✔[0m [92m[PASS][0m  Sort label 'Chapter Avg'
+    [92m✔[0m [92m[PASS][0m  Nav tab 'Overview'
+    [92m✔[0m [92m[PASS][0m  Nav tab 'Chapters'
+    [92m✔[0m [92m[PASS][0m  Nav tab 'Questions'
+    [92m✔[0m [92m[PASS][0m  Nav tab 'Students'
+    [92m✔[0m [92m[PASS][0m  'Midterm' header
+    [92m✔[0m [92m[PASS][0m  'Preboard 1' header
+    [92m✔[0m [92m[PASS][0m  'ACCURACY' label
+    [92m✔[0m [92m[PASS][0m  'Struggling students' label
+    [92m✔[0m [92m[PASS][0m  'Weak Concepts' label
+    [92m✔[0m [92m[PASS][0m  'Weakest Concepts' section
+    [92m✔[0m [92m[PASS][0m  'Strongest Concepts' section
+    [92m✔[0m [92m[PASS][0m  'Why this chapter' heading
+    [92m✔[0m [92m[PASS][0m  IMPROVED/DECLINED chip
+    [92m✔[0m [92m[PASS][0m  'Change in chapter average' label
+    [92m✔[0m [92m[PASS][0m  Concept pill badges
+    [92m✔[0m [92m[PASS][0m  Header accuracy badge
+
+[1m[96m════════════════════════════════════════════════════════════════════════
+  PHASE 8  ▶  [97mEXCEL VALIDATION
+════════════════════════════════════════════════════════════════════════[0m
+    [92m✔[0m [92m[PASS][0m  Excel match 'Application of Derivatives'  [2mApplication of Derivatives[0m
+    [92m✔[0m [92m[PASS][0m  Excel match 'Relations & Functions'  [2mRelations & Functions[0m
+    [92m✔[0m [92m[PASS][0m  Excel match 'Determinants'  [2mDeterminants[0m
+    [92m✔[0m [92m[PASS][0m  Excel match 'Continuity & Differentiability'  [2mContinuity & Differentiability[0m
+    [92m✔[0m [92m[PASS][0m  Excel match 'Integrals'  [2mIntegrals[0m
+    [92m✔[0m [92m[PASS][0m  Excel match 'Linear Programming'  [2mLinear Programming[0m
+    [92m✔[0m [92m[PASS][0m  Excel match 'Application of Integrals'  [2mApplication of Integrals[0m
+    [92m✔[0m [92m[PASS][0m  Excel match 'Matrices'  [2mMatrices[0m
+    [92m✔[0m [92m[PASS][0m  Excel match 'Inverse Trigonometric Functions'  [2mInverse Trigonometric Functions[0m
+
+  [1mSection [93mK[0m[1m: [92m290✔[0m/[91m11✘[0m (96%)
+
+  [1m[96m┌─ HEADER ACCURACY — Section K ──────────────────────────────┐[0m
+    [91m✘[0m   1. Application of Derivatives                         [96m[1mNOT FOUND[0m
+    [91m✘[0m   2. Relations & Functions                              [96m[1mNOT FOUND[0m
+    [91m✘[0m   3. Determinants                                       [96m[1mNOT FOUND[0m
+    [91m✘[0m   4. Continuity & Differentiability                     [96m[1mNOT FOUND[0m
+    [91m✘[0m   5. Integrals                                          [96m[1mNOT FOUND[0m
+    [91m✘[0m   6. Linear Programming                                 [96m[1mNOT FOUND[0m
+    [91m✘[0m   7. Application of Integrals                           [96m[1mNOT FOUND[0m
+    [91m✘[0m   8. Matrices                                           [96m[1mNOT FOUND[0m
+    [91m✘[0m   9. Inverse Trigonometric Functions                    [96m[1mNOT FOUND[0m
+  [96m└────────────────────────────────────────────────────────────┘[0m
+
+[1m[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+  SECTION  [93mL[0m[1m[97m
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[0m
+
+
+[1m[96m════════════════════════════════════════════════════════════════════════
+  PHASE S  ▶  [97mSWITCH → L
+════════════════════════════════════════════════════════════════════════[0m
+  [92m✔ Section selected: L[0m
+    [92m✔[0m [92m[PASS][0m  Section 'L' selected
+
+[1m[96m════════════════════════════════════════════════════════════════════════
+  PHASE 3  ▶  [97mNAVIGATION VERIFY
+════════════════════════════════════════════════════════════════════════[0m
+    [92m✔[0m [92m[PASS][0m  Chapters URL  [2mard+1&screen=chapters&chapterName=Application+of+Derivatives[0m
+    [92m✔[0m [92m[PASS][0m  Tab 'Overview'
+    [92m✔[0m [92m[PASS][0m  Tab 'Chapters'
+    [92m✔[0m [92m[PASS][0m  Tab 'Questions'
+    [92m✔[0m [92m[PASS][0m  Tab 'Students'
+
+[1m[96m════════════════════════════════════════════════════════════════════════
+  PHASE 4  ▶  [97mCHAPTER CARD DISCOVERY
+════════════════════════════════════════════════════════════════════════[0m
+    [92m✔[0m [92m[PASS][0m  Cards discovered  [2m9 found[0m
+    [92m✔[0m [92m[PASS][0m  Sorted High→Low  [2m[13.4, 12.3, 11.5, 9.7, 6.4]…[0m
+    [92m✔[0m [92m[PASS][0m  Sort label present
+
+  [1mChapters [L]:[0m
+    [2m 1.[0m Determinants                                         [92m▲ +13.4%   [92m✔[0m  [2m[Algebra  10m][0m
+    [2m 2.[0m Application of Derivatives                           [92m▲ +12.3%   [92m✔[0m  [2m[Calculus  35m][0m
+    [2m 3.[0m Continuity & Differentiability                       [92m▲ +11.5%   [92m✔[0m  [2m[Calculus  35m][0m
+    [2m 4.[0m Linear Programming                                   [92m▲ +9.7%   [92m✔[0m  [2m[Linear Programming Problem  5m][0m
+    [2m 5.[0m Matrices                                             [92m▲ +6.4%   [92m✔[0m  [2m[Algebra  10m][0m
+    [2m 6.[0m Relations & Functions                                [92m▲ +4.4%   [92m✔[0m  [2m[Relations and Functions  8m][0m
+    [2m 7.[0m Application of Integrals                             [92m▲ +1.9%   [92m✔[0m  [2m[Calculus  35m][0m
+    [2m 8.[0m Integrals                                            [92m▲ +1.4%   [92m✔[0m  [2m[Calculus  35m][0m
+    [2m 9.[0m Inverse Trigonometric Functions                      [92m▲ +1.2%   [92m✔[0m  [2m[Relations and Functions  8m][0m
+
+[1m[96m════════════════════════════════════════════════════════════════════════
+  PHASE 5  ▶  [97mPER-CHAPTER DETAIL — LOC1/LOC2/LOC3/LOC4 + HEADER ACCURACY
+════════════════════════════════════════════════════════════════════════[0m
+
+  [1m[92m▲  [97mDeterminants[0m  [92m+13.4%[0m
+  ─────────────────────────────────────────────────────────────────
+    [92m✔[0m [92m[PASS][0m  Loc 1 · Card list badge % readable  [2m+13.4%[0m
+    [92m✔[0m [92m[PASS][0m  Card clickable / detail panel opens
+    [92m✔[0m [92m[PASS][0m  Loc 2 · IMPROVED/DECLINED chip % readable  [2m+13.4%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 3 · Change in chapter average badge  [2m+13.4%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 4 · Why-text % (change or accuracy)  [2mchange%=+13.4%[0m
+    [91m✘[0m [91m[FAIL][0m  Header accuracy badge readable  [2mNOT FOUND[0m
+    [92m✔[0m [92m[PASS][0m  ✦ 4-Way Consistency Loc1==Loc2==Loc3==Loc4  [2mL1=+13.4%  L2=+13.4%  L3=+13.4%  L4=+13.4%[0m
+    [92m✔[0m [92m[PASS][0m  'Why this chapter' heading present  [2mWhy this chapter improved[0m
+    [92m✔[0m [92m[PASS][0m  Explanation body text present  [2mGood improvement of 13.4% in this chapter. Students have str…[0m
+    [92m✔[0m [92m[PASS][0m  Midterm panel visible
+    [92m✔[0m [92m[PASS][0m  Preboard 1 panel visible
+    [92m✔[0m [92m[PASS][0m  ACCURACY label present
+    [92m✔[0m [92m[PASS][0m  Weakest Concepts section
+    [92m✔[0m [92m[PASS][0m  Strongest Concepts section
+    [92m✔[0m [92m[PASS][0m  Struggling students label
+    [92m✔[0m [92m[PASS][0m  Weak Concepts label
+    [92m✔[0m [92m[PASS][0m  IMPROVED/DECLINED chip
+    [92m✔[0m [92m[PASS][0m  Change in chapter average
+        Midterm: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Midterm: weakest=[]
+        Midterm: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Midterm] Accuracy % readable  [2m48.9%[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Struggling students count  [2m18 students[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weak Concepts count  [2m2 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weakest Concepts list ≥ 1 item  [2m5 items: ['1\nAdjoint & Inverse\n2\nDeterminant of a Matrix', '1\nAdjoint & Inverse', 'Adjoint & Inverse'][0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mMidterm:[0m  Accuracy=[92m[1m48.9%[0m  Struggling=[93m[1m18[0m  WeakConcepts=[96m2[0m
+        Weakest : ['1\nAdjoint & Inverse\n2\nDeterminant of a Matrix', '1\nAdjoint & Inverse', 'Adjoint & Inverse', '2\nDeterminant of a Matrix', 'Determinant of a Matrix']
+        Strongest: ['Preboard 1\nOct 11, 2025', 'Preboard 1', 'Oct 11, 2025', '62.3%\nACCURACY 62.3%', 'ACCURACY', 'Struggling students\n8\nWeak Concepts\n0', 'Struggling students\n8', 'Struggling students']
+        Preboard 1: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Preboard 1: weakest=[]
+        Preboard 1: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Accuracy % readable  [2m62.3%[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Struggling students count  [2m8 students[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weak Concepts count  [2m0 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weakest Concepts list ≥ 1 item  [2m3 items: ['1\nProperties of Determinants\nNew', '1\nProperties of Determinants', 'Properties of Determinants'][0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mPreboard 1:[0m  Accuracy=[92m[1m62.3%[0m  Struggling=[93m[1m8[0m  WeakConcepts=[96m0[0m
+        Weakest : ['1\nProperties of Determinants\nNew', '1\nProperties of Determinants', 'Properties of Determinants']
+        Strongest: ['Determinant of a Matrix\n77%\nImproved\nAdjoint & Inverse\n62%\nImproved', 'Determinant of a Matrix\n77%\nImproved', 'Determinant of a Matrix', '77%\nImproved 77% [Improved]', 'Adjoint & Inverse\n62%\nImproved', 'Adjoint & Inverse', '62%\nImproved 62% [Improved]', '↗ 13.4%\nIMPROVED']
+    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['Improved', 'New', 'IMPROVED'][0m
+
+      [96m┌─ HEADER ACCURACY BADGE ──────────────────────────────────────┐[0m
+      [96m│[0m Preboard 1 accuracy : [91m[1mNOT FOUND[0m
+      [96m└────────────────────────────────────────────────────────────┘[0m
+
+      [93m┌─ WHY SECTION ─────────────────────────────────────────────┐[0m
+      [93m│[0m Heading : Why this chapter improved
+      [93m│[0m Text    : Good improvement of 13.4% in this chapter. Students have strengthened …
+      [93m│[0m Change %: [92m[1m+13.4%[0m
+      [93m└───────────────────────────────────────────────────────┘[0m
+
+  [1m[92m▲  [97mApplication of Derivatives[0m  [92m+12.3%[0m
+  ─────────────────────────────────────────────────────────────────
+    [92m✔[0m [92m[PASS][0m  Loc 1 · Card list badge % readable  [2m+12.3%[0m
+    [92m✔[0m [92m[PASS][0m  Card clickable / detail panel opens
+    [92m✔[0m [92m[PASS][0m  Loc 2 · IMPROVED/DECLINED chip % readable  [2m+12.3%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 3 · Change in chapter average badge  [2m+12.3%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 4 · Why-text % (change or accuracy)  [2mchange%=+12.3%[0m
+    [91m✘[0m [91m[FAIL][0m  Header accuracy badge readable  [2mNOT FOUND[0m
+    [92m✔[0m [92m[PASS][0m  ✦ 4-Way Consistency Loc1==Loc2==Loc3==Loc4  [2mL1=+12.3%  L2=+12.3%  L3=+12.3%  L4=+12.3%[0m
+    [92m✔[0m [92m[PASS][0m  'Why this chapter' heading present  [2mWhy this chapter improved[0m
+    [92m✔[0m [92m[PASS][0m  Explanation body text present  [2mGood improvement of 12.3% in this chapter. Students have str…[0m
+    [92m✔[0m [92m[PASS][0m  Midterm panel visible
+    [92m✔[0m [92m[PASS][0m  Preboard 1 panel visible
+    [92m✔[0m [92m[PASS][0m  ACCURACY label present
+    [92m✔[0m [92m[PASS][0m  Weakest Concepts section
+    [92m✔[0m [92m[PASS][0m  Strongest Concepts section
+    [92m✔[0m [92m[PASS][0m  Struggling students label
+    [92m✔[0m [92m[PASS][0m  Weak Concepts label
+    [92m✔[0m [92m[PASS][0m  IMPROVED/DECLINED chip
+    [92m✔[0m [92m[PASS][0m  Change in chapter average
+        Midterm: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Midterm: weakest=[]
+        Midterm: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Midterm] Accuracy % readable  [2m30.7%[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Struggling students count  [2m30 students[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weak Concepts count  [2m2 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weakest Concepts list ≥ 1 item  [2m5 items: ['1\nMaxima & Minima real life Applications\n2\nRate of Change', '1\nMaxima & Minima real life Applications', 'Maxima & Minima real life Applications'][0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mMidterm:[0m  Accuracy=[92m[1m30.7%[0m  Struggling=[93m[1m30[0m  WeakConcepts=[96m2[0m
+        Weakest : ['1\nMaxima & Minima real life Applications\n2\nRate of Change', '1\nMaxima & Minima real life Applications', 'Maxima & Minima real life Applications', '2\nRate of Change', 'Rate of Change']
+        Strongest: ['Increasing & Decreasing Functions\n44%', 'Increasing & Decreasing Functions 44%', 'Preboard 1\nOct 11, 2025', 'Preboard 1', 'Oct 11, 2025', '43%\nACCURACY 43%', 'ACCURACY', 'Struggling students\n20\nWeak Concepts\n1']
+        Preboard 1: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Preboard 1: weakest=[]
+        Preboard 1: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Accuracy % readable  [2m43%[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Struggling students count  [2m20 students[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weak Concepts count  [2m1 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weakest Concepts list ≥ 1 item  [2m6 items: ['1\nMaxima & Minima real life Applications\n2\nMaxima & Minima\nNew', '1\nMaxima & Minima real life Applications', 'Maxima & Minima real life Applications'][0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mPreboard 1:[0m  Accuracy=[92m[1m43%[0m  Struggling=[93m[1m20[0m  WeakConcepts=[96m1[0m
+        Weakest : ['1\nMaxima & Minima real life Applications\n2\nMaxima & Minima\nNew', '1\nMaxima & Minima real life Applications', 'Maxima & Minima real life Applications', '2\nMaxima & Minima\nNew', '2\nMaxima & Minima', 'Maxima & Minima']
+        Strongest: ['Rate of Change\n69%\nImproved', 'Rate of Change', '69%\nImproved 69% [Improved]', '↗ 12.3%\nIMPROVED', '↗ 12.3% [IMPROVED]', 'Premium Feature', 'Remediation Plan for this chapter', "Make sure you don't have to worry about this chapter again!"]
+    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['Improved', 'New', 'IMPROVED'][0m
+
+      [96m┌─ HEADER ACCURACY BADGE ──────────────────────────────────────┐[0m
+      [96m│[0m Preboard 1 accuracy : [91m[1mNOT FOUND[0m
+      [96m└────────────────────────────────────────────────────────────┘[0m
+
+      [93m┌─ WHY SECTION ─────────────────────────────────────────────┐[0m
+      [93m│[0m Heading : Why this chapter improved
+      [93m│[0m Text    : Good improvement of 12.3% in this chapter. Students have strengthened …
+      [93m│[0m Change %: [92m[1m+12.3%[0m
+      [93m└───────────────────────────────────────────────────────┘[0m
+
+  [1m[92m▲  [97mContinuity & Differentiability[0m  [92m+11.5%[0m
+  ─────────────────────────────────────────────────────────────────
+    [92m✔[0m [92m[PASS][0m  Loc 1 · Card list badge % readable  [2m+11.5%[0m
+    [92m✔[0m [92m[PASS][0m  Card clickable / detail panel opens
+    [92m✔[0m [92m[PASS][0m  Loc 2 · IMPROVED/DECLINED chip % readable  [2m+11.5%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 3 · Change in chapter average badge  [2m+11.5%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 4 · Why-text % (change or accuracy)  [2mchange%=+11.5%[0m
+    [91m✘[0m [91m[FAIL][0m  Header accuracy badge readable  [2mNOT FOUND[0m
+    [92m✔[0m [92m[PASS][0m  ✦ 4-Way Consistency Loc1==Loc2==Loc3==Loc4  [2mL1=+11.5%  L2=+11.5%  L3=+11.5%  L4=+11.5%[0m
+    [92m✔[0m [92m[PASS][0m  'Why this chapter' heading present  [2mWhy this chapter improved[0m
+    [92m✔[0m [92m[PASS][0m  Explanation body text present  [2mGood improvement of 11.5% in this chapter. Students have str…[0m
+    [92m✔[0m [92m[PASS][0m  Midterm panel visible
+    [92m✔[0m [92m[PASS][0m  Preboard 1 panel visible
+    [92m✔[0m [92m[PASS][0m  ACCURACY label present
+    [92m✔[0m [92m[PASS][0m  Weakest Concepts section
+    [92m✔[0m [92m[PASS][0m  Strongest Concepts section
+    [92m✔[0m [92m[PASS][0m  Struggling students label
+    [92m✔[0m [92m[PASS][0m  Weak Concepts label
+    [92m✔[0m [92m[PASS][0m  IMPROVED/DECLINED chip
+    [92m✔[0m [92m[PASS][0m  Change in chapter average
+        Midterm: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Midterm: weakest=[]
+        Midterm: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Midterm] Accuracy % readable  [2m42.3%[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Struggling students count  [2m22 students[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weak Concepts count  [2m2 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weakest Concepts list ≥ 1 item  [2m6 items: ['1\nSecond Order Derivative', 'Second Order Derivative', '2\nContinuity'][0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mMidterm:[0m  Accuracy=[92m[1m42.3%[0m  Struggling=[93m[1m22[0m  WeakConcepts=[96m2[0m
+        Weakest : ['1\nSecond Order Derivative', 'Second Order Derivative', '2\nContinuity', 'Continuity', '3\nParametric & Implicit Differentiation', 'Parametric & Implicit Differentiation']
+        Strongest: ['Rules of Differentiations\n94%', 'Rules of Differentiations 94%', 'Exponential & Logarithmic Functions/Logarithmic Properties\n70%', 'Exponential & Logarithmic Functions/Logarithmic Properties 70%', 'Preboard 1\nOct 11, 2025', 'Preboard 1', 'Oct 11, 2025', '53.8%\nACCURACY 53.8%']
+        Preboard 1: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Preboard 1: weakest=[]
+        Preboard 1: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Accuracy % readable  [2m53.8%[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Struggling students count  [2m12 students[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weak Concepts count  [2m1 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weakest Concepts list ≥ 1 item  [2m6 items: ['1\nDerivatives of Inverse Trig Functions\nNew', '1\nDerivatives of Inverse Trig Functions', 'Derivatives of Inverse Trig Functions'][0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mPreboard 1:[0m  Accuracy=[92m[1m53.8%[0m  Struggling=[93m[1m12[0m  WeakConcepts=[96m1[0m
+        Weakest : ['1\nDerivatives of Inverse Trig Functions\nNew', '1\nDerivatives of Inverse Trig Functions', 'Derivatives of Inverse Trig Functions', '2\nExponential & Logarithmic Functions/Logarithmic Properties', 'Exponential & Logarithmic Functions/Logarithmic Properties', '3\nContinuity\nImproved']
+        Strongest: ['Parametric & Implicit Differentiation\n89%\nImproved', 'Parametric & Implicit Differentiation', '89%\nImproved 89% [Improved]', 'Second Order Derivative\n55%\nImproved', 'Second Order Derivative', '55%\nImproved 55% [Improved]', '↗ 11.5%\nIMPROVED', '↗ 11.5% [IMPROVED]']
+    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['Improved', 'New', 'IMPROVED'][0m
+
+      [96m┌─ HEADER ACCURACY BADGE ──────────────────────────────────────┐[0m
+      [96m│[0m Preboard 1 accuracy : [91m[1mNOT FOUND[0m
+      [96m└────────────────────────────────────────────────────────────┘[0m
+
+      [93m┌─ WHY SECTION ─────────────────────────────────────────────┐[0m
+      [93m│[0m Heading : Why this chapter improved
+      [93m│[0m Text    : Good improvement of 11.5% in this chapter. Students have strengthened …
+      [93m│[0m Change %: [92m[1m+11.5%[0m
+      [93m└───────────────────────────────────────────────────────┘[0m
+
+  [1m[92m▲  [97mLinear Programming[0m  [92m+9.7%[0m
+  ─────────────────────────────────────────────────────────────────
+    [92m✔[0m [92m[PASS][0m  Loc 1 · Card list badge % readable  [2m+9.7%[0m
+    [92m✔[0m [92m[PASS][0m  Card clickable / detail panel opens
+    [92m✔[0m [92m[PASS][0m  Loc 2 · IMPROVED/DECLINED chip % readable  [2m+9.7%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 3 · Change in chapter average badge  [2m+9.7%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 4 · Why-text % (change or accuracy)  [2mchange%=+9.7%[0m
+    [91m✘[0m [91m[FAIL][0m  Header accuracy badge readable  [2mNOT FOUND[0m
+    [92m✔[0m [92m[PASS][0m  ✦ 4-Way Consistency Loc1==Loc2==Loc3==Loc4  [2mL1=+9.7%  L2=+9.7%  L3=+9.7%  L4=+9.7%[0m
+    [92m✔[0m [92m[PASS][0m  'Why this chapter' heading present  [2mWhy this chapter improved[0m
+    [92m✔[0m [92m[PASS][0m  Explanation body text present  [2mSlight improvement of 9.7% as students are making progress. …[0m
+    [92m✔[0m [92m[PASS][0m  Midterm panel visible
+    [92m✔[0m [92m[PASS][0m  Preboard 1 panel visible
+    [92m✔[0m [92m[PASS][0m  ACCURACY label present
+    [92m✔[0m [92m[PASS][0m  Weakest Concepts section
+    [92m✔[0m [92m[PASS][0m  Strongest Concepts section
+    [92m✔[0m [92m[PASS][0m  Struggling students label
+    [92m✔[0m [92m[PASS][0m  Weak Concepts label
+    [92m✔[0m [92m[PASS][0m  IMPROVED/DECLINED chip
+    [92m✔[0m [92m[PASS][0m  Change in chapter average
+        Midterm: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Midterm: weakest=[]
+        Midterm: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Midterm] Accuracy % readable  [2m51.7%[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Struggling students count  [2m16 students[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weak Concepts count  [2m0 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weakest Concepts list ≥ 1 item  [2m2 items: ['1\nGraphical method of solution for problems in two variables', 'Graphical method of solution for problems in two variables'][0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mMidterm:[0m  Accuracy=[92m[1m51.7%[0m  Struggling=[93m[1m16[0m  WeakConcepts=[96m0[0m
+        Weakest : ['1\nGraphical method of solution for problems in two variables', 'Graphical method of solution for problems in two variables']
+        Strongest: ['Feasible Region\n60%', 'Feasible Region 60%', 'Preboard 1\nOct 11, 2025', 'Preboard 1', 'Oct 11, 2025', '61.4%\nACCURACY 61.4%', 'ACCURACY', 'Struggling students\n7\nWeak Concepts\n0']
+        Preboard 1: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Preboard 1: weakest=[]
+        Preboard 1: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Accuracy % readable  [2m61.4%[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Struggling students count  [2m7 students[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weak Concepts count  [2m0 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weakest Concepts list ≥ 1 item  [2m4 items: ['1\nGraphical method of solution for problems in two variables\nImproved', '1\nGraphical method of solution for problems in two variables', 'Graphical method of solution for problems in two variables'][0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mPreboard 1:[0m  Accuracy=[92m[1m61.4%[0m  Struggling=[93m[1m7[0m  WeakConcepts=[96m0[0m
+        Weakest : ['1\nGraphical method of solution for problems in two variables\nImproved', '1\nGraphical method of solution for problems in two variables', 'Graphical method of solution for problems in two variables', 'Improved']
+        Strongest: ['Objective Function\n71%\nNew', 'Objective Function', '71%\nNew 71% [New]', '↗ 9.7%\nIMPROVED', '↗ 9.7% [IMPROVED]', 'Premium Feature', 'Remediation Plan for this chapter', "Make sure you don't have to worry about this chapter again!"]
+    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['Improved', 'New', 'IMPROVED'][0m
+
+      [96m┌─ HEADER ACCURACY BADGE ──────────────────────────────────────┐[0m
+      [96m│[0m Preboard 1 accuracy : [91m[1mNOT FOUND[0m
+      [96m└────────────────────────────────────────────────────────────┘[0m
+
+      [93m┌─ WHY SECTION ─────────────────────────────────────────────┐[0m
+      [93m│[0m Heading : Why this chapter improved
+      [93m│[0m Text    : Slight improvement of 9.7% as students are making progress. Students h…
+      [93m│[0m Change %: [92m[1m+9.7%[0m
+      [93m└───────────────────────────────────────────────────────┘[0m
+
+  [1m[92m▲  [97mMatrices[0m  [92m+6.4%[0m
+  ─────────────────────────────────────────────────────────────────
+    [92m✔[0m [92m[PASS][0m  Loc 1 · Card list badge % readable  [2m+6.4%[0m
+    [92m✔[0m [92m[PASS][0m  Card clickable / detail panel opens
+    [92m✔[0m [92m[PASS][0m  Loc 2 · IMPROVED/DECLINED chip % readable  [2m+6.4%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 3 · Change in chapter average badge  [2m+6.4%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 4 · Why-text % (change or accuracy)  [2mchange%=+6.4%[0m
+    [91m✘[0m [91m[FAIL][0m  Header accuracy badge readable  [2mNOT FOUND[0m
+    [92m✔[0m [92m[PASS][0m  ✦ 4-Way Consistency Loc1==Loc2==Loc3==Loc4  [2mL1=+6.4%  L2=+6.4%  L3=+6.4%  L4=+6.4%[0m
+    [92m✔[0m [92m[PASS][0m  'Why this chapter' heading present  [2mWhy this chapter improved[0m
+    [92m✔[0m [92m[PASS][0m  Explanation body text present  [2mSlight improvement of 6.4% as students are making progress. …[0m
+    [92m✔[0m [92m[PASS][0m  Midterm panel visible
+    [92m✔[0m [92m[PASS][0m  Preboard 1 panel visible
+    [92m✔[0m [92m[PASS][0m  ACCURACY label present
+    [92m✔[0m [92m[PASS][0m  Weakest Concepts section
+    [92m✔[0m [92m[PASS][0m  Strongest Concepts section
+    [92m✔[0m [92m[PASS][0m  Struggling students label
+    [92m✔[0m [92m[PASS][0m  Weak Concepts label
+    [92m✔[0m [92m[PASS][0m  IMPROVED/DECLINED chip
+    [92m✔[0m [92m[PASS][0m  Change in chapter average
+        Midterm: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Midterm: weakest=[]
+        Midterm: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Midterm] Accuracy % readable  [2m60.7%[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Struggling students count  [2m8 students[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weak Concepts count  [2m0 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weakest Concepts list ≥ 1 item  [2m5 items: ['1\nMatrix Operations\n2\nTranspose, Symmetric & Skew-symmetric', '1\nMatrix Operations', 'Matrix Operations'][0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mMidterm:[0m  Accuracy=[92m[1m60.7%[0m  Struggling=[93m[1m8[0m  WeakConcepts=[96m0[0m
+        Weakest : ['1\nMatrix Operations\n2\nTranspose, Symmetric & Skew-symmetric', '1\nMatrix Operations', 'Matrix Operations', '2\nTranspose, Symmetric & Skew-symmetric', 'Transpose, Symmetric & Skew-symmetric']
+        Strongest: ['Basics & Types of Matrices\n86%\nInverse Matrices\n77%', 'Basics & Types of Matrices\n86%', 'Basics & Types of Matrices 86%', 'Inverse Matrices\n77%', 'Inverse Matrices 77%', 'Preboard 1\nOct 11, 2025', 'Preboard 1', 'Oct 11, 2025']
+        Preboard 1: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Preboard 1: weakest=[]
+        Preboard 1: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Accuracy % readable  [2m67.1%[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Struggling students count  [2m3 students[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weak Concepts count  [2m0 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weakest Concepts list ≥ 1 item  [2m2 items: ['1\nTranspose, Symmetric & Skew-symmetric', 'Transpose, Symmetric & Skew-symmetric'][0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mPreboard 1:[0m  Accuracy=[92m[1m67.1%[0m  Struggling=[93m[1m3[0m  WeakConcepts=[96m0[0m
+        Weakest : ['1\nTranspose, Symmetric & Skew-symmetric', 'Transpose, Symmetric & Skew-symmetric']
+        Strongest: ['Matrix Operations\n83%\nImproved', 'Matrix Operations', '83%\nImproved 83% [Improved]', '↗ 6.4%\nIMPROVED', '↗ 6.4% [IMPROVED]', 'Premium Feature', 'Remediation Plan for this chapter', "Make sure you don't have to worry about this chapter again!"]
+    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['Improved', 'IMPROVED'][0m
+
+      [96m┌─ HEADER ACCURACY BADGE ──────────────────────────────────────┐[0m
+      [96m│[0m Preboard 1 accuracy : [91m[1mNOT FOUND[0m
+      [96m└────────────────────────────────────────────────────────────┘[0m
+
+      [93m┌─ WHY SECTION ─────────────────────────────────────────────┐[0m
+      [93m│[0m Heading : Why this chapter improved
+      [93m│[0m Text    : Slight improvement of 6.4% as students are making progress. Students h…
+      [93m│[0m Change %: [92m[1m+6.4%[0m
+      [93m└───────────────────────────────────────────────────────┘[0m
+
+  [1m[92m▲  [97mRelations & Functions[0m  [92m+4.4%[0m
+  ─────────────────────────────────────────────────────────────────
+    [92m✔[0m [92m[PASS][0m  Loc 1 · Card list badge % readable  [2m+4.4%[0m
+    [92m✔[0m [92m[PASS][0m  Card clickable / detail panel opens
+    [92m✔[0m [92m[PASS][0m  Loc 2 · IMPROVED/DECLINED chip % readable  [2m+4.4%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 3 · Change in chapter average badge  [2m+4.4%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 4 · Why-text % (change or accuracy)  [2mchange%=+4.4%[0m
+    [91m✘[0m [91m[FAIL][0m  Header accuracy badge readable  [2mNOT FOUND[0m
+    [92m✔[0m [92m[PASS][0m  ✦ 4-Way Consistency Loc1==Loc2==Loc3==Loc4  [2mL1=+4.4%  L2=+4.4%  L3=+4.4%  L4=+4.4%[0m
+    [92m✔[0m [92m[PASS][0m  'Why this chapter' heading present  [2mWhy this chapter improved[0m
+    [92m✔[0m [92m[PASS][0m  Explanation body text present  [2mSlight improvement of 4.4% as students are making progress. …[0m
+    [92m✔[0m [92m[PASS][0m  Midterm panel visible
+    [92m✔[0m [92m[PASS][0m  Preboard 1 panel visible
+    [92m✔[0m [92m[PASS][0m  ACCURACY label present
+    [92m✔[0m [92m[PASS][0m  Weakest Concepts section
+    [92m✔[0m [92m[PASS][0m  Strongest Concepts section
+    [92m✔[0m [92m[PASS][0m  Struggling students label
+    [92m✔[0m [92m[PASS][0m  Weak Concepts label
+    [92m✔[0m [92m[PASS][0m  IMPROVED/DECLINED chip
+    [92m✔[0m [92m[PASS][0m  Change in chapter average
+        Midterm: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Midterm: weakest=[]
+        Midterm: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Midterm] Accuracy % readable  [2m35%[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Struggling students count  [2m26 students[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weak Concepts count  [2m1 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weakest Concepts list ≥ 1 item  [2m2 items: ['1\nTypes of Relations', 'Types of Relations'][0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mMidterm:[0m  Accuracy=[92m[1m35%[0m  Struggling=[93m[1m26[0m  WeakConcepts=[96m1[0m
+        Weakest : ['1\nTypes of Relations', 'Types of Relations']
+        Strongest: ['Types of Functions\n59%', 'Types of Functions 59%', 'Preboard 1\nOct 11, 2025', 'Preboard 1', 'Oct 11, 2025', '39.4%\nACCURACY 39.4%', 'ACCURACY', 'Struggling students\n26\nWeak Concepts\n1']
+        Preboard 1: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Preboard 1: weakest=[]
+        Preboard 1: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Accuracy % readable  [2m39.4%[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Struggling students count  [2m26 students[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weak Concepts count  [2m1 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weakest Concepts list ≥ 1 item  [2m2 items: ['1\nTypes of Functions', 'Types of Functions'][0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mPreboard 1:[0m  Accuracy=[92m[1m39.4%[0m  Struggling=[93m[1m26[0m  WeakConcepts=[96m1[0m
+        Weakest : ['1\nTypes of Functions', 'Types of Functions']
+        Strongest: ['Types of Relations\n80%\nImproved', 'Types of Relations', '80%\nImproved 80% [Improved]', '↗ 4.4%\nIMPROVED', '↗ 4.4% [IMPROVED]', 'Premium Feature', 'Remediation Plan for this chapter', "Make sure you don't have to worry about this chapter again!"]
+    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['Improved', 'IMPROVED'][0m
+
+      [96m┌─ HEADER ACCURACY BADGE ──────────────────────────────────────┐[0m
+      [96m│[0m Preboard 1 accuracy : [91m[1mNOT FOUND[0m
+      [96m└────────────────────────────────────────────────────────────┘[0m
+
+      [93m┌─ WHY SECTION ─────────────────────────────────────────────┐[0m
+      [93m│[0m Heading : Why this chapter improved
+      [93m│[0m Text    : Slight improvement of 4.4% as students are making progress. Students h…
+      [93m│[0m Change %: [92m[1m+4.4%[0m
+      [93m└───────────────────────────────────────────────────────┘[0m
+
+  [1m[92m▲  [97mApplication of Integrals[0m  [92m+1.9%[0m
+  ─────────────────────────────────────────────────────────────────
+    [92m✔[0m [92m[PASS][0m  Loc 1 · Card list badge % readable  [2m+1.9%[0m
+    [92m✔[0m [92m[PASS][0m  Card clickable / detail panel opens
+    [92m✔[0m [92m[PASS][0m  Loc 2 · IMPROVED/DECLINED chip % readable  [2m+1.9%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 3 · Change in chapter average badge  [2m+1.9%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 4 · Why-text % (change or accuracy)  [2maccuracy%=52.9% (stable)[0m
+    [91m✘[0m [91m[FAIL][0m  Header accuracy badge readable  [2mNOT FOUND[0m
+    [91m✘[0m [91m[FAIL][0m  ✦ 4-Way Consistency Loc1==Loc2==Loc3==Loc4  [2mL1=+1.9%  L2=+1.9%  L3=+1.9%  L4=None[0m
+    [92m✔[0m [92m[PASS][0m  'Why this chapter' heading present  [2mWhy this chapter improved[0m
+    [92m✔[0m [92m[PASS][0m  Explanation body text present  [2mPerformance remained stable at around 52.9% accuracy.…[0m
+    [92m✔[0m [92m[PASS][0m  Midterm panel visible
+    [92m✔[0m [92m[PASS][0m  Preboard 1 panel visible
+    [92m✔[0m [92m[PASS][0m  ACCURACY label present
+    [92m✔[0m [92m[PASS][0m  Weakest Concepts section
+    [92m✔[0m [92m[PASS][0m  Strongest Concepts section
+    [92m✔[0m [92m[PASS][0m  Struggling students label
+    [92m✔[0m [92m[PASS][0m  Weak Concepts label
+    [92m✔[0m [92m[PASS][0m  IMPROVED/DECLINED chip
+    [92m✔[0m [92m[PASS][0m  Change in chapter average
+        Midterm: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Midterm: weakest=[]
+        Midterm: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Midterm] Accuracy % readable  [2m51%[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Struggling students count  [2m12 students[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weak Concepts count  [2m0 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weakest Concepts list ≥ 1 item  [2m2 items: ['1\nArea under Curves', 'Area under Curves'][0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mMidterm:[0m  Accuracy=[92m[1m51%[0m  Struggling=[93m[1m12[0m  WeakConcepts=[96m0[0m
+        Weakest : ['1\nArea under Curves', 'Area under Curves']
+        Strongest: ['No Strongest Concepts Available', 'Preboard 1\nOct 11, 2025', 'Preboard 1', 'Oct 11, 2025', '52.9%\nACCURACY 52.9%', 'ACCURACY', 'Struggling students\n17\nWeak Concepts\n0', 'Struggling students\n17']
+        Preboard 1: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Preboard 1: weakest=[]
+        Preboard 1: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Accuracy % readable  [2m52.9%[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Struggling students count  [2m17 students[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weak Concepts count  [2m0 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weakest Concepts list ≥ 1 item  [2m4 items: ['1\nArea under Curves\nImproved', '1\nArea under Curves', 'Area under Curves'][0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mPreboard 1:[0m  Accuracy=[92m[1m52.9%[0m  Struggling=[93m[1m17[0m  WeakConcepts=[96m0[0m
+        Weakest : ['1\nArea under Curves\nImproved', '1\nArea under Curves', 'Area under Curves', 'Improved']
+        Strongest: ['No Strongest Concepts Available', '↗ 1.9%\nIMPROVED', '↗ 1.9% [IMPROVED]', 'Premium Feature', 'Remediation Plan for this chapter', "Make sure you don't have to worry about this chapter again!", 'Create Lesson Plans\nAccess Teaching Materials', 'Create Lesson Plans']
+    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['Improved', 'IMPROVED'][0m
+
+      [96m┌─ HEADER ACCURACY BADGE ──────────────────────────────────────┐[0m
+      [96m│[0m Preboard 1 accuracy : [91m[1mNOT FOUND[0m
+      [96m└────────────────────────────────────────────────────────────┘[0m
+
+      [93m┌─ WHY SECTION ─────────────────────────────────────────────┐[0m
+      [93m│[0m Heading : Why this chapter improved
+      [93m│[0m Text    : Performance remained stable at around 52.9% accuracy.
+      [93m│[0m Change %: [93m[1m— (only accuracy % in text)[0m
+      [93m└───────────────────────────────────────────────────────┘[0m
+
+  [1m[92m▲  [97mIntegrals[0m  [92m+1.4%[0m
+  ─────────────────────────────────────────────────────────────────
+    [92m✔[0m [92m[PASS][0m  Loc 1 · Card list badge % readable  [2m+1.4%[0m
+    [92m✔[0m [92m[PASS][0m  Card clickable / detail panel opens
+    [92m✔[0m [92m[PASS][0m  Loc 2 · IMPROVED/DECLINED chip % readable  [2m+1.4%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 3 · Change in chapter average badge  [2m+1.4%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 4 · Why-text % (change or accuracy)  [2maccuracy%=36.5% (stable)[0m
+    [91m✘[0m [91m[FAIL][0m  Header accuracy badge readable  [2mNOT FOUND[0m
+    [91m✘[0m [91m[FAIL][0m  ✦ 4-Way Consistency Loc1==Loc2==Loc3==Loc4  [2mL1=+1.4%  L2=+1.4%  L3=+1.4%  L4=None[0m
+    [92m✔[0m [92m[PASS][0m  'Why this chapter' heading present  [2mWhy this chapter improved[0m
+    [92m✔[0m [92m[PASS][0m  Explanation body text present  [2mPerformance remained stable at around 36.5% accuracy. Howeve…[0m
+    [92m✔[0m [92m[PASS][0m  Midterm panel visible
+    [92m✔[0m [92m[PASS][0m  Preboard 1 panel visible
+    [92m✔[0m [92m[PASS][0m  ACCURACY label present
+    [92m✔[0m [92m[PASS][0m  Weakest Concepts section
+    [92m✔[0m [92m[PASS][0m  Strongest Concepts section
+    [92m✔[0m [92m[PASS][0m  Struggling students label
+    [92m✔[0m [92m[PASS][0m  Weak Concepts label
+    [92m✔[0m [92m[PASS][0m  IMPROVED/DECLINED chip
+    [92m✔[0m [92m[PASS][0m  Change in chapter average
+        Midterm: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Midterm: weakest=[]
+        Midterm: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Midterm] Accuracy % readable  [2m35.1%[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Struggling students count  [2m26 students[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weak Concepts count  [2m3 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weakest Concepts list ≥ 1 item  [2m6 items: ['1\nPartial Fractions\n2\nIntegration by Parts\n3\nDefinite Integrals', '1\nPartial Fractions', 'Partial Fractions'][0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mMidterm:[0m  Accuracy=[92m[1m35.1%[0m  Struggling=[93m[1m26[0m  WeakConcepts=[96m3[0m
+        Weakest : ['1\nPartial Fractions\n2\nIntegration by Parts\n3\nDefinite Integrals', '1\nPartial Fractions', 'Partial Fractions', '2\nIntegration by Parts', 'Integration by Parts', '3\nDefinite Integrals']
+        Strongest: ['Properties of Definite Integrals\n72%', 'Properties of Definite Integrals 72%', 'Rules of integrals\n69%', 'Rules of integrals 69%', 'Integration by Substitution\n57%', 'Integration by Substitution 57%', 'Preboard 1\nOct 11, 2025', 'Preboard 1']
+        Preboard 1: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Preboard 1: weakest=[]
+        Preboard 1: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Accuracy % readable  [2m36.5%[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Struggling students count  [2m24 students[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weak Concepts count  [2m2 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weakest Concepts list ≥ 1 item  [2m5 items: ['1\nRules of integrals\n2\nIntegration by Substitution', '1\nRules of integrals', 'Rules of integrals'][0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mPreboard 1:[0m  Accuracy=[92m[1m36.5%[0m  Struggling=[93m[1m24[0m  WeakConcepts=[96m2[0m
+        Weakest : ['1\nRules of integrals\n2\nIntegration by Substitution', '1\nRules of integrals', 'Rules of integrals', '2\nIntegration by Substitution', 'Integration by Substitution']
+        Strongest: ['Partial Fractions\n73%\nImproved', 'Partial Fractions', '73%\nImproved 73% [Improved]', 'Indefinite Integrals (Anti derivatives)\n66%\nNew', 'Indefinite Integrals (Anti derivatives)', '66%\nNew 66% [New]', '↗ 1.4%\nIMPROVED', '↗ 1.4% [IMPROVED]']
+    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['Improved', 'New', 'IMPROVED'][0m
+
+      [96m┌─ HEADER ACCURACY BADGE ──────────────────────────────────────┐[0m
+      [96m│[0m Preboard 1 accuracy : [91m[1mNOT FOUND[0m
+      [96m└────────────────────────────────────────────────────────────┘[0m
+
+      [93m┌─ WHY SECTION ─────────────────────────────────────────────┐[0m
+      [93m│[0m Heading : Why this chapter improved
+      [93m│[0m Text    : Performance remained stable at around 36.5% accuracy. However, 'Rules …
+      [93m│[0m Change %: [93m[1m— (only accuracy % in text)[0m
+      [93m└───────────────────────────────────────────────────────┘[0m
+
+  [1m[92m▲  [97mInverse Trigonometric Functions[0m  [92m+1.2%[0m
+  ─────────────────────────────────────────────────────────────────
+    [92m✔[0m [92m[PASS][0m  Loc 1 · Card list badge % readable  [2m+1.2%[0m
+    [92m✔[0m [92m[PASS][0m  Card clickable / detail panel opens
+    [92m✔[0m [92m[PASS][0m  Loc 2 · IMPROVED/DECLINED chip % readable  [2m+1.2%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 3 · Change in chapter average badge  [2m+1.2%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 4 · Why-text % (change or accuracy)  [2maccuracy%=62.4% (stable)[0m
+    [91m✘[0m [91m[FAIL][0m  Header accuracy badge readable  [2mNOT FOUND[0m
+    [91m✘[0m [91m[FAIL][0m  ✦ 4-Way Consistency Loc1==Loc2==Loc3==Loc4  [2mL1=+1.2%  L2=+1.2%  L3=+1.2%  L4=None[0m
+    [92m✔[0m [92m[PASS][0m  'Why this chapter' heading present  [2mWhy this chapter improved[0m
+    [92m✔[0m [92m[PASS][0m  Explanation body text present  [2mPerformance remained stable at around 62.4% accuracy. Studen…[0m
+    [92m✔[0m [92m[PASS][0m  Midterm panel visible
+    [92m✔[0m [92m[PASS][0m  Preboard 1 panel visible
+    [92m✔[0m [92m[PASS][0m  ACCURACY label present
+    [92m✔[0m [92m[PASS][0m  Weakest Concepts section
+    [92m✔[0m [92m[PASS][0m  Strongest Concepts section
+    [92m✔[0m [92m[PASS][0m  Struggling students label
+    [92m✔[0m [92m[PASS][0m  Weak Concepts label
+    [92m✔[0m [92m[PASS][0m  IMPROVED/DECLINED chip
+    [92m✔[0m [92m[PASS][0m  Change in chapter average
+        Midterm: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Midterm: weakest=[]
+        Midterm: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Midterm] Accuracy % readable  [2m61.2%[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Struggling students count  [2m12 students[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weak Concepts count  [2m0 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weakest Concepts list ≥ 1 item  [2m2 items: ['1\nAlgebra of Inverse Trig Functions', 'Algebra of Inverse Trig Functions'][0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mMidterm:[0m  Accuracy=[92m[1m61.2%[0m  Struggling=[93m[1m12[0m  WeakConcepts=[96m0[0m
+        Weakest : ['1\nAlgebra of Inverse Trig Functions', 'Algebra of Inverse Trig Functions']
+        Strongest: ['Principal Values (Domain and Range)\n63%', 'Principal Values (Domain and Range) 63%', 'Preboard 1\nOct 11, 2025', 'Preboard 1', 'Oct 11, 2025', '62.4%\nACCURACY 62.4%', 'ACCURACY', 'Struggling students\n16\nWeak Concepts\n0']
+        Preboard 1: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Preboard 1: weakest=[]
+        Preboard 1: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Accuracy % readable  [2m62.4%[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Struggling students count  [2m16 students[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weak Concepts count  [2m0 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weakest Concepts list ≥ 1 item  [2m2 items: ['1\nAlgebra of Inverse Trig Functions', 'Algebra of Inverse Trig Functions'][0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mPreboard 1:[0m  Accuracy=[92m[1m62.4%[0m  Struggling=[93m[1m16[0m  WeakConcepts=[96m0[0m
+        Weakest : ['1\nAlgebra of Inverse Trig Functions', 'Algebra of Inverse Trig Functions']
+        Strongest: ['Principal Values (Domain and Range)\n86%\nImproved', 'Principal Values (Domain and Range)', '86%\nImproved 86% [Improved]', '↗ 1.2%\nIMPROVED', '↗ 1.2% [IMPROVED]', 'Premium Feature', 'Remediation Plan for this chapter', "Make sure you don't have to worry about this chapter again!"]
+    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['Improved', 'IMPROVED'][0m
+
+      [96m┌─ HEADER ACCURACY BADGE ──────────────────────────────────────┐[0m
+      [96m│[0m Preboard 1 accuracy : [91m[1mNOT FOUND[0m
+      [96m└────────────────────────────────────────────────────────────┘[0m
+
+      [93m┌─ WHY SECTION ─────────────────────────────────────────────┐[0m
+      [93m│[0m Heading : Why this chapter improved
+      [93m│[0m Text    : Performance remained stable at around 62.4% accuracy. Students are com…
+      [93m│[0m Change %: [93m[1m— (only accuracy % in text)[0m
+      [93m└───────────────────────────────────────────────────────┘[0m
+
+[1m[96m════════════════════════════════════════════════════════════════════════
+  PHASE 6  ▶  [97mSEARCH BOX FUNCTIONALITY
+════════════════════════════════════════════════════════════════════════[0m
+    [92m✔[0m [92m[PASS][0m  Search input element present  [2mSearch chapter...[0m
+    [92m✔[0m [92m[PASS][0m  Search 'Determinants' → target visible
+    [92m✔[0m [92m[PASS][0m  Search filters non-matching
+    [91m✘[0m [91m[FAIL][0m  Search cleared → all restored  [2mmissing 2[0m
+    [92m✔[0m [92m[PASS][0m  No-match query → cards hidden
+
+[1m[96m════════════════════════════════════════════════════════════════════════
+  PHASE 7  ▶  [97mSTATIC UI LABELS
+════════════════════════════════════════════════════════════════════════[0m
+    [92m✔[0m [92m[PASS][0m  Sort label 'Chapter Avg'
+    [92m✔[0m [92m[PASS][0m  Nav tab 'Overview'
+    [92m✔[0m [92m[PASS][0m  Nav tab 'Chapters'
+    [92m✔[0m [92m[PASS][0m  Nav tab 'Questions'
+    [92m✔[0m [92m[PASS][0m  Nav tab 'Students'
+    [92m✔[0m [92m[PASS][0m  'Midterm' header
+    [92m✔[0m [92m[PASS][0m  'Preboard 1' header
+    [92m✔[0m [92m[PASS][0m  'ACCURACY' label
+    [92m✔[0m [92m[PASS][0m  'Struggling students' label
+    [92m✔[0m [92m[PASS][0m  'Weak Concepts' label
+    [92m✔[0m [92m[PASS][0m  'Weakest Concepts' section
+    [92m✔[0m [92m[PASS][0m  'Strongest Concepts' section
+    [92m✔[0m [92m[PASS][0m  'Why this chapter' heading
+    [92m✔[0m [92m[PASS][0m  IMPROVED/DECLINED chip
+    [92m✔[0m [92m[PASS][0m  'Change in chapter average' label
+    [92m✔[0m [92m[PASS][0m  Concept pill badges
+    [92m✔[0m [92m[PASS][0m  Header accuracy badge
+
+[1m[96m════════════════════════════════════════════════════════════════════════
+  PHASE 8  ▶  [97mEXCEL VALIDATION
+════════════════════════════════════════════════════════════════════════[0m
+    [92m✔[0m [92m[PASS][0m  Excel match 'Determinants'  [2mDeterminants[0m
+    [92m✔[0m [92m[PASS][0m  Excel match 'Application of Derivatives'  [2mApplication of Derivatives[0m
+    [92m✔[0m [92m[PASS][0m  Excel match 'Continuity & Differentiability'  [2mContinuity & Differentiability[0m
+    [92m✔[0m [92m[PASS][0m  Excel match 'Linear Programming'  [2mLinear Programming[0m
+    [92m✔[0m [92m[PASS][0m  Excel match 'Matrices'  [2mMatrices[0m
+    [92m✔[0m [92m[PASS][0m  Excel match 'Relations & Functions'  [2mRelations & Functions[0m
+    [92m✔[0m [92m[PASS][0m  Excel match 'Application of Integrals'  [2mApplication of Integrals[0m
+    [92m✔[0m [92m[PASS][0m  Excel match 'Integrals'  [2mIntegrals[0m
+    [92m✔[0m [92m[PASS][0m  Excel match 'Inverse Trigonometric Functions'  [2mInverse Trigonometric Functions[0m
+
+  [1mSection [93mL[0m[1m: [92m288✔[0m/[91m13✘[0m (96%)
+
+  [1m[96m┌─ HEADER ACCURACY — Section L ──────────────────────────────┐[0m
+    [91m✘[0m   1. Determinants                                       [96m[1mNOT FOUND[0m
+    [91m✘[0m   2. Application of Derivatives                         [96m[1mNOT FOUND[0m
+    [91m✘[0m   3. Continuity & Differentiability                     [96m[1mNOT FOUND[0m
+    [91m✘[0m   4. Linear Programming                                 [96m[1mNOT FOUND[0m
+    [91m✘[0m   5. Matrices                                           [96m[1mNOT FOUND[0m
+    [91m✘[0m   6. Relations & Functions                              [96m[1mNOT FOUND[0m
+    [91m✘[0m   7. Application of Integrals                           [96m[1mNOT FOUND[0m
+    [91m✘[0m   8. Integrals                                          [96m[1mNOT FOUND[0m
+    [91m✘[0m   9. Inverse Trigonometric Functions                    [96m[1mNOT FOUND[0m
+  [96m└────────────────────────────────────────────────────────────┘[0m
+
+[1m[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+  SECTION  [93mM[0m[1m[97m
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[0m
+
+
+[1m[96m════════════════════════════════════════════════════════════════════════
+  PHASE S  ▶  [97mSWITCH → M
+════════════════════════════════════════════════════════════════════════[0m
+  [92m✔ Section selected: M[0m
+    [92m✔[0m [92m[PASS][0m  Section 'M' selected
+
+[1m[96m════════════════════════════════════════════════════════════════════════
+  PHASE 3  ▶  [97mNAVIGATION VERIFY
+════════════════════════════════════════════════════════════════════════[0m
+    [92m✔[0m [92m[PASS][0m  Chapters URL  [2midterm%2CPreboard+1&screen=chapters&chapterName=Determinants[0m
+    [92m✔[0m [92m[PASS][0m  Tab 'Overview'
+    [92m✔[0m [92m[PASS][0m  Tab 'Chapters'
+    [92m✔[0m [92m[PASS][0m  Tab 'Questions'
+    [92m✔[0m [92m[PASS][0m  Tab 'Students'
+
+[1m[96m════════════════════════════════════════════════════════════════════════
+  PHASE 4  ▶  [97mCHAPTER CARD DISCOVERY
+════════════════════════════════════════════════════════════════════════[0m
+    [92m✔[0m [92m[PASS][0m  Cards discovered  [2m9 found[0m
+    [91m✘[0m [91m[FAIL][0m  Sorted High→Low  [2m[12.1, 1.9, 2.9, 4.9, 12.3]…[0m
+    [92m✔[0m [92m[PASS][0m  Sort label present
+
+  [1mChapters [M]:[0m
+    [2m 1.[0m Application of Derivatives                           [92m▲ +12.1%   [92m✔[0m  [2m[Calculus  35m][0m
+    [2m 2.[0m Integrals                                            [92m▲ +1.9%   [92m✔[0m  [2m[Calculus  35m][0m
+    [2m 3.[0m Continuity & Differentiability                       [91m▼ -2.9%   [92m✔[0m  [2m[Calculus  35m][0m
+    [2m 4.[0m Linear Programming                                   [91m▼ -4.9%   [92m✔[0m  [2m[Linear Programming Problem  5m][0m
+    [2m 5.[0m Determinants                                         [91m▼ -12.3%   [92m✔[0m  [2m[Algebra  10m][0m
+    [2m 6.[0m Relations & Functions                                [91m▼ -17.5%   [92m✔[0m  [2m[Relations and Functions  8m][0m
+    [2m 7.[0m Application of Integrals                             [91m▼ -25.5%   [92m✔[0m  [2m[Calculus  35m][0m
+    [2m 8.[0m Matrices                                             [91m▼ -29.1%   [92m✔[0m  [2m[Algebra  10m][0m
+    [2m 9.[0m Inverse Trigonometric Functions                      [91m▼ -29.8%   [92m✔[0m  [2m[Relations and Functions  8m][0m
+
+[1m[96m════════════════════════════════════════════════════════════════════════
+  PHASE 5  ▶  [97mPER-CHAPTER DETAIL — LOC1/LOC2/LOC3/LOC4 + HEADER ACCURACY
+════════════════════════════════════════════════════════════════════════[0m
+
+  [1m[92m▲  [97mApplication of Derivatives[0m  [92m+12.1%[0m
+  ─────────────────────────────────────────────────────────────────
+    [92m✔[0m [92m[PASS][0m  Loc 1 · Card list badge % readable  [2m+12.1%[0m
+    [92m✔[0m [92m[PASS][0m  Card clickable / detail panel opens
+    [92m✔[0m [92m[PASS][0m  Loc 2 · IMPROVED/DECLINED chip % readable  [2m+12.1%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 3 · Change in chapter average badge  [2m+12.1%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 4 · Why-text % (change or accuracy)  [2mchange%=+12.1%[0m
+    [91m✘[0m [91m[FAIL][0m  Header accuracy badge readable  [2mNOT FOUND[0m
+    [92m✔[0m [92m[PASS][0m  ✦ 4-Way Consistency Loc1==Loc2==Loc3==Loc4  [2mL1=+12.1%  L2=+12.1%  L3=+12.1%  L4=+12.1%[0m
+    [92m✔[0m [92m[PASS][0m  'Why this chapter' heading present  [2mWhy this chapter improved[0m
+    [92m✔[0m [92m[PASS][0m  Explanation body text present  [2mGood improvement of 12.1% in this chapter. Students have str…[0m
+    [92m✔[0m [92m[PASS][0m  Midterm panel visible
+    [92m✔[0m [92m[PASS][0m  Preboard 1 panel visible
+    [92m✔[0m [92m[PASS][0m  ACCURACY label present
+    [92m✔[0m [92m[PASS][0m  Weakest Concepts section
+    [92m✔[0m [92m[PASS][0m  Strongest Concepts section
+    [92m✔[0m [92m[PASS][0m  Struggling students label
+    [92m✔[0m [92m[PASS][0m  Weak Concepts label
+    [92m✔[0m [92m[PASS][0m  IMPROVED/DECLINED chip
+    [92m✔[0m [92m[PASS][0m  Change in chapter average
+        Midterm: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Midterm: weakest=[]
+        Midterm: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Midterm] Accuracy % readable  [2m34.2%[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Struggling students count  [2m14 students[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weak Concepts count  [2m1 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weakest Concepts list ≥ 1 item  [2m5 items: ['1\nMaxima & Minima real life Applications\n2\nRate of Change', '1\nMaxima & Minima real life Applications', 'Maxima & Minima real life Applications'][0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mMidterm:[0m  Accuracy=[92m[1m34.2%[0m  Struggling=[93m[1m14[0m  WeakConcepts=[96m1[0m
+        Weakest : ['1\nMaxima & Minima real life Applications\n2\nRate of Change', '1\nMaxima & Minima real life Applications', 'Maxima & Minima real life Applications', '2\nRate of Change', 'Rate of Change']
+        Strongest: ['Increasing & Decreasing Functions\n50%', 'Increasing & Decreasing Functions 50%', 'Preboard 1\nOct 11, 2025', 'Preboard 1', 'Oct 11, 2025', '46.3%\nACCURACY 46.3%', 'ACCURACY', 'Struggling students\n5\nWeak Concepts\n1']
+        Preboard 1: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Preboard 1: weakest=[]
+        Preboard 1: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Accuracy % readable  [2m46.3%[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Struggling students count  [2m5 students[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weak Concepts count  [2m1 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weakest Concepts list ≥ 1 item  [2m6 items: ['1\nMaxima & Minima real life Applications\nImproved', '1\nMaxima & Minima real life Applications', 'Maxima & Minima real life Applications'][0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mPreboard 1:[0m  Accuracy=[92m[1m46.3%[0m  Struggling=[93m[1m5[0m  WeakConcepts=[96m1[0m
+        Weakest : ['1\nMaxima & Minima real life Applications\nImproved', '1\nMaxima & Minima real life Applications', 'Maxima & Minima real life Applications', 'Improved', '2\nMaxima & Minima\nNew', '2\nMaxima & Minima']
+        Strongest: ['Rate of Change\n78%\nImproved', 'Rate of Change', '78%\nImproved 78% [Improved]', '↗ 12.1%\nIMPROVED', '↗ 12.1% [IMPROVED]', 'Premium Feature', 'Remediation Plan for this chapter', "Make sure you don't have to worry about this chapter again!"]
+    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['Improved', 'New', 'IMPROVED'][0m
+
+      [96m┌─ HEADER ACCURACY BADGE ──────────────────────────────────────┐[0m
+      [96m│[0m Preboard 1 accuracy : [91m[1mNOT FOUND[0m
+      [96m└────────────────────────────────────────────────────────────┘[0m
+
+      [93m┌─ WHY SECTION ─────────────────────────────────────────────┐[0m
+      [93m│[0m Heading : Why this chapter improved
+      [93m│[0m Text    : Good improvement of 12.1% in this chapter. Students have strengthened …
+      [93m│[0m Change %: [92m[1m+12.1%[0m
+      [93m└───────────────────────────────────────────────────────┘[0m
+
+  [1m[92m▲  [97mIntegrals[0m  [92m+1.9%[0m
+  ─────────────────────────────────────────────────────────────────
+    [92m✔[0m [92m[PASS][0m  Loc 1 · Card list badge % readable  [2m+1.9%[0m
+    [92m✔[0m [92m[PASS][0m  Card clickable / detail panel opens
+    [92m✔[0m [92m[PASS][0m  Loc 2 · IMPROVED/DECLINED chip % readable  [2m+1.9%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 3 · Change in chapter average badge  [2m+1.9%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 4 · Why-text % (change or accuracy)  [2maccuracy%=28.6% (stable)[0m
+    [91m✘[0m [91m[FAIL][0m  Header accuracy badge readable  [2mNOT FOUND[0m
+    [91m✘[0m [91m[FAIL][0m  ✦ 4-Way Consistency Loc1==Loc2==Loc3==Loc4  [2mL1=+1.9%  L2=+1.9%  L3=+1.9%  L4=None[0m
+    [92m✔[0m [92m[PASS][0m  'Why this chapter' heading present  [2mWhy this chapter improved[0m
+    [92m✔[0m [92m[PASS][0m  Explanation body text present  [2mPerformance remained stable at around 28.6% accuracy. Howeve…[0m
+    [92m✔[0m [92m[PASS][0m  Midterm panel visible
+    [92m✔[0m [92m[PASS][0m  Preboard 1 panel visible
+    [92m✔[0m [92m[PASS][0m  ACCURACY label present
+    [92m✔[0m [92m[PASS][0m  Weakest Concepts section
+    [92m✔[0m [92m[PASS][0m  Strongest Concepts section
+    [92m✔[0m [92m[PASS][0m  Struggling students label
+    [92m✔[0m [92m[PASS][0m  Weak Concepts label
+    [92m✔[0m [92m[PASS][0m  IMPROVED/DECLINED chip
+    [92m✔[0m [92m[PASS][0m  Change in chapter average
+        Midterm: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Midterm: weakest=[]
+        Midterm: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Midterm] Accuracy % readable  [2m26.7%[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Struggling students count  [2m15 students[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weak Concepts count  [2m5 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weakest Concepts list ≥ 1 item  [2m6 items: ['1\nIntegration by Parts', 'Integration by Parts', '2\nProperties of Definite Integrals'][0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mMidterm:[0m  Accuracy=[92m[1m26.7%[0m  Struggling=[93m[1m15[0m  WeakConcepts=[96m5[0m
+        Weakest : ['1\nIntegration by Parts', 'Integration by Parts', '2\nProperties of Definite Integrals', 'Properties of Definite Integrals', '3\nRules of integrals', 'Rules of integrals']
+        Strongest: ['Integration by Substitution\n41%', 'Integration by Substitution 28%', 'Partial Fractions\n37%', 'Partial Fractions 37%', 'Definite Integrals\n30%', 'Definite Integrals 30%', 'Preboard 1\nOct 11, 2025', 'Preboard 1']
+        Preboard 1: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Preboard 1: weakest=[]
+        Preboard 1: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Accuracy % readable  [2m28.6%[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Struggling students count  [2m12 students[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weak Concepts count  [2m4 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weakest Concepts list ≥ 1 item  [2m6 items: ['1\nPartial Fractions\n2\nIndefinite Integrals (Anti derivatives)\nNew', '1\nPartial Fractions', 'Partial Fractions'][0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mPreboard 1:[0m  Accuracy=[92m[1m28.6%[0m  Struggling=[93m[1m12[0m  WeakConcepts=[96m4[0m
+        Weakest : ['1\nPartial Fractions\n2\nIndefinite Integrals (Anti derivatives)\nNew', '1\nPartial Fractions', 'Partial Fractions', '2\nIndefinite Integrals (Anti derivatives)\nNew', '2\nIndefinite Integrals (Anti derivatives)', 'Indefinite Integrals (Anti derivatives)']
+        Strongest: ['Rules of integrals\n34%\nImproved\nIntegration by Substitution\n28%', 'Rules of integrals\n34%\nImproved', 'Rules of integrals', '34%\nImproved 34% [Improved]', 'Integration by Substitution\n28%', 'Integration by Substitution 28%', '↗ 1.9%\nIMPROVED', '↗ 1.9% [IMPROVED]']
+    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['Improved', 'New', 'IMPROVED'][0m
+
+      [96m┌─ HEADER ACCURACY BADGE ──────────────────────────────────────┐[0m
+      [96m│[0m Preboard 1 accuracy : [91m[1mNOT FOUND[0m
+      [96m└────────────────────────────────────────────────────────────┘[0m
+
+      [93m┌─ WHY SECTION ─────────────────────────────────────────────┐[0m
+      [93m│[0m Heading : Why this chapter improved
+      [93m│[0m Text    : Performance remained stable at around 28.6% accuracy. However, 'Partia…
+      [93m│[0m Change %: [93m[1m— (only accuracy % in text)[0m
+      [93m└───────────────────────────────────────────────────────┘[0m
+
+  [1m[91m▼  [97mContinuity & Differentiability[0m  [91m-2.9%[0m
+  ─────────────────────────────────────────────────────────────────
+    [92m✔[0m [92m[PASS][0m  Loc 1 · Card list badge % readable  [2m-2.9%[0m
+    [92m✔[0m [92m[PASS][0m  Card clickable / detail panel opens
+    [92m✔[0m [92m[PASS][0m  Loc 2 · IMPROVED/DECLINED chip % readable  [2m-2.9%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 3 · Change in chapter average badge  [2m-2.9%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 4 · Why-text % (change or accuracy)  [2mchange%=-2.9%[0m
+    [91m✘[0m [91m[FAIL][0m  Header accuracy badge readable  [2mNOT FOUND[0m
+    [92m✔[0m [92m[PASS][0m  ✦ 4-Way Consistency Loc1==Loc2==Loc3==Loc4  [2mL1=-2.9%  L2=-2.9%  L3=-2.9%  L4=-2.9%[0m
+    [92m✔[0m [92m[PASS][0m  'Why this chapter' heading present  [2mWhy this chapter declined[0m
+    [92m✔[0m [92m[PASS][0m  Explanation body text present  [2mThere was a slight decline of 2.9% in this chapter. 'Derivat…[0m
+    [92m✔[0m [92m[PASS][0m  Midterm panel visible
+    [92m✔[0m [92m[PASS][0m  Preboard 1 panel visible
+    [92m✔[0m [92m[PASS][0m  ACCURACY label present
+    [92m✔[0m [92m[PASS][0m  Weakest Concepts section
+    [92m✔[0m [92m[PASS][0m  Strongest Concepts section
+    [92m✔[0m [92m[PASS][0m  Struggling students label
+    [92m✔[0m [92m[PASS][0m  Weak Concepts label
+    [92m✔[0m [92m[PASS][0m  IMPROVED/DECLINED chip
+    [92m✔[0m [92m[PASS][0m  Change in chapter average
+        Midterm: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Midterm: weakest=[]
+        Midterm: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Midterm] Accuracy % readable  [2m44.4%[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Struggling students count  [2m11 students[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weak Concepts count  [2m2 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weakest Concepts list ≥ 1 item  [2m6 items: ['1\nSecond Order Derivative\n2\nContinuity\n3\nRules of Differentiations', '1\nSecond Order Derivative', 'Second Order Derivative'][0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mMidterm:[0m  Accuracy=[92m[1m44.4%[0m  Struggling=[93m[1m11[0m  WeakConcepts=[96m2[0m
+        Weakest : ['1\nSecond Order Derivative\n2\nContinuity\n3\nRules of Differentiations', '1\nSecond Order Derivative', 'Second Order Derivative', '2\nContinuity', 'Continuity', '3\nRules of Differentiations']
+        Strongest: ['Parametric & Implicit Differentiation\n61%', 'Parametric & Implicit Differentiation 52%', 'Exponential & Logarithmic Functions/Logarithmic Properties\n52%', 'Exponential & Logarithmic Functions/Logarithmic Properties 52%', 'Preboard 1\nOct 11, 2025', 'Preboard 1', 'Oct 11, 2025', '41.5%\nACCURACY 41.5%']
+        Preboard 1: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Preboard 1: weakest=[]
+        Preboard 1: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Accuracy % readable  [2m41.5%[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Struggling students count  [2m9 students[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weak Concepts count  [2m2 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weakest Concepts list ≥ 1 item  [2m6 items: ['1\nDerivatives of Inverse Trig Functions\nNew', '1\nDerivatives of Inverse Trig Functions', 'Derivatives of Inverse Trig Functions'][0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mPreboard 1:[0m  Accuracy=[92m[1m41.5%[0m  Struggling=[93m[1m9[0m  WeakConcepts=[96m2[0m
+        Weakest : ['1\nDerivatives of Inverse Trig Functions\nNew', '1\nDerivatives of Inverse Trig Functions', 'Derivatives of Inverse Trig Functions', '2\nContinuity\nImproved', '2\nContinuity', 'Continuity']
+        Strongest: ['Parametric & Implicit Differentiation\n52%', 'Parametric & Implicit Differentiation 52%', 'Second Order Derivative\n50%\nImproved', 'Second Order Derivative', '50%\nImproved 50% [Improved]', '↘ 2.9%\nDECLINED', '↘ 2.9% [DECLINED]', 'Premium Feature']
+    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['Improved', 'New', 'DECLINED'][0m
+
+      [96m┌─ HEADER ACCURACY BADGE ──────────────────────────────────────┐[0m
+      [96m│[0m Preboard 1 accuracy : [91m[1mNOT FOUND[0m
+      [96m└────────────────────────────────────────────────────────────┘[0m
+
+      [93m┌─ WHY SECTION ─────────────────────────────────────────────┐[0m
+      [93m│[0m Heading : Why this chapter declined
+      [93m│[0m Text    : There was a slight decline of 2.9% in this chapter. 'Derivatives of In…
+      [93m│[0m Change %: [91m[1m-2.9%[0m
+      [93m└───────────────────────────────────────────────────────┘[0m
+
+  [1m[91m▼  [97mLinear Programming[0m  [91m-4.9%[0m
+  ─────────────────────────────────────────────────────────────────
+    [92m✔[0m [92m[PASS][0m  Loc 1 · Card list badge % readable  [2m-4.9%[0m
+    [92m✔[0m [92m[PASS][0m  Card clickable / detail panel opens
+    [92m✔[0m [92m[PASS][0m  Loc 2 · IMPROVED/DECLINED chip % readable  [2m-4.9%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 3 · Change in chapter average badge  [2m-4.9%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 4 · Why-text % (change or accuracy)  [2mchange%=-4.9%[0m
+    [91m✘[0m [91m[FAIL][0m  Header accuracy badge readable  [2mNOT FOUND[0m
+    [92m✔[0m [92m[PASS][0m  ✦ 4-Way Consistency Loc1==Loc2==Loc3==Loc4  [2mL1=-4.9%  L2=-4.9%  L3=-4.9%  L4=-4.9%[0m
+    [92m✔[0m [92m[PASS][0m  'Why this chapter' heading present  [2mWhy this chapter declined[0m
+    [92m✔[0m [92m[PASS][0m  Explanation body text present  [2mThere was a slight decline of 4.9% in this chapter, mainly b…[0m
+    [92m✔[0m [92m[PASS][0m  Midterm panel visible
+    [92m✔[0m [92m[PASS][0m  Preboard 1 panel visible
+    [92m✔[0m [92m[PASS][0m  ACCURACY label present
+    [92m✔[0m [92m[PASS][0m  Weakest Concepts section
+    [92m✔[0m [92m[PASS][0m  Strongest Concepts section
+    [92m✔[0m [92m[PASS][0m  Struggling students label
+    [92m✔[0m [92m[PASS][0m  Weak Concepts label
+    [92m✔[0m [92m[PASS][0m  IMPROVED/DECLINED chip
+    [92m✔[0m [92m[PASS][0m  Change in chapter average
+        Midterm: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Midterm: weakest=[]
+        Midterm: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Midterm] Accuracy % readable  [2m52.9%[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Struggling students count  [2m6 students[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weak Concepts count  [2m0 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weakest Concepts list ≥ 1 item  [2m2 items: ['1\nGraphical method of solution for problems in two variables', 'Graphical method of solution for problems in two variables'][0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mMidterm:[0m  Accuracy=[92m[1m52.9%[0m  Struggling=[93m[1m6[0m  WeakConcepts=[96m0[0m
+        Weakest : ['1\nGraphical method of solution for problems in two variables', 'Graphical method of solution for problems in two variables']
+        Strongest: ['Feasible Region\n56%', 'Feasible Region 56%', 'Preboard 1\nOct 11, 2025', 'Preboard 1', 'Oct 11, 2025', '48%\nACCURACY 48%', 'ACCURACY', 'Struggling students\n7\nWeak Concepts\n1']
+        Preboard 1: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Preboard 1: weakest=[]
+        Preboard 1: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Accuracy % readable  [2m48%[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Struggling students count  [2m7 students[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weak Concepts count  [2m1 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Weakest Concepts list ≥ 1 item  [2m3 items: ['1\nObjective Function\nNew', '1\nObjective Function', 'Objective Function'][0m
+    [92m✔[0m [92m[PASS][0m  [Preboard 1] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mPreboard 1:[0m  Accuracy=[92m[1m48%[0m  Struggling=[93m[1m7[0m  WeakConcepts=[96m1[0m
+        Weakest : ['1\nObjective Function\nNew', '1\nObjective Function', 'Objective Function']
+        Strongest: ['Graphical method of solution for problems in two variables\n50%', 'Graphical method of solution for problems in two variables 50%', '↘ 4.9%\nDECLINED', '↘ 4.9% [DECLINED]', 'Premium Feature', 'Remediation Plan for this chapter', "Make sure you don't have to worry about this chapter again!", 'Create Lesson Plans\nAccess Teaching Materials']
+    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['New', 'DECLINED'][0m
+
+      [96m┌─ HEADER ACCURACY BADGE ──────────────────────────────────────┐[0m
+      [96m│[0m Preboard 1 accuracy : [91m[1mNOT FOUND[0m
+      [96m└────────────────────────────────────────────────────────────┘[0m
+
+      [93m┌─ WHY SECTION ─────────────────────────────────────────────┐[0m
+      [93m│[0m Heading : Why this chapter declined
+      [93m│[0m Text    : There was a slight decline of 4.9% in this chapter, mainly because 'Ob…
+      [93m│[0m Change %: [91m[1m-4.9%[0m
+      [93m└───────────────────────────────────────────────────────┘[0m
+
+  [1m[91m▼  [97mDeterminants[0m  [91m-12.3%[0m
+  ─────────────────────────────────────────────────────────────────
+    [92m✔[0m [92m[PASS][0m  Loc 1 · Card list badge % readable  [2m-12.3%[0m
+    [92m✔[0m [92m[PASS][0m  Card clickable / detail panel opens
+    [92m✔[0m [92m[PASS][0m  Loc 2 · IMPROVED/DECLINED chip % readable  [2m-12.3%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 3 · Change in chapter average badge  [2m-12.3%[0m
+    [92m✔[0m [92m[PASS][0m  Loc 4 · Why-text % (change or accuracy)  [2mchange%=-12.3%[0m
+    [91m✘[0m [91m[FAIL][0m  Header accuracy badge readable  [2mNOT FOUND[0m
+    [92m✔[0m [92m[PASS][0m  ✦ 4-Way Consistency Loc1==Loc2==Loc3==Loc4  [2mL1=-12.3%  L2=-12.3%  L3=-12.3%  L4=-12.3%[0m
+    [92m✔[0m [92m[PASS][0m  'Why this chapter' heading present  [2mWhy this chapter declined[0m
+    [92m✔[0m [92m[PASS][0m  Explanation body text present  [2mPerformance declined by 12.3% compared to Midterm, mainly be…[0m
+    [92m✔[0m [92m[PASS][0m  Midterm panel visible
+    [92m✔[0m [92m[PASS][0m  Preboard 1 panel visible
+    [92m✔[0m [92m[PASS][0m  ACCURACY label present
+    [92m✔[0m [92m[PASS][0m  Weakest Concepts section
+    [92m✔[0m [92m[PASS][0m  Strongest Concepts section
+    [92m✔[0m [92m[PASS][0m  Struggling students label
+    [92m✔[0m [92m[PASS][0m  Weak Concepts label
+    [92m✔[0m [92m[PASS][0m  IMPROVED/DECLINED chip
+    [92m✔[0m [92m[PASS][0m  Change in chapter average
+        Midterm: acc=None  str=None (raw='None' el='None')  wk=None (raw='None' el='None')
+        Midterm: weakest=[]
+        Midterm: strongest=[]
+    [92m✔[0m [92m[PASS][0m  [Midterm] Accuracy % readable  [2m67.3%[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Struggling students count  [2m3 students[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weak Concepts count  [2m2 concepts[0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Weakest Concepts list ≥ 1 item  [2m5 items: ['1\nDeterminant of a Matrix\n2\nAdjoint & Inverse', '1\nDeterminant of a Matrix', 'Determinant of a Matrix'][0m
+    [92m✔[0m [92m[PASS][0m  [Midterm] Strongest Concepts list ≥ 1 item  [2m8 items[0m
+      [2mMidterm:[0m  Accuracy=[92m[1m67.3%[0m  Struggling=[93m[1m3[0m  WeakConcepts=[96m2[0m
+        Weakest : ['1\nDeterminant of a Matrix\n2\nAdjoint & Inverse', '1\nDeterminant of a Matrix', 'Determinant of a Matrix', '2\nAdjoint & Inverse', 'Adjoint & Inverse']
