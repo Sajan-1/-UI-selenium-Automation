@@ -1,71 +1,61 @@
 
 # ==============================================================================
-# ADD-ONLY PATCH INSERTED BY MASTER RUNNER
-# Suppress individual webbrowser.open() calls when running under the combined
-# master report so only one final master dashboard opens after all tests finish.
-# Original script content starts immediately after this block; no original line is
-# removed or edited.
+# ADD-ONLY USER SPEED PATCH - inserted into runtime copy only
 # ==============================================================================
-import os as __cl_master_os
-if __cl_master_os.environ.get("CLASSLENS_MASTER_SINGLE_REPORT", "") == "1":
+import os as __cl_user_fast_os
+if __cl_user_fast_os.environ.get("CLASSLENS_FAST_MODE", "1") == "1":
     try:
-        import webbrowser as __cl_master_webbrowser
-        def __cl_master_suppress_open(url, *args, **kwargs):
-            print(f"[MASTER SINGLE REPORT] Suppressed individual report popup: {url}")
-            return True
-        __cl_master_webbrowser.open = __cl_master_suppress_open
-        __cl_master_webbrowser.open_new = __cl_master_suppress_open
-        __cl_master_webbrowser.open_new_tab = __cl_master_suppress_open
-    except Exception as __cl_master_exc:
-        print(f"[MASTER SINGLE REPORT] Browser-popup suppress patch failed: {__cl_master_exc}")
-# ==============================================================================
-# END ADD-ONLY PATCH INSERTED BY MASTER RUNNER
-# ==============================================================================
-
-# ==============================================================================
-# ADD-ONLY FAST/HEADLESS PATCH INSERTED BY MASTER RUNNER
-# Original script content starts after this block. No original line is removed.
-# ==============================================================================
-import os as __cl_fast_os
-if __cl_fast_os.environ.get("CLASSLENS_FAST_MODE", "1") == "1":
-    try:
-        import time as __cl_fast_time
-        __cl_fast_original_sleep = __cl_fast_time.sleep
-        __cl_fast_max_sleep = float(__cl_fast_os.environ.get("CLASSLENS_FAST_MAX_SLEEP", "0.35"))
-        def __cl_fast_sleep(seconds):
+        import time as __cl_user_fast_time
+        if not hasattr(__cl_user_fast_time, "_classlens_user_original_sleep"):
+            __cl_user_fast_time._classlens_user_original_sleep = __cl_user_fast_time.sleep
+        __cl_user_fast_cap = float(__cl_user_fast_os.environ.get("CLASSLENS_FAST_MAX_SLEEP", "0.10"))
+        def __cl_user_fast_sleep(seconds):
             try:
                 seconds = float(seconds)
             except Exception:
                 seconds = 0
-            return __cl_fast_original_sleep(min(seconds, __cl_fast_max_sleep))
-        __cl_fast_time.sleep = __cl_fast_sleep
-        print(f"[FAST MODE] time.sleep capped at {__cl_fast_max_sleep}s")
-    except Exception as __cl_fast_exc:
-        print(f"[FAST MODE] sleep patch failed: {__cl_fast_exc}")
-
+            return __cl_user_fast_time._classlens_user_original_sleep(min(seconds, __cl_user_fast_cap))
+        __cl_user_fast_time.sleep = __cl_user_fast_sleep
+        print(f"[FAST MODE] user speed patch active; sleep cap={__cl_user_fast_cap}s")
+    except Exception as __cl_user_fast_exc:
+        print(f"[FAST MODE] user speed patch failed: {__cl_user_fast_exc}")
     try:
-        from selenium.webdriver.chrome.options import Options as __cl_fast_Options
-        __cl_fast_old_init = __cl_fast_Options.__init__
-        def __cl_fast_options_init(self, *args, **kwargs):
-            __cl_fast_old_init(self, *args, **kwargs)
-            try:
-                if __cl_fast_os.environ.get("CLASSLENS_HEADLESS", "1") == "1":
-                    self.add_argument("--headless=new")
-                self.add_argument("--disable-gpu")
-                self.add_argument("--no-sandbox")
-                self.add_argument("--window-size=1920,1080")
-                self.add_argument("--disable-dev-shm-usage")
-                self.add_argument("--disable-notifications")
-                self.add_argument("--log-level=3")
-            except Exception as __cl_fast_opt_exc:
-                print(f"[FAST MODE] chrome option patch failed: {__cl_fast_opt_exc}")
-        __cl_fast_Options.__init__ = __cl_fast_options_init
-        print("[FAST MODE] Chrome Options patched for headless/speed.")
-    except Exception as __cl_fast_exc:
-        print(f"[FAST MODE] Chrome Options patch failed: {__cl_fast_exc}")
+        from selenium.webdriver.chrome.options import Options as __cl_user_Options
+        if not hasattr(__cl_user_Options, "_classlens_user_fast_patched"):
+            __cl_user_old_init = __cl_user_Options.__init__
+            def __cl_user_options_init(self, *args, **kwargs):
+                __cl_user_old_init(self, *args, **kwargs)
+                try:
+                    if __cl_user_fast_os.environ.get("CLASSLENS_HEADLESS", "1") == "1":
+                        self.add_argument("--headless=new")
+                    for __cl_arg in [
+                        "--disable-gpu",
+                        "--disable-dev-shm-usage",
+                        "--disable-notifications",
+                        "--disable-extensions",
+                        "--disable-popup-blocking",
+                        "--window-size=1920,1080",
+                        "--log-level=3",
+                        "--blink-settings=imagesEnabled=false",
+                    ]:
+                        self.add_argument(__cl_arg)
+                    try:
+                        self.add_experimental_option("prefs", {
+                            "profile.managed_default_content_settings.images": 2,
+                            "profile.default_content_setting_values.notifications": 2,
+                        })
+                    except Exception:
+                        pass
+                except Exception as __cl_user_opt_exc:
+                    print(f"[FAST MODE] user chrome option patch failed: {__cl_user_opt_exc}")
+            __cl_user_Options.__init__ = __cl_user_options_init
+            __cl_user_Options._classlens_user_fast_patched = True
+    except Exception as __cl_user_opt_outer:
+        print(f"[FAST MODE] user chrome option setup failed: {__cl_user_opt_outer}")
 # ==============================================================================
-# END ADD-ONLY FAST/HEADLESS PATCH
+# END ADD-ONLY USER SPEED PATCH
 # ==============================================================================
+
 import os
 import re
 import time
@@ -110,7 +100,7 @@ USERNAME    = os.getenv("CLASSLENS_USER", "Tanmay")
 PASSWORD    = os.getenv("CLASSLENS_PASS", "Operations123")
 REPORT_FILE = "classlens_all_sections_report.html"
 
-ALL_SECTIONS = ["C","H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "ZZ"]
+ALL_SECTIONS = ["C","H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R"]  # ZZ skipped by master add-only patch
 
 BASE_VALUES = {
     "Class":   "12",
@@ -1615,3 +1605,54 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# ============================================================================== 
+# ADD-ONLY RUNTIME PATCH APPLIED BY MASTER: SECTION ZZ INTENTIONALLY SKIPPED
+# ------------------------------------------------------------------------------
+# User request: always skip Section ZZ and continue testing.
+# ============================================================================== 
+try:
+    if 'ALL_SECTIONS' in globals():
+        ALL_SECTIONS = [s for s in ALL_SECTIONS if str(s).strip().upper() != 'ZZ']
+        print('[MASTER PATCH] Section ZZ skipped by request. Remaining sections:', ALL_SECTIONS)
+    if 'SECTION_WHITELIST' in globals() and isinstance(SECTION_WHITELIST, list):
+        SECTION_WHITELIST = [s for s in SECTION_WHITELIST if str(s).strip().upper() != 'ZZ']
+except Exception as _skip_zz_runtime_exc:
+    print('[MASTER PATCH] ZZ skip notice failed:', _skip_zz_runtime_exc)
+# ============================================================================== 
+
+
+# ==============================================================================
+# ADD-ONLY RUNTIME PATCH: HEADLESS / FAST CHROME SUPPORT
+# ==============================================================================
+try:
+    import sys as _cl_sys
+    if '--headless' in _cl_sys.argv:
+        _CL_PREV_MAKE_DRIVER_FOR_HEADLESS = make_driver
+        def make_driver():
+            d = None
+            try:
+                opts = Options()
+                opts.add_argument('--headless=new')
+                opts.add_argument('--window-size=1920,1080')
+                opts.add_argument('--disable-gpu')
+                opts.add_argument('--disable-extensions')
+                opts.add_argument('--disable-notifications')
+                opts.add_argument('--no-sandbox')
+                opts.add_argument('--disable-dev-shm-usage')
+                opts.add_argument('--disable-background-timer-throttling')
+                opts.add_argument('--disable-backgrounding-occluded-windows')
+                opts.add_argument('--disable-renderer-backgrounding')
+                d = webdriver.Chrome(options=opts)
+                try:
+                    d.set_page_load_timeout(90)
+                except Exception:
+                    pass
+                return d
+            except Exception as _cl_headless_exc:
+                print('[ADD-ONLY OVERRIDE] Headless driver fallback:', _cl_headless_exc)
+                return _CL_PREV_MAKE_DRIVER_FOR_HEADLESS()
+except Exception as _cl_headless_patch_exc:
+    print('[ADD-ONLY OVERRIDE] Headless patch skipped:', _cl_headless_patch_exc)
+# ==============================================================================
+

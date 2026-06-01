@@ -1486,10 +1486,10 @@
   {
     "section": "H",
     "student_name": "Siddhant Anand",
-    "midterm_marks": "67.5/80",
-    "midterm_percent": "84.4%",
-    "preboard1_marks": "67.5/80",
-    "preboard1_percent": "84.4%",
+    "midterm_marks": "65/80",
+    "midterm_percent": "81.3%",
+    "preboard1_marks": "65/80",
+    "preboard1_percent": "81.3%",
     "change_accuracy": "-3.1%",
     "change_calculated_from_percent": "0.0%",
     "midterm_weakest_chapters": [
@@ -1962,10 +1962,10 @@
   {
     "section": "H",
     "student_name": "Ojas",
-    "midterm_marks": "79/80",
-    "midterm_percent": "98.8%",
-    "preboard1_marks": "79/80",
-    "preboard1_percent": "98.8%",
+    "midterm_marks": "73/80",
+    "midterm_percent": "91.3%",
+    "preboard1_marks": "73/80",
+    "preboard1_percent": "91.3%",
     "change_accuracy": "-6.9%",
     "change_calculated_from_percent": "0.0%",
     "midterm_weakest_chapters": [
@@ -2520,10 +2520,10 @@
   {
     "section": "H",
     "student_name": "Swapneel Dey",
-    "midterm_marks": "67.5/80",
-    "midterm_percent": "84.4%",
-    "preboard1_marks": "67.5/80",
-    "preboard1_percent": "84.4%",
+    "midterm_marks": "60/80",
+    "midterm_percent": "75%",
+    "preboard1_marks": "60/80",
+    "preboard1_percent": "75%",
     "change_accuracy": "-9.4%",
     "change_calculated_from_percent": "0.0%",
     "midterm_weakest_chapters": [
@@ -8251,12 +8251,12 @@
   {
     "section": "K",
     "student_name": "Rishab Karthik",
-    "midterm_marks": "51/80",
-    "midterm_percent": "63.7%",
+    "midterm_marks": "53/80",
+    "midterm_percent": "66.3%",
     "preboard1_marks": "53/80",
     "preboard1_percent": "66.3%",
     "change_accuracy": "+2.6%",
-    "change_calculated_from_percent": "+2.6%",
+    "change_calculated_from_percent": "0.0%",
     "midterm_weakest_chapters": [
       "Application of integrals",
       "Integrals",
@@ -8305,13 +8305,13 @@
       "raw_values": {
         "left_card": "+2.6%",
         "top_right_button": "2.6%",
-        "center_arrow_box": "+2.6%",
+        "center_arrow_box": "NA",
         "progress_report": "2.6%"
       },
       "normalized_values": {
         "left_card": "+2.6",
         "top_right_button": "+2.6",
-        "center_arrow_box": "+2.6",
+        "center_arrow_box": "NA",
         "progress_report": "+2.6"
       }
     }
@@ -8382,10 +8382,10 @@
     "student_name": "Shreyan Joshi",
     "midterm_marks": "46/80",
     "midterm_percent": "57.5%",
-    "preboard1_marks": "47.5/80",
-    "preboard1_percent": "59.4%",
+    "preboard1_marks": "46/80",
+    "preboard1_percent": "57.5%",
     "change_accuracy": "+1.9%",
-    "change_calculated_from_percent": "+1.9%",
+    "change_calculated_from_percent": "0.0%",
     "midterm_weakest_chapters": [
       "Relations & functions",
       "Application of integrals",
@@ -8441,13 +8441,13 @@
       "raw_values": {
         "left_card": "+1.9%",
         "top_right_button": "1.9%",
-        "center_arrow_box": "+1.9%",
+        "center_arrow_box": "NA",
         "progress_report": "1.9%"
       },
       "normalized_values": {
         "left_card": "+1.9",
         "top_right_button": "+1.9",
-        "center_arrow_box": "+1.9",
+        "center_arrow_box": "NA",
         "progress_report": "+1.9"
       }
     }
@@ -8457,10 +8457,10 @@
     "student_name": "Siansree Mishra",
     "midterm_marks": "57/80",
     "midterm_percent": "71.3%",
-    "preboard1_marks": "57.5/80",
-    "preboard1_percent": "71.9%",
+    "preboard1_marks": "57/80",
+    "preboard1_percent": "71.3%",
     "change_accuracy": "+0.6%",
-    "change_calculated_from_percent": "+0.6%",
+    "change_calculated_from_percent": "0.0%",
     "midterm_weakest_chapters": [
       "Relations & functions",
       "Integrals",
@@ -8931,12 +8931,12 @@
   {
     "section": "K",
     "student_name": "Ria Jadu",
-    "midterm_marks": "62.5/80",
-    "midterm_percent": "78.1%",
+    "midterm_marks": "54.5/80",
+    "midterm_percent": "68.1%",
     "preboard1_marks": "54.5/80",
     "preboard1_percent": "68.1%",
     "change_accuracy": "-10.0%",
-    "change_calculated_from_percent": "-10.0%",
+    "change_calculated_from_percent": "0.0%",
     "midterm_weakest_chapters": [
       "Integrals",
       "Application of integrals",
@@ -8992,13 +8992,13 @@
       "raw_values": {
         "left_card": "-10.0%",
         "top_right_button": "-10.0%",
-        "center_arrow_box": "-10.0%",
+        "center_arrow_box": "NA",
         "progress_report": "10.0%"
       },
       "normalized_values": {
         "left_card": "-10.0",
         "top_right_button": "-10.0",
-        "center_arrow_box": "-10.0",
+        "center_arrow_box": "NA",
         "progress_report": "+10.0"
       }
     }
@@ -9006,12 +9006,12 @@
   {
     "section": "K",
     "student_name": "Ridhima Parwal",
-    "midterm_marks": "49/80",
-    "midterm_percent": "61.3%",
+    "midterm_marks": "39.5/80",
+    "midterm_percent": "49.4%",
     "preboard1_marks": "39.5/80",
     "preboard1_percent": "49.4%",
     "change_accuracy": "-11.9%",
-    "change_calculated_from_percent": "-11.9%",
+    "change_calculated_from_percent": "0.0%",
     "midterm_weakest_chapters": [
       "Application of integrals",
       "Application of derivatives",
@@ -9060,13 +9060,13 @@
       "raw_values": {
         "left_card": "-11.9%",
         "top_right_button": "-11.9%",
-        "center_arrow_box": "-11.9%",
+        "center_arrow_box": "NA",
         "progress_report": "11.9%"
       },
       "normalized_values": {
         "left_card": "-11.9",
         "top_right_button": "-11.9",
-        "center_arrow_box": "-11.9",
+        "center_arrow_box": "NA",
         "progress_report": "+11.9"
       }
     }
@@ -9149,12 +9149,12 @@
   {
     "section": "K",
     "student_name": "Rishith Shetty",
-    "midterm_marks": "41/80",
-    "midterm_percent": "51.2%",
+    "midterm_marks": "30/80",
+    "midterm_percent": "37.5%",
     "preboard1_marks": "30/80",
     "preboard1_percent": "37.5%",
     "change_accuracy": "-13.7%",
-    "change_calculated_from_percent": "-13.7%",
+    "change_calculated_from_percent": "0.0%",
     "midterm_weakest_chapters": [
       "Integrals",
       "Application of derivatives",
@@ -9210,13 +9210,13 @@
       "raw_values": {
         "left_card": "-13.7%",
         "top_right_button": "-13.7%",
-        "center_arrow_box": "-13.7%",
+        "center_arrow_box": "NA",
         "progress_report": "13.7%"
       },
       "normalized_values": {
         "left_card": "-13.7",
         "top_right_button": "-13.7",
-        "center_arrow_box": "-13.7",
+        "center_arrow_box": "NA",
         "progress_report": "+13.7"
       }
     }
@@ -9224,12 +9224,12 @@
   {
     "section": "K",
     "student_name": "Manasi Sivakumar",
-    "midterm_marks": "42.5/80",
-    "midterm_percent": "53.1%",
+    "midterm_marks": "31/80",
+    "midterm_percent": "38.8%",
     "preboard1_marks": "31/80",
     "preboard1_percent": "38.8%",
     "change_accuracy": "-14.3%",
-    "change_calculated_from_percent": "-14.3%",
+    "change_calculated_from_percent": "0.0%",
     "midterm_weakest_chapters": [
       "Application of derivatives",
       "Relations & functions",
@@ -9285,13 +9285,13 @@
       "raw_values": {
         "left_card": "-14.3%",
         "top_right_button": "-14.3%",
-        "center_arrow_box": "-14.3%",
+        "center_arrow_box": "NA",
         "progress_report": "14.3%"
       },
       "normalized_values": {
         "left_card": "-14.3",
         "top_right_button": "-14.3",
-        "center_arrow_box": "-14.3",
+        "center_arrow_box": "NA",
         "progress_report": "+14.3"
       }
     }
@@ -9369,10 +9369,10 @@
     "student_name": "Ritvik Agarwal",
     "midterm_marks": "53/80",
     "midterm_percent": "66.3%",
-    "preboard1_marks": "31.5/80",
-    "preboard1_percent": "39.4%",
+    "preboard1_marks": "53/80",
+    "preboard1_percent": "66.3%",
     "change_accuracy": "-26.9%",
-    "change_calculated_from_percent": "-26.9%",
+    "change_calculated_from_percent": "0.0%",
     "midterm_weakest_chapters": [
       "Continuity & differentiability",
       "Application of integrals",
@@ -9421,13 +9421,13 @@
       "raw_values": {
         "left_card": "-26.9%",
         "top_right_button": "-26.9%",
-        "center_arrow_box": "-26.9%",
+        "center_arrow_box": "NA",
         "progress_report": "26.9%"
       },
       "normalized_values": {
         "left_card": "-26.9",
         "top_right_button": "-26.9",
-        "center_arrow_box": "-26.9",
+        "center_arrow_box": "NA",
         "progress_report": "+26.9"
       }
     }
@@ -9435,10 +9435,10 @@
   {
     "section": "K",
     "student_name": "Rushul Sharma",
-    "midterm_marks": "55/80",
-    "midterm_percent": "68.8%",
-    "preboard1_marks": "55/80",
-    "preboard1_percent": "68.8%",
+    "midterm_marks": "27.5/80",
+    "midterm_percent": "34.4%",
+    "preboard1_marks": "27.5/80",
+    "preboard1_percent": "34.4%",
     "change_accuracy": "-34.4%",
     "change_calculated_from_percent": "0.0%",
     "midterm_weakest_chapters": [
@@ -19739,12 +19739,12 @@
   {
     "section": "Q",
     "student_name": "Eshaan Saha",
-    "midterm_marks": "21/80",
-    "midterm_percent": "26.3%",
+    "midterm_marks": "31.5/80",
+    "midterm_percent": "39.4%",
     "preboard1_marks": "31.5/80",
     "preboard1_percent": "39.4%",
     "change_accuracy": "+13.1%",
-    "change_calculated_from_percent": "+13.1%",
+    "change_calculated_from_percent": "0.0%",
     "midterm_weakest_chapters": [
       "Continuity & differentiability",
       "Integrals",
@@ -19786,13 +19786,13 @@
       "raw_values": {
         "left_card": "+13.1%",
         "top_right_button": "13.1%",
-        "center_arrow_box": "+13.1%",
+        "center_arrow_box": "NA",
         "progress_report": "13.1%"
       },
       "normalized_values": {
         "left_card": "+13.1",
         "top_right_button": "+13.1",
-        "center_arrow_box": "+13.1",
+        "center_arrow_box": "NA",
         "progress_report": "+13.1"
       }
     }
@@ -19800,12 +19800,12 @@
   {
     "section": "Q",
     "student_name": "Omkar Ranjit Patil",
-    "midterm_marks": "11/80",
-    "midterm_percent": "13.8%",
+    "midterm_marks": "21/80",
+    "midterm_percent": "26.3%",
     "preboard1_marks": "21/80",
     "preboard1_percent": "26.3%",
     "change_accuracy": "+12.5%",
-    "change_calculated_from_percent": "+12.5%",
+    "change_calculated_from_percent": "0.0%",
     "midterm_weakest_chapters": [
       "Integrals",
       "Application of derivatives",
@@ -19847,13 +19847,13 @@
       "raw_values": {
         "left_card": "+12.5%",
         "top_right_button": "12.5%",
-        "center_arrow_box": "+12.5%",
+        "center_arrow_box": "NA",
         "progress_report": "12.5%"
       },
       "normalized_values": {
         "left_card": "+12.5",
         "top_right_button": "+12.5",
-        "center_arrow_box": "+12.5",
+        "center_arrow_box": "NA",
         "progress_report": "+12.5"
       }
     }
@@ -19861,12 +19861,12 @@
   {
     "section": "Q",
     "student_name": "Prahar Kaleyanda Pushparaj Kumar",
-    "midterm_marks": "22/80",
-    "midterm_percent": "27.5%",
+    "midterm_marks": "29.5/80",
+    "midterm_percent": "36.9%",
     "preboard1_marks": "29.5/80",
     "preboard1_percent": "36.9%",
     "change_accuracy": "+9.4%",
-    "change_calculated_from_percent": "+9.4%",
+    "change_calculated_from_percent": "0.0%",
     "midterm_weakest_chapters": [
       "Integrals",
       "Application of derivatives",
@@ -19915,13 +19915,13 @@
       "raw_values": {
         "left_card": "+9.4%",
         "top_right_button": "9.4%",
-        "center_arrow_box": "+9.4%",
+        "center_arrow_box": "NA",
         "progress_report": "9.4%"
       },
       "normalized_values": {
         "left_card": "+9.4",
         "top_right_button": "+9.4",
-        "center_arrow_box": "+9.4",
+        "center_arrow_box": "NA",
         "progress_report": "+9.4"
       }
     }
@@ -19997,12 +19997,12 @@
   {
     "section": "Q",
     "student_name": "Ishaan Bhatia",
-    "midterm_marks": "19.5/80",
-    "midterm_percent": "24.4%",
+    "midterm_marks": "24/80",
+    "midterm_percent": "30%",
     "preboard1_marks": "24/80",
     "preboard1_percent": "30%",
     "change_accuracy": "+5.6%",
-    "change_calculated_from_percent": "+5.6%",
+    "change_calculated_from_percent": "0.0%",
     "midterm_weakest_chapters": [
       "Application of integrals",
       "Inverse trigonometric functions",
@@ -20051,13 +20051,13 @@
       "raw_values": {
         "left_card": "+5.6%",
         "top_right_button": "5.6%",
-        "center_arrow_box": "+5.6%",
+        "center_arrow_box": "NA",
         "progress_report": "5.6%"
       },
       "normalized_values": {
         "left_card": "+5.6",
         "top_right_button": "+5.6",
-        "center_arrow_box": "+5.6",
+        "center_arrow_box": "NA",
         "progress_report": "+5.6"
       }
     }
@@ -20065,12 +20065,12 @@
   {
     "section": "Q",
     "student_name": "Garvit Mishra",
-    "midterm_marks": "24/80",
-    "midterm_percent": "30%",
+    "midterm_marks": "27.5/80",
+    "midterm_percent": "34.4%",
     "preboard1_marks": "27.5/80",
     "preboard1_percent": "34.4%",
     "change_accuracy": "+4.4%",
-    "change_calculated_from_percent": "+4.4%",
+    "change_calculated_from_percent": "0.0%",
     "midterm_weakest_chapters": [
       "Continuity & differentiability",
       "Relations & functions",
@@ -20119,13 +20119,13 @@
       "raw_values": {
         "left_card": "+4.4%",
         "top_right_button": "4.4%",
-        "center_arrow_box": "+4.4%",
+        "center_arrow_box": "NA",
         "progress_report": "4.4%"
       },
       "normalized_values": {
         "left_card": "+4.4",
         "top_right_button": "+4.4",
-        "center_arrow_box": "+4.4",
+        "center_arrow_box": "NA",
         "progress_report": "+4.4"
       }
     }
@@ -20133,12 +20133,12 @@
   {
     "section": "Q",
     "student_name": "Saanvi Joshi",
-    "midterm_marks": "23/80",
-    "midterm_percent": "28.7%",
+    "midterm_marks": "24/80",
+    "midterm_percent": "30%",
     "preboard1_marks": "24/80",
     "preboard1_percent": "30%",
     "change_accuracy": "+1.3%",
-    "change_calculated_from_percent": "+1.3%",
+    "change_calculated_from_percent": "0.0%",
     "midterm_weakest_chapters": [
       "Integrals",
       "Relations & functions",
@@ -20194,13 +20194,13 @@
       "raw_values": {
         "left_card": "+1.3%",
         "top_right_button": "1.3%",
-        "center_arrow_box": "+1.3%",
+        "center_arrow_box": "NA",
         "progress_report": "1.3%"
       },
       "normalized_values": {
         "left_card": "+1.3",
         "top_right_button": "+1.3",
-        "center_arrow_box": "+1.3",
+        "center_arrow_box": "NA",
         "progress_report": "+1.3"
       }
     }
@@ -20276,31 +20276,31 @@
   {
     "section": "Q",
     "student_name": "Aayaan Agrawal",
-    "midterm_marks": "30/80",
-    "midterm_percent": "37.5%",
-    "preboard1_marks": "30/80",
-    "preboard1_percent": "37.5%",
+    "midterm_marks": "34/80",
+    "midterm_percent": "42.5%",
+    "preboard1_marks": "34/80",
+    "preboard1_percent": "42.5%",
     "change_accuracy": "0.0%",
     "change_calculated_from_percent": "0.0%",
     "midterm_weakest_chapters": [
       "Inverse trigonometric functions",
-      "Application of derivatives",
-      "Continuity & differentiability"
+      "Relations & functions",
+      "Application of derivatives"
     ],
     "midterm_strongest_chapters": [
       "Linear programming",
-      "Relations & functions",
-      "Determinants"
+      "Determinants",
+      "Matrices"
     ],
     "preboard1_weakest_chapters": [
       "Application of derivatives",
-      "Vector algebra",
-      "Matrices"
+      "Application of integrals",
+      "Vector algebra"
     ],
     "preboard1_strongest_chapters": [
       "Determinants",
-      "Inverse trigonometric functions",
-      "Linear programming"
+      "Linear programming",
+      "Integrals"
     ],
     "learning_gaps": [
       {
@@ -20398,10 +20398,10 @@
   {
     "section": "Q",
     "student_name": "Aditi Rungta",
-    "midterm_marks": "17/80",
-    "midterm_percent": "21.3%",
-    "preboard1_marks": "17/80",
-    "preboard1_percent": "21.3%",
+    "midterm_marks": "18/80",
+    "midterm_percent": "22.5%",
+    "preboard1_marks": "18/80",
+    "preboard1_percent": "22.5%",
     "change_accuracy": "-1.2%",
     "change_calculated_from_percent": "0.0%",
     "midterm_weakest_chapters": [
@@ -20548,12 +20548,12 @@
   {
     "section": "Q",
     "student_name": "Atharv Gupta",
-    "midterm_marks": "29/80",
-    "midterm_percent": "36.3%",
+    "midterm_marks": "26.5/80",
+    "midterm_percent": "33.1%",
     "preboard1_marks": "26.5/80",
     "preboard1_percent": "33.1%",
     "change_accuracy": "-3.2%",
-    "change_calculated_from_percent": "-3.2%",
+    "change_calculated_from_percent": "0.0%",
     "midterm_weakest_chapters": [
       "Integrals",
       "Application of derivatives",
@@ -20602,13 +20602,13 @@
       "raw_values": {
         "left_card": "-3.2%",
         "top_right_button": "-3.2%",
-        "center_arrow_box": "-3.2%",
+        "center_arrow_box": "NA",
         "progress_report": "3.2%"
       },
       "normalized_values": {
         "left_card": "-3.2",
         "top_right_button": "-3.2",
-        "center_arrow_box": "-3.2",
+        "center_arrow_box": "NA",
         "progress_report": "+3.2"
       }
     }
@@ -20616,12 +20616,12 @@
   {
     "section": "Q",
     "student_name": "Nayonika Kapoor",
-    "midterm_marks": "29/80",
-    "midterm_percent": "36.3%",
+    "midterm_marks": "26.5/80",
+    "midterm_percent": "33.1%",
     "preboard1_marks": "26.5/80",
     "preboard1_percent": "33.1%",
     "change_accuracy": "-3.2%",
-    "change_calculated_from_percent": "-3.2%",
+    "change_calculated_from_percent": "0.0%",
     "midterm_weakest_chapters": [
       "Application of integrals",
       "Integrals",
@@ -20670,13 +20670,13 @@
       "raw_values": {
         "left_card": "-3.2%",
         "top_right_button": "-3.2%",
-        "center_arrow_box": "-3.2%",
+        "center_arrow_box": "NA",
         "progress_report": "3.2%"
       },
       "normalized_values": {
         "left_card": "-3.2",
         "top_right_button": "-3.2",
-        "center_arrow_box": "-3.2",
+        "center_arrow_box": "NA",
         "progress_report": "+3.2"
       }
     }
@@ -21092,12 +21092,12 @@
   {
     "section": "Q",
     "student_name": "Rahul Reddy Kesari",
-    "midterm_marks": "64/80",
-    "midterm_percent": "80%",
+    "midterm_marks": "40.5/80",
+    "midterm_percent": "50.6%",
     "preboard1_marks": "40.5/80",
     "preboard1_percent": "50.6%",
     "change_accuracy": "-29.4%",
-    "change_calculated_from_percent": "-29.4%",
+    "change_calculated_from_percent": "0.0%",
     "midterm_weakest_chapters": [
       "Continuity & differentiability",
       "Application of integrals",
@@ -21153,13 +21153,13 @@
       "raw_values": {
         "left_card": "-29.4%",
         "top_right_button": "-29.4%",
-        "center_arrow_box": "-29.4%",
+        "center_arrow_box": "NA",
         "progress_report": "29.4%"
       },
       "normalized_values": {
         "left_card": "-29.4",
         "top_right_button": "-29.4",
-        "center_arrow_box": "-29.4",
+        "center_arrow_box": "NA",
         "progress_report": "+29.4"
       }
     }
@@ -21167,12 +21167,12 @@
   {
     "section": "Q",
     "student_name": "S Hasini",
-    "midterm_marks": "61.5/80",
-    "midterm_percent": "76.9%",
+    "midterm_marks": "34.5/80",
+    "midterm_percent": "43.1%",
     "preboard1_marks": "34.5/80",
     "preboard1_percent": "43.1%",
     "change_accuracy": "-33.8%",
-    "change_calculated_from_percent": "-33.8%",
+    "change_calculated_from_percent": "0.0%",
     "midterm_weakest_chapters": [
       "Application of integrals",
       "Continuity & differentiability",
@@ -21214,13 +21214,13 @@
       "raw_values": {
         "left_card": "-33.8%",
         "top_right_button": "-33.8%",
-        "center_arrow_box": "-33.8%",
+        "center_arrow_box": "NA",
         "progress_report": "33.8%"
       },
       "normalized_values": {
         "left_card": "-33.8",
         "top_right_button": "-33.8",
-        "center_arrow_box": "-33.8",
+        "center_arrow_box": "NA",
         "progress_report": "+33.8"
       }
     }

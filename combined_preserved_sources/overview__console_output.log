@@ -1,0 +1,4325 @@
+
+══════════════════════════════════════════════════════════════════════
+  RUN 1/12 — SECTION C
+══════════════════════════════════════════════════════════════════════
+
+╔══════════════════════════════════════════════════════════════════════╗
+║   ClassLens – UI Test Suite v17.0                                   ║
+║   JS-first modal detection · JS student rows · badge text-content   ║
+║   Section: C   Started: 2026-06-01 17:10:53                          ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 1 – Login & Page Load
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-L-001] Login page loads
+         → https://classlens.inferentics.com/
+  ✅ [TC-L-002] Logo visible
+  ✅ [TC-L-003] Username / Password / Submit visible
+  ✅ [TC-L-004] Password masked
+  ✅ [TC-L-005] Login succeeds
+         → https://classlens.inferentics.com/
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 2 – Form Selection & Navigation
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-N-001] Dropdown 'Class'='12'
+  ✅ [TC-N-002] Dropdown 'Section'='C'
+  ✅ [TC-N-003] Dropdown 'Subject'='Maths'
+  ✅ [TC-N-004] Dropdown 'Exam'='Midterm'
+  ✅ [TC-N-005] Dropdown 'CompareLeft'='Midterm'
+  ✅ [TC-N-006] Dropdown 'CompareRight'='Preboard 1'
+  ✅ [TC-N-007] Enter → Dashboard
+         → https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1
+  ✅ [TC-N-008] Overview tab clicked
+  ✅ [TC-N-009] Page header visible
+         → Overview of Section 12 C
+  ✅ [TC-N-009a] Dashboard data loaded
+  ✅ [TC-N-010] Tab 'Overview' visible
+  ✅ [TC-N-011] Tab 'Chapters' visible
+  ✅ [TC-N-012] Tab 'Questions' visible
+  ✅ [TC-N-013] Tab 'Students' visible
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 3 – Exam Comparison Banner
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-EC-001] Exam Comparison heading
+         → Exam Comparison
+  ✅ [TC-EC-002] Sub-label 'Change in'
+         → Change in class average
+  ✅ [TC-EC-003] Midterm label present
+  ✅ [TC-EC-004] Preboard label present
+  ✅ [TC-EC-005] Left avg = 34.2%
+         → 34.2%
+  ✅ [TC-EC-006] Right avg = 0.0%
+         → 0.0%
+  ⚠️  [TC-EC-007] Trend badge
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – Reteach Chapters
+══════════════════════════════════════════════════════════════════════
+      ⚠ Could not find panel for 'Reteach' using bg='bg-blue-50'
+  ⚠️  [TC-RT-001] Chapter panel found
+         → Using body fallback
+  ⚠️  [TC-RT-002] Chapter badge
+         → Not found — will still attempt card extraction
+  ⚠️  [TC-RT-003] Instruction text
+         → Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Revise Thoroughly')]"}
+  (Session info: chrome=148.0.7778.179); For documenta
+      ⚠ Could not find panel for 'Reteach' using bg='bg-blue-50'
+
+    Found chapter overflow: '+3 more students'
+      ⚠ URL param 'modal=chapters' not detected in time
+  ⚠️  [TC-RT-OVF] Chapter overflow click
+         → Modal DOM not found after click
+      ⚠ Could not find panel for 'Reteach' using bg='bg-blue-50'
+  ℹ️  [TC-RT-004] 0 chapters in section
+         → Empty section
+
+  ─────────────────────────────────────────────────────────────────
+  RETEACH — SUMMARY
+  Badge: N/A (0 declared)
+  ─────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – Brushup Chapters
+══════════════════════════════════════════════════════════════════════
+      ⚠ Could not find panel for 'Brushup' using bg='FFF7E6'
+  ⚠️  [TC-BU-001] Chapter panel found
+         → Using body fallback
+  ⚠️  [TC-BU-002] Chapter badge
+         → Not found — will still attempt card extraction
+  ⚠️  [TC-BU-003] Instruction text
+         → Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Review Specific Concepts')]"}
+  (Session info: chrome=148.0.7778.179); For do
+      ⚠ Could not find panel for 'Brushup' using bg='FFF7E6'
+
+    Found chapter overflow: '+3 more students'
+      ⚠ URL param 'modal=chapters' not detected in time
+  ⚠️  [TC-BU-OVF] Chapter overflow click
+         → Modal DOM not found after click
+      ⚠ Could not find panel for 'Brushup' using bg='FFF7E6'
+  ℹ️  [TC-BU-004] 0 chapters in section
+         → Empty section
+
+  ─────────────────────────────────────────────────────────────────
+  BRUSHUP — SUMMARY
+  Badge: N/A (0 declared)
+  ─────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – On Track Chapters
+══════════════════════════════════════════════════════════════════════
+      ⚠ Could not find panel for 'On Track' using bg='bg-green-50'
+  ⚠️  [TC-OT-001] Chapter panel found
+         → Using body fallback
+  ⚠️  [TC-OT-002] Chapter badge
+         → Not found — will still attempt card extraction
+  ⚠️  [TC-OT-003] Instruction text
+         → Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Significant Improvement')]"}
+  (Session info: chrome=148.0.7778.179); For doc
+      ⚠ Could not find panel for 'On Track' using bg='bg-green-50'
+
+    Found chapter overflow: '+3 more students'
+      ⚠ URL param 'modal=chapters' not detected in time
+  ⚠️  [TC-OT-OVF] Chapter overflow click
+         → Modal DOM not found after click
+      ⚠ Could not find panel for 'On Track' using bg='bg-green-50'
+  ℹ️  [TC-OT-004] 0 chapters in section
+         → Empty section
+
+  ─────────────────────────────────────────────────────────────────
+  ON TRACK — SUMMARY
+  Badge: N/A (0 declared)
+  ─────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 7 – Highlighted Students
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-HS-000] Highlighted Students heading
+         → Highlighted Students
+  ✅ [TC-HS-SUB] Sub-text visible
+         → Students classified based on their preboard scores.
+
+══════════════════════════════════════════════════════════════════════
+    Weak
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Weak
+  ✅ [TC-HS-W-001] 'Weak' heading visible
+         → Weak
+  ✅ [TC-HS-W-002] Student count badge
+         → '6 students' → 6 declared
+
+    Scraping visible student rows…
+      Found 3 student row containers
+    ✅ 3 visible students:
+      #1: Ameera Faixal Salim — 0.0%
+  ✅ [TC-HS-W-S01] Visible #1: Ameera Faixal Salim
+         → Score: 0.0%
+      #2: Riya Choudhary Dabbu — 16.9%
+  ✅ [TC-HS-W-S02] Visible #2: Riya Choudhary Dabbu
+         → Score: 16.9%
+      #3: Ishita Jigneshkumr Panchal — 23.8%
+  ✅ [TC-HS-W-S03] Visible #3: Ishita Jigneshkumr Panchal
+         → Score: 23.8%
+
+    Looking for '+N more students' overflow button…
+  ✅ [TC-HS-W-OVF-001] Overflow button found
+         → '+3 more students'
+    ✅ Found: '+3 more students'
+      URL: modal=students&modalItem=Weak
+      Current URL: https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1&screen=overview&modal=students&modalItem=Weak
+  ✅ [TC-HS-W-MODAL-001] Student modal read
+         → 6 students captured
+  ✅ [TC-HS-W-M01] Modal #1: Ameera Faixal Salim
+         → Score:0.0%  Class 12C
+  ✅ [TC-HS-W-M02] Modal #2: Riya Choudhary Dabbu
+         → Score:16.9%  Class 12C
+  ✅ [TC-HS-W-M03] Modal #3: Ishita Jigneshkumr Panchal
+         → Score:23.8%  Class 12C
+  ✅ [TC-HS-W-M04] Modal #4: Khiya Chhajed
+         → Score:23.8%  Class 12C
+  ✅ [TC-HS-W-M05] Modal #5: Bhavye Garg
+         → Score:33.1%  Class 12C
+  ✅ [TC-HS-W-M06] Modal #6: Shaurya Pandey
+         → Score:33.1%  Class 12C
+
+      6 students read from modal:
+        # 1: Ameera Faixal Salim                          0.0%  (Class 12C)
+        # 2: Riya Choudhary Dabbu                        16.9%  (Class 12C)
+        # 3: Ishita Jigneshkumr Panchal                  23.8%  (Class 12C)
+        # 4: Khiya Chhajed                               23.8%  (Class 12C)
+        # 5: Bhavye Garg                                 33.1%  (Class 12C)
+        # 6: Shaurya Pandey                              33.1%  (Class 12C)
+  ✅ [TC-HS-W-VAL] Count check: declared=6, captured=6
+         → 6/6
+      Modal closed.
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  WEAK — 6 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    Ameera Faixal Salim                        Class 12C        0.0%
+  2    Riya Choudhary Dabbu                       Class 12C       16.9%
+  3    Ishita Jigneshkumr Panchal                 Class 12C       23.8%
+  4    Khiya Chhajed                              Class 12C       23.8%
+  5    Bhavye Garg                                Class 12C       33.1%
+  6    Shaurya Pandey                             Class 12C       33.1%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+    Lagging
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Lagging
+  ✅ [TC-HS-L-001] 'Lagging' heading visible
+         → Lagging
+  ✅ [TC-HS-L-002] Student count badge
+         → '4 students' → 4 declared
+
+    Scraping visible student rows…
+      Found 3 student row containers
+    ✅ 3 visible students:
+      #1: Dion Dsilva — 41.3%
+  ✅ [TC-HS-L-S01] Visible #1: Dion Dsilva
+         → Score: 41.3%
+      #2: Charishma Sukumar — 46.3%
+  ✅ [TC-HS-L-S02] Visible #2: Charishma Sukumar
+         → Score: 46.3%
+      #3: Shaurya Tiwari — 46.3%
+  ✅ [TC-HS-L-S03] Visible #3: Shaurya Tiwari
+         → Score: 46.3%
+
+    Looking for '+N more students' overflow button…
+  ✅ [TC-HS-L-OVF-001] Overflow button found
+         → '+1 more students'
+    ✅ Found: '+1 more students'
+      URL: modal=students&modalItem=Lagging
+      Current URL: https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1&screen=overview&modal=students&modalItem=Lagging
+  ✅ [TC-HS-L-MODAL-001] Student modal read
+         → 4 students captured
+  ✅ [TC-HS-L-M01] Modal #1: Dion Dsilva
+         → Score:41.3%  Class 12C
+  ✅ [TC-HS-L-M02] Modal #2: Charishma Sukumar
+         → Score:46.3%  Class 12C
+  ✅ [TC-HS-L-M03] Modal #3: Shaurya Tiwari
+         → Score:46.3%  Class 12C
+  ✅ [TC-HS-L-M04] Modal #4: Mannava Ronit
+         → Score:48.8%  Class 12C
+
+      4 students read from modal:
+        # 1: Dion Dsilva                                 41.3%  (Class 12C)
+        # 2: Charishma Sukumar                           46.3%  (Class 12C)
+        # 3: Shaurya Tiwari                              46.3%  (Class 12C)
+        # 4: Mannava Ronit                               48.8%  (Class 12C)
+  ✅ [TC-HS-L-VAL] Count check: declared=4, captured=4
+         → 4/4
+      Modal closed.
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  LAGGING — 4 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    Dion Dsilva                                Class 12C       41.3%
+  2    Charishma Sukumar                          Class 12C       46.3%
+  3    Shaurya Tiwari                             Class 12C       46.3%
+  4    Mannava Ronit                              Class 12C       48.8%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+    Performing Well
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Performing Well
+  ✅ [TC-HS-P-001] 'Performing Well' heading visible
+         → Performing Well
+  ✅ [TC-HS-P-002] Student count badge
+         → '1 students' → 1 declared
+
+    Scraping visible student rows…
+      Found 1 student row containers
+    ✅ 1 visible students:
+      #1: Ahana Sharma — 63.1%
+  ✅ [TC-HS-P-S01] Visible #1: Ahana Sharma
+         → Score: 63.1%
+
+    Looking for '+N more students' overflow button…
+  ℹ️  [TC-HS-P-OVF-001] Overflow button
+         → Not found — all students visible
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  PERFORMING WELL — 1 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    Ahana Sharma                                               63.1%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  FINAL SUMMARY — SECTION C
+══════════════════════════════════════════════════════════════════════
+  ✅  Passed   : 56
+  ❌  Failed   : 0
+  ⚠️   Warnings : 13
+  📊  Pass Rate: 81.2%  (56/69)
+
+══════════════════════════════════════════════════════════════════════
+  RUN 2/12 — SECTION H
+══════════════════════════════════════════════════════════════════════
+
+╔══════════════════════════════════════════════════════════════════════╗
+║   ClassLens – UI Test Suite v17.0                                   ║
+║   JS-first modal detection · JS student rows · badge text-content   ║
+║   Section: H   Started: 2026-06-01 17:12:38                          ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 1 – Login & Page Load
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-L-001] Login page loads
+         → https://classlens.inferentics.com/
+  ✅ [TC-L-002] Logo visible
+  ✅ [TC-L-003] Username / Password / Submit visible
+  ✅ [TC-L-004] Password masked
+  ✅ [TC-L-005] Login succeeds
+         → https://classlens.inferentics.com/
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 2 – Form Selection & Navigation
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-N-001] Dropdown 'Class'='12'
+  ✅ [TC-N-002] Dropdown 'Section'='H'
+  ✅ [TC-N-003] Dropdown 'Subject'='Maths'
+  ✅ [TC-N-004] Dropdown 'Exam'='Midterm'
+  ✅ [TC-N-005] Dropdown 'CompareLeft'='Midterm'
+  ✅ [TC-N-006] Dropdown 'CompareRight'='Preboard 1'
+  ✅ [TC-N-007] Enter → Dashboard
+         → https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1
+  ✅ [TC-N-008] Overview tab clicked
+  ✅ [TC-N-009] Page header visible
+         → Overview of Section 12 H
+  ✅ [TC-N-009a] Dashboard data loaded
+  ✅ [TC-N-010] Tab 'Overview' visible
+  ✅ [TC-N-011] Tab 'Chapters' visible
+  ✅ [TC-N-012] Tab 'Questions' visible
+  ✅ [TC-N-013] Tab 'Students' visible
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 3 – Exam Comparison Banner
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-EC-001] Exam Comparison heading
+         → Exam Comparison
+  ✅ [TC-EC-002] Sub-label 'Change in'
+         → Change in class average
+  ✅ [TC-EC-003] Midterm label present
+  ✅ [TC-EC-004] Preboard label present
+  ✅ [TC-EC-005] Left avg = 75.7%
+         → 75.7%
+  ✅ [TC-EC-006] Right avg = 75.8%
+         → 75.8%
+  ✅ [TC-EC-007] Trend: '+0.1 points improve'
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – Reteach Chapters
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-RT-001] Chapter panel found
+         → bg=bg-blue-50
+  ⚠️  [TC-RT-002] Chapter badge
+         → Not found — will still attempt card extraction
+  ✅ [TC-RT-003] Instruction 'Revise Thoroughly'
+         → Revise Thoroughly
+  ℹ️  [TC-RT-004] Empty state — No chapters
+         → No chapters available
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – Brushup Chapters
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-BU-001] Chapter panel found
+         → bg=FFF7E6
+  ⚠️  [TC-BU-002] Chapter badge
+         → Not found — will still attempt card extraction
+  ✅ [TC-BU-003] Instruction 'Review Specific Concepts'
+         → Review Specific Concepts
+  ℹ️  [TC-BU-004] Empty state — No chapters
+         → No chapters available
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – On Track Chapters
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-OT-001] Chapter panel found
+         → bg=bg-green-50
+  ✅ [TC-OT-002] Chapter badge
+         → '9 chapters' → 9 chapters declared
+  ✅ [TC-OT-003] Instruction 'Significant Improvement'
+         → Significant Improvement
+
+    Found chapter overflow: '+5 more chapters'
+      URL updated: modal=chapters&modalItem=OnTrack
+      Modal subheading: ''
+  ✅ [TC-OT-OVF] Chapter overflow → modal opened
+         → '+5 more chapters' → 8 chapters
+        # 1: Integrals
+  ✅ [TC-OT-MCH01] Modal chapter #1: Integrals
+        # 2: Linear Programming
+  ✅ [TC-OT-MCH02] Modal chapter #2: Linear Programming
+        # 3: Continuity & Differentiability
+  ✅ [TC-OT-MCH03] Modal chapter #3: Continuity & Differentiability
+        # 4: Inverse Trigonometric Functions
+  ✅ [TC-OT-MCH04] Modal chapter #4: Inverse Trigonometric Functions
+        # 5: Application of Derivatives
+  ✅ [TC-OT-MCH05] Modal chapter #5: Application of Derivatives
+        # 6: Application of Integrals
+  ✅ [TC-OT-MCH06] Modal chapter #6: Application of Integrals
+        # 7: Relations & Functions
+  ✅ [TC-OT-MCH07] Modal chapter #7: Relations & Functions
+        # 8: Determinants
+  ✅ [TC-OT-MCH08] Modal chapter #8: Determinants
+      Modal closed.
+      Found 4 chapter name elements
+
+      Processing: 'Integrals'
+        ✗ Expansion timeout
+
+      Processing: 'Linear Programming'
+        ✗ Expansion timeout
+
+      Processing: 'Continuity & Differentiability'
+        ✗ Expansion timeout
+
+      Processing: 'Inverse Trigonometric Functions'
+        ✗ Expansion timeout
+  ✅ [TC-OT-004] Chapter cards extracted
+         → 4 cards: ['Integrals', 'Linear Programming', 'Continuity & Differentiability', 'Inverse Trigonometric Functions']
+  ✅ [TC-OT-C01] Card 'Integrals' expanded
+  ⚠️  [TC-OT-C01-AVG]   Chapter Avg = 'N/A'
+  ⚠️  [TC-OT-C01-WT]   Avg Weightage = 'N/A'
+  ⚠️  [TC-OT-C01-BTN]   View Chapter Details button
+  ✅ [TC-OT-C02] Card 'Linear Programming' expanded
+  ⚠️  [TC-OT-C02-AVG]   Chapter Avg = 'N/A'
+  ⚠️  [TC-OT-C02-WT]   Avg Weightage = 'N/A'
+  ⚠️  [TC-OT-C02-BTN]   View Chapter Details button
+  ✅ [TC-OT-C03] Card 'Continuity & Differentiability' expanded
+  ⚠️  [TC-OT-C03-AVG]   Chapter Avg = 'N/A'
+  ⚠️  [TC-OT-C03-WT]   Avg Weightage = 'N/A'
+  ⚠️  [TC-OT-C03-BTN]   View Chapter Details button
+  ✅ [TC-OT-C04] Card 'Inverse Trigonometric Functions' expanded
+  ⚠️  [TC-OT-C04-AVG]   Chapter Avg = 'N/A'
+  ⚠️  [TC-OT-C04-WT]   Avg Weightage = 'N/A'
+  ⚠️  [TC-OT-C04-BTN]   View Chapter Details button
+
+  ─────────────────────────────────────────────────────────────────
+  ON TRACK — SUMMARY
+  Badge: 9 chapters (9 declared)
+  Modal chapters (8):
+    #1   Integrals
+    #2   Linear Programming
+    #3   Continuity & Differentiability
+    #4   Inverse Trigonometric Functions
+    #5   Application of Derivatives
+    #6   Application of Integrals
+    #7   Relations & Functions
+    #8   Determinants
+  Inline cards (4):
+    Integrals                                Avg:      N/A  Wt:        N/A
+    Linear Programming                       Avg:      N/A  Wt:        N/A
+    Continuity & Differentiability           Avg:      N/A  Wt:        N/A
+    Inverse Trigonometric Functions          Avg:      N/A  Wt:        N/A
+  ─────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 7 – Highlighted Students
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-HS-000] Highlighted Students heading
+         → Highlighted Students
+  ✅ [TC-HS-SUB] Sub-text visible
+         → Students classified based on their preboard scores.
+
+══════════════════════════════════════════════════════════════════════
+    Weak
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Weak
+  ✅ [TC-HS-W-001] 'Weak' heading visible
+         → Weak
+  ✅ [TC-HS-W-002] Student count badge
+         → '0 students' → 0 declared
+  ℹ️  [TC-HS-W-EMPTY] Empty state detected
+         → No students in this category yet
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  WEAK — 0 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  ⚠️  No students captured
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+    Lagging
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Lagging
+  ✅ [TC-HS-L-001] 'Lagging' heading visible
+         → Lagging
+  ✅ [TC-HS-L-002] Student count badge
+         → '1 students' → 1 declared
+
+    Scraping visible student rows…
+      Found 1 student row containers
+    ✅ 1 visible students:
+      #1: Akshat Narayan — 42.5%
+  ✅ [TC-HS-L-S01] Visible #1: Akshat Narayan
+         → Score: 42.5%
+
+    Looking for '+N more students' overflow button…
+  ℹ️  [TC-HS-L-OVF-001] Overflow button
+         → Not found — all students visible
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  LAGGING — 1 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    Akshat Narayan                                             42.5%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+    Performing Well
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Performing Well
+  ✅ [TC-HS-P-001] 'Performing Well' heading visible
+         → Performing Well
+  ✅ [TC-HS-P-002] Student count badge
+         → '33 students' → 33 declared
+
+    Scraping visible student rows…
+      Found 3 student row containers
+    ✅ 3 visible students:
+      #1: A B Keerti — 98.8%
+  ✅ [TC-HS-P-S01] Visible #1: A B Keerti
+         → Score: 98.8%
+      #2: Riddhima Bhaskar — 93.8%
+  ✅ [TC-HS-P-S02] Visible #2: Riddhima Bhaskar
+         → Score: 93.8%
+      #3: Samyukta Santhosh — 91.9%
+  ✅ [TC-HS-P-S03] Visible #3: Samyukta Santhosh
+         → Score: 91.9%
+
+    Looking for '+N more students' overflow button…
+  ✅ [TC-HS-P-OVF-001] Overflow button found
+         → '+30 more students'
+    ✅ Found: '+30 more students'
+      ⚠ URL param not detected in time — current URL: https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1&screen=overview&modal=chapters&modalItem=OnTrack
+      Current URL: https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1&screen=overview&modal=chapters&modalItem=OnTrack
+      Trying partial heading match for 'Performing Well'…
+  ⚠️  [TC-HS-P-MODAL-001] Student modal
+         → Modal DOM not found
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  PERFORMING WELL — 3 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    A B Keerti                                                 98.8%
+  2    Riddhima Bhaskar                                           93.8%
+  3    Samyukta Santhosh                                          91.9%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  FINAL SUMMARY — SECTION H
+══════════════════════════════════════════════════════════════════════
+  ✅  Passed   : 60
+  ❌  Failed   : 0
+  ⚠️   Warnings : 15
+  📊  Pass Rate: 80.0%  (60/75)
+
+══════════════════════════════════════════════════════════════════════
+  RUN 3/12 — SECTION I
+══════════════════════════════════════════════════════════════════════
+
+╔══════════════════════════════════════════════════════════════════════╗
+║   ClassLens – UI Test Suite v17.0                                   ║
+║   JS-first modal detection · JS student rows · badge text-content   ║
+║   Section: I   Started: 2026-06-01 17:14:12                          ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 1 – Login & Page Load
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-L-001] Login page loads
+         → https://classlens.inferentics.com/
+  ✅ [TC-L-002] Logo visible
+  ✅ [TC-L-003] Username / Password / Submit visible
+  ✅ [TC-L-004] Password masked
+  ✅ [TC-L-005] Login succeeds
+         → https://classlens.inferentics.com/
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 2 – Form Selection & Navigation
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-N-001] Dropdown 'Class'='12'
+  ✅ [TC-N-002] Dropdown 'Section'='I'
+  ✅ [TC-N-003] Dropdown 'Subject'='Maths'
+  ✅ [TC-N-004] Dropdown 'Exam'='Midterm'
+  ✅ [TC-N-005] Dropdown 'CompareLeft'='Midterm'
+  ✅ [TC-N-006] Dropdown 'CompareRight'='Preboard 1'
+  ✅ [TC-N-007] Enter → Dashboard
+         → https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1
+  ✅ [TC-N-008] Overview tab clicked
+  ✅ [TC-N-009] Page header visible
+         → Overview of Section 12 I
+  ✅ [TC-N-009a] Dashboard data loaded
+  ✅ [TC-N-010] Tab 'Overview' visible
+  ✅ [TC-N-011] Tab 'Chapters' visible
+  ✅ [TC-N-012] Tab 'Questions' visible
+  ✅ [TC-N-013] Tab 'Students' visible
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 3 – Exam Comparison Banner
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-EC-001] Exam Comparison heading
+         → Exam Comparison
+  ✅ [TC-EC-002] Sub-label 'Change in'
+         → Change in class average
+  ✅ [TC-EC-003] Midterm label present
+  ✅ [TC-EC-004] Preboard label present
+  ✅ [TC-EC-005] Left avg = 43.6%
+         → 43.6%
+  ✅ [TC-EC-006] Right avg = 47.8%
+         → 47.8%
+  ✅ [TC-EC-007] Trend: '+4.2 points improve'
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – Reteach Chapters
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-RT-001] Chapter panel found
+         → bg=bg-blue-50
+  ✅ [TC-RT-002] Chapter badge
+         → '1 chapters' → 1 chapters declared
+  ✅ [TC-RT-003] Instruction 'Revise Thoroughly'
+         → Revise Thoroughly
+  ℹ️  [TC-RT-OVF] No chapter overflow button
+         → All chapters visible inline
+      Found 1 chapter name elements
+
+      Processing: 'Integrals'
+        Avg: +4.8%  Wt: 35/ 80  Btn: True
+  ✅ [TC-RT-004] Chapter cards extracted
+         → 1 cards: ['Integrals']
+  ✅ [TC-RT-C01] Card 'Integrals' expanded
+  ✅ [TC-RT-C01-AVG]   Chapter Avg = '+4.8%'
+  ✅ [TC-RT-C01-WT]   Avg Weightage = '35/ 80'
+  ✅ [TC-RT-C01-BTN]   View Chapter Details button
+
+  ─────────────────────────────────────────────────────────────────
+  RETEACH — SUMMARY
+  Badge: 1 chapters (1 declared)
+  Inline cards (1):
+    Integrals                                Avg:    +4.8%  Wt:     35/ 80
+  ─────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – Brushup Chapters
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-BU-001] Chapter panel found
+         → bg=FFF7E6
+  ✅ [TC-BU-002] Chapter badge
+         → '2 chapters' → 2 chapters declared
+  ✅ [TC-BU-003] Instruction 'Review Specific Concepts'
+         → Review Specific Concepts
+  ℹ️  [TC-BU-OVF] No chapter overflow button
+         → All chapters visible inline
+      Found 2 chapter name elements
+
+      Processing: 'Matrices'
+        Avg: -11.6%  Wt: 10/ 80  Btn: True
+
+      Processing: 'Application Of Derivatives'
+        Avg: +19.8%  Wt: 35/ 80  Btn: True
+  ✅ [TC-BU-004] Chapter cards extracted
+         → 2 cards: ['Matrices', 'Application Of Derivatives']
+  ✅ [TC-BU-C01] Card 'Matrices' expanded
+  ✅ [TC-BU-C01-AVG]   Chapter Avg = '-11.6%'
+  ✅ [TC-BU-C01-WT]   Avg Weightage = '10/ 80'
+  ✅ [TC-BU-C01-BTN]   View Chapter Details button
+  ✅ [TC-BU-C02] Card 'Application Of Derivatives' expanded
+  ✅ [TC-BU-C02-AVG]   Chapter Avg = '+19.8%'
+  ✅ [TC-BU-C02-WT]   Avg Weightage = '35/ 80'
+  ✅ [TC-BU-C02-BTN]   View Chapter Details button
+
+  ─────────────────────────────────────────────────────────────────
+  BRUSHUP — SUMMARY
+  Badge: 2 chapters (2 declared)
+  Inline cards (2):
+    Matrices                                 Avg:   -11.6%  Wt:     10/ 80
+    Application Of Derivatives               Avg:   +19.8%  Wt:     35/ 80
+  ─────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – On Track Chapters
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-OT-001] Chapter panel found
+         → bg=bg-green-50
+  ✅ [TC-OT-002] Chapter badge
+         → '6 chapters' → 6 chapters declared
+  ✅ [TC-OT-003] Instruction 'Significant Improvement'
+         → Significant Improvement
+
+    Found chapter overflow: '+2 more chapters'
+      URL updated: modal=chapters&modalItem=OnTrack
+      Modal subheading: '6 chapters in this category'
+  ✅ [TC-OT-OVF] Chapter overflow → modal opened
+         → '+2 more chapters' → 6 chapters
+        # 1: Determinants
+  ✅ [TC-OT-MCH01] Modal chapter #1: Determinants
+        # 2: Continuity & Differentiability
+  ✅ [TC-OT-MCH02] Modal chapter #2: Continuity & Differentiability
+        # 3: Relations & Functions
+  ✅ [TC-OT-MCH03] Modal chapter #3: Relations & Functions
+        # 4: Application of Integrals
+  ✅ [TC-OT-MCH04] Modal chapter #4: Application of Integrals
+        # 5: Linear Programming
+  ✅ [TC-OT-MCH05] Modal chapter #5: Linear Programming
+        # 6: Inverse Trigonometric Functions
+  ✅ [TC-OT-MCH06] Modal chapter #6: Inverse Trigonometric Functions
+      Modal closed.
+      Found 4 chapter name elements
+
+      Processing: 'Determinants'
+        Avg: +20%  Wt: 10/ 80  Btn: True
+
+      Processing: 'Continuity & Differentiability'
+        Avg: +10.6%  Wt: 35/ 80  Btn: True
+
+      Processing: 'Relations & Functions'
+        Avg: +9.5%  Wt: 8/ 80  Btn: True
+
+      Processing: 'Application Of Integrals'
+        Avg: +2.8%  Wt: 35/ 80  Btn: True
+  ✅ [TC-OT-004] Chapter cards extracted
+         → 4 cards: ['Determinants', 'Continuity & Differentiability', 'Relations & Functions', 'Application Of Integrals']
+  ✅ [TC-OT-C01] Card 'Determinants' expanded
+  ✅ [TC-OT-C01-AVG]   Chapter Avg = '+20%'
+  ✅ [TC-OT-C01-WT]   Avg Weightage = '10/ 80'
+  ✅ [TC-OT-C01-BTN]   View Chapter Details button
+  ✅ [TC-OT-C02] Card 'Continuity & Differentiability' expanded
+  ✅ [TC-OT-C02-AVG]   Chapter Avg = '+10.6%'
+  ✅ [TC-OT-C02-WT]   Avg Weightage = '35/ 80'
+  ✅ [TC-OT-C02-BTN]   View Chapter Details button
+  ✅ [TC-OT-C03] Card 'Relations & Functions' expanded
+  ✅ [TC-OT-C03-AVG]   Chapter Avg = '+9.5%'
+  ✅ [TC-OT-C03-WT]   Avg Weightage = '8/ 80'
+  ✅ [TC-OT-C03-BTN]   View Chapter Details button
+  ✅ [TC-OT-C04] Card 'Application Of Integrals' expanded
+  ✅ [TC-OT-C04-AVG]   Chapter Avg = '+2.8%'
+  ✅ [TC-OT-C04-WT]   Avg Weightage = '35/ 80'
+  ✅ [TC-OT-C04-BTN]   View Chapter Details button
+
+  ─────────────────────────────────────────────────────────────────
+  ON TRACK — SUMMARY
+  Badge: 6 chapters (6 declared)
+  Modal chapters (6):
+    #1   Determinants
+    #2   Continuity & Differentiability
+    #3   Relations & Functions
+    #4   Application of Integrals
+    #5   Linear Programming
+    #6   Inverse Trigonometric Functions
+  Inline cards (4):
+    Determinants                             Avg:     +20%  Wt:     10/ 80
+    Continuity & Differentiability           Avg:   +10.6%  Wt:     35/ 80
+    Relations & Functions                    Avg:    +9.5%  Wt:      8/ 80
+    Application Of Integrals                 Avg:    +2.8%  Wt:     35/ 80
+  ─────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 7 – Highlighted Students
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-HS-000] Highlighted Students heading
+         → Highlighted Students
+  ✅ [TC-HS-SUB] Sub-text visible
+         → Students classified based on their preboard scores.
+
+══════════════════════════════════════════════════════════════════════
+    Weak
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Weak
+  ✅ [TC-HS-W-001] 'Weak' heading visible
+         → Weak
+  ✅ [TC-HS-W-002] Student count badge
+         → '5 students' → 5 declared
+
+    Scraping visible student rows…
+      Found 3 student row containers
+    ✅ 3 visible students:
+      #1: Juana Jimmy Puthenparambil — 21.3%
+  ✅ [TC-HS-W-S01] Visible #1: Juana Jimmy Puthenparambil
+         → Score: 21.3%
+      #2: Janhavi Rajeev Nair — 24.4%
+  ✅ [TC-HS-W-S02] Visible #2: Janhavi Rajeev Nair
+         → Score: 24.4%
+      #3: Trisha Bhowmick — 25.6%
+  ✅ [TC-HS-W-S03] Visible #3: Trisha Bhowmick
+         → Score: 25.6%
+
+    Looking for '+N more students' overflow button…
+  ✅ [TC-HS-W-OVF-001] Overflow button found
+         → '+2 more students'
+    ✅ Found: '+2 more students'
+      URL: modal=students&modalItem=Weak
+      Current URL: https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1&screen=overview&modal=students&modalItem=Weak
+  ✅ [TC-HS-W-MODAL-001] Student modal read
+         → 5 students captured
+  ✅ [TC-HS-W-M01] Modal #1: Juana Jimmy Puthenparambil
+         → Score:21.3%  Class 12I
+  ✅ [TC-HS-W-M02] Modal #2: Janhavi Rajeev Nair
+         → Score:24.4%  Class 12I
+  ✅ [TC-HS-W-M03] Modal #3: Trisha Bhowmick
+         → Score:25.6%  Class 12I
+  ✅ [TC-HS-W-M04] Modal #4: Geetika Santoshi Suda
+         → Score:25.6%  Class 12I
+  ✅ [TC-HS-W-M05] Modal #5: Karpaga Varshini A I
+         → Score:33.8%  Class 12I
+
+      5 students read from modal:
+        # 1: Juana Jimmy Puthenparambil                  21.3%  (Class 12I)
+        # 2: Janhavi Rajeev Nair                         24.4%  (Class 12I)
+        # 3: Trisha Bhowmick                             25.6%  (Class 12I)
+        # 4: Geetika Santoshi Suda                       25.6%  (Class 12I)
+        # 5: Karpaga Varshini A I                        33.8%  (Class 12I)
+  ✅ [TC-HS-W-VAL] Count check: declared=5, captured=5
+         → 5/5
+      Modal closed.
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  WEAK — 5 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    Juana Jimmy Puthenparambil                 Class 12I       21.3%
+  2    Janhavi Rajeev Nair                        Class 12I       24.4%
+  3    Trisha Bhowmick                            Class 12I       25.6%
+  4    Geetika Santoshi Suda                      Class 12I       25.6%
+  5    Karpaga Varshini A I                       Class 12I       33.8%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+    Lagging
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Lagging
+  ✅ [TC-HS-L-001] 'Lagging' heading visible
+         → Lagging
+  ✅ [TC-HS-L-002] Student count badge
+         → '7 students' → 7 declared
+
+    Scraping visible student rows…
+      Found 3 student row containers
+    ✅ 3 visible students:
+      #1: M R Ashwin — 35.6%
+  ✅ [TC-HS-L-S01] Visible #1: M R Ashwin
+         → Score: 35.6%
+      #2: Nilaksh Singhvi — 36.3%
+  ✅ [TC-HS-L-S02] Visible #2: Nilaksh Singhvi
+         → Score: 36.3%
+      #3: Swapnil Neogi — 37.5%
+  ✅ [TC-HS-L-S03] Visible #3: Swapnil Neogi
+         → Score: 37.5%
+
+    Looking for '+N more students' overflow button…
+  ✅ [TC-HS-L-OVF-001] Overflow button found
+         → '+4 more students'
+    ✅ Found: '+4 more students'
+      URL: modal=students&modalItem=Lagging
+      Current URL: https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1&screen=overview&modal=students&modalItem=Lagging
+  ✅ [TC-HS-L-MODAL-001] Student modal read
+         → 7 students captured
+  ✅ [TC-HS-L-M01] Modal #1: M R Ashwin
+         → Score:35.6%  Class 12I
+  ✅ [TC-HS-L-M02] Modal #2: Nilaksh Singhvi
+         → Score:36.3%  Class 12I
+  ✅ [TC-HS-L-M03] Modal #3: Swapnil Neogi
+         → Score:37.5%  Class 12I
+  ✅ [TC-HS-L-M04] Modal #4: Manideepika Vakkalanka
+         → Score:39.4%  Class 12I
+  ✅ [TC-HS-L-M05] Modal #5: Davis Joe
+         → Score:43.1%  Class 12I
+  ✅ [TC-HS-L-M06] Modal #6: Dhairya Agrawal
+         → Score:44.4%  Class 12I
+  ✅ [TC-HS-L-M07] Modal #7: Venkata Sarayu Pydimarri
+         → Score:45.6%  Class 12I
+
+      7 students read from modal:
+        # 1: M R Ashwin                                  35.6%  (Class 12I)
+        # 2: Nilaksh Singhvi                             36.3%  (Class 12I)
+        # 3: Swapnil Neogi                               37.5%  (Class 12I)
+        # 4: Manideepika Vakkalanka                      39.4%  (Class 12I)
+        # 5: Davis Joe                                   43.1%  (Class 12I)
+        # 6: Dhairya Agrawal                             44.4%  (Class 12I)
+        # 7: Venkata Sarayu Pydimarri                    45.6%  (Class 12I)
+  ✅ [TC-HS-L-VAL] Count check: declared=7, captured=7
+         → 7/7
+      Modal closed.
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  LAGGING — 7 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    M R Ashwin                                 Class 12I       35.6%
+  2    Nilaksh Singhvi                            Class 12I       36.3%
+  3    Swapnil Neogi                              Class 12I       37.5%
+  4    Manideepika Vakkalanka                     Class 12I       39.4%
+  5    Davis Joe                                  Class 12I       43.1%
+  6    Dhairya Agrawal                            Class 12I       44.4%
+  7    Venkata Sarayu Pydimarri                   Class 12I       45.6%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+    Performing Well
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Performing Well
+  ✅ [TC-HS-P-001] 'Performing Well' heading visible
+         → Performing Well
+  ✅ [TC-HS-P-002] Student count badge
+         → '7 students' → 7 declared
+
+    Scraping visible student rows…
+      Found 3 student row containers
+    ✅ 3 visible students:
+      #1: Dhruv Nema — 82.5%
+  ✅ [TC-HS-P-S01] Visible #1: Dhruv Nema
+         → Score: 82.5%
+      #2: Sam Augustine Mathew — 78.8%
+  ✅ [TC-HS-P-S02] Visible #2: Sam Augustine Mathew
+         → Score: 78.8%
+      #3: Varunkumar Karthikeyan — 76.9%
+  ✅ [TC-HS-P-S03] Visible #3: Varunkumar Karthikeyan
+         → Score: 76.9%
+
+    Looking for '+N more students' overflow button…
+  ✅ [TC-HS-P-OVF-001] Overflow button found
+         → '+4 more students'
+    ✅ Found: '+4 more students'
+      URL: modal=students&modalItem=Performing_Well
+      Current URL: https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1&screen=overview&modal=students&modalItem=Lagging
+      Trying partial heading match for 'Performing Well'…
+  ⚠️  [TC-HS-P-MODAL-001] Student modal
+         → Modal DOM not found
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  PERFORMING WELL — 3 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    Dhruv Nema                                                 82.5%
+  2    Sam Augustine Mathew                                       78.8%
+  3    Varunkumar Karthikeyan                                     76.9%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  FINAL SUMMARY — SECTION I
+══════════════════════════════════════════════════════════════════════
+  ✅  Passed   : 109
+  ❌  Failed   : 0
+  ⚠️   Warnings : 1
+  📊  Pass Rate: 99.1%  (109/110)
+
+══════════════════════════════════════════════════════════════════════
+  RUN 4/12 — SECTION J
+══════════════════════════════════════════════════════════════════════
+
+╔══════════════════════════════════════════════════════════════════════╗
+║   ClassLens – UI Test Suite v17.0                                   ║
+║   JS-first modal detection · JS student rows · badge text-content   ║
+║   Section: J   Started: 2026-06-01 17:15:18                          ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 1 – Login & Page Load
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-L-001] Login page loads
+         → https://classlens.inferentics.com/
+  ✅ [TC-L-002] Logo visible
+  ✅ [TC-L-003] Username / Password / Submit visible
+  ✅ [TC-L-004] Password masked
+  ✅ [TC-L-005] Login succeeds
+         → https://classlens.inferentics.com/
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 2 – Form Selection & Navigation
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-N-001] Dropdown 'Class'='12'
+  ✅ [TC-N-002] Dropdown 'Section'='J'
+  ✅ [TC-N-003] Dropdown 'Subject'='Maths'
+  ✅ [TC-N-004] Dropdown 'Exam'='Midterm'
+  ✅ [TC-N-005] Dropdown 'CompareLeft'='Midterm'
+  ✅ [TC-N-006] Dropdown 'CompareRight'='Preboard 1'
+  ✅ [TC-N-007] Enter → Dashboard
+         → https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1
+  ✅ [TC-N-008] Overview tab clicked
+  ✅ [TC-N-009] Page header visible
+         → Overview of Section 12 J
+  ✅ [TC-N-009a] Dashboard data loaded
+  ✅ [TC-N-010] Tab 'Overview' visible
+  ✅ [TC-N-011] Tab 'Chapters' visible
+  ✅ [TC-N-012] Tab 'Questions' visible
+  ✅ [TC-N-013] Tab 'Students' visible
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 3 – Exam Comparison Banner
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-EC-001] Exam Comparison heading
+         → Exam Comparison
+  ✅ [TC-EC-002] Sub-label 'Change in'
+         → Change in class average
+  ✅ [TC-EC-003] Midterm label present
+  ✅ [TC-EC-004] Preboard label present
+  ✅ [TC-EC-005] Left avg = 49.1%
+         → 49.1%
+  ✅ [TC-EC-006] Right avg = 44.4%
+         → 44.4%
+  ✅ [TC-EC-007] Trend: '-4.7 points decline'
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – Reteach Chapters
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-RT-001] Chapter panel found
+         → bg=bg-blue-50
+  ✅ [TC-RT-002] Chapter badge
+         → '1 chapters' → 1 chapters declared
+  ✅ [TC-RT-003] Instruction 'Revise Thoroughly'
+         → Revise Thoroughly
+  ℹ️  [TC-RT-OVF] No chapter overflow button
+         → All chapters visible inline
+      Found 1 chapter name elements
+
+      Processing: 'Continuity & Differentiability'
+        Avg: -10.6%  Wt: 35/ 80  Btn: True
+  ✅ [TC-RT-004] Chapter cards extracted
+         → 1 cards: ['Continuity & Differentiability']
+  ✅ [TC-RT-C01] Card 'Continuity & Differentiability' expanded
+  ✅ [TC-RT-C01-AVG]   Chapter Avg = '-10.6%'
+  ✅ [TC-RT-C01-WT]   Avg Weightage = '35/ 80'
+  ✅ [TC-RT-C01-BTN]   View Chapter Details button
+
+  ─────────────────────────────────────────────────────────────────
+  RETEACH — SUMMARY
+  Badge: 1 chapters (1 declared)
+  Inline cards (1):
+    Continuity & Differentiability           Avg:   -10.6%  Wt:     35/ 80
+  ─────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – Brushup Chapters
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-BU-001] Chapter panel found
+         → bg=FFF7E6
+  ✅ [TC-BU-002] Chapter badge
+         → '3 chapters' → 3 chapters declared
+  ✅ [TC-BU-003] Instruction 'Review Specific Concepts'
+         → Review Specific Concepts
+  ℹ️  [TC-BU-OVF] No chapter overflow button
+         → All chapters visible inline
+      Found 3 chapter name elements
+
+      Processing: 'Relations & Functions'
+        Avg: -0.8%  Wt: 8/ 80  Btn: True
+
+      Processing: 'Application Of Derivatives'
+        Avg: +9.4%  Wt: 35/ 80  Btn: True
+
+      Processing: 'Integrals'
+        Avg: +10.6%  Wt: 35/ 80  Btn: True
+  ✅ [TC-BU-004] Chapter cards extracted
+         → 3 cards: ['Relations & Functions', 'Application Of Derivatives', 'Integrals']
+  ✅ [TC-BU-C01] Card 'Relations & Functions' expanded
+  ✅ [TC-BU-C01-AVG]   Chapter Avg = '-0.8%'
+  ✅ [TC-BU-C01-WT]   Avg Weightage = '8/ 80'
+  ✅ [TC-BU-C01-BTN]   View Chapter Details button
+  ✅ [TC-BU-C02] Card 'Application Of Derivatives' expanded
+  ✅ [TC-BU-C02-AVG]   Chapter Avg = '+9.4%'
+  ✅ [TC-BU-C02-WT]   Avg Weightage = '35/ 80'
+  ✅ [TC-BU-C02-BTN]   View Chapter Details button
+  ✅ [TC-BU-C03] Card 'Integrals' expanded
+  ✅ [TC-BU-C03-AVG]   Chapter Avg = '+10.6%'
+  ✅ [TC-BU-C03-WT]   Avg Weightage = '35/ 80'
+  ✅ [TC-BU-C03-BTN]   View Chapter Details button
+
+  ─────────────────────────────────────────────────────────────────
+  BRUSHUP — SUMMARY
+  Badge: 3 chapters (3 declared)
+  Inline cards (3):
+    Relations & Functions                    Avg:    -0.8%  Wt:      8/ 80
+    Application Of Derivatives               Avg:    +9.4%  Wt:     35/ 80
+    Integrals                                Avg:   +10.6%  Wt:     35/ 80
+  ─────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – On Track Chapters
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-OT-001] Chapter panel found
+         → bg=bg-green-50
+  ✅ [TC-OT-002] Chapter badge
+         → '5 chapters' → 5 chapters declared
+  ✅ [TC-OT-003] Instruction 'Significant Improvement'
+         → Significant Improvement
+
+    Found chapter overflow: '+1 more chapters'
+      URL updated: modal=chapters&modalItem=OnTrack
+      Modal subheading: '5 chapters in this category'
+  ✅ [TC-OT-OVF] Chapter overflow → modal opened
+         → '+1 more chapters' → 5 chapters
+        # 1: Determinants
+  ✅ [TC-OT-MCH01] Modal chapter #1: Determinants
+        # 2: Application of Integrals
+  ✅ [TC-OT-MCH02] Modal chapter #2: Application of Integrals
+        # 3: Linear Programming
+  ✅ [TC-OT-MCH03] Modal chapter #3: Linear Programming
+        # 4: Inverse Trigonometric Functions
+  ✅ [TC-OT-MCH04] Modal chapter #4: Inverse Trigonometric Functions
+        # 5: Matrices
+  ✅ [TC-OT-MCH05] Modal chapter #5: Matrices
+      Modal closed.
+      Found 4 chapter name elements
+
+      Processing: 'Determinants'
+        Avg: +9.5%  Wt: 10/ 80  Btn: True
+
+      Processing: 'Application Of Integrals'
+        Avg: -1.9%  Wt: 35/ 80  Btn: True
+
+      Processing: 'Linear Programming'
+        Avg: -2.3%  Wt: 5/ 80  Btn: True
+
+      Processing: 'Inverse Trigonometric Functions'
+        Avg: -4.6%  Wt: 8/ 80  Btn: True
+  ✅ [TC-OT-004] Chapter cards extracted
+         → 4 cards: ['Determinants', 'Application Of Integrals', 'Linear Programming', 'Inverse Trigonometric Functions']
+  ✅ [TC-OT-C01] Card 'Determinants' expanded
+  ✅ [TC-OT-C01-AVG]   Chapter Avg = '+9.5%'
+  ✅ [TC-OT-C01-WT]   Avg Weightage = '10/ 80'
+  ✅ [TC-OT-C01-BTN]   View Chapter Details button
+  ✅ [TC-OT-C02] Card 'Application Of Integrals' expanded
+  ✅ [TC-OT-C02-AVG]   Chapter Avg = '-1.9%'
+  ✅ [TC-OT-C02-WT]   Avg Weightage = '35/ 80'
+  ✅ [TC-OT-C02-BTN]   View Chapter Details button
+  ✅ [TC-OT-C03] Card 'Linear Programming' expanded
+  ✅ [TC-OT-C03-AVG]   Chapter Avg = '-2.3%'
+  ✅ [TC-OT-C03-WT]   Avg Weightage = '5/ 80'
+  ✅ [TC-OT-C03-BTN]   View Chapter Details button
+  ✅ [TC-OT-C04] Card 'Inverse Trigonometric Functions' expanded
+  ✅ [TC-OT-C04-AVG]   Chapter Avg = '-4.6%'
+  ✅ [TC-OT-C04-WT]   Avg Weightage = '8/ 80'
+  ✅ [TC-OT-C04-BTN]   View Chapter Details button
+
+  ─────────────────────────────────────────────────────────────────
+  ON TRACK — SUMMARY
+  Badge: 5 chapters (5 declared)
+  Modal chapters (5):
+    #1   Determinants
+    #2   Application of Integrals
+    #3   Linear Programming
+    #4   Inverse Trigonometric Functions
+    #5   Matrices
+  Inline cards (4):
+    Determinants                             Avg:    +9.5%  Wt:     10/ 80
+    Application Of Integrals                 Avg:    -1.9%  Wt:     35/ 80
+    Linear Programming                       Avg:    -2.3%  Wt:      5/ 80
+    Inverse Trigonometric Functions          Avg:    -4.6%  Wt:      8/ 80
+  ─────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 7 – Highlighted Students
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-HS-000] Highlighted Students heading
+         → Highlighted Students
+  ✅ [TC-HS-SUB] Sub-text visible
+         → Students classified based on their preboard scores.
+
+══════════════════════════════════════════════════════════════════════
+    Weak
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Weak
+  ✅ [TC-HS-W-001] 'Weak' heading visible
+         → Weak
+  ✅ [TC-HS-W-002] Student count badge
+         → '10 students' → 10 declared
+
+    Scraping visible student rows…
+      Found 3 student row containers
+    ✅ 3 visible students:
+      #1: Prakhar Taparia — 10.0%
+  ✅ [TC-HS-W-S01] Visible #1: Prakhar Taparia
+         → Score: 10.0%
+      #2: Livea Grace — 15.6%
+  ✅ [TC-HS-W-S02] Visible #2: Livea Grace
+         → Score: 15.6%
+      #3: Prabhakar Mishra — 16.3%
+  ✅ [TC-HS-W-S03] Visible #3: Prabhakar Mishra
+         → Score: 16.3%
+
+    Looking for '+N more students' overflow button…
+  ✅ [TC-HS-W-OVF-001] Overflow button found
+         → '+7 more students'
+    ✅ Found: '+7 more students'
+      URL: modal=students&modalItem=Weak
+      Current URL: https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1&screen=overview&modal=students&modalItem=Weak
+  ✅ [TC-HS-W-MODAL-001] Student modal read
+         → 10 students captured
+  ✅ [TC-HS-W-M01] Modal #1: Prakhar Taparia
+         → Score:10.0%  Class 12J
+  ✅ [TC-HS-W-M02] Modal #2: Livea Grace
+         → Score:15.6%  Class 12J
+  ✅ [TC-HS-W-M03] Modal #3: Prabhakar Mishra
+         → Score:16.3%  Class 12J
+  ✅ [TC-HS-W-M04] Modal #4: Naman Kaushal
+         → Score:19.4%  Class 12J
+  ✅ [TC-HS-W-M05] Modal #5: Shambhvi Sharma
+         → Score:24.4%  Class 12J
+  ✅ [TC-HS-W-M06] Modal #6: Aditya Verma
+         → Score:26.9%  Class 12J
+  ✅ [TC-HS-W-M07] Modal #7: Neil Rana
+         → Score:28.1%  Class 12J
+  ✅ [TC-HS-W-M08] Modal #8: Atharv Daluja
+         → Score:30.0%  Class 12J
+  ✅ [TC-HS-W-M09] Modal #9: Krish Karan
+         → Score:30.0%  Class 12J
+  ✅ [TC-HS-W-M10] Modal #10: Anmol Singh
+         → Score:31.9%  Class 12J
+
+      10 students read from modal:
+        # 1: Prakhar Taparia                             10.0%  (Class 12J)
+        # 2: Livea Grace                                 15.6%  (Class 12J)
+        # 3: Prabhakar Mishra                            16.3%  (Class 12J)
+        # 4: Naman Kaushal                               19.4%  (Class 12J)
+        # 5: Shambhvi Sharma                             24.4%  (Class 12J)
+        # 6: Aditya Verma                                26.9%  (Class 12J)
+        # 7: Neil Rana                                   28.1%  (Class 12J)
+        # 8: Atharv Daluja                               30.0%  (Class 12J)
+        # 9: Krish Karan                                 30.0%  (Class 12J)
+        #10: Anmol Singh                                 31.9%  (Class 12J)
+  ✅ [TC-HS-W-VAL] Count check: declared=10, captured=10
+         → 10/10
+      Modal closed.
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  WEAK — 10 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    Prakhar Taparia                            Class 12J       10.0%
+  2    Livea Grace                                Class 12J       15.6%
+  3    Prabhakar Mishra                           Class 12J       16.3%
+  4    Naman Kaushal                              Class 12J       19.4%
+  5    Shambhvi Sharma                            Class 12J       24.4%
+  6    Aditya Verma                               Class 12J       26.9%
+  7    Neil Rana                                  Class 12J       28.1%
+  8    Atharv Daluja                              Class 12J       30.0%
+  9    Krish Karan                                Class 12J       30.0%
+  10   Anmol Singh                                Class 12J       31.9%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+    Lagging
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Lagging
+  ✅ [TC-HS-L-001] 'Lagging' heading visible
+         → Lagging
+  ✅ [TC-HS-L-002] Student count badge
+         → '9 students' → 9 declared
+
+    Scraping visible student rows…
+      Found 3 student row containers
+    ✅ 3 visible students:
+      #1: Daksh Sharma — 36.9%
+  ✅ [TC-HS-L-S01] Visible #1: Daksh Sharma
+         → Score: 36.9%
+      #2: Jagrav Suchak — 37.5%
+  ✅ [TC-HS-L-S02] Visible #2: Jagrav Suchak
+         → Score: 37.5%
+      #3: Lakshya Sharma — 38.8%
+  ✅ [TC-HS-L-S03] Visible #3: Lakshya Sharma
+         → Score: 38.8%
+
+    Looking for '+N more students' overflow button…
+  ✅ [TC-HS-L-OVF-001] Overflow button found
+         → '+6 more students'
+    ✅ Found: '+6 more students'
+      URL: modal=students&modalItem=Lagging
+      Current URL: https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1&screen=overview&modal=students&modalItem=Weak
+  ⚠️  [TC-HS-L-MODAL-001] Student modal
+         → Modal DOM not found
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  LAGGING — 3 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    Daksh Sharma                                               36.9%
+  2    Jagrav Suchak                                              37.5%
+  3    Lakshya Sharma                                             38.8%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+    Performing Well
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Performing Well
+  ✅ [TC-HS-P-001] 'Performing Well' heading visible
+         → Performing Well
+  ✅ [TC-HS-P-002] Student count badge
+         → '13 students' → 13 declared
+
+    Scraping visible student rows…
+      Found 3 student row containers
+    ✅ 3 visible students:
+      #1: Aditi N — 76.3%
+  ✅ [TC-HS-P-S01] Visible #1: Aditi N
+         → Score: 76.3%
+      #2: Aarav Sidhartha — 75.6%
+  ✅ [TC-HS-P-S02] Visible #2: Aarav Sidhartha
+         → Score: 75.6%
+      #3: Shreasee Kumar — 72.5%
+  ✅ [TC-HS-P-S03] Visible #3: Shreasee Kumar
+         → Score: 72.5%
+
+    Looking for '+N more students' overflow button…
+  ✅ [TC-HS-P-OVF-001] Overflow button found
+         → '+10 more students'
+    ✅ Found: '+10 more students'
+      URL: modal=students&modalItem=Performing_Well
+      Current URL: https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1&screen=overview&modal=students&modalItem=Weak
+      Trying partial heading match for 'Performing Well'…
+  ⚠️  [TC-HS-P-MODAL-001] Student modal
+         → Modal DOM not found
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  PERFORMING WELL — 3 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    Aditi N                                                    76.3%
+  2    Aarav Sidhartha                                            75.6%
+  3    Shreasee Kumar                                             72.5%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  FINAL SUMMARY — SECTION J
+══════════════════════════════════════════════════════════════════════
+  ✅  Passed   : 108
+  ❌  Failed   : 0
+  ⚠️   Warnings : 2
+  📊  Pass Rate: 98.2%  (108/110)
+
+══════════════════════════════════════════════════════════════════════
+  RUN 5/12 — SECTION K
+══════════════════════════════════════════════════════════════════════
+
+╔══════════════════════════════════════════════════════════════════════╗
+║   ClassLens – UI Test Suite v17.0                                   ║
+║   JS-first modal detection · JS student rows · badge text-content   ║
+║   Section: K   Started: 2026-06-01 17:16:43                          ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 1 – Login & Page Load
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-L-001] Login page loads
+         → https://classlens.inferentics.com/
+  ✅ [TC-L-002] Logo visible
+  ✅ [TC-L-003] Username / Password / Submit visible
+  ✅ [TC-L-004] Password masked
+  ✅ [TC-L-005] Login succeeds
+         → https://classlens.inferentics.com/
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 2 – Form Selection & Navigation
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-N-001] Dropdown 'Class'='12'
+  ✅ [TC-N-002] Dropdown 'Section'='K'
+  ✅ [TC-N-003] Dropdown 'Subject'='Maths'
+  ✅ [TC-N-004] Dropdown 'Exam'='Midterm'
+  ✅ [TC-N-005] Dropdown 'CompareLeft'='Midterm'
+  ✅ [TC-N-006] Dropdown 'CompareRight'='Preboard 1'
+  ✅ [TC-N-007] Enter → Dashboard
+         → https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1
+  ✅ [TC-N-008] Overview tab clicked
+  ✅ [TC-N-009] Page header visible
+         → Overview of Section 12 K
+  ✅ [TC-N-009a] Dashboard data loaded
+  ✅ [TC-N-010] Tab 'Overview' visible
+  ✅ [TC-N-011] Tab 'Chapters' visible
+  ✅ [TC-N-012] Tab 'Questions' visible
+  ✅ [TC-N-013] Tab 'Students' visible
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 3 – Exam Comparison Banner
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-EC-001] Exam Comparison heading
+         → Exam Comparison
+  ✅ [TC-EC-002] Sub-label 'Change in'
+         → Change in class average
+  ✅ [TC-EC-003] Midterm label present
+  ✅ [TC-EC-004] Preboard label present
+  ✅ [TC-EC-005] Left avg = 56.6%
+         → 56.6%
+  ✅ [TC-EC-006] Right avg = 59.1%
+         → 59.1%
+  ✅ [TC-EC-007] Trend: '+2.5 points improve'
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – Reteach Chapters
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-RT-001] Chapter panel found
+         → bg=bg-blue-50
+  ⚠️  [TC-RT-002] Chapter badge
+         → Not found — will still attempt card extraction
+  ✅ [TC-RT-003] Instruction 'Revise Thoroughly'
+         → Revise Thoroughly
+  ℹ️  [TC-RT-004] Empty state — No chapters
+         → No chapters available
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – Brushup Chapters
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-BU-001] Chapter panel found
+         → bg=FFF7E6
+  ⚠️  [TC-BU-002] Chapter badge
+         → Not found — will still attempt card extraction
+  ✅ [TC-BU-003] Instruction 'Review Specific Concepts'
+         → Review Specific Concepts
+  ℹ️  [TC-BU-004] Empty state — No chapters
+         → No chapters available
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – On Track Chapters
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-OT-001] Chapter panel found
+         → bg=bg-green-50
+  ✅ [TC-OT-002] Chapter badge
+         → '9 chapters' → 9 chapters declared
+  ✅ [TC-OT-003] Instruction 'Significant Improvement'
+         → Significant Improvement
+
+    Found chapter overflow: '+5 more chapters'
+      URL updated: modal=chapters&modalItem=OnTrack
+      Modal subheading: ''
+  ✅ [TC-OT-OVF] Chapter overflow → modal opened
+         → '+5 more chapters' → 8 chapters
+        # 1: Application of Derivatives
+  ✅ [TC-OT-MCH01] Modal chapter #1: Application of Derivatives
+        # 2: Relations & Functions
+  ✅ [TC-OT-MCH02] Modal chapter #2: Relations & Functions
+        # 3: Determinants
+  ✅ [TC-OT-MCH03] Modal chapter #3: Determinants
+        # 4: Continuity & Differentiability
+  ✅ [TC-OT-MCH04] Modal chapter #4: Continuity & Differentiability
+        # 5: Integrals
+  ✅ [TC-OT-MCH05] Modal chapter #5: Integrals
+        # 6: Linear Programming
+  ✅ [TC-OT-MCH06] Modal chapter #6: Linear Programming
+        # 7: Application of Integrals
+  ✅ [TC-OT-MCH07] Modal chapter #7: Application of Integrals
+        # 8: Inverse Trigonometric Functions
+  ✅ [TC-OT-MCH08] Modal chapter #8: Inverse Trigonometric Functions
+      Modal closed.
+      Found 4 chapter name elements
+
+      Processing: 'Application Of Derivatives'
+        ✗ Expansion timeout
+
+      Processing: 'Relations & Functions'
+        ✗ Expansion timeout
+
+      Processing: 'Determinants'
+        ✗ Expansion timeout
+
+      Processing: 'Continuity & Differentiability'
+        ✗ Expansion timeout
+  ✅ [TC-OT-004] Chapter cards extracted
+         → 4 cards: ['Application Of Derivatives', 'Relations & Functions', 'Determinants', 'Continuity & Differentiability']
+  ✅ [TC-OT-C01] Card 'Application Of Derivatives' expanded
+  ⚠️  [TC-OT-C01-AVG]   Chapter Avg = 'N/A'
+  ⚠️  [TC-OT-C01-WT]   Avg Weightage = 'N/A'
+  ⚠️  [TC-OT-C01-BTN]   View Chapter Details button
+  ✅ [TC-OT-C02] Card 'Relations & Functions' expanded
+  ⚠️  [TC-OT-C02-AVG]   Chapter Avg = 'N/A'
+  ⚠️  [TC-OT-C02-WT]   Avg Weightage = 'N/A'
+  ⚠️  [TC-OT-C02-BTN]   View Chapter Details button
+  ✅ [TC-OT-C03] Card 'Determinants' expanded
+  ⚠️  [TC-OT-C03-AVG]   Chapter Avg = 'N/A'
+  ⚠️  [TC-OT-C03-WT]   Avg Weightage = 'N/A'
+  ⚠️  [TC-OT-C03-BTN]   View Chapter Details button
+  ✅ [TC-OT-C04] Card 'Continuity & Differentiability' expanded
+  ⚠️  [TC-OT-C04-AVG]   Chapter Avg = 'N/A'
+  ⚠️  [TC-OT-C04-WT]   Avg Weightage = 'N/A'
+  ⚠️  [TC-OT-C04-BTN]   View Chapter Details button
+
+  ─────────────────────────────────────────────────────────────────
+  ON TRACK — SUMMARY
+  Badge: 9 chapters (9 declared)
+  Modal chapters (8):
+    #1   Application of Derivatives
+    #2   Relations & Functions
+    #3   Determinants
+    #4   Continuity & Differentiability
+    #5   Integrals
+    #6   Linear Programming
+    #7   Application of Integrals
+    #8   Inverse Trigonometric Functions
+  Inline cards (4):
+    Application Of Derivatives               Avg:      N/A  Wt:        N/A
+    Relations & Functions                    Avg:      N/A  Wt:        N/A
+    Determinants                             Avg:      N/A  Wt:        N/A
+    Continuity & Differentiability           Avg:      N/A  Wt:        N/A
+  ─────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 7 – Highlighted Students
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-HS-000] Highlighted Students heading
+         → Highlighted Students
+  ✅ [TC-HS-SUB] Sub-text visible
+         → Students classified based on their preboard scores.
+
+══════════════════════════════════════════════════════════════════════
+    Weak
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Weak
+  ✅ [TC-HS-W-001] 'Weak' heading visible
+         → Weak
+  ✅ [TC-HS-W-002] Student count badge
+         → '3 students' → 3 declared
+
+    Scraping visible student rows…
+      Found 3 student row containers
+    ✅ 3 visible students:
+      #1: Sanskruthi Sarvesh — 25.6%
+  ✅ [TC-HS-W-S01] Visible #1: Sanskruthi Sarvesh
+         → Score: 25.6%
+      #2: Merlyn Moby — 30.6%
+  ✅ [TC-HS-W-S02] Visible #2: Merlyn Moby
+         → Score: 30.6%
+      #3: Rushul Sharma — 34.4%
+  ✅ [TC-HS-W-S03] Visible #3: Rushul Sharma
+         → Score: 34.4%
+
+    Looking for '+N more students' overflow button…
+  ℹ️  [TC-HS-W-OVF-001] Overflow button
+         → Not found — all students visible
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  WEAK — 3 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    Sanskruthi Sarvesh                                         25.6%
+  2    Merlyn Moby                                                30.6%
+  3    Rushul Sharma                                              34.4%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+    Lagging
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Lagging
+  ✅ [TC-HS-L-001] 'Lagging' heading visible
+         → Lagging
+  ✅ [TC-HS-L-002] Student count badge
+         → '7 students' → 7 declared
+
+    Scraping visible student rows…
+      Found 3 student row containers
+    ✅ 3 visible students:
+      #1: Rishith Shetty — 37.5%
+  ✅ [TC-HS-L-S01] Visible #1: Rishith Shetty
+         → Score: 37.5%
+      #2: Manasi Sivakumar — 38.8%
+  ✅ [TC-HS-L-S02] Visible #2: Manasi Sivakumar
+         → Score: 38.8%
+      #3: Tanvi Priyadarshini — 38.8%
+  ✅ [TC-HS-L-S03] Visible #3: Tanvi Priyadarshini
+         → Score: 38.8%
+
+    Looking for '+N more students' overflow button…
+  ✅ [TC-HS-L-OVF-001] Overflow button found
+         → '+4 more students'
+    ✅ Found: '+4 more students'
+      ⚠ URL param not detected in time — current URL: https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1&screen=overview&modal=chapters&modalItem=OnTrack
+      Current URL: https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1&screen=overview&modal=chapters&modalItem=OnTrack
+  ⚠️  [TC-HS-L-MODAL-001] Student modal
+         → Modal DOM not found
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  LAGGING — 3 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    Rishith Shetty                                             37.5%
+  2    Manasi Sivakumar                                           38.8%
+  3    Tanvi Priyadarshini                                        38.8%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+    Performing Well
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Performing Well
+  ✅ [TC-HS-P-001] 'Performing Well' heading visible
+         → Performing Well
+  ✅ [TC-HS-P-002] Student count badge
+         → '21 students' → 21 declared
+
+    Scraping visible student rows…
+      Found 3 student row containers
+    ✅ 3 visible students:
+      #1: Akshath Gowtham Rao — 90.6%
+  ✅ [TC-HS-P-S01] Visible #1: Akshath Gowtham Rao
+         → Score: 90.6%
+      #2: Shiva Vijai — 90.6%
+  ✅ [TC-HS-P-S02] Visible #2: Shiva Vijai
+         → Score: 90.6%
+      #3: Siddharth Siaram — 86.9%
+  ✅ [TC-HS-P-S03] Visible #3: Siddharth Siaram
+         → Score: 86.9%
+
+    Looking for '+N more students' overflow button…
+  ✅ [TC-HS-P-OVF-001] Overflow button found
+         → '+18 more students'
+    ✅ Found: '+18 more students'
+      ⚠ URL param not detected in time — current URL: https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1&screen=overview&modal=chapters&modalItem=OnTrack
+      Current URL: https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1&screen=overview&modal=chapters&modalItem=OnTrack
+      Trying partial heading match for 'Performing Well'…
+  ⚠️  [TC-HS-P-MODAL-001] Student modal
+         → Modal DOM not found
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  PERFORMING WELL — 3 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    Akshath Gowtham Rao                                        90.6%
+  2    Shiva Vijai                                                90.6%
+  3    Siddharth Siaram                                           86.9%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  FINAL SUMMARY — SECTION K
+══════════════════════════════════════════════════════════════════════
+  ✅  Passed   : 66
+  ❌  Failed   : 0
+  ⚠️   Warnings : 16
+  📊  Pass Rate: 80.5%  (66/82)
+
+══════════════════════════════════════════════════════════════════════
+  RUN 6/12 — SECTION L
+══════════════════════════════════════════════════════════════════════
+
+╔══════════════════════════════════════════════════════════════════════╗
+║   ClassLens – UI Test Suite v17.0                                   ║
+║   JS-first modal detection · JS student rows · badge text-content   ║
+║   Section: L   Started: 2026-06-01 17:18:43                          ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 1 – Login & Page Load
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-L-001] Login page loads
+         → https://classlens.inferentics.com/
+  ✅ [TC-L-002] Logo visible
+  ✅ [TC-L-003] Username / Password / Submit visible
+  ✅ [TC-L-004] Password masked
+  ✅ [TC-L-005] Login succeeds
+         → https://classlens.inferentics.com/
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 2 – Form Selection & Navigation
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-N-001] Dropdown 'Class'='12'
+  ✅ [TC-N-002] Dropdown 'Section'='L'
+  ✅ [TC-N-003] Dropdown 'Subject'='Maths'
+  ✅ [TC-N-004] Dropdown 'Exam'='Midterm'
+  ✅ [TC-N-005] Dropdown 'CompareLeft'='Midterm'
+  ✅ [TC-N-006] Dropdown 'CompareRight'='Preboard 1'
+  ✅ [TC-N-007] Enter → Dashboard
+         → https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1
+  ✅ [TC-N-008] Overview tab clicked
+  ✅ [TC-N-009] Page header visible
+         → Overview of Section 12 L
+  ✅ [TC-N-009a] Dashboard data loaded
+  ✅ [TC-N-010] Tab 'Overview' visible
+  ✅ [TC-N-011] Tab 'Chapters' visible
+  ✅ [TC-N-012] Tab 'Questions' visible
+  ✅ [TC-N-013] Tab 'Students' visible
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 3 – Exam Comparison Banner
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-EC-001] Exam Comparison heading
+         → Exam Comparison
+  ✅ [TC-EC-002] Sub-label 'Change in'
+         → Change in class average
+  ✅ [TC-EC-003] Midterm label present
+  ✅ [TC-EC-004] Preboard label present
+  ✅ [TC-EC-005] Left avg = 43.8%
+         → 43.8%
+  ✅ [TC-EC-006] Right avg = 44.6%
+         → 44.6%
+  ✅ [TC-EC-007] Trend: '+0.8 points improve'
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – Reteach Chapters
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-RT-001] Chapter panel found
+         → bg=bg-blue-50
+  ✅ [TC-RT-002] Chapter badge
+         → '2 chapters' → 2 chapters declared
+  ✅ [TC-RT-003] Instruction 'Revise Thoroughly'
+         → Revise Thoroughly
+  ℹ️  [TC-RT-OVF] No chapter overflow button
+         → All chapters visible inline
+      Found 2 chapter name elements
+
+      Processing: 'Integrals'
+        Avg: +1.4%  Wt: 35/ 80  Btn: True
+
+      Processing: 'Relations & Functions'
+        Avg: +4.4%  Wt: 8/ 80  Btn: True
+  ✅ [TC-RT-004] Chapter cards extracted
+         → 2 cards: ['Integrals', 'Relations & Functions']
+  ✅ [TC-RT-C01] Card 'Integrals' expanded
+  ✅ [TC-RT-C01-AVG]   Chapter Avg = '+1.4%'
+  ✅ [TC-RT-C01-WT]   Avg Weightage = '35/ 80'
+  ✅ [TC-RT-C01-BTN]   View Chapter Details button
+  ✅ [TC-RT-C02] Card 'Relations & Functions' expanded
+  ✅ [TC-RT-C02-AVG]   Chapter Avg = '+4.4%'
+  ✅ [TC-RT-C02-WT]   Avg Weightage = '8/ 80'
+  ✅ [TC-RT-C02-BTN]   View Chapter Details button
+
+  ─────────────────────────────────────────────────────────────────
+  RETEACH — SUMMARY
+  Badge: 2 chapters (2 declared)
+  Inline cards (2):
+    Integrals                                Avg:    +1.4%  Wt:     35/ 80
+    Relations & Functions                    Avg:    +4.4%  Wt:      8/ 80
+  ─────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – Brushup Chapters
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-BU-001] Chapter panel found
+         → bg=FFF7E6
+  ✅ [TC-BU-002] Chapter badge
+         → '1 chapters' → 1 chapters declared
+  ✅ [TC-BU-003] Instruction 'Review Specific Concepts'
+         → Review Specific Concepts
+  ℹ️  [TC-BU-OVF] No chapter overflow button
+         → All chapters visible inline
+      Found 1 chapter name elements
+
+      Processing: 'Application Of Derivatives'
+        Avg: +12.3%  Wt: 35/ 80  Btn: True
+  ✅ [TC-BU-004] Chapter cards extracted
+         → 1 cards: ['Application Of Derivatives']
+  ✅ [TC-BU-C01] Card 'Application Of Derivatives' expanded
+  ✅ [TC-BU-C01-AVG]   Chapter Avg = '+12.3%'
+  ✅ [TC-BU-C01-WT]   Avg Weightage = '35/ 80'
+  ✅ [TC-BU-C01-BTN]   View Chapter Details button
+
+  ─────────────────────────────────────────────────────────────────
+  BRUSHUP — SUMMARY
+  Badge: 1 chapters (1 declared)
+  Inline cards (1):
+    Application Of Derivatives               Avg:   +12.3%  Wt:     35/ 80
+  ─────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – On Track Chapters
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-OT-001] Chapter panel found
+         → bg=bg-green-50
+  ✅ [TC-OT-002] Chapter badge
+         → '6 chapters' → 6 chapters declared
+  ✅ [TC-OT-003] Instruction 'Significant Improvement'
+         → Significant Improvement
+
+    Found chapter overflow: '+2 more chapters'
+      URL updated: modal=chapters&modalItem=OnTrack
+      Modal subheading: '6 chapters in this category'
+  ✅ [TC-OT-OVF] Chapter overflow → modal opened
+         → '+2 more chapters' → 6 chapters
+        # 1: Determinants
+  ✅ [TC-OT-MCH01] Modal chapter #1: Determinants
+        # 2: Continuity & Differentiability
+  ✅ [TC-OT-MCH02] Modal chapter #2: Continuity & Differentiability
+        # 3: Linear Programming
+  ✅ [TC-OT-MCH03] Modal chapter #3: Linear Programming
+        # 4: Matrices
+  ✅ [TC-OT-MCH04] Modal chapter #4: Matrices
+        # 5: Application of Integrals
+  ✅ [TC-OT-MCH05] Modal chapter #5: Application of Integrals
+        # 6: Inverse Trigonometric Functions
+  ✅ [TC-OT-MCH06] Modal chapter #6: Inverse Trigonometric Functions
+      Modal closed.
+      Found 4 chapter name elements
+
+      Processing: 'Determinants'
+        Avg: +13.4%  Wt: 10/ 80  Btn: True
+
+      Processing: 'Continuity & Differentiability'
+        Avg: +11.5%  Wt: 35/ 80  Btn: True
+
+      Processing: 'Linear Programming'
+        Avg: +9.7%  Wt: 5/ 80  Btn: True
+
+      Processing: 'Matrices'
+        Avg: +6.4%  Wt: 10/ 80  Btn: True
+  ✅ [TC-OT-004] Chapter cards extracted
+         → 4 cards: ['Determinants', 'Continuity & Differentiability', 'Linear Programming', 'Matrices']
+  ✅ [TC-OT-C01] Card 'Determinants' expanded
+  ✅ [TC-OT-C01-AVG]   Chapter Avg = '+13.4%'
+  ✅ [TC-OT-C01-WT]   Avg Weightage = '10/ 80'
+  ✅ [TC-OT-C01-BTN]   View Chapter Details button
+  ✅ [TC-OT-C02] Card 'Continuity & Differentiability' expanded
+  ✅ [TC-OT-C02-AVG]   Chapter Avg = '+11.5%'
+  ✅ [TC-OT-C02-WT]   Avg Weightage = '35/ 80'
+  ✅ [TC-OT-C02-BTN]   View Chapter Details button
+  ✅ [TC-OT-C03] Card 'Linear Programming' expanded
+  ✅ [TC-OT-C03-AVG]   Chapter Avg = '+9.7%'
+  ✅ [TC-OT-C03-WT]   Avg Weightage = '5/ 80'
+  ✅ [TC-OT-C03-BTN]   View Chapter Details button
+  ✅ [TC-OT-C04] Card 'Matrices' expanded
+  ✅ [TC-OT-C04-AVG]   Chapter Avg = '+6.4%'
+  ✅ [TC-OT-C04-WT]   Avg Weightage = '10/ 80'
+  ✅ [TC-OT-C04-BTN]   View Chapter Details button
+
+  ─────────────────────────────────────────────────────────────────
+  ON TRACK — SUMMARY
+  Badge: 6 chapters (6 declared)
+  Modal chapters (6):
+    #1   Determinants
+    #2   Continuity & Differentiability
+    #3   Linear Programming
+    #4   Matrices
+    #5   Application of Integrals
+    #6   Inverse Trigonometric Functions
+  Inline cards (4):
+    Determinants                             Avg:   +13.4%  Wt:     10/ 80
+    Continuity & Differentiability           Avg:   +11.5%  Wt:     35/ 80
+    Linear Programming                       Avg:    +9.7%  Wt:      5/ 80
+    Matrices                                 Avg:    +6.4%  Wt:     10/ 80
+  ─────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 7 – Highlighted Students
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-HS-000] Highlighted Students heading
+         → Highlighted Students
+  ✅ [TC-HS-SUB] Sub-text visible
+         → Students classified based on their preboard scores.
+
+══════════════════════════════════════════════════════════════════════
+    Weak
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Weak
+  ✅ [TC-HS-W-001] 'Weak' heading visible
+         → Weak
+  ✅ [TC-HS-W-002] Student count badge
+         → '11 students' → 11 declared
+
+    Scraping visible student rows…
+      Found 3 student row containers
+    ✅ 3 visible students:
+      #1: Aditya Mishra — 21.9%
+  ✅ [TC-HS-W-S01] Visible #1: Aditya Mishra
+         → Score: 21.9%
+      #2: Ishaan Dua — 23.8%
+  ✅ [TC-HS-W-S02] Visible #2: Ishaan Dua
+         → Score: 23.8%
+      #3: Patil Smit Mahendra — 26.3%
+  ✅ [TC-HS-W-S03] Visible #3: Patil Smit Mahendra
+         → Score: 26.3%
+
+    Looking for '+N more students' overflow button…
+  ✅ [TC-HS-W-OVF-001] Overflow button found
+         → '+8 more students'
+    ✅ Found: '+8 more students'
+      URL: modal=students&modalItem=Weak
+      Current URL: https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1&screen=overview&modal=students&modalItem=Weak
+  ✅ [TC-HS-W-MODAL-001] Student modal read
+         → 10 students captured
+  ✅ [TC-HS-W-M01] Modal #1: Aditya Mishra
+         → Score:21.9%  Class 12L
+  ✅ [TC-HS-W-M02] Modal #2: Ishaan Dua
+         → Score:23.8%  Class 12L
+  ✅ [TC-HS-W-M03] Modal #3: Patil Smit Mahendra
+         → Score:26.3%  Class 12L
+  ✅ [TC-HS-W-M04] Modal #4: Pranjal Saxena
+         → Score:26.9%  Class 12L
+  ✅ [TC-HS-W-M05] Modal #5: Subham Patnaik
+         → Score:27.5%  Class 12L
+  ✅ [TC-HS-W-M06] Modal #6: Koushik Sarathy
+         → Score:33.1%  Class 12L
+  ✅ [TC-HS-W-M07] Modal #7: P B Krithik
+         → Score:33.8%  Class 12L
+  ✅ [TC-HS-W-M08] Modal #8: Srujan Prashant Tumminkatti
+         → Score:33.8%  Class 12L
+  ✅ [TC-HS-W-M09] Modal #9: Dhruv Mishra
+         → Score:34.4%  Class 12L
+  ✅ [TC-HS-W-M10] Modal #10: Samarth M
+         → Score:34.4%  Class 12L
+
+      10 students read from modal:
+        # 1: Aditya Mishra                               21.9%  (Class 12L)
+        # 2: Ishaan Dua                                  23.8%  (Class 12L)
+        # 3: Patil Smit Mahendra                         26.3%  (Class 12L)
+        # 4: Pranjal Saxena                              26.9%  (Class 12L)
+        # 5: Subham Patnaik                              27.5%  (Class 12L)
+        # 6: Koushik Sarathy                             33.1%  (Class 12L)
+        # 7: P B Krithik                                 33.8%  (Class 12L)
+        # 8: Srujan Prashant Tumminkatti                 33.8%  (Class 12L)
+        # 9: Dhruv Mishra                                34.4%  (Class 12L)
+        #10: Samarth M                                   34.4%  (Class 12L)
+  ⚠️  [TC-HS-W-VAL] Count check: declared=11, captured=10
+         → 10/11
+      Modal closed.
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  WEAK — 10 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    Aditya Mishra                              Class 12L       21.9%
+  2    Ishaan Dua                                 Class 12L       23.8%
+  3    Patil Smit Mahendra                        Class 12L       26.3%
+  4    Pranjal Saxena                             Class 12L       26.9%
+  5    Subham Patnaik                             Class 12L       27.5%
+  6    Koushik Sarathy                            Class 12L       33.1%
+  7    P B Krithik                                Class 12L       33.8%
+  8    Srujan Prashant Tumminkatti                Class 12L       33.8%
+  9    Dhruv Mishra                               Class 12L       34.4%
+  10   Samarth M                                  Class 12L       34.4%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+    Lagging
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Lagging
+  ✅ [TC-HS-L-001] 'Lagging' heading visible
+         → Lagging
+  ✅ [TC-HS-L-002] Student count badge
+         → '11 students' → 11 declared
+
+    Scraping visible student rows…
+      Found 3 student row containers
+    ✅ 3 visible students:
+      #1: Stavros Heisanam — 35.0%
+  ✅ [TC-HS-L-S01] Visible #1: Stavros Heisanam
+         → Score: 35.0%
+      #2: Advik Saxena — 35.6%
+  ✅ [TC-HS-L-S02] Visible #2: Advik Saxena
+         → Score: 35.6%
+      #3: Mahika Gudimetla — 36.3%
+  ✅ [TC-HS-L-S03] Visible #3: Mahika Gudimetla
+         → Score: 36.3%
+
+    Looking for '+N more students' overflow button…
+  ✅ [TC-HS-L-OVF-001] Overflow button found
+         → '+8 more students'
+    ✅ Found: '+8 more students'
+      URL: modal=students&modalItem=Lagging
+      Current URL: https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1&screen=overview&modal=students&modalItem=Weak
+  ⚠️  [TC-HS-L-MODAL-001] Student modal
+         → Modal DOM not found
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  LAGGING — 3 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    Stavros Heisanam                                           35.0%
+  2    Advik Saxena                                               35.6%
+  3    Mahika Gudimetla                                           36.3%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+    Performing Well
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Performing Well
+  ✅ [TC-HS-P-001] 'Performing Well' heading visible
+         → Performing Well
+  ✅ [TC-HS-P-002] Student count badge
+         → '8 students' → 8 declared
+
+    Scraping visible student rows…
+      Found 3 student row containers
+    ✅ 3 visible students:
+      #1: Shreyash Lodh — 83.8%
+  ✅ [TC-HS-P-S01] Visible #1: Shreyash Lodh
+         → Score: 83.8%
+      #2: Arushi Jaiswal — 78.8%
+  ✅ [TC-HS-P-S02] Visible #2: Arushi Jaiswal
+         → Score: 78.8%
+      #3: Tuhina Parhi — 76.3%
+  ✅ [TC-HS-P-S03] Visible #3: Tuhina Parhi
+         → Score: 76.3%
+
+    Looking for '+N more students' overflow button…
+  ✅ [TC-HS-P-OVF-001] Overflow button found
+         → '+5 more students'
+    ✅ Found: '+5 more students'
+      URL: modal=students&modalItem=Performing_Well
+      Current URL: https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1&screen=overview&modal=students&modalItem=Weak
+      Trying partial heading match for 'Performing Well'…
+  ⚠️  [TC-HS-P-MODAL-001] Student modal
+         → Modal DOM not found
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  PERFORMING WELL — 3 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    Shreyash Lodh                                              83.8%
+  2    Arushi Jaiswal                                             78.8%
+  3    Tuhina Parhi                                               76.3%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  FINAL SUMMARY — SECTION L
+══════════════════════════════════════════════════════════════════════
+  ✅  Passed   : 104
+  ❌  Failed   : 0
+  ⚠️   Warnings : 3
+  📊  Pass Rate: 97.2%  (104/107)
+
+══════════════════════════════════════════════════════════════════════
+  RUN 7/12 — SECTION M
+══════════════════════════════════════════════════════════════════════
+
+╔══════════════════════════════════════════════════════════════════════╗
+║   ClassLens – UI Test Suite v17.0                                   ║
+║   JS-first modal detection · JS student rows · badge text-content   ║
+║   Section: M   Started: 2026-06-01 17:20:07                          ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 1 – Login & Page Load
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-L-001] Login page loads
+         → https://classlens.inferentics.com/
+  ✅ [TC-L-002] Logo visible
+  ✅ [TC-L-003] Username / Password / Submit visible
+  ✅ [TC-L-004] Password masked
+  ✅ [TC-L-005] Login succeeds
+         → https://classlens.inferentics.com/
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 2 – Form Selection & Navigation
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-N-001] Dropdown 'Class'='12'
+  ✅ [TC-N-002] Dropdown 'Section'='M'
+  ✅ [TC-N-003] Dropdown 'Subject'='Maths'
+  ✅ [TC-N-004] Dropdown 'Exam'='Midterm'
+  ✅ [TC-N-005] Dropdown 'CompareLeft'='Midterm'
+  ✅ [TC-N-006] Dropdown 'CompareRight'='Preboard 1'
+  ✅ [TC-N-007] Enter → Dashboard
+         → https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1
+  ✅ [TC-N-008] Overview tab clicked
+  ✅ [TC-N-009] Page header visible
+         → Overview of Section 12 M
+  ✅ [TC-N-009a] Dashboard data loaded
+  ✅ [TC-N-010] Tab 'Overview' visible
+  ✅ [TC-N-011] Tab 'Chapters' visible
+  ✅ [TC-N-012] Tab 'Questions' visible
+  ✅ [TC-N-013] Tab 'Students' visible
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 3 – Exam Comparison Banner
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-EC-001] Exam Comparison heading
+         → Exam Comparison
+  ✅ [TC-EC-002] Sub-label 'Change in'
+         → Change in class average
+  ✅ [TC-EC-003] Midterm label present
+  ✅ [TC-EC-004] Preboard label present
+  ✅ [TC-EC-005] Left avg = 46.8%
+         → 46.8%
+  ✅ [TC-EC-006] Right avg = 34.3%
+         → 34.3%
+  ✅ [TC-EC-007] Trend: '-12.5 points decline'
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – Reteach Chapters
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-RT-001] Chapter panel found
+         → bg=bg-blue-50
+  ✅ [TC-RT-002] Chapter badge
+         → '3 chapters' → 3 chapters declared
+  ✅ [TC-RT-003] Instruction 'Revise Thoroughly'
+         → Revise Thoroughly
+  ℹ️  [TC-RT-OVF] No chapter overflow button
+         → All chapters visible inline
+      Found 3 chapter name elements
+
+      Processing: 'Matrices'
+        Avg: -29.1%  Wt: 10/ 80  Btn: True
+
+      Processing: 'Application Of Integrals'
+        Avg: -25.5%  Wt: 35/ 80  Btn: True
+
+      Processing: 'Integrals'
+        Avg: +1.9%  Wt: 35/ 80  Btn: True
+  ✅ [TC-RT-004] Chapter cards extracted
+         → 3 cards: ['Matrices', 'Application Of Integrals', 'Integrals']
+  ✅ [TC-RT-C01] Card 'Matrices' expanded
+  ✅ [TC-RT-C01-AVG]   Chapter Avg = '-29.1%'
+  ✅ [TC-RT-C01-WT]   Avg Weightage = '10/ 80'
+  ✅ [TC-RT-C01-BTN]   View Chapter Details button
+  ✅ [TC-RT-C02] Card 'Application Of Integrals' expanded
+  ✅ [TC-RT-C02-AVG]   Chapter Avg = '-25.5%'
+  ✅ [TC-RT-C02-WT]   Avg Weightage = '35/ 80'
+  ✅ [TC-RT-C02-BTN]   View Chapter Details button
+  ✅ [TC-RT-C03] Card 'Integrals' expanded
+  ✅ [TC-RT-C03-AVG]   Chapter Avg = '+1.9%'
+  ✅ [TC-RT-C03-WT]   Avg Weightage = '35/ 80'
+  ✅ [TC-RT-C03-BTN]   View Chapter Details button
+
+  ─────────────────────────────────────────────────────────────────
+  RETEACH — SUMMARY
+  Badge: 3 chapters (3 declared)
+  Inline cards (3):
+    Matrices                                 Avg:   -29.1%  Wt:     10/ 80
+    Application Of Integrals                 Avg:   -25.5%  Wt:     35/ 80
+    Integrals                                Avg:    +1.9%  Wt:     35/ 80
+  ─────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – Brushup Chapters
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-BU-001] Chapter panel found
+         → bg=FFF7E6
+  ✅ [TC-BU-002] Chapter badge
+         → '6 chapters' → 6 chapters declared
+  ✅ [TC-BU-003] Instruction 'Review Specific Concepts'
+         → Review Specific Concepts
+
+    Found chapter overflow: '+2 more chapters'
+      URL updated: modal=chapters&modalItem=Brushup
+      Modal subheading: '6 chapters in this category'
+  ✅ [TC-BU-OVF] Chapter overflow → modal opened
+         → '+2 more chapters' → 6 chapters
+        # 1: Inverse Trigonometric Functions
+  ✅ [TC-BU-MCH01] Modal chapter #1: Inverse Trigonometric Functions
+        # 2: Relations & Functions
+  ✅ [TC-BU-MCH02] Modal chapter #2: Relations & Functions
+        # 3: Determinants
+  ✅ [TC-BU-MCH03] Modal chapter #3: Determinants
+        # 4: Linear Programming
+  ✅ [TC-BU-MCH04] Modal chapter #4: Linear Programming
+        # 5: Continuity & Differentiability
+  ✅ [TC-BU-MCH05] Modal chapter #5: Continuity & Differentiability
+        # 6: Application of Derivatives
+  ✅ [TC-BU-MCH06] Modal chapter #6: Application of Derivatives
+      Modal closed.
+      Found 4 chapter name elements
+
+      Processing: 'Inverse Trigonometric Functions'
+        Avg: -29.8%  Wt: 8/ 80  Btn: True
+
+      Processing: 'Relations & Functions'
+        Avg: -17.5%  Wt: 8/ 80  Btn: True
+
+      Processing: 'Determinants'
+        Avg: -12.3%  Wt: 10/ 80  Btn: True
+
+      Processing: 'Linear Programming'
+        Avg: -4.9%  Wt: 5/ 80  Btn: True
+  ✅ [TC-BU-004] Chapter cards extracted
+         → 4 cards: ['Inverse Trigonometric Functions', 'Relations & Functions', 'Determinants', 'Linear Programming']
+  ✅ [TC-BU-C01] Card 'Inverse Trigonometric Functions' expanded
+  ✅ [TC-BU-C01-AVG]   Chapter Avg = '-29.8%'
+  ✅ [TC-BU-C01-WT]   Avg Weightage = '8/ 80'
+  ✅ [TC-BU-C01-BTN]   View Chapter Details button
+  ✅ [TC-BU-C02] Card 'Relations & Functions' expanded
+  ✅ [TC-BU-C02-AVG]   Chapter Avg = '-17.5%'
+  ✅ [TC-BU-C02-WT]   Avg Weightage = '8/ 80'
+  ✅ [TC-BU-C02-BTN]   View Chapter Details button
+  ✅ [TC-BU-C03] Card 'Determinants' expanded
+  ✅ [TC-BU-C03-AVG]   Chapter Avg = '-12.3%'
+  ✅ [TC-BU-C03-WT]   Avg Weightage = '10/ 80'
+  ✅ [TC-BU-C03-BTN]   View Chapter Details button
+  ✅ [TC-BU-C04] Card 'Linear Programming' expanded
+  ✅ [TC-BU-C04-AVG]   Chapter Avg = '-4.9%'
+  ✅ [TC-BU-C04-WT]   Avg Weightage = '5/ 80'
+  ✅ [TC-BU-C04-BTN]   View Chapter Details button
+
+  ─────────────────────────────────────────────────────────────────
+  BRUSHUP — SUMMARY
+  Badge: 6 chapters (6 declared)
+  Modal chapters (6):
+    #1   Inverse Trigonometric Functions
+    #2   Relations & Functions
+    #3   Determinants
+    #4   Linear Programming
+    #5   Continuity & Differentiability
+    #6   Application of Derivatives
+  Inline cards (4):
+    Inverse Trigonometric Functions          Avg:   -29.8%  Wt:      8/ 80
+    Relations & Functions                    Avg:   -17.5%  Wt:      8/ 80
+    Determinants                             Avg:   -12.3%  Wt:     10/ 80
+    Linear Programming                       Avg:    -4.9%  Wt:      5/ 80
+  ─────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – On Track Chapters
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-OT-001] Chapter panel found
+         → bg=bg-green-50
+  ⚠️  [TC-OT-002] Chapter badge
+         → Not found — will still attempt card extraction
+  ✅ [TC-OT-003] Instruction 'Significant Improvement'
+         → Significant Improvement
+  ℹ️  [TC-OT-004] Empty state — No chapters
+         → No chapters available
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 7 – Highlighted Students
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-HS-000] Highlighted Students heading
+         → Highlighted Students
+  ✅ [TC-HS-SUB] Sub-text visible
+         → Students classified based on their preboard scores.
+
+══════════════════════════════════════════════════════════════════════
+    Weak
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Weak
+  ✅ [TC-HS-W-001] 'Weak' heading visible
+         → Weak
+  ✅ [TC-HS-W-002] Student count badge
+         → '6 students' → 6 declared
+
+    Scraping visible student rows…
+      Found 3 student row containers
+    ✅ 3 visible students:
+      #1: Eipsita Kumari — 18.8%
+  ✅ [TC-HS-W-S01] Visible #1: Eipsita Kumari
+         → Score: 18.8%
+      #2: Kavinesh M — 23.8%
+  ✅ [TC-HS-W-S02] Visible #2: Kavinesh M
+         → Score: 23.8%
+      #3: Annette Denny — 25.6%
+  ✅ [TC-HS-W-S03] Visible #3: Annette Denny
+         → Score: 25.6%
+
+    Looking for '+N more students' overflow button…
+  ✅ [TC-HS-W-OVF-001] Overflow button found
+         → '+3 more students'
+    ✅ Found: '+3 more students'
+      URL: modal=students&modalItem=Weak
+      Current URL: https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1&screen=overview&modal=students&modalItem=Weak
+  ✅ [TC-HS-W-MODAL-001] Student modal read
+         → 6 students captured
+  ✅ [TC-HS-W-M01] Modal #1: Eipsita Kumari
+         → Score:18.8%  Class 12M
+  ✅ [TC-HS-W-M02] Modal #2: Kavinesh M
+         → Score:23.8%  Class 12M
+  ✅ [TC-HS-W-M03] Modal #3: Annette Denny
+         → Score:25.6%  Class 12M
+  ✅ [TC-HS-W-M04] Modal #4: Gouri Vijay
+         → Score:28.1%  Class 12M
+  ✅ [TC-HS-W-M05] Modal #5: Bhavana Sathish
+         → Score:30.0%  Class 12M
+  ✅ [TC-HS-W-M06] Modal #6: Vibhush Yohith K
+         → Score:31.3%  Class 12M
+
+      6 students read from modal:
+        # 1: Eipsita Kumari                              18.8%  (Class 12M)
+        # 2: Kavinesh M                                  23.8%  (Class 12M)
+        # 3: Annette Denny                               25.6%  (Class 12M)
+        # 4: Gouri Vijay                                 28.1%  (Class 12M)
+        # 5: Bhavana Sathish                             30.0%  (Class 12M)
+        # 6: Vibhush Yohith K                            31.3%  (Class 12M)
+  ✅ [TC-HS-W-VAL] Count check: declared=6, captured=6
+         → 6/6
+      Modal closed.
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  WEAK — 6 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    Eipsita Kumari                             Class 12M       18.8%
+  2    Kavinesh M                                 Class 12M       23.8%
+  3    Annette Denny                              Class 12M       25.6%
+  4    Gouri Vijay                                Class 12M       28.1%
+  5    Bhavana Sathish                            Class 12M       30.0%
+  6    Vibhush Yohith K                           Class 12M       31.3%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+    Lagging
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Lagging
+  ✅ [TC-HS-L-001] 'Lagging' heading visible
+         → Lagging
+  ✅ [TC-HS-L-002] Student count badge
+         → '6 students' → 6 declared
+
+    Scraping visible student rows…
+      Found 3 student row containers
+    ✅ 3 visible students:
+      #1: Eva kanungo — 36.9%
+  ✅ [TC-HS-L-S01] Visible #1: Eva kanungo
+         → Score: 36.9%
+      #2: Ritika Mukherjee — 38.1%
+  ✅ [TC-HS-L-S02] Visible #2: Ritika Mukherjee
+         → Score: 38.1%
+      #3: Sashrika Mohanty — 40.0%
+  ✅ [TC-HS-L-S03] Visible #3: Sashrika Mohanty
+         → Score: 40.0%
+
+    Looking for '+N more students' overflow button…
+  ✅ [TC-HS-L-OVF-001] Overflow button found
+         → '+3 more students'
+    ✅ Found: '+3 more students'
+      URL: modal=students&modalItem=Lagging
+      Current URL: https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1&screen=overview&modal=students&modalItem=Lagging
+  ✅ [TC-HS-L-MODAL-001] Student modal read
+         → 6 students captured
+  ✅ [TC-HS-L-M01] Modal #1: Eva kanungo
+         → Score:36.9%  Class 12M
+  ✅ [TC-HS-L-M02] Modal #2: Ritika Mukherjee
+         → Score:38.1%  Class 12M
+  ✅ [TC-HS-L-M03] Modal #3: Sashrika Mohanty
+         → Score:40.0%  Class 12M
+  ✅ [TC-HS-L-M04] Modal #4: Arjun Babu
+         → Score:42.5%  Class 12M
+  ✅ [TC-HS-L-M05] Modal #5: Bhuvi Rathod
+         → Score:48.1%  Class 12M
+  ✅ [TC-HS-L-M06] Modal #6: Akshaya J Sreejith
+         → Score:48.8%  Class 12M
+
+      6 students read from modal:
+        # 1: Eva kanungo                                 36.9%  (Class 12M)
+        # 2: Ritika Mukherjee                            38.1%  (Class 12M)
+        # 3: Sashrika Mohanty                            40.0%  (Class 12M)
+        # 4: Arjun Babu                                  42.5%  (Class 12M)
+        # 5: Bhuvi Rathod                                48.1%  (Class 12M)
+        # 6: Akshaya J Sreejith                          48.8%  (Class 12M)
+  ✅ [TC-HS-L-VAL] Count check: declared=6, captured=6
+         → 6/6
+      Modal closed.
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  LAGGING — 6 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    Eva kanungo                                Class 12M       36.9%
+  2    Ritika Mukherjee                           Class 12M       38.1%
+  3    Sashrika Mohanty                           Class 12M       40.0%
+  4    Arjun Babu                                 Class 12M       42.5%
+  5    Bhuvi Rathod                               Class 12M       48.1%
+  6    Akshaya J Sreejith                         Class 12M       48.8%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+    Performing Well
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Performing Well
+  ✅ [TC-HS-P-001] 'Performing Well' heading visible
+         → Performing Well
+  ✅ [TC-HS-P-002] Student count badge
+         → '0 students' → 0 declared
+  ℹ️  [TC-HS-P-EMPTY] Empty state detected
+         → No students in this category yet
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  PERFORMING WELL — 0 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  ⚠️  No students captured
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  FINAL SUMMARY — SECTION M
+══════════════════════════════════════════════════════════════════════
+  ✅  Passed   : 103
+  ❌  Failed   : 0
+  ⚠️   Warnings : 1
+  📊  Pass Rate: 99.0%  (103/104)
+
+══════════════════════════════════════════════════════════════════════
+  RUN 8/12 — SECTION N
+══════════════════════════════════════════════════════════════════════
+
+╔══════════════════════════════════════════════════════════════════════╗
+║   ClassLens – UI Test Suite v17.0                                   ║
+║   JS-first modal detection · JS student rows · badge text-content   ║
+║   Section: N   Started: 2026-06-01 17:20:40                          ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 1 – Login & Page Load
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-L-001] Login page loads
+         → https://classlens.inferentics.com/
+  ✅ [TC-L-002] Logo visible
+  ✅ [TC-L-003] Username / Password / Submit visible
+  ✅ [TC-L-004] Password masked
+  ✅ [TC-L-005] Login succeeds
+         → https://classlens.inferentics.com/
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 2 – Form Selection & Navigation
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-N-001] Dropdown 'Class'='12'
+  ✅ [TC-N-002] Dropdown 'Section'='N'
+  ✅ [TC-N-003] Dropdown 'Subject'='Maths'
+  ✅ [TC-N-004] Dropdown 'Exam'='Midterm'
+  ✅ [TC-N-005] Dropdown 'CompareLeft'='Midterm'
+  ✅ [TC-N-006] Dropdown 'CompareRight'='Preboard 1'
+  ✅ [TC-N-007] Enter → Dashboard
+         → https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1
+  ✅ [TC-N-008] Overview tab clicked
+  ✅ [TC-N-009] Page header visible
+         → Overview of Section 12 N
+  ✅ [TC-N-009a] Dashboard data loaded
+  ✅ [TC-N-010] Tab 'Overview' visible
+  ✅ [TC-N-011] Tab 'Chapters' visible
+  ✅ [TC-N-012] Tab 'Questions' visible
+  ✅ [TC-N-013] Tab 'Students' visible
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 3 – Exam Comparison Banner
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-EC-001] Exam Comparison heading
+         → Exam Comparison
+  ✅ [TC-EC-002] Sub-label 'Change in'
+         → Change in class average
+  ✅ [TC-EC-003] Midterm label present
+  ✅ [TC-EC-004] Preboard label present
+  ✅ [TC-EC-005] Left avg = 49.2%
+         → 49.2%
+  ✅ [TC-EC-006] Right avg = 44.6%
+         → 44.6%
+  ✅ [TC-EC-007] Trend: '-4.6 points decline'
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – Reteach Chapters
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-RT-001] Chapter panel found
+         → bg=bg-blue-50
+  ✅ [TC-RT-002] Chapter badge
+         → '2 chapters' → 2 chapters declared
+  ✅ [TC-RT-003] Instruction 'Revise Thoroughly'
+         → Revise Thoroughly
+  ℹ️  [TC-RT-OVF] No chapter overflow button
+         → All chapters visible inline
+      Found 2 chapter name elements
+
+      Processing: 'Application Of Derivatives'
+        Avg: -7.6%  Wt: 35/ 80  Btn: True
+
+      Processing: 'Integrals'
+        Avg: -6.1%  Wt: 35/ 80  Btn: True
+  ✅ [TC-RT-004] Chapter cards extracted
+         → 2 cards: ['Application Of Derivatives', 'Integrals']
+  ✅ [TC-RT-C01] Card 'Application Of Derivatives' expanded
+  ✅ [TC-RT-C01-AVG]   Chapter Avg = '-7.6%'
+  ✅ [TC-RT-C01-WT]   Avg Weightage = '35/ 80'
+  ✅ [TC-RT-C01-BTN]   View Chapter Details button
+  ✅ [TC-RT-C02] Card 'Integrals' expanded
+  ✅ [TC-RT-C02-AVG]   Chapter Avg = '-6.1%'
+  ✅ [TC-RT-C02-WT]   Avg Weightage = '35/ 80'
+  ✅ [TC-RT-C02-BTN]   View Chapter Details button
+
+  ─────────────────────────────────────────────────────────────────
+  RETEACH — SUMMARY
+  Badge: 2 chapters (2 declared)
+  Inline cards (2):
+    Application Of Derivatives               Avg:    -7.6%  Wt:     35/ 80
+    Integrals                                Avg:    -6.1%  Wt:     35/ 80
+  ─────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – Brushup Chapters
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-BU-001] Chapter panel found
+         → bg=FFF7E6
+  ✅ [TC-BU-002] Chapter badge
+         → '3 chapters' → 3 chapters declared
+  ✅ [TC-BU-003] Instruction 'Review Specific Concepts'
+         → Review Specific Concepts
+  ℹ️  [TC-BU-OVF] No chapter overflow button
+         → All chapters visible inline
+      Found 3 chapter name elements
+
+      Processing: 'Inverse Trigonometric Functions'
+        Avg: -11.9%  Wt: 8/ 80  Btn: True
+
+      Processing: 'Application Of Integrals'
+        Avg: -1.2%  Wt: 35/ 80  Btn: True
+
+      Processing: 'Relations & Functions'
+        Avg: +5%  Wt: 8/ 80  Btn: True
+  ✅ [TC-BU-004] Chapter cards extracted
+         → 3 cards: ['Inverse Trigonometric Functions', 'Application Of Integrals', 'Relations & Functions']
+  ✅ [TC-BU-C01] Card 'Inverse Trigonometric Functions' expanded
+  ✅ [TC-BU-C01-AVG]   Chapter Avg = '-11.9%'
+  ✅ [TC-BU-C01-WT]   Avg Weightage = '8/ 80'
+  ✅ [TC-BU-C01-BTN]   View Chapter Details button
+  ✅ [TC-BU-C02] Card 'Application Of Integrals' expanded
+  ✅ [TC-BU-C02-AVG]   Chapter Avg = '-1.2%'
+  ✅ [TC-BU-C02-WT]   Avg Weightage = '35/ 80'
+  ✅ [TC-BU-C02-BTN]   View Chapter Details button
+  ✅ [TC-BU-C03] Card 'Relations & Functions' expanded
+  ✅ [TC-BU-C03-AVG]   Chapter Avg = '+5%'
+  ✅ [TC-BU-C03-WT]   Avg Weightage = '8/ 80'
+  ✅ [TC-BU-C03-BTN]   View Chapter Details button
+
+  ─────────────────────────────────────────────────────────────────
+  BRUSHUP — SUMMARY
+  Badge: 3 chapters (3 declared)
+  Inline cards (3):
+    Inverse Trigonometric Functions          Avg:   -11.9%  Wt:      8/ 80
+    Application Of Integrals                 Avg:    -1.2%  Wt:     35/ 80
+    Relations & Functions                    Avg:      +5%  Wt:      8/ 80
+  ─────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – On Track Chapters
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-OT-001] Chapter panel found
+         → bg=bg-green-50
+  ✅ [TC-OT-002] Chapter badge
+         → '4 chapters' → 4 chapters declared
+  ✅ [TC-OT-003] Instruction 'Significant Improvement'
+         → Significant Improvement
+  ℹ️  [TC-OT-OVF] No chapter overflow button
+         → All chapters visible inline
+      Found 4 chapter name elements
+
+      Processing: 'Continuity & Differentiability'
+        Avg: +5.1%  Wt: 35/ 80  Btn: True
+
+      Processing: 'Matrices'
+        Avg: +2.3%  Wt: 10/ 80  Btn: True
+
+      Processing: 'Determinants'
+        Avg: -0.6%  Wt: 10/ 80  Btn: True
+
+      Processing: 'Linear Programming'
+        Avg: -2.9%  Wt: 5/ 80  Btn: True
+  ✅ [TC-OT-004] Chapter cards extracted
+         → 4 cards: ['Continuity & Differentiability', 'Matrices', 'Determinants', 'Linear Programming']
+  ✅ [TC-OT-C01] Card 'Continuity & Differentiability' expanded
+  ✅ [TC-OT-C01-AVG]   Chapter Avg = '+5.1%'
+  ✅ [TC-OT-C01-WT]   Avg Weightage = '35/ 80'
+  ✅ [TC-OT-C01-BTN]   View Chapter Details button
+  ✅ [TC-OT-C02] Card 'Matrices' expanded
+  ✅ [TC-OT-C02-AVG]   Chapter Avg = '+2.3%'
+  ✅ [TC-OT-C02-WT]   Avg Weightage = '10/ 80'
+  ✅ [TC-OT-C02-BTN]   View Chapter Details button
+  ✅ [TC-OT-C03] Card 'Determinants' expanded
+  ✅ [TC-OT-C03-AVG]   Chapter Avg = '-0.6%'
+  ✅ [TC-OT-C03-WT]   Avg Weightage = '10/ 80'
+  ✅ [TC-OT-C03-BTN]   View Chapter Details button
+  ✅ [TC-OT-C04] Card 'Linear Programming' expanded
+  ✅ [TC-OT-C04-AVG]   Chapter Avg = '-2.9%'
+  ✅ [TC-OT-C04-WT]   Avg Weightage = '5/ 80'
+  ✅ [TC-OT-C04-BTN]   View Chapter Details button
+
+  ─────────────────────────────────────────────────────────────────
+  ON TRACK — SUMMARY
+  Badge: 4 chapters (4 declared)
+  Inline cards (4):
+    Continuity & Differentiability           Avg:    +5.1%  Wt:     35/ 80
+    Matrices                                 Avg:    +2.3%  Wt:     10/ 80
+    Determinants                             Avg:    -0.6%  Wt:     10/ 80
+    Linear Programming                       Avg:    -2.9%  Wt:      5/ 80
+  ─────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 7 – Highlighted Students
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-HS-000] Highlighted Students heading
+         → Highlighted Students
+  ✅ [TC-HS-SUB] Sub-text visible
+         → Students classified based on their preboard scores.
+
+══════════════════════════════════════════════════════════════════════
+    Weak
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Weak
+  ✅ [TC-HS-W-001] 'Weak' heading visible
+         → Weak
+  ✅ [TC-HS-W-002] Student count badge
+         → '13 students' → 13 declared
+
+    Scraping visible student rows…
+      Found 3 student row containers
+    ✅ 3 visible students:
+      #1: Sachpreet Verma — 5.0%
+  ✅ [TC-HS-W-S01] Visible #1: Sachpreet Verma
+         → Score: 5.0%
+      #2: Aditya Ranjith — 11.3%
+  ✅ [TC-HS-W-S02] Visible #2: Aditya Ranjith
+         → Score: 11.3%
+      #3: Amrita Kumari — 18.8%
+  ✅ [TC-HS-W-S03] Visible #3: Amrita Kumari
+         → Score: 18.8%
+
+    Looking for '+N more students' overflow button…
+  ✅ [TC-HS-W-OVF-001] Overflow button found
+         → '+10 more students'
+    ✅ Found: '+10 more students'
+      URL: modal=students&modalItem=Weak
+      Current URL: https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1&screen=overview&modal=students&modalItem=Weak
+  ✅ [TC-HS-W-MODAL-001] Student modal read
+         → 13 students captured
+  ✅ [TC-HS-W-M01] Modal #1: Sachpreet Verma
+         → Score:5.0%  Class 12N
+  ✅ [TC-HS-W-M02] Modal #2: Aditya Ranjith
+         → Score:11.3%  Class 12N
+  ✅ [TC-HS-W-M03] Modal #3: Amrita Kumari
+         → Score:18.8%  Class 12N
+  ✅ [TC-HS-W-M04] Modal #4: S Sheeram
+         → Score:23.1%  Class 12N
+  ✅ [TC-HS-W-M05] Modal #5: P Vijaychandh
+         → Score:23.1%  Class 12N
+  ✅ [TC-HS-W-M06] Modal #6: Prithesh Murugaboopathy
+         → Score:28.8%  Class 12N
+  ✅ [TC-HS-W-M07] Modal #7: Balaji Saheth Gajula
+         → Score:33.1%  Class 12N
+  ✅ [TC-HS-W-M08] Modal #8: Chethan .R
+         → Score:33.1%  Class 12N
+  ✅ [TC-HS-W-M09] Modal #9: Peddada Sri Arush
+         → Score:33.1%  Class 12N
+  ✅ [TC-HS-W-M10] Modal #10: Saanvi Saurabh Jhalani
+         → Score:33.1%  Class 12N
+  ✅ [TC-HS-W-M11] Modal #11: Sujai Aravindakannan
+         → Score:33.1%  Class 12N
+  ✅ [TC-HS-W-M12] Modal #12: Varshana Balaji
+         → Score:33.1%  Class 12N
+  ✅ [TC-HS-W-M13] Modal #13: Joshson Lourdu
+         → Score:33.8%  Class 12N
+
+      13 students read from modal:
+        # 1: Sachpreet Verma                              5.0%  (Class 12N)
+        # 2: Aditya Ranjith                              11.3%  (Class 12N)
+        # 3: Amrita Kumari                               18.8%  (Class 12N)
+        # 4: S Sheeram                                   23.1%  (Class 12N)
+        # 5: P Vijaychandh                               23.1%  (Class 12N)
+        # 6: Prithesh Murugaboopathy                     28.8%  (Class 12N)
+        # 7: Balaji Saheth Gajula                        33.1%  (Class 12N)
+        # 8: Chethan .R                                  33.1%  (Class 12N)
+        # 9: Peddada Sri Arush                           33.1%  (Class 12N)
+        #10: Saanvi Saurabh Jhalani                      33.1%  (Class 12N)
+        #11: Sujai Aravindakannan                        33.1%  (Class 12N)
+        #12: Varshana Balaji                             33.1%  (Class 12N)
+        #13: Joshson Lourdu                              33.8%  (Class 12N)
+  ✅ [TC-HS-W-VAL] Count check: declared=13, captured=13
+         → 13/13
+      Modal closed.
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  WEAK — 13 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    Sachpreet Verma                            Class 12N        5.0%
+  2    Aditya Ranjith                             Class 12N       11.3%
+  3    Amrita Kumari                              Class 12N       18.8%
+  4    S Sheeram                                  Class 12N       23.1%
+  5    P Vijaychandh                              Class 12N       23.1%
+  6    Prithesh Murugaboopathy                    Class 12N       28.8%
+  7    Balaji Saheth Gajula                       Class 12N       33.1%
+  8    Chethan .R                                 Class 12N       33.1%
+  9    Peddada Sri Arush                          Class 12N       33.1%
+  10   Saanvi Saurabh Jhalani                     Class 12N       33.1%
+  11   Sujai Aravindakannan                       Class 12N       33.1%
+  12   Varshana Balaji                            Class 12N       33.1%
+  13   Joshson Lourdu                             Class 12N       33.8%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+    Lagging
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Lagging
+  ✅ [TC-HS-L-001] 'Lagging' heading visible
+         → Lagging
+  ✅ [TC-HS-L-002] Student count badge
+         → '9 students' → 9 declared
+
+    Scraping visible student rows…
+      Found 3 student row containers
+    ✅ 3 visible students:
+      #1: Apurv Akshat Rajesh — 35.6%
+  ✅ [TC-HS-L-S01] Visible #1: Apurv Akshat Rajesh
+         → Score: 35.6%
+      #2: Avilala Nikhil Raj — 36.3%
+  ✅ [TC-HS-L-S02] Visible #2: Avilala Nikhil Raj
+         → Score: 36.3%
+      #3: Nirvaan Nair — 36.3%
+  ✅ [TC-HS-L-S03] Visible #3: Nirvaan Nair
+         → Score: 36.3%
+
+    Looking for '+N more students' overflow button…
+  ✅ [TC-HS-L-OVF-001] Overflow button found
+         → '+6 more students'
+    ✅ Found: '+6 more students'
+      URL: modal=students&modalItem=Lagging
+      Current URL: https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1&screen=overview&modal=students&modalItem=Weak
+  ⚠️  [TC-HS-L-MODAL-001] Student modal
+         → Modal DOM not found
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  LAGGING — 3 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    Apurv Akshat Rajesh                                        35.6%
+  2    Avilala Nikhil Raj                                         36.3%
+  3    Nirvaan Nair                                               36.3%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+    Performing Well
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Performing Well
+  ✅ [TC-HS-P-001] 'Performing Well' heading visible
+         → Performing Well
+  ✅ [TC-HS-P-002] Student count badge
+         → '10 students' → 10 declared
+
+    Scraping visible student rows…
+      Found 3 student row containers
+    ✅ 3 visible students:
+      #1: Amogh Rai — 94.4%
+  ✅ [TC-HS-P-S01] Visible #1: Amogh Rai
+         → Score: 94.4%
+      #2: Abigail Varghese — 93.1%
+  ✅ [TC-HS-P-S02] Visible #2: Abigail Varghese
+         → Score: 93.1%
+      #3: Aditi Sesham — 82.5%
+  ✅ [TC-HS-P-S03] Visible #3: Aditi Sesham
+         → Score: 82.5%
+
+    Looking for '+N more students' overflow button…
+  ✅ [TC-HS-P-OVF-001] Overflow button found
+         → '+7 more students'
+    ✅ Found: '+7 more students'
+      URL: modal=students&modalItem=Performing_Well
+      Current URL: https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1&screen=overview&modal=students&modalItem=Weak
+      Trying partial heading match for 'Performing Well'…
+  ⚠️  [TC-HS-P-MODAL-001] Student modal
+         → Modal DOM not found
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  PERFORMING WELL — 3 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    Amogh Rai                                                  94.4%
+  2    Abigail Varghese                                           93.1%
+  3    Aditi Sesham                                               82.5%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  FINAL SUMMARY — SECTION N
+══════════════════════════════════════════════════════════════════════
+  ✅  Passed   : 109
+  ❌  Failed   : 0
+  ⚠️   Warnings : 2
+  📊  Pass Rate: 98.2%  (109/111)
+
+══════════════════════════════════════════════════════════════════════
+  RUN 9/12 — SECTION O
+══════════════════════════════════════════════════════════════════════
+
+╔══════════════════════════════════════════════════════════════════════╗
+║   ClassLens – UI Test Suite v17.0                                   ║
+║   JS-first modal detection · JS student rows · badge text-content   ║
+║   Section: O   Started: 2026-06-01 17:22:04                          ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 1 – Login & Page Load
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-L-001] Login page loads
+         → https://classlens.inferentics.com/
+  ✅ [TC-L-002] Logo visible
+  ✅ [TC-L-003] Username / Password / Submit visible
+  ✅ [TC-L-004] Password masked
+  ✅ [TC-L-005] Login succeeds
+         → https://classlens.inferentics.com/
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 2 – Form Selection & Navigation
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-N-001] Dropdown 'Class'='12'
+  ✅ [TC-N-002] Dropdown 'Section'='O'
+  ✅ [TC-N-003] Dropdown 'Subject'='Maths'
+  ✅ [TC-N-004] Dropdown 'Exam'='Midterm'
+  ✅ [TC-N-005] Dropdown 'CompareLeft'='Midterm'
+  ✅ [TC-N-006] Dropdown 'CompareRight'='Preboard 1'
+  ✅ [TC-N-007] Enter → Dashboard
+         → https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1
+  ✅ [TC-N-008] Overview tab clicked
+  ✅ [TC-N-009] Page header visible
+         → Overview of Section 12 O
+  ✅ [TC-N-009a] Dashboard data loaded
+  ✅ [TC-N-010] Tab 'Overview' visible
+  ✅ [TC-N-011] Tab 'Chapters' visible
+  ✅ [TC-N-012] Tab 'Questions' visible
+  ✅ [TC-N-013] Tab 'Students' visible
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 3 – Exam Comparison Banner
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-EC-001] Exam Comparison heading
+         → Exam Comparison
+  ✅ [TC-EC-002] Sub-label 'Change in'
+         → Change in class average
+  ✅ [TC-EC-003] Midterm label present
+  ✅ [TC-EC-004] Preboard label present
+  ✅ [TC-EC-005] Left avg = 45%
+         → 45%
+  ✅ [TC-EC-006] Right avg = 36.1%
+         → 36.1%
+  ✅ [TC-EC-007] Trend: '-8.9 points decline'
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – Reteach Chapters
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-RT-001] Chapter panel found
+         → bg=bg-blue-50
+  ✅ [TC-RT-002] Chapter badge
+         → '4 chapters' → 4 chapters declared
+  ✅ [TC-RT-003] Instruction 'Revise Thoroughly'
+         → Revise Thoroughly
+  ℹ️  [TC-RT-OVF] No chapter overflow button
+         → All chapters visible inline
+      Found 4 chapter name elements
+
+      Processing: 'Matrices'
+        Avg: -29.4%  Wt: 10/ 80  Btn: True
+
+      Processing: 'Application Of Integrals'
+        Avg: -12.3%  Wt: 35/ 80  Btn: True
+
+      Processing: 'Application Of Derivatives'
+        Avg: -3.5%  Wt: 35/ 80  Btn: True
+
+      Processing: 'Integrals'
+        Avg: -0.6%  Wt: 35/ 80  Btn: True
+  ✅ [TC-RT-004] Chapter cards extracted
+         → 4 cards: ['Matrices', 'Application Of Integrals', 'Application Of Derivatives', 'Integrals']
+  ✅ [TC-RT-C01] Card 'Matrices' expanded
+  ✅ [TC-RT-C01-AVG]   Chapter Avg = '-29.4%'
+  ✅ [TC-RT-C01-WT]   Avg Weightage = '10/ 80'
+  ✅ [TC-RT-C01-BTN]   View Chapter Details button
+  ✅ [TC-RT-C02] Card 'Application Of Integrals' expanded
+  ✅ [TC-RT-C02-AVG]   Chapter Avg = '-12.3%'
+  ✅ [TC-RT-C02-WT]   Avg Weightage = '35/ 80'
+  ✅ [TC-RT-C02-BTN]   View Chapter Details button
+  ✅ [TC-RT-C03] Card 'Application Of Derivatives' expanded
+  ✅ [TC-RT-C03-AVG]   Chapter Avg = '-3.5%'
+  ✅ [TC-RT-C03-WT]   Avg Weightage = '35/ 80'
+  ✅ [TC-RT-C03-BTN]   View Chapter Details button
+  ✅ [TC-RT-C04] Card 'Integrals' expanded
+  ✅ [TC-RT-C04-AVG]   Chapter Avg = '-0.6%'
+  ✅ [TC-RT-C04-WT]   Avg Weightage = '35/ 80'
+  ✅ [TC-RT-C04-BTN]   View Chapter Details button
+
+  ─────────────────────────────────────────────────────────────────
+  RETEACH — SUMMARY
+  Badge: 4 chapters (4 declared)
+  Inline cards (4):
+    Matrices                                 Avg:   -29.4%  Wt:     10/ 80
+    Application Of Integrals                 Avg:   -12.3%  Wt:     35/ 80
+    Application Of Derivatives               Avg:    -3.5%  Wt:     35/ 80
+    Integrals                                Avg:    -0.6%  Wt:     35/ 80
+  ─────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – Brushup Chapters
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-BU-001] Chapter panel found
+         → bg=FFF7E6
+  ✅ [TC-BU-002] Chapter badge
+         → '3 chapters' → 3 chapters declared
+  ✅ [TC-BU-003] Instruction 'Review Specific Concepts'
+         → Review Specific Concepts
+  ℹ️  [TC-BU-OVF] No chapter overflow button
+         → All chapters visible inline
+      Found 3 chapter name elements
+
+      Processing: 'Inverse Trigonometric Functions'
+        Avg: -16.5%  Wt: 8/ 80  Btn: True
+
+      Processing: 'Continuity & Differentiability'
+        Avg: -2.8%  Wt: 35/ 80  Btn: True
+
+      Processing: 'Relations & Functions'
+        Avg: +5.1%  Wt: 8/ 80  Btn: True
+  ✅ [TC-BU-004] Chapter cards extracted
+         → 3 cards: ['Inverse Trigonometric Functions', 'Continuity & Differentiability', 'Relations & Functions']
+  ✅ [TC-BU-C01] Card 'Inverse Trigonometric Functions' expanded
+  ✅ [TC-BU-C01-AVG]   Chapter Avg = '-16.5%'
+  ✅ [TC-BU-C01-WT]   Avg Weightage = '8/ 80'
+  ✅ [TC-BU-C01-BTN]   View Chapter Details button
+  ✅ [TC-BU-C02] Card 'Continuity & Differentiability' expanded
+  ✅ [TC-BU-C02-AVG]   Chapter Avg = '-2.8%'
+  ✅ [TC-BU-C02-WT]   Avg Weightage = '35/ 80'
+  ✅ [TC-BU-C02-BTN]   View Chapter Details button
+  ✅ [TC-BU-C03] Card 'Relations & Functions' expanded
+  ✅ [TC-BU-C03-AVG]   Chapter Avg = '+5.1%'
+  ✅ [TC-BU-C03-WT]   Avg Weightage = '8/ 80'
+  ✅ [TC-BU-C03-BTN]   View Chapter Details button
+
+  ─────────────────────────────────────────────────────────────────
+  BRUSHUP — SUMMARY
+  Badge: 3 chapters (3 declared)
+  Inline cards (3):
+    Inverse Trigonometric Functions          Avg:   -16.5%  Wt:      8/ 80
+    Continuity & Differentiability           Avg:    -2.8%  Wt:     35/ 80
+    Relations & Functions                    Avg:    +5.1%  Wt:      8/ 80
+  ─────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – On Track Chapters
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-OT-001] Chapter panel found
+         → bg=bg-green-50
+  ✅ [TC-OT-002] Chapter badge
+         → '2 chapters' → 2 chapters declared
+  ✅ [TC-OT-003] Instruction 'Significant Improvement'
+         → Significant Improvement
+  ℹ️  [TC-OT-OVF] No chapter overflow button
+         → All chapters visible inline
+      Found 2 chapter name elements
+
+      Processing: 'Linear Programming'
+        Avg: -2.1%  Wt: 5/ 80  Btn: True
+
+      Processing: 'Determinants'
+        Avg: -6.6%  Wt: 10/ 80  Btn: True
+  ✅ [TC-OT-004] Chapter cards extracted
+         → 2 cards: ['Linear Programming', 'Determinants']
+  ✅ [TC-OT-C01] Card 'Linear Programming' expanded
+  ✅ [TC-OT-C01-AVG]   Chapter Avg = '-2.1%'
+  ✅ [TC-OT-C01-WT]   Avg Weightage = '5/ 80'
+  ✅ [TC-OT-C01-BTN]   View Chapter Details button
+  ✅ [TC-OT-C02] Card 'Determinants' expanded
+  ✅ [TC-OT-C02-AVG]   Chapter Avg = '-6.6%'
+  ✅ [TC-OT-C02-WT]   Avg Weightage = '10/ 80'
+  ✅ [TC-OT-C02-BTN]   View Chapter Details button
+
+  ─────────────────────────────────────────────────────────────────
+  ON TRACK — SUMMARY
+  Badge: 2 chapters (2 declared)
+  Inline cards (2):
+    Linear Programming                       Avg:    -2.1%  Wt:      5/ 80
+    Determinants                             Avg:    -6.6%  Wt:     10/ 80
+  ─────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 7 – Highlighted Students
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-HS-000] Highlighted Students heading
+         → Highlighted Students
+  ✅ [TC-HS-SUB] Sub-text visible
+         → Students classified based on their preboard scores.
+
+══════════════════════════════════════════════════════════════════════
+    Weak
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Weak
+  ✅ [TC-HS-W-001] 'Weak' heading visible
+         → Weak
+  ✅ [TC-HS-W-002] Student count badge
+         → '13 students' → 13 declared
+
+    Scraping visible student rows…
+      Found 3 student row containers
+    ✅ 3 visible students:
+      #1: T Jeeva — 10.0%
+  ✅ [TC-HS-W-S01] Visible #1: T Jeeva
+         → Score: 10.0%
+      #2: J Jaison Gerard — 15.6%
+  ✅ [TC-HS-W-S02] Visible #2: J Jaison Gerard
+         → Score: 15.6%
+      #3: Nirav Bhatia — 15.6%
+  ✅ [TC-HS-W-S03] Visible #3: Nirav Bhatia
+         → Score: 15.6%
+
+    Looking for '+N more students' overflow button…
+  ✅ [TC-HS-W-OVF-001] Overflow button found
+         → '+10 more students'
+    ✅ Found: '+10 more students'
+      URL: modal=students&modalItem=Weak
+      Current URL: https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1&screen=overview&modal=students&modalItem=Weak
+  ✅ [TC-HS-W-MODAL-001] Student modal read
+         → 13 students captured
+  ✅ [TC-HS-W-M01] Modal #1: T Jeeva
+         → Score:10.0%  Class 12O
+  ✅ [TC-HS-W-M02] Modal #2: J Jaison Gerard
+         → Score:15.6%  Class 12O
+  ✅ [TC-HS-W-M03] Modal #3: Nirav Bhatia
+         → Score:15.6%  Class 12O
+  ✅ [TC-HS-W-M04] Modal #4: Kaushik Manchukonda
+         → Score:20.0%  Class 12O
+  ✅ [TC-HS-W-M05] Modal #5: Madhav Mathur
+         → Score:20.6%  Class 12O
+  ✅ [TC-HS-W-M06] Modal #6: Nithin K
+         → Score:21.3%  Class 12O
+  ✅ [TC-HS-W-M07] Modal #7: Saptaswa Das
+         → Score:22.5%  Class 12O
+  ✅ [TC-HS-W-M08] Modal #8: Aditya Nair
+         → Score:25.0%  Class 12O
+  ✅ [TC-HS-W-M09] Modal #9: Keerthi Sameer R K
+         → Score:25.0%  Class 12O
+  ✅ [TC-HS-W-M10] Modal #10: Gargi Agarwal
+         → Score:27.5%  Class 12O
+  ✅ [TC-HS-W-M11] Modal #11: Lena Alice Mathew
+         → Score:28.1%  Class 12O
+  ✅ [TC-HS-W-M12] Modal #12: Atharv Ratish Dixit
+         → Score:31.9%  Class 12O
+  ✅ [TC-HS-W-M13] Modal #13: Devashree N Sawant
+         → Score:33.1%  Class 12O
+
+      13 students read from modal:
+        # 1: T Jeeva                                     10.0%  (Class 12O)
+        # 2: J Jaison Gerard                             15.6%  (Class 12O)
+        # 3: Nirav Bhatia                                15.6%  (Class 12O)
+        # 4: Kaushik Manchukonda                         20.0%  (Class 12O)
+        # 5: Madhav Mathur                               20.6%  (Class 12O)
+        # 6: Nithin K                                    21.3%  (Class 12O)
+        # 7: Saptaswa Das                                22.5%  (Class 12O)
+        # 8: Aditya Nair                                 25.0%  (Class 12O)
+        # 9: Keerthi Sameer R K                          25.0%  (Class 12O)
+        #10: Gargi Agarwal                               27.5%  (Class 12O)
+        #11: Lena Alice Mathew                           28.1%  (Class 12O)
+        #12: Atharv Ratish Dixit                         31.9%  (Class 12O)
+        #13: Devashree N Sawant                          33.1%  (Class 12O)
+  ✅ [TC-HS-W-VAL] Count check: declared=13, captured=13
+         → 13/13
+      Modal closed.
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  WEAK — 13 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    T Jeeva                                    Class 12O       10.0%
+  2    J Jaison Gerard                            Class 12O       15.6%
+  3    Nirav Bhatia                               Class 12O       15.6%
+  4    Kaushik Manchukonda                        Class 12O       20.0%
+  5    Madhav Mathur                              Class 12O       20.6%
+  6    Nithin K                                   Class 12O       21.3%
+  7    Saptaswa Das                               Class 12O       22.5%
+  8    Aditya Nair                                Class 12O       25.0%
+  9    Keerthi Sameer R K                         Class 12O       25.0%
+  10   Gargi Agarwal                              Class 12O       27.5%
+  11   Lena Alice Mathew                          Class 12O       28.1%
+  12   Atharv Ratish Dixit                        Class 12O       31.9%
+  13   Devashree N Sawant                         Class 12O       33.1%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+    Lagging
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Lagging
+  ✅ [TC-HS-L-001] 'Lagging' heading visible
+         → Lagging
+  ✅ [TC-HS-L-002] Student count badge
+         → '8 students' → 8 declared
+
+    Scraping visible student rows…
+      Found 3 student row containers
+    ✅ 3 visible students:
+      #1: Devaditya Dey — 37.5%
+  ✅ [TC-HS-L-S01] Visible #1: Devaditya Dey
+         → Score: 37.5%
+      #2: Akshay Rao — 39.4%
+  ✅ [TC-HS-L-S02] Visible #2: Akshay Rao
+         → Score: 39.4%
+      #3: Janhvi Abhijit Kharade — 39.4%
+  ✅ [TC-HS-L-S03] Visible #3: Janhvi Abhijit Kharade
+         → Score: 39.4%
+
+    Looking for '+N more students' overflow button…
+  ✅ [TC-HS-L-OVF-001] Overflow button found
+         → '+5 more students'
+    ✅ Found: '+5 more students'
+      URL: modal=students&modalItem=Lagging
+      Current URL: https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1&screen=overview&modal=students&modalItem=Weak
+  ⚠️  [TC-HS-L-MODAL-001] Student modal
+         → Modal DOM not found
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  LAGGING — 3 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    Devaditya Dey                                              37.5%
+  2    Akshay Rao                                                 39.4%
+  3    Janhvi Abhijit Kharade                                     39.4%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+    Performing Well
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Performing Well
+  ✅ [TC-HS-P-001] 'Performing Well' heading visible
+         → Performing Well
+  ✅ [TC-HS-P-002] Student count badge
+         → '6 students' → 6 declared
+
+    Scraping visible student rows…
+      Found 3 student row containers
+    ✅ 3 visible students:
+      #1: Pranav Nathan Sivakumar — 66.9%
+  ✅ [TC-HS-P-S01] Visible #1: Pranav Nathan Sivakumar
+         → Score: 66.9%
+      #2: Prerana Talikoti — 66.3%
+  ✅ [TC-HS-P-S02] Visible #2: Prerana Talikoti
+         → Score: 66.3%
+      #3: Lakshmeesh Reddy R — 65.0%
+  ✅ [TC-HS-P-S03] Visible #3: Lakshmeesh Reddy R
+         → Score: 65.0%
+
+    Looking for '+N more students' overflow button…
+  ✅ [TC-HS-P-OVF-001] Overflow button found
+         → '+3 more students'
+    ✅ Found: '+3 more students'
+      URL: modal=students&modalItem=Performing_Well
+      Current URL: https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1&screen=overview&modal=students&modalItem=Weak
+      Trying partial heading match for 'Performing Well'…
+  ⚠️  [TC-HS-P-MODAL-001] Student modal
+         → Modal DOM not found
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  PERFORMING WELL — 3 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    Pranav Nathan Sivakumar                                    66.9%
+  2    Prerana Talikoti                                           66.3%
+  3    Lakshmeesh Reddy R                                         65.0%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  FINAL SUMMARY — SECTION O
+══════════════════════════════════════════════════════════════════════
+  ✅  Passed   : 109
+  ❌  Failed   : 0
+  ⚠️   Warnings : 2
+  📊  Pass Rate: 98.2%  (109/111)
+
+══════════════════════════════════════════════════════════════════════
+  RUN 10/12 — SECTION P
+══════════════════════════════════════════════════════════════════════
+
+╔══════════════════════════════════════════════════════════════════════╗
+║   ClassLens – UI Test Suite v17.0                                   ║
+║   JS-first modal detection · JS student rows · badge text-content   ║
+║   Section: P   Started: 2026-06-01 17:23:26                          ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 1 – Login & Page Load
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-L-001] Login page loads
+         → https://classlens.inferentics.com/
+  ✅ [TC-L-002] Logo visible
+  ✅ [TC-L-003] Username / Password / Submit visible
+  ✅ [TC-L-004] Password masked
+  ✅ [TC-L-005] Login succeeds
+         → https://classlens.inferentics.com/
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 2 – Form Selection & Navigation
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-N-001] Dropdown 'Class'='12'
+  ✅ [TC-N-002] Dropdown 'Section'='P'
+  ✅ [TC-N-003] Dropdown 'Subject'='Maths'
+  ✅ [TC-N-004] Dropdown 'Exam'='Midterm'
+  ✅ [TC-N-005] Dropdown 'CompareLeft'='Midterm'
+  ✅ [TC-N-006] Dropdown 'CompareRight'='Preboard 1'
+  ✅ [TC-N-007] Enter → Dashboard
+         → https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1
+  ✅ [TC-N-008] Overview tab clicked
+  ✅ [TC-N-009] Page header visible
+         → Overview of Section 12 P
+  ✅ [TC-N-009a] Dashboard data loaded
+  ✅ [TC-N-010] Tab 'Overview' visible
+  ✅ [TC-N-011] Tab 'Chapters' visible
+  ✅ [TC-N-012] Tab 'Questions' visible
+  ✅ [TC-N-013] Tab 'Students' visible
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 3 – Exam Comparison Banner
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-EC-001] Exam Comparison heading
+         → Exam Comparison
+  ✅ [TC-EC-002] Sub-label 'Change in'
+         → Change in class average
+  ✅ [TC-EC-003] Midterm label present
+  ✅ [TC-EC-004] Preboard label present
+  ✅ [TC-EC-005] Left avg = 36.5%
+         → 36.5%
+  ✅ [TC-EC-006] Right avg = 30%
+         → 30%
+  ✅ [TC-EC-007] Trend: '-6.5 points decline'
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – Reteach Chapters
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-RT-001] Chapter panel found
+         → bg=bg-blue-50
+  ✅ [TC-RT-002] Chapter badge
+         → '2 chapters' → 2 chapters declared
+  ✅ [TC-RT-003] Instruction 'Revise Thoroughly'
+         → Revise Thoroughly
+  ℹ️  [TC-RT-OVF] No chapter overflow button
+         → All chapters visible inline
+      Found 2 chapter name elements
+
+      Processing: 'Application Of Derivatives'
+        Avg: -1.9%  Wt: 35/ 80  Btn: True
+
+      Processing: 'Integrals'
+        Avg: +2.4%  Wt: 35/ 80  Btn: True
+  ✅ [TC-RT-004] Chapter cards extracted
+         → 2 cards: ['Application Of Derivatives', 'Integrals']
+  ✅ [TC-RT-C01] Card 'Application Of Derivatives' expanded
+  ✅ [TC-RT-C01-AVG]   Chapter Avg = '-1.9%'
+  ✅ [TC-RT-C01-WT]   Avg Weightage = '35/ 80'
+  ✅ [TC-RT-C01-BTN]   View Chapter Details button
+  ✅ [TC-RT-C02] Card 'Integrals' expanded
+  ✅ [TC-RT-C02-AVG]   Chapter Avg = '+2.4%'
+  ✅ [TC-RT-C02-WT]   Avg Weightage = '35/ 80'
+  ✅ [TC-RT-C02-BTN]   View Chapter Details button
+
+  ─────────────────────────────────────────────────────────────────
+  RETEACH — SUMMARY
+  Badge: 2 chapters (2 declared)
+  Inline cards (2):
+    Application Of Derivatives               Avg:    -1.9%  Wt:     35/ 80
+    Integrals                                Avg:    +2.4%  Wt:     35/ 80
+  ─────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – Brushup Chapters
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-BU-001] Chapter panel found
+         → bg=FFF7E6
+  ✅ [TC-BU-002] Chapter badge
+         → '5 chapters' → 5 chapters declared
+  ✅ [TC-BU-003] Instruction 'Review Specific Concepts'
+         → Review Specific Concepts
+
+    Found chapter overflow: '+1 more chapters'
+      URL updated: modal=chapters&modalItem=Brushup
+      Modal subheading: '5 chapters in this category'
+  ✅ [TC-BU-OVF] Chapter overflow → modal opened
+         → '+1 more chapters' → 5 chapters
+        # 1: Inverse Trigonometric Functions
+  ✅ [TC-BU-MCH01] Modal chapter #1: Inverse Trigonometric Functions
+        # 2: Relations & Functions
+  ✅ [TC-BU-MCH02] Modal chapter #2: Relations & Functions
+        # 3: Application of Integrals
+  ✅ [TC-BU-MCH03] Modal chapter #3: Application of Integrals
+        # 4: Linear Programming
+  ✅ [TC-BU-MCH04] Modal chapter #4: Linear Programming
+        # 5: Continuity & Differentiability
+  ✅ [TC-BU-MCH05] Modal chapter #5: Continuity & Differentiability
+      Modal closed.
+      Found 4 chapter name elements
+
+      Processing: 'Inverse Trigonometric Functions'
+        Avg: -21.5%  Wt: 8/ 80  Btn: True
+
+      Processing: 'Relations & Functions'
+        Avg: -5.1%  Wt: 8/ 80  Btn: True
+
+      Processing: 'Application Of Integrals'
+        Avg: -0.9%  Wt: 35/ 80  Btn: True
+
+      Processing: 'Linear Programming'
+        Avg: +1.4%  Wt: 5/ 80  Btn: True
+  ✅ [TC-BU-004] Chapter cards extracted
+         → 4 cards: ['Inverse Trigonometric Functions', 'Relations & Functions', 'Application Of Integrals', 'Linear Programming']
+  ✅ [TC-BU-C01] Card 'Inverse Trigonometric Functions' expanded
+  ✅ [TC-BU-C01-AVG]   Chapter Avg = '-21.5%'
+  ✅ [TC-BU-C01-WT]   Avg Weightage = '8/ 80'
+  ✅ [TC-BU-C01-BTN]   View Chapter Details button
+  ✅ [TC-BU-C02] Card 'Relations & Functions' expanded
+  ✅ [TC-BU-C02-AVG]   Chapter Avg = '-5.1%'
+  ✅ [TC-BU-C02-WT]   Avg Weightage = '8/ 80'
+  ✅ [TC-BU-C02-BTN]   View Chapter Details button
+  ✅ [TC-BU-C03] Card 'Application Of Integrals' expanded
+  ✅ [TC-BU-C03-AVG]   Chapter Avg = '-0.9%'
+  ✅ [TC-BU-C03-WT]   Avg Weightage = '35/ 80'
+  ✅ [TC-BU-C03-BTN]   View Chapter Details button
+  ✅ [TC-BU-C04] Card 'Linear Programming' expanded
+  ✅ [TC-BU-C04-AVG]   Chapter Avg = '+1.4%'
+  ✅ [TC-BU-C04-WT]   Avg Weightage = '5/ 80'
+  ✅ [TC-BU-C04-BTN]   View Chapter Details button
+
+  ─────────────────────────────────────────────────────────────────
+  BRUSHUP — SUMMARY
+  Badge: 5 chapters (5 declared)
+  Modal chapters (5):
+    #1   Inverse Trigonometric Functions
+    #2   Relations & Functions
+    #3   Application of Integrals
+    #4   Linear Programming
+    #5   Continuity & Differentiability
+  Inline cards (4):
+    Inverse Trigonometric Functions          Avg:   -21.5%  Wt:      8/ 80
+    Relations & Functions                    Avg:    -5.1%  Wt:      8/ 80
+    Application Of Integrals                 Avg:    -0.9%  Wt:     35/ 80
+    Linear Programming                       Avg:    +1.4%  Wt:      5/ 80
+  ─────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – On Track Chapters
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-OT-001] Chapter panel found
+         → bg=bg-green-50
+  ✅ [TC-OT-002] Chapter badge
+         → '2 chapters' → 2 chapters declared
+  ✅ [TC-OT-003] Instruction 'Significant Improvement'
+         → Significant Improvement
+  ℹ️  [TC-OT-OVF] No chapter overflow button
+         → All chapters visible inline
+      Found 2 chapter name elements
+
+      Processing: 'Determinants'
+        Avg: +10.4%  Wt: 10/ 80  Btn: True
+
+      Processing: 'Matrices'
+        Avg: -5.7%  Wt: 10/ 80  Btn: True
+  ✅ [TC-OT-004] Chapter cards extracted
+         → 2 cards: ['Determinants', 'Matrices']
+  ✅ [TC-OT-C01] Card 'Determinants' expanded
+  ✅ [TC-OT-C01-AVG]   Chapter Avg = '+10.4%'
+  ✅ [TC-OT-C01-WT]   Avg Weightage = '10/ 80'
+  ✅ [TC-OT-C01-BTN]   View Chapter Details button
+  ✅ [TC-OT-C02] Card 'Matrices' expanded
+  ✅ [TC-OT-C02-AVG]   Chapter Avg = '-5.7%'
+  ✅ [TC-OT-C02-WT]   Avg Weightage = '10/ 80'
+  ✅ [TC-OT-C02-BTN]   View Chapter Details button
+
+  ─────────────────────────────────────────────────────────────────
+  ON TRACK — SUMMARY
+  Badge: 2 chapters (2 declared)
+  Inline cards (2):
+    Determinants                             Avg:   +10.4%  Wt:     10/ 80
+    Matrices                                 Avg:    -5.7%  Wt:     10/ 80
+  ─────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 7 – Highlighted Students
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-HS-000] Highlighted Students heading
+         → Highlighted Students
+  ✅ [TC-HS-SUB] Sub-text visible
+         → Students classified based on their preboard scores.
+
+══════════════════════════════════════════════════════════════════════
+    Weak
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Weak
+  ✅ [TC-HS-W-001] 'Weak' heading visible
+         → Weak
+  ✅ [TC-HS-W-002] Student count badge
+         → '15 students' → 15 declared
+
+    Scraping visible student rows…
+      Found 3 student row containers
+    ✅ 3 visible students:
+      #1: Nehal Mital — 11.3%
+  ✅ [TC-HS-W-S01] Visible #1: Nehal Mital
+         → Score: 11.3%
+      #2: Tanya Tripathy — 13.8%
+  ✅ [TC-HS-W-S02] Visible #2: Tanya Tripathy
+         → Score: 13.8%
+      #3: S Prajith — 15.0%
+  ✅ [TC-HS-W-S03] Visible #3: S Prajith
+         → Score: 15.0%
+
+    Looking for '+N more students' overflow button…
+  ✅ [TC-HS-W-OVF-001] Overflow button found
+         → '+12 more students'
+    ✅ Found: '+12 more students'
+      URL: modal=students&modalItem=Weak
+      Current URL: https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1&screen=overview&modal=students&modalItem=Weak
+  ✅ [TC-HS-W-MODAL-001] Student modal read
+         → 15 students captured
+  ✅ [TC-HS-W-M01] Modal #1: Nehal Mital
+         → Score:11.3%  Class 12P
+  ✅ [TC-HS-W-M02] Modal #2: Tanya Tripathy
+         → Score:13.8%  Class 12P
+  ✅ [TC-HS-W-M03] Modal #3: S Prajith
+         → Score:15.0%  Class 12P
+  ✅ [TC-HS-W-M04] Modal #4: Tenneti Aditya Bhavya Hamsini
+         → Score:16.3%  Class 12P
+  ✅ [TC-HS-W-M05] Modal #5: Adam Benzeer
+         → Score:16.3%  Class 12P
+  ✅ [TC-HS-W-M06] Modal #6: Paavana S N
+         → Score:16.9%  Class 12P
+  ✅ [TC-HS-W-M07] Modal #7: Mrinal Raj
+         → Score:17.5%  Class 12P
+  ✅ [TC-HS-W-M08] Modal #8: Gautham Rajesh
+         → Score:17.5%  Class 12P
+  ✅ [TC-HS-W-M09] Modal #9: Olive sara Sibey
+         → Score:18.8%  Class 12P
+  ✅ [TC-HS-W-M10] Modal #10: Abhinav Kumar
+         → Score:23.8%  Class 12P
+  ✅ [TC-HS-W-M11] Modal #11: Tanisha Nanda
+         → Score:23.8%  Class 12P
+  ✅ [TC-HS-W-M12] Modal #12: Yash Srivastava
+         → Score:25.0%  Class 12P
+  ✅ [TC-HS-W-M13] Modal #13: Serah Anju Daniel
+         → Score:25.0%  Class 12P
+  ✅ [TC-HS-W-M14] Modal #14: Vrishank Sai Ramadurgam
+         → Score:25.6%  Class 12P
+  ✅ [TC-HS-W-M15] Modal #15: Manya Badami Nagesh
+         → Score:26.3%  Class 12P
+
+      15 students read from modal:
+        # 1: Nehal Mital                                 11.3%  (Class 12P)
+        # 2: Tanya Tripathy                              13.8%  (Class 12P)
+        # 3: S Prajith                                   15.0%  (Class 12P)
+        # 4: Tenneti Aditya Bhavya Hamsini               16.3%  (Class 12P)
+        # 5: Adam Benzeer                                16.3%  (Class 12P)
+        # 6: Paavana S N                                 16.9%  (Class 12P)
+        # 7: Mrinal Raj                                  17.5%  (Class 12P)
+        # 8: Gautham Rajesh                              17.5%  (Class 12P)
+        # 9: Olive sara Sibey                            18.8%  (Class 12P)
+        #10: Abhinav Kumar                               23.8%  (Class 12P)
+        #11: Tanisha Nanda                               23.8%  (Class 12P)
+        #12: Yash Srivastava                             25.0%  (Class 12P)
+        #13: Serah Anju Daniel                           25.0%  (Class 12P)
+        #14: Vrishank Sai Ramadurgam                     25.6%  (Class 12P)
+        #15: Manya Badami Nagesh                         26.3%  (Class 12P)
+  ✅ [TC-HS-W-VAL] Count check: declared=15, captured=15
+         → 15/15
+      Modal closed.
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  WEAK — 15 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    Nehal Mital                                Class 12P       11.3%
+  2    Tanya Tripathy                             Class 12P       13.8%
+  3    S Prajith                                  Class 12P       15.0%
+  4    Tenneti Aditya Bhavya Hamsini              Class 12P       16.3%
+  5    Adam Benzeer                               Class 12P       16.3%
+  6    Paavana S N                                Class 12P       16.9%
+  7    Mrinal Raj                                 Class 12P       17.5%
+  8    Gautham Rajesh                             Class 12P       17.5%
+  9    Olive sara Sibey                           Class 12P       18.8%
+  10   Abhinav Kumar                              Class 12P       23.8%
+  11   Tanisha Nanda                              Class 12P       23.8%
+  12   Yash Srivastava                            Class 12P       25.0%
+  13   Serah Anju Daniel                          Class 12P       25.0%
+  14   Vrishank Sai Ramadurgam                    Class 12P       25.6%
+  15   Manya Badami Nagesh                        Class 12P       26.3%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+    Lagging
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Lagging
+  ✅ [TC-HS-L-001] 'Lagging' heading visible
+         → Lagging
+  ✅ [TC-HS-L-002] Student count badge
+         → '6 students' → 6 declared
+
+    Scraping visible student rows…
+      Found 3 student row containers
+    ✅ 3 visible students:
+      #1: R Raghavi — 35.0%
+  ✅ [TC-HS-L-S01] Visible #1: R Raghavi
+         → Score: 35.0%
+      #2: Shivangi Mohapatra — 36.3%
+  ✅ [TC-HS-L-S02] Visible #2: Shivangi Mohapatra
+         → Score: 36.3%
+      #3: Rishabh Sharma — 37.5%
+  ✅ [TC-HS-L-S03] Visible #3: Rishabh Sharma
+         → Score: 37.5%
+
+    Looking for '+N more students' overflow button…
+  ✅ [TC-HS-L-OVF-001] Overflow button found
+         → '+3 more students'
+    ✅ Found: '+3 more students'
+      URL: modal=students&modalItem=Lagging
+      Current URL: https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1&screen=overview&modal=students&modalItem=Weak
+  ⚠️  [TC-HS-L-MODAL-001] Student modal
+         → Modal DOM not found
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  LAGGING — 3 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    R Raghavi                                                  35.0%
+  2    Shivangi Mohapatra                                         36.3%
+  3    Rishabh Sharma                                             37.5%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+    Performing Well
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Performing Well
+  ✅ [TC-HS-P-001] 'Performing Well' heading visible
+         → Performing Well
+  ✅ [TC-HS-P-002] Student count badge
+         → '5 students' → 5 declared
+
+    Scraping visible student rows…
+      Found 3 student row containers
+    ✅ 3 visible students:
+      #1: Aishani Tarafdar — 66.3%
+  ✅ [TC-HS-P-S01] Visible #1: Aishani Tarafdar
+         → Score: 66.3%
+      #2: Maulishka Kohli — 54.4%
+  ✅ [TC-HS-P-S02] Visible #2: Maulishka Kohli
+         → Score: 54.4%
+      #3: Madhav Iyli — 50.6%
+  ✅ [TC-HS-P-S03] Visible #3: Madhav Iyli
+         → Score: 50.6%
+
+    Looking for '+N more students' overflow button…
+  ✅ [TC-HS-P-OVF-001] Overflow button found
+         → '+2 more students'
+    ✅ Found: '+2 more students'
+      URL: modal=students&modalItem=Performing_Well
+      Current URL: https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1&screen=overview&modal=students&modalItem=Weak
+      Trying partial heading match for 'Performing Well'…
+  ⚠️  [TC-HS-P-MODAL-001] Student modal
+         → Modal DOM not found
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  PERFORMING WELL — 3 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    Aishani Tarafdar                                           66.3%
+  2    Maulishka Kohli                                            54.4%
+  3    Madhav Iyli                                                50.6%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  FINAL SUMMARY — SECTION P
+══════════════════════════════════════════════════════════════════════
+  ✅  Passed   : 113
+  ❌  Failed   : 0
+  ⚠️   Warnings : 2
+  📊  Pass Rate: 98.3%  (113/115)
+
+══════════════════════════════════════════════════════════════════════
+  RUN 11/12 — SECTION Q
+══════════════════════════════════════════════════════════════════════
+
+╔══════════════════════════════════════════════════════════════════════╗
+║   ClassLens – UI Test Suite v17.0                                   ║
+║   JS-first modal detection · JS student rows · badge text-content   ║
+║   Section: Q   Started: 2026-06-01 17:24:53                          ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 1 – Login & Page Load
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-L-001] Login page loads
+         → https://classlens.inferentics.com/
+  ✅ [TC-L-002] Logo visible
+  ✅ [TC-L-003] Username / Password / Submit visible
+  ✅ [TC-L-004] Password masked
+  ✅ [TC-L-005] Login succeeds
+         → https://classlens.inferentics.com/
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 2 – Form Selection & Navigation
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-N-001] Dropdown 'Class'='12'
+  ✅ [TC-N-002] Dropdown 'Section'='Q'
+  ✅ [TC-N-003] Dropdown 'Subject'='Maths'
+  ✅ [TC-N-004] Dropdown 'Exam'='Midterm'
+  ✅ [TC-N-005] Dropdown 'CompareLeft'='Midterm'
+  ✅ [TC-N-006] Dropdown 'CompareRight'='Preboard 1'
+  ✅ [TC-N-007] Enter → Dashboard
+         → https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1
+  ✅ [TC-N-008] Overview tab clicked
+  ✅ [TC-N-009] Page header visible
+         → Overview of Section 12 Q
+  ✅ [TC-N-009a] Dashboard data loaded
+  ✅ [TC-N-010] Tab 'Overview' visible
+  ✅ [TC-N-011] Tab 'Chapters' visible
+  ✅ [TC-N-012] Tab 'Questions' visible
+  ✅ [TC-N-013] Tab 'Students' visible
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 3 – Exam Comparison Banner
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-EC-001] Exam Comparison heading
+         → Exam Comparison
+  ✅ [TC-EC-002] Sub-label 'Change in'
+         → Change in class average
+  ✅ [TC-EC-003] Midterm label present
+  ✅ [TC-EC-004] Preboard label present
+  ✅ [TC-EC-005] Left avg = 34.1%
+         → 34.1%
+  ✅ [TC-EC-006] Right avg = 33.3%
+         → 33.3%
+  ✅ [TC-EC-007] Trend: '-0.8 points decline'
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – Reteach Chapters
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-RT-001] Chapter panel found
+         → bg=bg-blue-50
+  ✅ [TC-RT-002] Chapter badge
+         → '4 chapters' → 4 chapters declared
+  ✅ [TC-RT-003] Instruction 'Revise Thoroughly'
+         → Revise Thoroughly
+  ℹ️  [TC-RT-OVF] No chapter overflow button
+         → All chapters visible inline
+      Found 4 chapter name elements
+
+      Processing: 'Integrals'
+        Avg: -3.1%  Wt: 35/ 80  Btn: True
+
+      Processing: 'Application Of Derivatives'
+        Avg: -0.3%  Wt: 35/ 80  Btn: True
+
+      Processing: 'Continuity & Differentiability'
+        Avg: +1.4%  Wt: 35/ 80  Btn: True
+
+      Processing: 'Application Of Integrals'
+        Avg: +7.8%  Wt: 35/ 80  Btn: True
+  ✅ [TC-RT-004] Chapter cards extracted
+         → 4 cards: ['Integrals', 'Application Of Derivatives', 'Continuity & Differentiability', 'Application Of Integrals']
+  ✅ [TC-RT-C01] Card 'Integrals' expanded
+  ✅ [TC-RT-C01-AVG]   Chapter Avg = '-3.1%'
+  ✅ [TC-RT-C01-WT]   Avg Weightage = '35/ 80'
+  ✅ [TC-RT-C01-BTN]   View Chapter Details button
+  ✅ [TC-RT-C02] Card 'Application Of Derivatives' expanded
+  ✅ [TC-RT-C02-AVG]   Chapter Avg = '-0.3%'
+  ✅ [TC-RT-C02-WT]   Avg Weightage = '35/ 80'
+  ✅ [TC-RT-C02-BTN]   View Chapter Details button
+  ✅ [TC-RT-C03] Card 'Continuity & Differentiability' expanded
+  ✅ [TC-RT-C03-AVG]   Chapter Avg = '+1.4%'
+  ✅ [TC-RT-C03-WT]   Avg Weightage = '35/ 80'
+  ✅ [TC-RT-C03-BTN]   View Chapter Details button
+  ✅ [TC-RT-C04] Card 'Application Of Integrals' expanded
+  ✅ [TC-RT-C04-AVG]   Chapter Avg = '+7.8%'
+  ✅ [TC-RT-C04-WT]   Avg Weightage = '35/ 80'
+  ✅ [TC-RT-C04-BTN]   View Chapter Details button
+
+  ─────────────────────────────────────────────────────────────────
+  RETEACH — SUMMARY
+  Badge: 4 chapters (4 declared)
+  Inline cards (4):
+    Integrals                                Avg:    -3.1%  Wt:     35/ 80
+    Application Of Derivatives               Avg:    -0.3%  Wt:     35/ 80
+    Continuity & Differentiability           Avg:    +1.4%  Wt:     35/ 80
+    Application Of Integrals                 Avg:    +7.8%  Wt:     35/ 80
+  ─────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – Brushup Chapters
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-BU-001] Chapter panel found
+         → bg=FFF7E6
+  ✅ [TC-BU-002] Chapter badge
+         → '2 chapters' → 2 chapters declared
+  ✅ [TC-BU-003] Instruction 'Review Specific Concepts'
+         → Review Specific Concepts
+  ℹ️  [TC-BU-OVF] No chapter overflow button
+         → All chapters visible inline
+      Found 2 chapter name elements
+
+      Processing: 'Inverse Trigonometric Functions'
+        Avg: -9.9%  Wt: 8/ 80  Btn: True
+
+      Processing: 'Relations & Functions'
+        Avg: -5.8%  Wt: 8/ 80  Btn: True
+  ✅ [TC-BU-004] Chapter cards extracted
+         → 2 cards: ['Inverse Trigonometric Functions', 'Relations & Functions']
+  ✅ [TC-BU-C01] Card 'Inverse Trigonometric Functions' expanded
+  ✅ [TC-BU-C01-AVG]   Chapter Avg = '-9.9%'
+  ✅ [TC-BU-C01-WT]   Avg Weightage = '8/ 80'
+  ✅ [TC-BU-C01-BTN]   View Chapter Details button
+  ✅ [TC-BU-C02] Card 'Relations & Functions' expanded
+  ✅ [TC-BU-C02-AVG]   Chapter Avg = '-5.8%'
+  ✅ [TC-BU-C02-WT]   Avg Weightage = '8/ 80'
+  ✅ [TC-BU-C02-BTN]   View Chapter Details button
+
+  ─────────────────────────────────────────────────────────────────
+  BRUSHUP — SUMMARY
+  Badge: 2 chapters (2 declared)
+  Inline cards (2):
+    Inverse Trigonometric Functions          Avg:    -9.9%  Wt:      8/ 80
+    Relations & Functions                    Avg:    -5.8%  Wt:      8/ 80
+  ─────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – On Track Chapters
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-OT-001] Chapter panel found
+         → bg=bg-green-50
+  ✅ [TC-OT-002] Chapter badge
+         → '3 chapters' → 3 chapters declared
+  ✅ [TC-OT-003] Instruction 'Significant Improvement'
+         → Significant Improvement
+  ℹ️  [TC-OT-OVF] No chapter overflow button
+         → All chapters visible inline
+      Found 3 chapter name elements
+
+      Processing: 'Determinants'
+        Avg: +21.3%  Wt: 10/ 80  Btn: True
+
+      Processing: 'Matrices'
+        Avg: +11.8%  Wt: 10/ 80  Btn: True
+
+      Processing: 'Linear Programming'
+        Avg: -13.4%  Wt: 5/ 80  Btn: True
+  ✅ [TC-OT-004] Chapter cards extracted
+         → 3 cards: ['Determinants', 'Matrices', 'Linear Programming']
+  ✅ [TC-OT-C01] Card 'Determinants' expanded
+  ✅ [TC-OT-C01-AVG]   Chapter Avg = '+21.3%'
+  ✅ [TC-OT-C01-WT]   Avg Weightage = '10/ 80'
+  ✅ [TC-OT-C01-BTN]   View Chapter Details button
+  ✅ [TC-OT-C02] Card 'Matrices' expanded
+  ✅ [TC-OT-C02-AVG]   Chapter Avg = '+11.8%'
+  ✅ [TC-OT-C02-WT]   Avg Weightage = '10/ 80'
+  ✅ [TC-OT-C02-BTN]   View Chapter Details button
+  ✅ [TC-OT-C03] Card 'Linear Programming' expanded
+  ✅ [TC-OT-C03-AVG]   Chapter Avg = '-13.4%'
+  ✅ [TC-OT-C03-WT]   Avg Weightage = '5/ 80'
+  ✅ [TC-OT-C03-BTN]   View Chapter Details button
+
+  ─────────────────────────────────────────────────────────────────
+  ON TRACK — SUMMARY
+  Badge: 3 chapters (3 declared)
+  Inline cards (3):
+    Determinants                             Avg:   +21.3%  Wt:     10/ 80
+    Matrices                                 Avg:   +11.8%  Wt:     10/ 80
+    Linear Programming                       Avg:   -13.4%  Wt:      5/ 80
+  ─────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 7 – Highlighted Students
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-HS-000] Highlighted Students heading
+         → Highlighted Students
+  ✅ [TC-HS-SUB] Sub-text visible
+         → Students classified based on their preboard scores.
+
+══════════════════════════════════════════════════════════════════════
+    Weak
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Weak
+  ✅ [TC-HS-W-001] 'Weak' heading visible
+         → Weak
+  ✅ [TC-HS-W-002] Student count badge
+         → '13 students' → 13 declared
+
+    Scraping visible student rows…
+      Found 3 student row containers
+    ✅ 3 visible students:
+      #1: Siri Ganesh — 13.8%
+  ✅ [TC-HS-W-S01] Visible #1: Siri Ganesh
+         → Score: 13.8%
+      #2: Disha Shenoy — 20.0%
+  ✅ [TC-HS-W-S02] Visible #2: Disha Shenoy
+         → Score: 20.0%
+      #3: Aditi Rungta — 22.5%
+  ✅ [TC-HS-W-S03] Visible #3: Aditi Rungta
+         → Score: 22.5%
+
+    Looking for '+N more students' overflow button…
+  ✅ [TC-HS-W-OVF-001] Overflow button found
+         → '+10 more students'
+    ✅ Found: '+10 more students'
+      URL: modal=students&modalItem=Weak
+      Current URL: https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1&screen=overview&modal=students&modalItem=Weak
+  ✅ [TC-HS-W-MODAL-001] Student modal read
+         → 13 students captured
+  ✅ [TC-HS-W-M01] Modal #1: Siri Ganesh
+         → Score:13.8%  Class 12Q
+  ✅ [TC-HS-W-M02] Modal #2: Disha Shenoy
+         → Score:20.0%  Class 12Q
+  ✅ [TC-HS-W-M03] Modal #3: Aditi Rungta
+         → Score:22.5%  Class 12Q
+  ✅ [TC-HS-W-M04] Modal #4: Akhil Steven Thalari
+         → Score:23.8%  Class 12Q
+  ✅ [TC-HS-W-M05] Modal #5: Omkar Ranjit Patil
+         → Score:26.3%  Class 12Q
+  ✅ [TC-HS-W-M06] Modal #6: Archit Arindam Dash
+         → Score:28.8%  Class 12Q
+  ✅ [TC-HS-W-M07] Modal #7: Vismaya Anumesh
+         → Score:28.8%  Class 12Q
+  ✅ [TC-HS-W-M08] Modal #8: Shrestha Agarwal
+         → Score:28.8%  Class 12Q
+  ✅ [TC-HS-W-M09] Modal #9: Saanvi Joshi
+         → Score:30.0%  Class 12Q
+  ✅ [TC-HS-W-M10] Modal #10: Ishaan Bhatia
+         → Score:30.0%  Class 12Q
+  ✅ [TC-HS-W-M11] Modal #11: Atharv Gupta
+         → Score:33.1%  Class 12Q
+  ✅ [TC-HS-W-M12] Modal #12: Nayonika Kapoor
+         → Score:33.1%  Class 12Q
+  ✅ [TC-HS-W-M13] Modal #13: Garvit Mishra
+         → Score:34.4%  Class 12Q
+
+      13 students read from modal:
+        # 1: Siri Ganesh                                 13.8%  (Class 12Q)
+        # 2: Disha Shenoy                                20.0%  (Class 12Q)
+        # 3: Aditi Rungta                                22.5%  (Class 12Q)
+        # 4: Akhil Steven Thalari                        23.8%  (Class 12Q)
+        # 5: Omkar Ranjit Patil                          26.3%  (Class 12Q)
+        # 6: Archit Arindam Dash                         28.8%  (Class 12Q)
+        # 7: Vismaya Anumesh                             28.8%  (Class 12Q)
+        # 8: Shrestha Agarwal                            28.8%  (Class 12Q)
+        # 9: Saanvi Joshi                                30.0%  (Class 12Q)
+        #10: Ishaan Bhatia                               30.0%  (Class 12Q)
+        #11: Atharv Gupta                                33.1%  (Class 12Q)
+        #12: Nayonika Kapoor                             33.1%  (Class 12Q)
+        #13: Garvit Mishra                               34.4%  (Class 12Q)
+  ✅ [TC-HS-W-VAL] Count check: declared=13, captured=13
+         → 13/13
+      Modal closed.
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  WEAK — 13 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    Siri Ganesh                                Class 12Q       13.8%
+  2    Disha Shenoy                               Class 12Q       20.0%
+  3    Aditi Rungta                               Class 12Q       22.5%
+  4    Akhil Steven Thalari                       Class 12Q       23.8%
+  5    Omkar Ranjit Patil                         Class 12Q       26.3%
+  6    Archit Arindam Dash                        Class 12Q       28.8%
+  7    Vismaya Anumesh                            Class 12Q       28.8%
+  8    Shrestha Agarwal                           Class 12Q       28.8%
+  9    Saanvi Joshi                               Class 12Q       30.0%
+  10   Ishaan Bhatia                              Class 12Q       30.0%
+  11   Atharv Gupta                               Class 12Q       33.1%
+  12   Nayonika Kapoor                            Class 12Q       33.1%
+  13   Garvit Mishra                              Class 12Q       34.4%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+    Lagging
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Lagging
+  ✅ [TC-HS-L-001] 'Lagging' heading visible
+         → Lagging
+  ✅ [TC-HS-L-002] Student count badge
+         → '8 students' → 8 declared
+
+    Scraping visible student rows…
+      Found 3 student row containers
+    ✅ 3 visible students:
+      #1: Eshan Sharma — 35.0%
+  ✅ [TC-HS-L-S01] Visible #1: Eshan Sharma
+         → Score: 35.0%
+      #2: Pratyush Singh — 35.0%
+  ✅ [TC-HS-L-S02] Visible #2: Pratyush Singh
+         → Score: 35.0%
+      #3: Prahar Kaleyanda Pushparaj Kumar — 36.9%
+  ✅ [TC-HS-L-S03] Visible #3: Prahar Kaleyanda Pushparaj Kumar
+         → Score: 36.9%
+
+    Looking for '+N more students' overflow button…
+  ✅ [TC-HS-L-OVF-001] Overflow button found
+         → '+5 more students'
+    ✅ Found: '+5 more students'
+      URL: modal=students&modalItem=Lagging
+      Current URL: https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1&screen=overview&modal=students&modalItem=Weak
+  ⚠️  [TC-HS-L-MODAL-001] Student modal
+         → Modal DOM not found
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  LAGGING — 3 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    Eshan Sharma                                               35.0%
+  2    Pratyush Singh                                             35.0%
+  3    Prahar Kaleyanda Pushparaj Kumar                           36.9%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+    Performing Well
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Performing Well
+  ✅ [TC-HS-P-001] 'Performing Well' heading visible
+         → Performing Well
+  ✅ [TC-HS-P-002] Student count badge
+         → '2 students' → 2 declared
+
+    Scraping visible student rows…
+      Found 2 student row containers
+    ✅ 2 visible students:
+      #1: Vittalraam Baranidhar — 52.5%
+  ✅ [TC-HS-P-S01] Visible #1: Vittalraam Baranidhar
+         → Score: 52.5%
+      #2: Rahul Reddy Kesari — 50.6%
+  ✅ [TC-HS-P-S02] Visible #2: Rahul Reddy Kesari
+         → Score: 50.6%
+
+    Looking for '+N more students' overflow button…
+  ℹ️  [TC-HS-P-OVF-001] Overflow button
+         → Not found — all students visible
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  PERFORMING WELL — 2 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    Vittalraam Baranidhar                                      52.5%
+  2    Rahul Reddy Kesari                                         50.6%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  FINAL SUMMARY — SECTION Q
+══════════════════════════════════════════════════════════════════════
+  ✅  Passed   : 107
+  ❌  Failed   : 0
+  ⚠️   Warnings : 1
+  📊  Pass Rate: 99.1%  (107/108)
+
+══════════════════════════════════════════════════════════════════════
+  RUN 12/12 — SECTION R
+══════════════════════════════════════════════════════════════════════
+
+╔══════════════════════════════════════════════════════════════════════╗
+║   ClassLens – UI Test Suite v17.0                                   ║
+║   JS-first modal detection · JS student rows · badge text-content   ║
+║   Section: R   Started: 2026-06-01 17:25:52                          ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 1 – Login & Page Load
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-L-001] Login page loads
+         → https://classlens.inferentics.com/
+  ✅ [TC-L-002] Logo visible
+  ✅ [TC-L-003] Username / Password / Submit visible
+  ✅ [TC-L-004] Password masked
+  ✅ [TC-L-005] Login succeeds
+         → https://classlens.inferentics.com/
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 2 – Form Selection & Navigation
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-N-001] Dropdown 'Class'='12'
+  ✅ [TC-N-002] Dropdown 'Section'='R'
+  ✅ [TC-N-003] Dropdown 'Subject'='Maths'
+  ✅ [TC-N-004] Dropdown 'Exam'='Midterm'
+  ✅ [TC-N-005] Dropdown 'CompareLeft'='Midterm'
+  ✅ [TC-N-006] Dropdown 'CompareRight'='Preboard 1'
+  ✅ [TC-N-007] Enter → Dashboard
+         → https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1
+  ✅ [TC-N-008] Overview tab clicked
+  ✅ [TC-N-009] Page header visible
+         → Overview of Section 12 R
+  ✅ [TC-N-009a] Dashboard data loaded
+  ✅ [TC-N-010] Tab 'Overview' visible
+  ✅ [TC-N-011] Tab 'Chapters' visible
+  ✅ [TC-N-012] Tab 'Questions' visible
+  ✅ [TC-N-013] Tab 'Students' visible
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 3 – Exam Comparison Banner
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-EC-001] Exam Comparison heading
+         → Exam Comparison
+  ✅ [TC-EC-002] Sub-label 'Change in'
+         → Change in class average
+  ✅ [TC-EC-003] Midterm label present
+  ✅ [TC-EC-004] Preboard label present
+  ✅ [TC-EC-005] Left avg = 41.6%
+         → 41.6%
+  ✅ [TC-EC-006] Right avg = 7.5%
+         → 7.5%
+  ⚠️  [TC-EC-007] Trend badge
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – Reteach Chapters
+══════════════════════════════════════════════════════════════════════
+      ⚠ Could not find panel for 'Reteach' using bg='bg-blue-50'
+  ⚠️  [TC-RT-001] Chapter panel found
+         → Using body fallback
+  ⚠️  [TC-RT-002] Chapter badge
+         → Not found — will still attempt card extraction
+  ⚠️  [TC-RT-003] Instruction text
+         → Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Revise Thoroughly')]"}
+  (Session info: chrome=148.0.7778.179); For documenta
+      ⚠ Could not find panel for 'Reteach' using bg='bg-blue-50'
+
+    Found chapter overflow: '+9 more students'
+      ⚠ URL param 'modal=chapters' not detected in time
+  ⚠️  [TC-RT-OVF] Chapter overflow click
+         → Modal DOM not found after click
+      ⚠ Could not find panel for 'Reteach' using bg='bg-blue-50'
+  ℹ️  [TC-RT-004] 0 chapters in section
+         → Empty section
+
+  ─────────────────────────────────────────────────────────────────
+  RETEACH — SUMMARY
+  Badge: N/A (0 declared)
+  ─────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – Brushup Chapters
+══════════════════════════════════════════════════════════════════════
+      ⚠ Could not find panel for 'Brushup' using bg='FFF7E6'
+  ⚠️  [TC-BU-001] Chapter panel found
+         → Using body fallback
+  ⚠️  [TC-BU-002] Chapter badge
+         → Not found — will still attempt card extraction
+  ⚠️  [TC-BU-003] Instruction text
+         → Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Review Specific Concepts')]"}
+  (Session info: chrome=148.0.7778.179); For do
+      ⚠ Could not find panel for 'Brushup' using bg='FFF7E6'
+
+    Found chapter overflow: '+9 more students'
+      ⚠ URL param 'modal=chapters' not detected in time
+  ⚠️  [TC-BU-OVF] Chapter overflow click
+         → Modal DOM not found after click
+      ⚠ Could not find panel for 'Brushup' using bg='FFF7E6'
+  ℹ️  [TC-BU-004] 0 chapters in section
+         → Empty section
+
+  ─────────────────────────────────────────────────────────────────
+  BRUSHUP — SUMMARY
+  Badge: N/A (0 declared)
+  ─────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION – On Track Chapters
+══════════════════════════════════════════════════════════════════════
+      ⚠ Could not find panel for 'On Track' using bg='bg-green-50'
+  ⚠️  [TC-OT-001] Chapter panel found
+         → Using body fallback
+  ⚠️  [TC-OT-002] Chapter badge
+         → Not found — will still attempt card extraction
+  ⚠️  [TC-OT-003] Instruction text
+         → Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Significant Improvement')]"}
+  (Session info: chrome=148.0.7778.179); For doc
+      ⚠ Could not find panel for 'On Track' using bg='bg-green-50'
+
+    Found chapter overflow: '+9 more students'
+      ⚠ URL param 'modal=chapters' not detected in time
+  ⚠️  [TC-OT-OVF] Chapter overflow click
+         → Modal DOM not found after click
+      ⚠ Could not find panel for 'On Track' using bg='bg-green-50'
+  ℹ️  [TC-OT-004] 0 chapters in section
+         → Empty section
+
+  ─────────────────────────────────────────────────────────────────
+  ON TRACK — SUMMARY
+  Badge: N/A (0 declared)
+  ─────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  SECTION 7 – Highlighted Students
+══════════════════════════════════════════════════════════════════════
+  ✅ [TC-HS-000] Highlighted Students heading
+         → Highlighted Students
+  ✅ [TC-HS-SUB] Sub-text visible
+         → Students classified based on their preboard scores.
+
+══════════════════════════════════════════════════════════════════════
+    Weak
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Weak
+  ✅ [TC-HS-W-001] 'Weak' heading visible
+         → Weak
+  ✅ [TC-HS-W-002] Student count badge
+         → '12 students' → 12 declared
+
+    Scraping visible student rows…
+      Found 3 student row containers
+    ✅ 3 visible students:
+      #1: S Sirihasini — 7.5%
+  ✅ [TC-HS-W-S01] Visible #1: S Sirihasini
+         → Score: 7.5%
+      #2: Jhanivi Ratnakaran — 16.3%
+  ✅ [TC-HS-W-S02] Visible #2: Jhanivi Ratnakaran
+         → Score: 16.3%
+      #3: Ananya A — 16.9%
+  ✅ [TC-HS-W-S03] Visible #3: Ananya A
+         → Score: 16.9%
+
+    Looking for '+N more students' overflow button…
+  ✅ [TC-HS-W-OVF-001] Overflow button found
+         → '+9 more students'
+    ✅ Found: '+9 more students'
+      URL: modal=students&modalItem=Weak
+      Current URL: https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1&screen=overview&modal=students&modalItem=Weak
+  ✅ [TC-HS-W-MODAL-001] Student modal read
+         → 12 students captured
+  ✅ [TC-HS-W-M01] Modal #1: S Sirihasini
+         → Score:7.5%  Class 12R
+  ✅ [TC-HS-W-M02] Modal #2: Jhanivi Ratnakaran
+         → Score:16.3%  Class 12R
+  ✅ [TC-HS-W-M03] Modal #3: Ananya A
+         → Score:16.9%  Class 12R
+  ✅ [TC-HS-W-M04] Modal #4: Mitran Nandakumar
+         → Score:16.9%  Class 12R
+  ✅ [TC-HS-W-M05] Modal #5: Anuj
+         → Score:20.0%  Class 12R
+  ✅ [TC-HS-W-M06] Modal #6: Iffah Dawood
+         → Score:22.5%  Class 12R
+  ✅ [TC-HS-W-M07] Modal #7: Raajvi Mehta
+         → Score:23.8%  Class 12R
+  ✅ [TC-HS-W-M08] Modal #8: Danish Khaleel
+         → Score:23.8%  Class 12R
+  ✅ [TC-HS-W-M09] Modal #9: K Chiranth Reddy
+         → Score:23.8%  Class 12R
+  ✅ [TC-HS-W-M10] Modal #10: Charvi Sethi
+         → Score:25.6%  Class 12R
+  ✅ [TC-HS-W-M11] Modal #11: Darshana Ashok
+         → Score:28.8%  Class 12R
+  ✅ [TC-HS-W-M12] Modal #12: Saanvi Yagnick
+         → Score:33.1%  Class 12R
+
+      12 students read from modal:
+        # 1: S Sirihasini                                 7.5%  (Class 12R)
+        # 2: Jhanivi Ratnakaran                          16.3%  (Class 12R)
+        # 3: Ananya A                                    16.9%  (Class 12R)
+        # 4: Mitran Nandakumar                           16.9%  (Class 12R)
+        # 5: Anuj                                        20.0%  (Class 12R)
+        # 6: Iffah Dawood                                22.5%  (Class 12R)
+        # 7: Raajvi Mehta                                23.8%  (Class 12R)
+        # 8: Danish Khaleel                              23.8%  (Class 12R)
+        # 9: K Chiranth Reddy                            23.8%  (Class 12R)
+        #10: Charvi Sethi                                25.6%  (Class 12R)
+        #11: Darshana Ashok                              28.8%  (Class 12R)
+        #12: Saanvi Yagnick                              33.1%  (Class 12R)
+  ✅ [TC-HS-W-VAL] Count check: declared=12, captured=12
+         → 12/12
+      Modal closed.
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  WEAK — 12 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    S Sirihasini                               Class 12R        7.5%
+  2    Jhanivi Ratnakaran                         Class 12R       16.3%
+  3    Ananya A                                   Class 12R       16.9%
+  4    Mitran Nandakumar                          Class 12R       16.9%
+  5    Anuj                                       Class 12R       20.0%
+  6    Iffah Dawood                               Class 12R       22.5%
+  7    Raajvi Mehta                               Class 12R       23.8%
+  8    Danish Khaleel                             Class 12R       23.8%
+  9    K Chiranth Reddy                           Class 12R       23.8%
+  10   Charvi Sethi                               Class 12R       25.6%
+  11   Darshana Ashok                             Class 12R       28.8%
+  12   Saanvi Yagnick                             Class 12R       33.1%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+    Lagging
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Lagging
+  ✅ [TC-HS-L-001] 'Lagging' heading visible
+         → Lagging
+  ✅ [TC-HS-L-002] Student count badge
+         → '3 students' → 3 declared
+
+    Scraping visible student rows…
+      Found 3 student row containers
+    ✅ 3 visible students:
+      #1: Nivea Sivakumar — 39.4%
+  ✅ [TC-HS-L-S01] Visible #1: Nivea Sivakumar
+         → Score: 39.4%
+      #2: Ananya Chakraborty — 40.0%
+  ✅ [TC-HS-L-S02] Visible #2: Ananya Chakraborty
+         → Score: 40.0%
+      #3: Amisha Gupta — 40.0%
+  ✅ [TC-HS-L-S03] Visible #3: Amisha Gupta
+         → Score: 40.0%
+
+    Looking for '+N more students' overflow button…
+  ℹ️  [TC-HS-L-OVF-001] Overflow button
+         → Not found — all students visible
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  LAGGING — 3 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    Nivea Sivakumar                                            39.4%
+  2    Ananya Chakraborty                                         40.0%
+  3    Amisha Gupta                                               40.0%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+    Performing Well
+══════════════════════════════════════════════════════════════════════
+
+  ▶ Performing Well
+  ✅ [TC-HS-P-001] 'Performing Well' heading visible
+         → Performing Well
+  ✅ [TC-HS-P-002] Student count badge
+         → '9 students' → 9 declared
+
+    Scraping visible student rows…
+      Found 3 student row containers
+    ✅ 3 visible students:
+      #1: Nishita Ranjan — 92.5%
+  ✅ [TC-HS-P-S01] Visible #1: Nishita Ranjan
+         → Score: 92.5%
+      #2: Hridan Setia — 86.3%
+  ✅ [TC-HS-P-S02] Visible #2: Hridan Setia
+         → Score: 86.3%
+      #3: Vaishnavi Mishra — 75.6%
+  ✅ [TC-HS-P-S03] Visible #3: Vaishnavi Mishra
+         → Score: 75.6%
+
+    Looking for '+N more students' overflow button…
+  ✅ [TC-HS-P-OVF-001] Overflow button found
+         → '+6 more students'
+    ✅ Found: '+6 more students'
+      URL: modal=students&modalItem=Performing_Well
+      Current URL: https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1&screen=overview&modal=students&modalItem=Weak
+      Trying partial heading match for 'Performing Well'…
+  ⚠️  [TC-HS-P-MODAL-001] Student modal
+         → Modal DOM not found
+
+  ──────────────────────────────────────────────────────────────────────
+  📊  PERFORMING WELL — 3 STUDENTS
+  ──────────────────────────────────────────────────────────────────────
+  #    Name                                       Class           Score
+  ---- ------------------------------------------ ------------ --------
+  1    Nishita Ranjan                                             92.5%
+  2    Hridan Setia                                               86.3%
+  3    Vaishnavi Mishra                                           75.6%
+  ──────────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+  FINAL SUMMARY — SECTION R
+══════════════════════════════════════════════════════════════════════
+  ✅  Passed   : 58
+  ❌  Failed   : 0
+  ⚠️   Warnings : 14
+  📊  Pass Rate: 80.6%  (58/72)
+
+══════════════════════════════════════════════════════════════════════
+  COMBINED FINAL SUMMARY — ALL SECTIONS
+══════════════════════════════════════════════════════════════════════
+  Sections Run : 12
+  ✅ Passed    : 1102
+  ❌ Failed    : 0
+  ⚠️ Warnings  : 72
+  📊 Pass Rate : 93.9%  (1102/1174)
+
+  Section-wise summary
+  ------------------------------------------------------------------
+  Section     Passed    Failed    Warn      Rate
+  ------------------------------------------------------------------
+  C               56         0      13     81.2%
+  H               60         0      15     80.0%
+  I              109         0       1     99.1%
+  J              108         0       2     98.2%
+  K               66         0      16     80.5%
+  L              104         0       3     97.2%
+  M              103         0       1     99.0%
+  N              109         0       2     98.2%
+  O              109         0       2     98.2%
+  P              113         0       2     98.3%
+  Q              107         0       1     99.1%
+  R               58         0      14     80.6%
+
+  📦 Combined JSON → C:\Users\User\Downloads\-UI-selenium-Automation\combined_preserved_sources\classlens_data_all_sections_v17.json
+  📄 Combined HTML → C:\Users\User\Downloads\-UI-selenium-Automation\combined_preserved_sources\classlens_report_all_sections_v17.html
+
+  🌐 file:///C:/Users/User/Downloads/-UI-selenium-Automation/combined_preserved_sources/classlens_report_all_sections_v17.html
+  ✅ Browser launched.
+
+👉  Press ENTER to finish…
+🏁  Done.
+[OVERVIEW V17 MASTER PATCH] Section ZZ skipped. Sections: ['C', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R']

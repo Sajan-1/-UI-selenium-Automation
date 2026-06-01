@@ -23,7 +23,7 @@
 =============================================================================
 """
 
-import os, re, sys, json, time, traceback, webbrowser, subprocess
+import os, re, sys, json, time, traceback, webbrowser, subprocess, builtins
 from copy     import deepcopy
 from datetime import datetime
 
@@ -36,6 +36,34 @@ from selenium.common.exceptions             import (
     NoSuchElementException, ElementClickInterceptedException, TimeoutException
 )
 from selenium.webdriver.common.keys import Keys
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+#  STRICT OUTPUT GUARD — ONLY ONE FINAL REPORT/DATA FILE IS ALLOWED
+# ══════════════════════════════════════════════════════════════════════════════
+# This blocks the old per-section files completely, even if any older helper tries
+# to create them:
+#   classlens_full_report_v12_section_*.html
+#   classlens_full_data_v12_section_*.json
+_ORIGINAL_OPEN = builtins.open
+_BLOCKED_SECTION_OUTPUTS = (
+    "classlens_full_report_v12_section_",
+    "classlens_full_data_v12_section_",
+)
+
+def _strict_single_report_open(file, mode="r", *args, **kwargs):
+    try:
+        name = os.path.basename(os.fspath(file))
+        is_write = any(flag in str(mode) for flag in ("w", "a", "x", "+"))
+        if is_write and any(name.startswith(prefix) for prefix in _BLOCKED_SECTION_OUTPUTS):
+            print(f"\n  BLOCKED per-section output: {name}")
+            print("  Only the final combined report/data will be created.")
+            return _ORIGINAL_OPEN(os.devnull, mode, *args, **kwargs)
+    except Exception:
+        pass
+    return _ORIGINAL_OPEN(file, mode, *args, **kwargs)
+
+builtins.open = _strict_single_report_open
 
 # ══════════════════════════════════════════════════════════════════════════════
 #  CONFIG
@@ -3091,6 +3119,12 @@ def open_browser(path):
 
 
 def save_outputs():
+    """Disabled for all-sections mode.
+
+    The user requires NO per-section JSON/HTML files. Section data is finalized
+    by finalize_current_store_without_files() and written once by
+    write_only_final_outputs() after every section finishes.
+    """
     total = _P+_F+_W
     store["summary"] = {
         "total":total,"passed":_P,"failed":_F,"warnings":_W,
@@ -3099,18 +3133,7 @@ def save_outputs():
     for label in ["Reteach","Brushup","On Track"]:
         for c in store["chapters"][label]["cards"]:
             c.pop("el", None)
-
-    with open(JSON_FILE,"w",encoding="utf-8") as f:
-        json.dump(store, f, indent=2, ensure_ascii=False)
-    print(f"\n  📦 JSON  → {os.path.abspath(JSON_FILE)}")
-
-    html = build_report()
-    with open(REPORT_FILE,"w",encoding="utf-8") as f:
-        f.write(html)
-    print(f"  📄 HTML  → {os.path.abspath(REPORT_FILE)}")
-
-    if AUTO_OPEN_REPORT:
-        open_browser(REPORT_FILE)
+    print("\n  Per-section save_outputs() is disabled. No section JSON/HTML was created.")
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -3181,5 +3204,356 @@ def main():
         print("\n🏁  Done.")
 
 
+
+
+# ============================================================================
+#  ALL-SECTIONS RUNNER ADD-ON
+#  Added without deleting the original v12 code above.
+#  Purpose: collect every available Section option from the dropdown and run
+#  the complete existing test flow once per section.
+# ============================================================================
+
+BASE_VALUES = deepcopy(VALUES)
+BASE_REPORT_FILE = REPORT_FILE
+BASE_JSON_FILE = JSON_FILE
+ALL_SECTION_STORES = []
+FINAL_REPORT_FILE = "classlens_FINAL_COMBINED_ALL_SECTIONS_REPORT_ONLY.html"
+FINAL_JSON_FILE = "classlens_FINAL_COMBINED_ALL_SECTIONS_DATA_ONLY.json"
+
+
+def _safe_file_token(value):
+    token = re.sub(r"[^A-Za-z0-9_-]+", "_", str(value).strip())
+    return token.strip("_") or "section"
+
+
+def _new_store_for_section(section_value):
+    current_ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    return {
+        "run_ts"   : current_ts,
+        "config"   : deepcopy(VALUES),
+        "exam"     : {"left_pct":"","right_pct":"","trend":""},
+        "chapters" : {
+            "Reteach"  : {"badge":"","cards":[],"overflow_clicked":[],"modal_chapters":[],"tests":[]},
+            "Brushup"  : {"badge":"","cards":[],"overflow_clicked":[],"modal_chapters":[],"tests":[]},
+            "On Track" : {"badge":"","cards":[],"overflow_clicked":[],"modal_chapters":[],"tests":[]},
+        },
+        "students" : {
+            "Weak"           : {"badge":"","total":0,"visible":[],"modal":[],"all":[],"overflow_txt":"","modal_opened":False,"tests":[]},
+            "Lagging"        : {"badge":"","total":0,"visible":[],"modal":[],"all":[],"overflow_txt":"","modal_opened":False,"tests":[]},
+            "Performing Well": {"badge":"","total":0,"visible":[],"modal":[],"all":[],"overflow_txt":"","modal_opened":False,"tests":[]},
+        },
+        "login_tests" : [],
+        "nav_tests"   : [],
+        "exam_tests"  : [],
+        "summary"     : {},
+        "section_under_test": section_value,
+    }
+
+
+def reset_for_section(section_value):
+    global _P, _F, _W, store, run_ts, REPORT_FILE, JSON_FILE
+    _P = 0
+    _F = 0
+    _W = 0
+    VALUES.clear()
+    VALUES.update(deepcopy(BASE_VALUES))
+    VALUES["Section"] = section_value
+    run_ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    # IMPORTANT: Do NOT create per-section output filenames.
+    # All section results stay in memory and are written once at the very end.
+    REPORT_FILE = FINAL_REPORT_FILE
+    JSON_FILE = FINAL_JSON_FILE
+    store = _new_store_for_section(section_value)
+
+
+def get_available_sections(driver, wait):
+    """Login page/dropdown helper: select class first, then read all Section options."""
+    if not wait_opt(driver, 0, VALUES["Class"], TIMEOUT):
+        print(f"  ⚠️  Class {VALUES['Class']} option not available; using configured section only.")
+        return [VALUES["Section"]]
+
+    class_ok = js_pick(driver, get_selects(driver)[0], VALUES["Class"])
+    if not class_ok:
+        print(f"  ⚠️  Could not select class {VALUES['Class']}; using configured section only.")
+        return [VALUES["Section"]]
+
+    time.sleep(1.2)
+    wait.until(lambda d: len(get_selects(d)) > 1)
+    sections = []
+    seen = set()
+    for opt in get_selects(driver)[1].find_elements(By.TAG_NAME, "option"):
+        label = (opt.text or "").strip()
+        value = (opt.get_attribute("value") or "").strip()
+        pick = label or value
+        low = pick.lower()
+        if not pick or low in {"select", "section", "select section", "-- select --"}:
+            continue
+        if pick not in seen:
+            seen.add(pick)
+            sections.append(pick)
+
+    if not sections:
+        sections = [VALUES["Section"]]
+    print(f"  ✅  Sections discovered for Class {VALUES['Class']}: {sections}")
+    return sections
+
+
+def discover_sections_once():
+    """Open the app once, login, read the Section dropdown, then close."""
+    driver = make_driver()
+    wait = WebDriverWait(driver, TIMEOUT)
+    try:
+        if not test_login(driver, wait):
+            print("  ⚠️  Login failed while discovering sections; using configured section only.")
+            return [VALUES["Section"]]
+        return get_available_sections(driver, wait)
+    except Exception as exc:
+        print(f"  ⚠️  Section discovery failed: {exc}")
+        traceback.print_exc()
+        return [VALUES["Section"]]
+    finally:
+        try:
+            driver.quit()
+        except Exception:
+            pass
+
+
+def print_final_summary_for_current_section(section_value):
+    sep(f"FINAL SUMMARY — SECTION {section_value}")
+    total = _P + _F + _W
+    rate  = round(_P / max(total, 1) * 100, 1)
+    print(f"  ✅  Passed   : {_P}")
+    print(f"  ❌  Failed   : {_F}")
+    print(f"  ⚠️   Warnings : {_W}")
+    print(f"  📊  Pass Rate: {rate}%  ({_P}/{total})")
+
+    print("\n  ━━━━  CHAPTER CARDS SUMMARY  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+    for label in ["Reteach", "Brushup", "On Track"]:
+        cd = store["chapters"][label]
+        print(f"\n  {label.upper()} — {cd.get('badge', '')}")
+        for c in cd["cards"]:
+            print(f"    #{c['idx']:<3} {c['name']:<36} Avg:{c.get('chapter_avg','?'):>9}  Wt:{c.get('avg_weightage','?'):>12}")
+
+    print("\n  ━━━━  STUDENT SUMMARY  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+    for cat in ["Weak", "Lagging", "Performing Well"]:
+        sd = store["students"][cat]
+        stus = sd["all"]
+        print(f"\n  {cat.upper()} — {sd.get('badge', '')} — {len(stus)} captured")
+        if not stus:
+            print("    ⚠️  No students captured")
+        else:
+            print(f"  {'#':<4} {'Name':<40} {'Score':>8}  {'Class':<12}")
+            print(f"  {'-'*4} {'-'*40} {'-'*8}  {'-'*12}")
+            for i, s in enumerate(stus, 1):
+                print(f"  {i:<4} {s['name']:<40} {s.get('pct',''):>8}  {s.get('class_info',''):<12}")
+
+
+
+def finalize_current_store_without_files():
+    """Finalize the current section data in memory only. No JSON/HTML files are created here."""
+    global store
+    total = _P + _F + _W
+    store["summary"] = {
+        "total": total,
+        "passed": _P,
+        "failed": _F,
+        "warnings": _W,
+        "pass_rate": f"{round(_P / max(total, 1) * 100, 1)}%",
+    }
+    for label in ["Reteach", "Brushup", "On Track"]:
+        for c in store["chapters"][label]["cards"]:
+            c.pop("el", None)
+    return deepcopy(store)
+
+
+def _h(x):
+    return (str(x) if x is not None else "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
+
+
+def _all_tests_for_store(ss):
+    sec = ss.get("section_under_test", ss.get("config", {}).get("Section", ""))
+    buckets = [("Login", ss.get("login_tests", [])), ("Navigation", ss.get("nav_tests", [])), ("Exam Comparison", ss.get("exam_tests", []))]
+    for label in ["Reteach", "Brushup", "On Track"]:
+        buckets.append(("Chapter - " + label, ss.get("chapters", {}).get(label, {}).get("tests", [])))
+    for cat in ["Weak", "Lagging", "Performing Well"]:
+        buckets.append(("Students - " + cat, ss.get("students", {}).get(cat, {}).get("tests", [])))
+    out = []
+    for module, tests in buckets:
+        for t in tests:
+            row = dict(t)
+            row["section"] = sec
+            row["module"] = module
+            out.append(row)
+    return out
+
+
+def _status_html(status):
+    cls = {"PASS":"pass", "FAIL":"fail", "WARN":"warn", "INFO":"info"}.get(status, "info")
+    return '<span class="st ' + cls + '">' + _h(status) + '</span>'
+
+
+def build_only_one_final_report(section_stores):
+    generated = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    all_tests = []
+    for ss in section_stores:
+        all_tests.extend(_all_tests_for_store(ss))
+    total = sum(int(ss.get("summary", {}).get("total", 0) or 0) for ss in section_stores)
+    passed = sum(int(ss.get("summary", {}).get("passed", 0) or 0) for ss in section_stores)
+    failed = sum(int(ss.get("summary", {}).get("failed", 0) or 0) for ss in section_stores)
+    warnings = sum(int(ss.get("summary", {}).get("warnings", 0) or 0) for ss in section_stores)
+    rate = round(passed / max(total, 1) * 100, 1)
+    css = """
+    body{margin:0;background:#07101d;color:#eaf4ff;font-family:Segoe UI,Arial,sans-serif} .wrap{max-width:1500px;margin:auto;padding:38px}
+    .hero{background:linear-gradient(135deg,#17304d,#0c1a2d);border:1px solid #2b5277;border-radius:22px;padding:32px;display:flex;justify-content:space-between;gap:20px;box-shadow:0 20px 60px #0008}
+    h1{margin:4px 0 8px;font-size:34px}.muted{color:#8fb1d3}.rate{font-size:70px;font-weight:900;color:#25d392}.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin:22px 0}.card{background:#0f1d31;border:1px solid #244461;border-radius:16px;padding:20px;text-align:center}.num{font-size:38px;font-weight:900}.lbl{font-size:11px;text-transform:uppercase;color:#8fb1d3;font-weight:800}.panel{margin:22px 0;background:#0f1d31;border:1px solid #244461;border-radius:18px;overflow:hidden}.panel h2{margin:0;padding:18px 20px;background:#142840}table{width:100%;border-collapse:collapse}th{background:#091524;color:#8fb1d3;text-align:left;font-size:11px;letter-spacing:1px;text-transform:uppercase;padding:12px}td{border-top:1px solid #1d3854;padding:11px;vertical-align:top}code{color:#66c2ff}.good{color:#25d392;font-weight:800}.bad{color:#ff4d73;font-weight:800}.warnc{color:#ffb020;font-weight:800}.st{border-radius:20px;padding:4px 9px;font-size:11px;font-weight:900}.st.pass{background:#064838;color:#25d392}.st.fail{background:#4b172a;color:#ff6f91}.st.warn{background:#4a350a;color:#ffd166}.st.info{background:#123a5d;color:#77c7ff}
+    """
+    parts = ['<!doctype html><html><head><meta charset="utf-8"><title>ClassLens Final All Sections Report</title><style>', css, '</style></head><body><div class="wrap">']
+    parts.append('<section class="hero"><div><div class="muted">AUTOMATION QA FINAL REPORT</div><h1>ClassLens All Sections Complete UI Test Report</h1><div class="muted">Only one combined report generated after all available Section dropdown values finish testing. No per-section JSON/HTML files are created.</div><div class="muted">Class ' + _h(BASE_VALUES.get('Class','')) + ' | Subject ' + _h(BASE_VALUES.get('Subject','')) + ' | Exam ' + _h(BASE_VALUES.get('Exam','')) + ' | Generated ' + _h(generated) + '</div></div><div class="rate">' + str(rate) + '%</div></section>')
+    parts.append('<div class="grid"><div class="card"><div class="num">' + str(len(section_stores)) + '</div><div class="lbl">Sections</div></div><div class="card"><div class="num">' + str(total) + '</div><div class="lbl">Total Tests</div></div><div class="card"><div class="num good">' + str(passed) + '</div><div class="lbl">Passed</div></div><div class="card"><div class="num bad">' + str(failed) + '</div><div class="lbl">Failed</div></div><div class="card"><div class="num warnc">' + str(warnings) + '</div><div class="lbl">Warnings</div></div></div>')
+    parts.append('<section class="panel"><h2>Executive Summary by Section</h2><table><thead><tr><th>Section</th><th>Total</th><th>Passed</th><th>Failed</th><th>Warnings</th><th>Pass Rate</th><th>Exam Avg</th><th>Students Captured</th></tr></thead><tbody>')
+    for ss in section_stores:
+        sec = _h(ss.get('section_under_test',''))
+        sm = ss.get('summary', {})
+        ex = ss.get('exam', {})
+        stucount = sum(len(ss.get('students', {}).get(cat, {}).get('all', [])) for cat in ['Weak','Lagging','Performing Well'])
+        parts.append('<tr><td><b>Section ' + sec + '</b></td><td>' + _h(sm.get('total',0)) + '</td><td class="good">' + _h(sm.get('passed',0)) + '</td><td class="bad">' + _h(sm.get('failed',0)) + '</td><td class="warnc">' + _h(sm.get('warnings',0)) + '</td><td><b>' + _h(sm.get('pass_rate','0%')) + '</b></td><td>' + _h(ex.get('left_pct','')) + ' to ' + _h(ex.get('right_pct','')) + '</td><td>' + str(stucount) + '</td></tr>')
+    parts.append('</tbody></table></section>')
+    parts.append('<section class="panel"><h2>Chapter Coverage - All Sections</h2><table><thead><tr><th>Section</th><th>Category</th><th>Chapter</th><th>Source</th><th>Chapter Avg</th><th>Avg Weightage</th></tr></thead><tbody>')
+    chapter_any = False
+    for ss in section_stores:
+        sec = _h(ss.get('section_under_test',''))
+        for label in ['Reteach','Brushup','On Track']:
+            cd = ss.get('chapters', {}).get(label, {})
+            for ch in cd.get('modal_chapters', []):
+                chapter_any = True
+                parts.append('<tr><td>Section ' + sec + '</td><td>' + label + '</td><td>' + _h(ch) + '</td><td>Modal overflow</td><td>-</td><td>-</td></tr>')
+            for c in cd.get('cards', []):
+                chapter_any = True
+                parts.append('<tr><td>Section ' + sec + '</td><td>' + label + '</td><td>' + _h(c.get('name','')) + '</td><td>Inline card</td><td>' + _h(c.get('chapter_avg','N/A')) + '</td><td>' + _h(c.get('avg_weightage','N/A')) + '</td></tr>')
+    if not chapter_any:
+        parts.append('<tr><td colspan="6" class="muted">No chapter data captured.</td></tr>')
+    parts.append('</tbody></table></section>')
+    parts.append('<section class="panel"><h2>Highlighted Students - All Sections</h2><table><thead><tr><th>Section</th><th>Category</th><th>Student</th><th>Score</th><th>Class Info</th><th>Source</th></tr></thead><tbody>')
+    student_any = False
+    for ss in section_stores:
+        sec = _h(ss.get('section_under_test',''))
+        for cat in ['Weak','Lagging','Performing Well']:
+            for stu in ss.get('students', {}).get(cat, {}).get('all', []):
+                student_any = True
+                parts.append('<tr><td>Section ' + sec + '</td><td>' + cat + '</td><td>' + _h(stu.get('name','')) + '</td><td>' + _h(stu.get('pct','')) + '</td><td>' + _h(stu.get('class_info','')) + '</td><td>' + _h(stu.get('src','')) + '</td></tr>')
+    if not student_any:
+        parts.append('<tr><td colspan="6" class="muted">No student data captured.</td></tr>')
+    parts.append('</tbody></table></section>')
+    parts.append('<section class="panel"><h2>Complete Test Evidence - All Sections</h2><table><thead><tr><th>Section</th><th>Module</th><th>Test ID</th><th>Description</th><th>Status</th><th>Detail</th><th>Time</th></tr></thead><tbody>')
+    for r in all_tests:
+        parts.append('<tr><td>' + _h(r.get('section','')) + '</td><td>' + _h(r.get('module','')) + '</td><td><code>' + _h(r.get('tc_id','')) + '</code></td><td>' + _h(r.get('desc','')) + '</td><td>' + _status_html(r.get('status','')) + '</td><td>' + _h(r.get('detail','')) + '</td><td>' + _h(r.get('ts','')) + '</td></tr>')
+    parts.append('</tbody></table></section></div></body></html>')
+    return ''.join(parts)
+
+
+def write_only_final_outputs(section_stores, results):
+    payload = {"run_ts": datetime.now().strftime("%Y-%m-%d %H:%M:%S"), "config": deepcopy(BASE_VALUES), "sections": section_stores, "results": results}
+    with open(FINAL_JSON_FILE, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+    with open(FINAL_REPORT_FILE, "w", encoding="utf-8") as f:
+        f.write(build_only_one_final_report(section_stores))
+    print(f"\n  FINAL JSON  -> {os.path.abspath(FINAL_JSON_FILE)}")
+    print(f"  FINAL HTML  -> {os.path.abspath(FINAL_REPORT_FILE)}")
+    if AUTO_OPEN_REPORT:
+        open_browser(FINAL_REPORT_FILE)
+
+def run_complete_flow_for_section(section_value):
+    reset_for_section(section_value)
+    print("\n╔" + "═"*72 + "╗")
+    print(f"║   ClassLens — Complete UI Test Suite v12.0 — SECTION {section_value:<12}        ║")
+    print("║   Login · Navigation · Exam · Chapter Cards · ALL Students               ║")
+    print(f"║   Started: {run_ts}                                       ║")
+    print("╚" + "═"*72 + "╝")
+
+    driver = make_driver()
+    wait = WebDriverWait(driver, TIMEOUT)
+    try:
+        if not test_login(driver, wait):
+            print(f"❌  Login failed for section {section_value} — skipping.")
+            return False
+
+        if not test_navigation(driver, wait):
+            print(f"❌  Navigation failed for section {section_value} — skipping.")
+            return False
+
+        test_exam_comparison(driver)
+        test_chapter_section(driver, "Reteach")
+        test_chapter_section(driver, "Brushup")
+        test_chapter_section(driver, "On Track")
+        test_all_students(driver, wait)
+        return True
+
+    except Exception as exc:
+        print(f"\n💥  Unhandled exception in section {section_value}: {exc}")
+        traceback.print_exc()
+        return False
+
+    finally:
+        print_final_summary_for_current_section(section_value)
+        section_snapshot = finalize_current_store_without_files()
+        ALL_SECTION_STORES.append(section_snapshot)
+        print("\n  Section data kept in memory only. No per-section report was created.")
+        try:
+            driver.quit()
+        except Exception:
+            pass
+
+
+
+def cleanup_old_section_outputs():
+    """Remove stale per-section files so the folder contains only the final combined report/data."""
+    cwd = os.getcwd()
+    patterns = [
+        "classlens_full_report_v12_section_*.html",
+        "classlens_full_data_v12_section_*.json",
+    ]
+    removed = []
+    try:
+        import glob
+        for pat in patterns:
+            for fp in glob.glob(os.path.join(cwd, pat)):
+                try:
+                    os.remove(fp)
+                    removed.append(os.path.basename(fp))
+                except Exception:
+                    pass
+    except Exception:
+        pass
+    if removed:
+        print("\n  Removed old per-section output files:")
+        for name in removed:
+            print("   - " + name)
+
+
+def main_all_sections():
+    cleanup_old_section_outputs()
+    print("\n╔" + "═"*72 + "╗")
+    print("║   ClassLens — ALL SECTIONS Test Runner v12.0                           ║")
+    print("║   This runner keeps the original script and runs it for every section.   ║")
+    print("╚" + "═"*72 + "╝")
+
+    sections = discover_sections_once()
+    results = []
+    for section_value in sections:
+        ok = run_complete_flow_for_section(section_value)
+        results.append({"section": section_value, "ok": ok, "summary": deepcopy(store.get("summary", {}))})
+
+    write_only_final_outputs(ALL_SECTION_STORES, results)
+    cleanup_old_section_outputs()
+
+    sep("ALL SECTIONS COMPLETE")
+    for item in results:
+        status = "PASS" if item["ok"] else "FAIL"
+        summary = item.get("summary", {})
+        print(f"  {status:4}  Section {item['section']}: {summary}")
+    print("\nDone testing all sections. Only the final combined report was generated.")
+
+
+
 if __name__ == "__main__":
-    main()
+    main_all_sections()

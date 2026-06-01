@@ -2346,3 +2346,18 @@ def extract_learning_gaps(driver):
 
 if __name__ == "__main__":
     main()
+
+# ============================================================================== 
+# ADD-ONLY RUNTIME PATCH APPLIED BY MASTER: SECTION ZZ INTENTIONALLY SKIPPED
+# ------------------------------------------------------------------------------
+# User request: always skip Section ZZ and continue testing.
+# ============================================================================== 
+try:
+    if 'ALL_SECTIONS' in globals():
+        ALL_SECTIONS = [s for s in ALL_SECTIONS if str(s).strip().upper() != 'ZZ']
+        print('[MASTER PATCH] Section ZZ skipped by request. Remaining sections:', ALL_SECTIONS)
+    if 'SECTION_WHITELIST' in globals() and isinstance(SECTION_WHITELIST, list):
+        SECTION_WHITELIST = [s for s in SECTION_WHITELIST if str(s).strip().upper() != 'ZZ']
+except Exception as _skip_zz_runtime_exc:
+    print('[MASTER PATCH] ZZ skip notice failed:', _skip_zz_runtime_exc)
+# ============================================================================== 

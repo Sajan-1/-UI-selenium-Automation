@@ -13,12 +13,12 @@ import os
 import sys
 import requests
 
-WEBEX_BOT_TOKEN = os.getenv("WEBEX_BOT_TOKEN", "").strip()
+WEBEX_BOT_TOKEN = os.getenv("MjNiNzY3YmQtNTllNS00MzZjLThiZTQtZDE3M2Y5Yjc0NGJmNGIwYzAwMTUtZDNl_PI91_5794a072-eb1e-4fb3-ac34-50345faecbdc", "").strip()
 
 if not WEBEX_BOT_TOKEN:
     print("ERROR: WEBEX_BOT_TOKEN is not set.")
     print('PowerShell example:')
-    print('$env:WEBEX_BOT_TOKEN="PASTE_YOUR_BOT_ACCESS_TOKEN_HERE"')
+    print('$env:WEBEX_BOT_TOKEN="MjNiNzY3YmQtNTllNS00MzZjLThiZTQtZDE3M2Y5Yjc0NGJmNGIwYzAwMTUtZDNl_PI91_5794a072-eb1e-4fb3-ac34-50345faecbdc"')
     print('python get_room_id_webex.py')
     sys.exit(1)
 

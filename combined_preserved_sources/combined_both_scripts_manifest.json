@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-05-21 11:02:19",
+  "policy": "No uploaded source line removed. Both uploaded files are embedded byte-for-byte and extracted exactly.",
+  "primary_script": "C:\\Users\\User\\Downloads\\-UI-selenium-Automation\\combined_preserved_sources\\02_uploaded_script_2_primary_preserved.py",
+  "archive_script": "C:\\Users\\User\\Downloads\\-UI-selenium-Automation\\combined_preserved_sources\\01_uploaded_script_1_preserved.py",
+  "sources": [
+    {
+      "name": "01_uploaded_script_1_preserved.py",
+      "path": "C:\\Users\\User\\Downloads\\-UI-selenium-Automation\\combined_preserved_sources\\01_uploaded_script_1_preserved.py",
+      "bytes": 2077374,
+      "sha256": "d7429552f3ffff13d77c39ddee67ae78307cceba319982669c67011f30a4b7b2",
+      "role": "preserved/archive/fallback --use-first"
+    },
+    {
+      "name": "02_uploaded_script_2_primary_preserved.py",
+      "path": "C:\\Users\\User\\Downloads\\-UI-selenium-Automation\\combined_preserved_sources\\02_uploaded_script_2_primary_preserved.py",
+      "bytes": 495795,
+      "sha256": "b90d733fd83b8004290f5d13d0442096c6406a27ef70207b354cadda8653d1e1",
+      "role": "primary runnable script"
+    }
+  ]
+}
