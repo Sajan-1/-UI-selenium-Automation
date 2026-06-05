@@ -11,7 +11,7 @@ from datetime import datetime
 
 WEBEX_BOT_TOKEN = os.getenv("WEBEX_BOT_TOKEN", "").strip()
 WEBEX_ROOM_ID = os.getenv("WEBEX_ROOM_ID", "").strip()
-
+GCHAT_WEBHOOK_URL = "https://chat.googleapis.com/v1/spaces/XXXX/messages?key=XXXX&token=XXXX"
 
 def _webex_send_message(markdown_text):
     if not WEBEX_BOT_TOKEN or not WEBEX_ROOM_ID:
@@ -90,3 +90,59 @@ def send_classlens_final_report_to_webex():
 
 send_classlens_final_report_to_webex()
 # ================== END WEBEX REPORT SENDER - ADD ONLY ==================
+
+
+
+# ================== GOOGLE CHAT REPORT SENDER - ADD ONLY ==================
+# Set this environment variable:
+#   GCHAT_WEBHOOK_URL = your Google Chat incoming webhook URL
+
+GCHAT_WEBHOOK_URL = os.getenv("GCHAT_WEBHOOK_URL", "").strip()
+
+
+def _gchat_send_message(text):
+    if not GCHAT_WEBHOOK_URL:
+        print("[GCHAT] Skipped: GCHAT_WEBHOOK_URL is not set.")
+        return False
+
+    try:
+        response = requests.post(
+            GCHAT_WEBHOOK_URL,
+            headers={"Content-Type": "application/json"},
+            json={"text": text},
+            timeout=30,
+        )
+        print("[GCHAT] Status:", response.status_code)
+        print("[GCHAT] Response:", response.text[:500])
+        return 200 <= response.status_code < 300
+    except Exception as exc:
+        print("[GCHAT] Send failed:", exc)
+        return False
+
+
+def send_classlens_final_report_to_gchat():
+    report_path = _classlens_find_master_report()
+    failed_summary = _classlens_find_failed_summary()
+
+    if failed_summary:
+        status_line = "❌ ClassLens Daily Selenium Test Completed — Failed cases detected"
+        details = failed_summary[:2500]
+    else:
+        status_line = "✅ ClassLens Daily Selenium Test Completed"
+        details = "No failed-cases summary file was found. Check the master HTML report for complete results."
+
+    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    report_line = report_path if report_path else "Master report file not found."
+
+    message = (
+        f"{status_line}\n\n"
+        f"Run time: {now}\n\n"
+        f"Master report:\n{report_line}\n\n"
+        f"Summary:\n{details}"
+    )
+
+    _gchat_send_message(message)
+
+
+send_classlens_final_report_to_gchat()
+# ================== END GOOGLE CHAT REPORT SENDER - ADD ONLY ==================

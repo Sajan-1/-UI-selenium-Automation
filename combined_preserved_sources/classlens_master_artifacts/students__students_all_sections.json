@@ -1221,12 +1221,12 @@
   {
     "section": "H",
     "student_name": "Akshat Narayan",
-    "midterm_marks": "35.5/80",
-    "midterm_percent": "44.4%",
+    "midterm_marks": "34/80",
+    "midterm_percent": "42.5%",
     "preboard1_marks": "34/80",
     "preboard1_percent": "42.5%",
     "change_accuracy": "-1.9%",
-    "change_calculated_from_percent": "-1.9%",
+    "change_calculated_from_percent": "0.0%",
     "midterm_weakest_chapters": [
       "Integrals",
       "Determinants",
@@ -1268,13 +1268,13 @@
       "raw_values": {
         "left_card": "-1.9%",
         "top_right_button": "-1.9%",
-        "center_arrow_box": "-1.9%",
+        "center_arrow_box": "NA",
         "progress_report": "1.9%"
       },
       "normalized_values": {
         "left_card": "-1.9",
         "top_right_button": "-1.9",
-        "center_arrow_box": "-1.9",
+        "center_arrow_box": "NA",
         "progress_report": "+1.9"
       }
     }
@@ -7442,12 +7442,12 @@
   {
     "section": "K",
     "student_name": "Shiva Vijai",
-    "midterm_marks": "58.5/80",
-    "midterm_percent": "73.1%",
+    "midterm_marks": "72.5/80",
+    "midterm_percent": "90.6%",
     "preboard1_marks": "72.5/80",
     "preboard1_percent": "90.6%",
     "change_accuracy": "+17.5%",
-    "change_calculated_from_percent": "+17.5%",
+    "change_calculated_from_percent": "0.0%",
     "midterm_weakest_chapters": [
       "Application of integrals",
       "Matrices",
@@ -7496,13 +7496,13 @@
       "raw_values": {
         "left_card": "+17.5%",
         "top_right_button": "17.5%",
-        "center_arrow_box": "+17.5%",
+        "center_arrow_box": "NA",
         "progress_report": "17.5%"
       },
       "normalized_values": {
         "left_card": "+17.5",
         "top_right_button": "+17.5",
-        "center_arrow_box": "+17.5",
+        "center_arrow_box": "NA",
         "progress_report": "+17.5"
       }
     }
@@ -8040,12 +8040,12 @@
   {
     "section": "K",
     "student_name": "Tanishka",
-    "midterm_marks": "44/80",
-    "midterm_percent": "55%",
+    "midterm_marks": "48/80",
+    "midterm_percent": "60%",
     "preboard1_marks": "48/80",
     "preboard1_percent": "60%",
     "change_accuracy": "+5.0%",
-    "change_calculated_from_percent": "+5.0%",
+    "change_calculated_from_percent": "0.0%",
     "midterm_weakest_chapters": [
       "Application of integrals",
       "Determinants",
@@ -8101,13 +8101,13 @@
       "raw_values": {
         "left_card": "+5.0%",
         "top_right_button": "5.0%",
-        "center_arrow_box": "+5.0%",
+        "center_arrow_box": "NA",
         "progress_report": "5.0%"
       },
       "normalized_values": {
         "left_card": "+5.0",
         "top_right_button": "+5.0",
-        "center_arrow_box": "+5.0",
+        "center_arrow_box": "NA",
         "progress_report": "+5.0"
       }
     }
@@ -8183,12 +8183,12 @@
   {
     "section": "K",
     "student_name": "Sanskruthi Sarvesh",
-    "midterm_marks": "18/80",
-    "midterm_percent": "22.5%",
+    "midterm_marks": "20.5/80",
+    "midterm_percent": "25.6%",
     "preboard1_marks": "20.5/80",
     "preboard1_percent": "25.6%",
     "change_accuracy": "+3.1%",
-    "change_calculated_from_percent": "+3.1%",
+    "change_calculated_from_percent": "0.0%",
     "midterm_weakest_chapters": [
       "Integrals",
       "Application of integrals",
@@ -8237,13 +8237,13 @@
       "raw_values": {
         "left_card": "+3.1%",
         "top_right_button": "3.1%",
-        "center_arrow_box": "+3.1%",
+        "center_arrow_box": "NA",
         "progress_report": "3.1%"
       },
       "normalized_values": {
         "left_card": "+3.1",
         "top_right_button": "+3.1",
-        "center_arrow_box": "+3.1",
+        "center_arrow_box": "NA",
         "progress_report": "+3.1"
       }
     }
@@ -19739,10 +19739,10 @@
   {
     "section": "Q",
     "student_name": "Eshaan Saha",
-    "midterm_marks": "31.5/80",
-    "midterm_percent": "39.4%",
-    "preboard1_marks": "31.5/80",
-    "preboard1_percent": "39.4%",
+    "midterm_marks": "21/80",
+    "midterm_percent": "26.3%",
+    "preboard1_marks": "21/80",
+    "preboard1_percent": "26.3%",
     "change_accuracy": "+13.1%",
     "change_calculated_from_percent": "0.0%",
     "midterm_weakest_chapters": [
@@ -20752,10 +20752,10 @@
   {
     "section": "Q",
     "student_name": "Disha Shenoy",
-    "midterm_marks": "16/80",
-    "midterm_percent": "20%",
-    "preboard1_marks": "16/80",
-    "preboard1_percent": "20%",
+    "midterm_marks": "22/80",
+    "midterm_percent": "27.5%",
+    "preboard1_marks": "22/80",
+    "preboard1_percent": "27.5%",
     "change_accuracy": "-7.5%",
     "change_calculated_from_percent": "0.0%",
     "midterm_weakest_chapters": [

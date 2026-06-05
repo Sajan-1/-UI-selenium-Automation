@@ -1,0 +1,42 @@
+{
+  "classlens_MASTER_ALL_TABS_REPORT.html": {
+    "sha256": "6310e4608cb16a031ae44f4646f091a2b2be372a2d26b043529950f62de8639d",
+    "size": 15410840
+  },
+  "classlens_data_all_sections_v17.json": {
+    "sha256": "9a1e9dd79cdcf0003d62b246a66ba2333aa45d9b816641b73d551c0cc522f265",
+    "size": 392129
+  },
+  "classlens_master_artifacts/chapters__classlens_all_sections_final_report.html": {
+    "sha256": "5dfd1186d5881e1a16becff447e4ddb18d3540ea1cc10fc48b541a8c4f05d7fe",
+    "size": 3915279
+  },
+  "classlens_master_artifacts/overview__classlens_all_sections_master_report_v13.html": {
+    "sha256": "2c90305279ead2cbc19b41ff6156cee9aecdbaf7545012959096b8bc6c6fcb12",
+    "size": 453667
+  },
+  "classlens_master_artifacts/overview__classlens_report_all_sections_v17.html": {
+    "sha256": "2c90305279ead2cbc19b41ff6156cee9aecdbaf7545012959096b8bc6c6fcb12",
+    "size": 453667
+  },
+  "classlens_master_artifacts/questions__classlens_all_sections_report.html": {
+    "sha256": "f094a26bd6663cbb1b6811d977bf18b97aba57e791a1ad6f9a92b8c797d13209",
+    "size": 2622730
+  },
+  "classlens_master_artifacts/students__classlens_all_sections_report.html": {
+    "sha256": "031e34f22e3783e64ef0979152e5d2ff1208a0acb5b7b5f554e6ebc9cf7e0cab",
+    "size": 3324600
+  },
+  "classlens_master_artifacts/students__students_all_sections.json": {
+    "sha256": "3feb685ee0394ac3414cffd55f5a66cbdf3942328f5008ae788c50fc2ebc6b09",
+    "size": 655990
+  },
+  "classlens_report_all_sections_v17.html": {
+    "sha256": "2c90305279ead2cbc19b41ff6156cee9aecdbaf7545012959096b8bc6c6fcb12",
+    "size": 453667
+  },
+  "students_all_sections.json": {
+    "sha256": "3feb685ee0394ac3414cffd55f5a66cbdf3942328f5008ae788c50fc2ebc6b09",
+    "size": 655990
+  }
+}

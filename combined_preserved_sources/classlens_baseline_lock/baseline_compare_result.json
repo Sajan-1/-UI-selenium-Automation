@@ -1,0 +1,13 @@
+{
+  "status": "FAIL",
+  "changes": [
+    "CHANGED: classlens_data_all_sections_v17.json",
+    "CHANGED: classlens_report_all_sections_v17.html",
+    "CHANGED: classlens_MASTER_ALL_TABS_REPORT.html",
+    "CHANGED: classlens_master_artifacts/overview__classlens_all_sections_master_report_v13.html",
+    "CHANGED: classlens_master_artifacts/overview__classlens_report_all_sections_v17.html",
+    "CHANGED: classlens_master_artifacts/chapters__classlens_all_sections_final_report.html",
+    "CHANGED: classlens_master_artifacts/questions__classlens_all_sections_report.html"
+  ],
+  "checked_files": 10
+}

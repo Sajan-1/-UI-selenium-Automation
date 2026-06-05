@@ -1,8 +1,0 @@
-{
-  "module": "questions",
-  "exit_code": 124,
-  "timeout_seconds": 360,
-  "status": "TIMEOUT_CONTINUED",
-  "reason": "Module exceeded timeout, commonly caused by a dashboard spinner or data load wait.",
-  "next_action": "Review module artifact and page data availability; master runner continued to remaining modules."
-}
