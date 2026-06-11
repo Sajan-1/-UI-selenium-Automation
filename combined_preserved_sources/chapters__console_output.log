@@ -3,7 +3,7 @@
 
 [1m[96m════════════════════════════════════════════════════════════════════════
   ClassLens · All Sections · FINAL MERGED v4
-  [2m05 Jun 2026  16:47:31[0m
+  [2m11 Jun 2026  12:10:33[0m
 [96m════════════════════════════════════════════════════════════════════════[0m
 
 
@@ -1623,7 +1623,7 @@
       [2mPreboard 1:[0m  Accuracy=[92m[1m52.9%[0m  Struggling=[93m[1m12[0m  WeakConcepts=[96m0[0m
         Weakest : ['1\nGraphical method of solution for problems in two variables', 'Graphical method of solution for problems in two variables']
         Strongest: ['Objective Function\n65%\nNew', 'Objective Function', '65%\nNew 65% [New]', '↘ 2.4%\nDECLINED', '↘ 2.4% [DECLINED]', 'Premium Feature', 'Remediation Plan for this chapter', "Make sure you don't have to worry about this chapter again!"]
-    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['DECLINED', 'New'][0m
+    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['New', 'DECLINED'][0m
 
       [96m┌─ HEADER ACCURACY BADGE ──────────────────────────────────────┐[0m
       [96m│[0m Preboard 1 accuracy : [91m[1mNOT FOUND[0m
@@ -2154,7 +2154,7 @@
       [2mPreboard 1:[0m  Accuracy=[92m[1m53.9%[0m  Struggling=[93m[1m13[0m  WeakConcepts=[96m0[0m
         Weakest : ['1\nGraphical method of solution for problems in two variables', 'Graphical method of solution for problems in two variables']
         Strongest: ['Objective Function\n64%\nNew', 'Objective Function', '64%\nNew 64% [New]', '↘ 2.3%\nDECLINED', '↘ 2.3% [DECLINED]', 'Premium Feature', 'Remediation Plan for this chapter', "Make sure you don't have to worry about this chapter again!"]
-    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['DECLINED', 'New'][0m
+    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['New', 'DECLINED'][0m
 
       [96m┌─ HEADER ACCURACY BADGE ──────────────────────────────────────┐[0m
       [96m│[0m Preboard 1 accuracy : [91m[1mNOT FOUND[0m
@@ -3801,7 +3801,7 @@
       [2mPreboard 1:[0m  Accuracy=[92m[1m48%[0m  Struggling=[93m[1m7[0m  WeakConcepts=[96m1[0m
         Weakest : ['1\nObjective Function\nNew', '1\nObjective Function', 'Objective Function']
         Strongest: ['Graphical method of solution for problems in two variables\n50%', 'Graphical method of solution for problems in two variables 50%', '↘ 4.9%\nDECLINED', '↘ 4.9% [DECLINED]', 'Premium Feature', 'Remediation Plan for this chapter', "Make sure you don't have to worry about this chapter again!", 'Create Lesson Plans\nAccess Teaching Materials']
-    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['DECLINED', 'New'][0m
+    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['New', 'DECLINED'][0m
 
       [96m┌─ HEADER ACCURACY BADGE ──────────────────────────────────────┐[0m
       [96m│[0m Preboard 1 accuracy : [91m[1mNOT FOUND[0m
@@ -4494,7 +4494,7 @@
       [2mPreboard 1:[0m  Accuracy=[92m[1m55.5%[0m  Struggling=[93m[1m10[0m  WeakConcepts=[96m0[0m
         Weakest : ['1\nGraphical method of solution for problems in two variables', 'Graphical method of solution for problems in two variables']
         Strongest: ['Objective Function\n58%\nNew', 'Objective Function', '58%\nNew 58% [New]', '↘ 2.9%\nDECLINED', '↘ 2.9% [DECLINED]', 'Premium Feature', 'Remediation Plan for this chapter', "Make sure you don't have to worry about this chapter again!"]
-    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['DECLINED', 'New'][0m
+    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['New', 'DECLINED'][0m
 
       [96m┌─ HEADER ACCURACY BADGE ──────────────────────────────────────┐[0m
       [96m│[0m Preboard 1 accuracy : [91m[1mNOT FOUND[0m
@@ -4917,7 +4917,7 @@
       [2mPreboard 1:[0m  Accuracy=[92m[1m53.2%[0m  Struggling=[93m[1m10[0m  WeakConcepts=[96m0[0m
         Weakest : ['1\nGraphical method of solution for problems in two variables', 'Graphical method of solution for problems in two variables']
         Strongest: ['Objective Function\n65%\nNew', 'Objective Function', '65%\nNew 65% [New]', '↘ 2.1%\nDECLINED', '↘ 2.1% [DECLINED]', 'Premium Feature', 'Remediation Plan for this chapter', "Make sure you don't have to worry about this chapter again!"]
-    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['DECLINED', 'New'][0m
+    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['New', 'DECLINED'][0m
 
       [96m┌─ HEADER ACCURACY BADGE ──────────────────────────────────────┐[0m
       [96m│[0m Preboard 1 accuracy : [91m[1mNOT FOUND[0m
@@ -5257,7 +5257,7 @@
   PHASE 6  ▶  [97mSEARCH BOX FUNCTIONALITY
 ════════════════════════════════════════════════════════════════════════[0m
     [92m✔[0m [92m[PASS][0m  Search input element present  [2mSearch chapter...[0m
-    [91m✘[0m [91m[FAIL][0m  Search 'Relations' → target visible
+    [92m✔[0m [92m[PASS][0m  Search 'Linear' → target visible
     [92m✔[0m [92m[PASS][0m  Search filters non-matching
     [91m✘[0m [91m[FAIL][0m  Search cleared → all restored  [2mmissing 2[0m
     [92m✔[0m [92m[PASS][0m  No-match query → cards hidden
@@ -5296,7 +5296,7 @@
     [92m✔[0m [92m[PASS][0m  Excel match 'Inverse Trigonometric Functions'  [2mInverse Trigonometric Functions[0m
     [92m✔[0m [92m[PASS][0m  Excel match 'Matrices'  [2mMatrices[0m
 
-  [1mSection [93mO[0m[1m: [92m288✔[0m/[91m13✘[0m (96%)
+  [1mSection [93mO[0m[1m: [92m289✔[0m/[91m12✘[0m (96%)
 
   [1m[96m┌─ HEADER ACCURACY — Section O ──────────────────────────────┐[0m
     [91m✘[0m   1. Relations & Functions                              [96m[1mNOT FOUND[0m
@@ -5324,7 +5324,7 @@
 [1m[96m════════════════════════════════════════════════════════════════════════
   PHASE 3  ▶  [97mNAVIGATION VERIFY
 ════════════════════════════════════════════════════════════════════════[0m
-    [92m✔[0m [92m[PASS][0m  Chapters URL  [2meboard+1&screen=chapters&chapterName=Relations+%26+Functions[0m
+    [92m✔[0m [92m[PASS][0m  Chapters URL  [2m%2CPreboard+1&screen=chapters&chapterName=Linear+Programming[0m
     [92m✔[0m [92m[PASS][0m  Tab 'Overview'
     [92m✔[0m [92m[PASS][0m  Tab 'Chapters'
     [92m✔[0m [92m[PASS][0m  Tab 'Questions'
@@ -5556,7 +5556,7 @@
       [2mPreboard 1:[0m  Accuracy=[92m[1m48.2%[0m  Struggling=[93m[1m16[0m  WeakConcepts=[96m0[0m
         Weakest : ['1\nGraphical method of solution for problems in two variables', 'Graphical method of solution for problems in two variables']
         Strongest: ['Objective Function\n75%\nNew', 'Objective Function', '75%\nNew 75% [New]', '↗ 1.4%\nIMPROVED', '↗ 1.4% [IMPROVED]', 'Premium Feature', 'Remediation Plan for this chapter', "Make sure you don't have to worry about this chapter again!"]
-    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['New', 'IMPROVED'][0m
+    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['IMPROVED', 'New'][0m
 
       [96m┌─ HEADER ACCURACY BADGE ──────────────────────────────────────┐[0m
       [96m│[0m Preboard 1 accuracy : [91m[1mNOT FOUND[0m
@@ -6411,7 +6411,7 @@
       [2mPreboard 1:[0m  Accuracy=[92m[1m55.4%[0m  Struggling=[93m[1m8[0m  WeakConcepts=[96m0[0m
         Weakest : ['1\nObjective Function\nNew', '1\nObjective Function', 'Objective Function']
         Strongest: ['Graphical method of solution for problems in two variables\n56%', 'Graphical method of solution for problems in two variables 56%', '↘ 13.4%\nDECLINED', '↘ 13.4% [DECLINED]', 'Premium Feature', 'Remediation Plan for this chapter', "Make sure you don't have to worry about this chapter again!", 'Create Lesson Plans\nAccess Teaching Materials']
-    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['DECLINED', 'New'][0m
+    [92m✔[0m [92m[PASS][0m  Concept pill badges present  [2m['New', 'DECLINED'][0m
 
       [96m┌─ HEADER ACCURACY BADGE ──────────────────────────────────────┐[0m
       [96m│[0m Preboard 1 accuracy : [91m[1mNOT FOUND[0m
@@ -6427,7 +6427,7 @@
   PHASE 6  ▶  [97mSEARCH BOX FUNCTIONALITY
 ════════════════════════════════════════════════════════════════════════[0m
     [92m✔[0m [92m[PASS][0m  Search input element present  [2mSearch chapter...[0m
-    [92m✔[0m [92m[PASS][0m  Search 'Linear' → target visible
+    [92m✔[0m [92m[PASS][0m  Search 'Determinants' → target visible
     [92m✔[0m [92m[PASS][0m  Search filters non-matching
     [91m✘[0m [91m[FAIL][0m  Search cleared → all restored  [2mmissing 2[0m
     [92m✔[0m [92m[PASS][0m  No-match query → cards hidden
@@ -6494,7 +6494,7 @@
 [1m[96m════════════════════════════════════════════════════════════════════════
   PHASE 3  ▶  [97mNAVIGATION VERIFY
 ════════════════════════════════════════════════════════════════════════[0m
-    [92m✔[0m [92m[PASS][0m  Chapters URL  [2m%2CPreboard+1&screen=chapters&chapterName=Linear+Programming[0m
+    [92m✔[0m [92m[PASS][0m  Chapters URL  [2midterm%2CPreboard+1&screen=chapters&chapterName=Determinants[0m
     [92m✔[0m [92m[PASS][0m  Tab 'Overview'
     [92m✔[0m [92m[PASS][0m  Tab 'Chapters'
     [92m✔[0m [92m[PASS][0m  Tab 'Questions'
@@ -7012,7 +7012,7 @@
   PHASE 6  ▶  [97mSEARCH BOX FUNCTIONALITY
 ════════════════════════════════════════════════════════════════════════[0m
     [92m✔[0m [92m[PASS][0m  Search input element present  [2mSearch chapter...[0m
-    [92m✔[0m [92m[PASS][0m  Search 'Linear' → target visible
+    [92m✔[0m [92m[PASS][0m  Search 'Determinants' → target visible
     [92m✔[0m [92m[PASS][0m  Search filters non-matching
     [91m✘[0m [91m[FAIL][0m  Search cleared → all restored  [2mmissing 2[0m
     [92m✔[0m [92m[PASS][0m  No-match query → cards hidden
@@ -7079,7 +7079,7 @@
 [1m[96m════════════════════════════════════════════════════════════════════════
   PHASE 3  ▶  [97mNAVIGATION VERIFY
 ════════════════════════════════════════════════════════════════════════[0m
-    [92m✔[0m [92m[PASS][0m  Chapters URL  [2m%2CPreboard+1&screen=chapters&chapterName=Linear+Programming[0m
+    [92m✔[0m [92m[PASS][0m  Chapters URL  [2midterm%2CPreboard+1&screen=chapters&chapterName=Determinants[0m
     [92m✔[0m [92m[PASS][0m  Tab 'Overview'
     [92m✔[0m [92m[PASS][0m  Tab 'Chapters'
     [92m✔[0m [92m[PASS][0m  Tab 'Questions'
@@ -7111,7 +7111,7 @@
     [92m✔[0m [92m[PASS][0m  Nav tab 'Questions'
     [92m✔[0m [92m[PASS][0m  Nav tab 'Students'
     [92m✔[0m [92m[PASS][0m  'Midterm' header
-    [91m✘[0m [91m[FAIL][0m  'Preboard 1' header
+    [92m✔[0m [92m[PASS][0m  'Preboard 1' header
     [91m✘[0m [91m[FAIL][0m  'ACCURACY' label
     [91m✘[0m [91m[FAIL][0m  'Struggling students' label
     [91m✘[0m [91m[FAIL][0m  'Weak Concepts' label
@@ -7127,7 +7127,7 @@
   PHASE 8  ▶  [97mEXCEL VALIDATION
 ════════════════════════════════════════════════════════════════════════[0m
 
-  [1mSection [93mZZ[0m[1m: [92m14✔[0m/[91m12✘[0m (54%)
+  [1mSection [93mZZ[0m[1m: [92m15✔[0m/[91m11✘[0m (58%)
 
   [1m[96m┌─ HEADER ACCURACY — Section ZZ ──────────────────────────────┐[0m
   [96m└────────────────────────────────────────────────────────────┘[0m
@@ -7143,13 +7143,13 @@
   [1m[93mL         [0m  [93m█████████████████████████████░[0m   96%  [92m288✔[0m  [91m13✘[0m
   [1m[93mM         [0m  [93m█████████████████████████████░[0m   96%  [92m289✔[0m  [91m12✘[0m
   [1m[93mN         [0m  [93m████████████████████████████░░[0m   95%  [92m287✔[0m  [91m14✘[0m
-  [1m[93mO         [0m  [93m█████████████████████████████░[0m   96%  [92m288✔[0m  [91m13✘[0m
+  [1m[93mO         [0m  [93m█████████████████████████████░[0m   96%  [92m289✔[0m  [91m12✘[0m
   [1m[93mP         [0m  [93m████████████████████████████░░[0m   95%  [92m287✔[0m  [91m14✘[0m
   [1m[93mQ         [0m  [93m████████████████████████████░░[0m   94%  [92m282✔[0m  [91m19✘[0m
   [1m[93mR         [0m  [91m███████████████████░░░░░░░░░░░[0m   62%  [92m188✔[0m  [91m113✘[0m
-  [1m[93mZZ        [0m  [91m████████████████░░░░░░░░░░░░░░[0m   54%  [92m14✔[0m  [91m12✘[0m
+  [1m[93mZZ        [0m  [91m█████████████████░░░░░░░░░░░░░[0m   58%  [92m15✔[0m  [91m11✘[0m
 [96m────────────────────────────────────────────────────────────────────────[0m
-  TOTAL  3638 tests  3268 pass  370 fail  90%
+  TOTAL  3638 tests  3270 pass  368 fail  90%
 [96m════════════════════════════════════════════════════════════════════════[0m
 
 

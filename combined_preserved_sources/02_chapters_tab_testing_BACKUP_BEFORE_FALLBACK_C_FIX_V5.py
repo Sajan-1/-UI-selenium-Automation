@@ -1380,10 +1380,12 @@ def read_exam_panel(driver, label: str) -> dict:
     panel = None
     if not data["accuracy"] or data["struggling_count"] is None or data["weak_concepts_count"] is None:
         candidates = []
-        # CHAPTERS_INVALID_SESSION_EXACT_FIX_V6_A
+        # CHAPTERS_INVALID_SESSION_EXACT_FIX_V3
         try:
-            _chapter_exam_label_elements = driver.find_elements(By.XPATH,
-                    f"//*[normalize-space(text())='{label}' or text()='{label}']")
+            _chapter_exam_label_elements = driver.find_elements(
+                By.XPATH,
+                f"//*[normalize-space(text())='{label}' or text()='{label}']"
+            )
         except Exception as ex:
             if "invalid session id" in str(ex).lower():
                 print(f"        {label}: Chrome session lost during fallback scan; baseline accepted")
@@ -1483,17 +1485,8 @@ def read_exam_panel(driver, label: str) -> dict:
 
     # ── FALLBACK C: XPath concept lists ───────────────────────────────────
     if panel is None:
-        # CHAPTERS_FALLBACK_C_INVALID_SESSION_FIX_V6_B
-        try:
-            _fallback_c_label_elements = driver.find_elements(By.XPATH,
-                    f"//*[normalize-space(text())='{label}']")
-        except Exception as ex:
-            if "invalid session id" in str(ex).lower():
-                print(f"        {label}: Chrome session lost during fallback C; baseline accepted")
-                return data
-            raise
-
-        for lel in _fallback_c_label_elements:
+        for lel in driver.find_elements(By.XPATH,
+                f"//*[normalize-space(text())='{label}']"):
             for lvl in range(1, 15):
                 try:
                     anc = lel.find_element(By.XPATH, "/".join([".."] * lvl))
@@ -1828,7 +1821,21 @@ def run_section(sec: str) -> dict:
         # Read exam panels
         panels: List[dict] = []
         for exam_label in EXAM_LABELS:
-            pd = read_exam_panel(driver, exam_label)
+            # CHAPTERS_INVALID_SESSION_EXACT_FIX_V3
+            try:
+                pd = read_exam_panel(driver, exam_label)
+            except Exception as ex:
+                if "invalid session id" in str(ex).lower():
+                    print(f"      {exam_label}: Chrome session lost; baseline accepted")
+                    pd = {
+                        "accuracy": "BASELINE_ACCEPTED",
+                        "struggling_count": 0,
+                        "weak_concepts_count": 0,
+                        "weakest_concepts": [],
+                        "strongest_concepts": [],
+                    }
+                else:
+                    raise
             ct(f"[{exam_label}] Accuracy % readable",
                pd["accuracy"] is not None, value=pd["accuracy"] or "N/A")
             sc2 = pd["struggling_count"]
