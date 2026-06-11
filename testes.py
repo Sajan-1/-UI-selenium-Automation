@@ -5634,7 +5634,7 @@ if False:
     # PER-SECTION RUNNER
     # ─────────────────────────────────────────────────────────────────────────────
     def run_section(sec: str) -> dict:
-        global _cur, _ph
+        global _cur
         _cur = []
         sec_banner(sec)
         chdata: List[dict] = []
@@ -14621,6 +14621,7 @@ try:
 # ADD-ONLY USER SPEED PATCH - inserted into runtime copy only
 # ==============================================================================
 import os as __cl_user_fast_os
+import re as _re
 if __cl_user_fast_os.environ.get("CLASSLENS_FAST_MODE", "1") == "1":
     try:
         import time as __cl_user_fast_time
