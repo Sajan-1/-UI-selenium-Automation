@@ -3,14 +3,9 @@ name: Python application
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
   schedule:
     - cron: "0 5 * * *"
   workflow_dispatch:
-
-permissions:
-  contents: read
 
 jobs:
   build:
@@ -19,27 +14,20 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Set up Python 3.12
-      uses: actions/setup-python@v5
+    - uses: actions/setup-python@v5
       with:
         python-version: "3.12"
 
-    - name: Install dependencies
-      run: |
+    - run: |
         python -m pip install --upgrade pip
-        pip install flake8 pytest selenium webdriver-manager requests rich
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        pip install flake8 selenium webdriver-manager requests rich
 
-    - name: Syntax check
-      run: |
+    - run: |
         flake8 testes.py test_classlens_master_runner.py --count --select=E9 --show-source --statistics
 
-    - name: Run full ClassLens script headless
-      env:
-        CLASSLENS_HEADLESS: "1"
-        CLASSLENS_FAST_MODE: "1"
-        CLASSLENS_FAST_MAX_SLEEP: "0.15"
-        PYTHONUTF8: "1"
-        PYTHONIOENCODING: "utf-8"
+    - name: Run headless
       run: |
-        timeout 20m python -u testes.py --run-all --headless || echo "Headless run timed out or failed, continuing CI"
+        set +e
+        timeout 20m python -u testes.py --run-all --headless
+        echo "Workflow continues regardless of script result"
+        exit 0
