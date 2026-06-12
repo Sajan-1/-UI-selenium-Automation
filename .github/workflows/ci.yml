@@ -7,6 +7,9 @@ on:
     - cron: "0 5 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,16 +21,18 @@ jobs:
       with:
         python-version: "3.12"
 
-    - run: |
+    - name: Install dependencies
+      run: |
         python -m pip install --upgrade pip
-        pip install flake8 selenium webdriver-manager requests rich
+        pip install flake8 selenium webdriver-manager requests rich pytest
 
-    - run: |
+    - name: Syntax check
+      run: |
         flake8 testes.py test_classlens_master_runner.py --count --select=E9 --show-source --statistics
 
-    - name: Run headless
+    - name: Run full ClassLens script headless
       run: |
         set +e
         timeout 20m python -u testes.py --run-all --headless
-        echo "Workflow continues regardless of script result"
+        echo "Headless script finished/failed/timed out, but CI will pass."
         exit 0
