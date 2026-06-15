@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 
 """
 ClassLens Combined 4-Script Master Runner
@@ -30,7 +30,7 @@ Important:
 if False:
     """
     =============================================================================
-      ClassLens – Complete UI Test Suite  v12.0  (PROFESSIONAL EDITION)
+      ClassLens â€“ Complete UI Test Suite  v12.0  (PROFESSIONAL EDITION)
       Target URL : https://classlens.inferentics.com
     
       Tests Covered:
@@ -45,11 +45,11 @@ if False:
                        ALL students captured (not just the 3 visible)
     
       Key Fixes in v12:
-        • JS-based panel finding (handles Tailwind special chars like bg-[#FFF7E6])
-        • JS-based overflow button detection (border-dashed inside scoped panel)
-        • Brute-force JS fallback for overflow buttons
-        • Final JS DOM scrape safety net for students
-        • Professional enterprise HTML report design
+        â€¢ JS-based panel finding (handles Tailwind special chars like bg-[#FFF7E6])
+        â€¢ JS-based overflow button detection (border-dashed inside scoped panel)
+        â€¢ Brute-force JS fallback for overflow buttons
+        â€¢ Final JS DOM scrape safety net for students
+        â€¢ Professional enterprise HTML report design
     =============================================================================
     """
     
@@ -67,9 +67,9 @@ if False:
     )
     from selenium.webdriver.common.keys import Keys
     
-    # ══════════════════════════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     #  CONFIG
-    # ══════════════════════════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     
     LOGIN_URL         = "https://classlens.inferentics.com"
     USERNAME          = "sajan"
@@ -94,9 +94,9 @@ if False:
     MASTER_JSON_FILE  = "classlens_all_sections_master_data_v13.json"
     TIMEOUT           = 30
     
-    # ══════════════════════════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     #  DATA STORE
-    # ══════════════════════════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     
     run_ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     _P=0; _F=0; _W=0
@@ -125,7 +125,7 @@ if False:
     
     store = fresh_store()
     
-    ICONS = {"PASS":"✅","FAIL":"❌","WARN":"⚠️ ","INFO":"ℹ️ "}
+    ICONS = {"PASS":"âœ…","FAIL":"âŒ","WARN":"âš ï¸ ","INFO":"â„¹ï¸ "}
     
     def rec(bucket, tc_id, desc, status, detail=""):
         global _P,_F,_W
@@ -138,11 +138,11 @@ if False:
         elif status=="FAIL": _F+=1
         elif status=="WARN": _W+=1
     
-    def sep(t): print(f"\n{'═'*70}\n  {t}\n{'═'*70}")
+    def sep(t): print(f"\n{'â•'*70}\n  {t}\n{'â•'*70}")
     
-    # ══════════════════════════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     #  DRIVER
-    # ══════════════════════════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     
     driver_ref = []   # global driver reference for JS helpers
     
@@ -156,9 +156,9 @@ if False:
         driver_ref.append(d)
         return d
     
-    # ══════════════════════════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     #  HELPERS
-    # ══════════════════════════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     
     def el_text(el):
         try:    return (el.text or "").strip()
@@ -206,9 +206,9 @@ if False:
         try:   return d.find_element(By.TAG_NAME,"body").text
         except: return ""
     
-    # ══════════════════════════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     #  JS SNIPPETS FOR MODAL DETECTION
-    # ══════════════════════════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     
     JS_FIND_MODAL = (
         "(function(){"
@@ -324,9 +324,9 @@ if False:
         "})()"
     )
     
-    # ══════════════════════════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     #  STUDENT ROW SCRAPER
-    # ══════════════════════════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     
     STUDENT_SKIP = {"weak","lagging","performing well","highlighted","preboard",
                     "students","more","overview","exam","chapter","avg",
@@ -349,7 +349,7 @@ if False:
     
             # Skip noise
             if (not line
-                    or line in ("->", "←", "×", "✕", "✖", "x", "X")
+                    or line in ("->", "â†", "Ã—", "âœ•", "âœ–", "x", "X")
                     or "students in this category" in line.lower()
                     or "chapters in this category" in line.lower()
                     or re.match(r"^\d+\s+students?", line, re.I)
@@ -375,7 +375,7 @@ if False:
                     if re.match(r"^Class\s+\d+", nxt, re.I):
                         class_info = nxt; j += 1; continue
                     # Arrow separator
-                    if nxt in ("->", "←"):
+                    if nxt in ("->", "â†"):
                         j += 1; continue
                     # Percentage
                     if re.match(r"^\d+\.?\d*%$", nxt):
@@ -383,7 +383,7 @@ if False:
                     # Percentage without % sign (e.g. "11.3")
                     if re.match(r"^\d+\.\d+$", nxt):
                         pct = nxt; j += 1; break
-                    # Something else — stop scanning
+                    # Something else â€” stop scanning
                     break
     
                 if pct and name not in seen:
@@ -566,7 +566,7 @@ if False:
         Find the +N more students dashed button STRICTLY inside this category's panel.
         Returns (element, text) or (None, "").
         
-        CRITICAL: Never use page-wide search — that caused Weak/Lagging's overflow
+        CRITICAL: Never use page-wide search â€” that caused Weak/Lagging's overflow
         button to be returned for Performing Well (which has no overflow).
         """
         # Method 1: JS inside panel ONLY
@@ -611,9 +611,9 @@ if False:
                                 return el, t
                 except: pass
     
-        # ── NO PAGE-WIDE BRUTE FORCE — that caused wrong category's button to be returned
+        # â”€â”€ NO PAGE-WIDE BRUTE FORCE â€” that caused wrong category's button to be returned
         # If panel-scoped search found nothing, this category has no overflow button.
-        print(f"      No overflow button found in {category} panel — all students visible inline")
+        print(f"      No overflow button found in {category} panel â€” all students visible inline")
         return None, ""
     
     
@@ -630,7 +630,7 @@ if False:
         """
         time.sleep(2.0)   # wait for sheet to fully open
     
-        # ── LAYER 1: JS direct row extraction ──────────────────────────────────────
+        # â”€â”€ LAYER 1: JS direct row extraction â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         try:
             js_result = driver.execute_script("""
                 var cat = arguments[0];
@@ -693,7 +693,7 @@ if False:
                         }
                     });
     
-                    // Fallback: sequential walk — Name / optional "Class X" / XX.X%
+                    // Fallback: sequential walk â€” Name / optional "Class X" / XX.X%
                     if (students.length === 0) {
                         var allLeaves = Array.from(c.querySelectorAll('*')).filter(function(b) {
                             return b.children.length === 0 && (b.textContent||'').trim().length > 0;
@@ -816,8 +816,8 @@ if False:
     
                 if all_students:
                     return all_students, True
-                # Container found but no rows — may be a text-only layout, parse text
-                print("      JS rows empty — parsing container innerText...")
+                # Container found but no rows â€” may be a text-only layout, parse text
+                print("      JS rows empty â€” parsing container innerText...")
                 try:
                     ct = driver.execute_script("""
                         var all = Array.from(document.querySelectorAll('*'));
@@ -842,7 +842,7 @@ if False:
         except Exception as ex:
             print(f"      JS layer 1 error: {ex}")
     
-        # ── LAYER 2: Selenium anchor text walk-up ──────────────────────────────────
+        # â”€â”€ LAYER 2: Selenium anchor text walk-up â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         print("      Trying anchor text fallback...")
         try:
             anchors = driver.find_elements(By.XPATH,
@@ -860,14 +860,14 @@ if False:
                                 if any(category.lower() in ln.lower() for ln in first_lines) or ph > 300:
                                     stus = _line_pair(pt)
                                     if stus:
-                                        print(f"      ✅  Anchor fallback: {len(stus)} students")
+                                        print(f"      âœ…  Anchor fallback: {len(stus)} students")
                                         return stus, True
                             node = parent
                         except: break
         except Exception as e2:
             print(f"      Anchor error: {e2}")
     
-        # ── LAYER 3: Standard role/class modal selectors ───────────────────────────
+        # â”€â”€ LAYER 3: Standard role/class modal selectors â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         print("      Trying standard modal selectors...")
         try:
             modal_info = driver.execute_script(JS_FIND_MODAL)
@@ -875,7 +875,7 @@ if False:
             modal_info = None
     
         if modal_info and modal_info.get("found"):
-            print(f"      ✅  Standard modal: {modal_info.get('w')}x{modal_info.get('h')}")
+            print(f"      âœ…  Standard modal: {modal_info.get('w')}x{modal_info.get('h')}")
             all_students = []
             seen_keys    = set()
             for step in range(50):
@@ -897,7 +897,7 @@ if False:
                 except: pass
             return all_students, True
     
-        print("      ❌  Modal not detected by any method")
+        print("      âŒ  Modal not detected by any method")
         return [], False
     def close_modal(driver):
         try:
@@ -913,9 +913,9 @@ if False:
             return False
     
     
-    # ══════════════════════════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     #  CHAPTER HELPERS
-    # ══════════════════════════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     
     CHAPTER_SKIP = {"reteach","brushup","on track","revise thoroughly",
                     "review specific","significant improvement","target these chapters",
@@ -989,7 +989,7 @@ if False:
         cards = []
         seen  = set()
     
-        # Strategy 1: Selenium — find chapter name elements
+        # Strategy 1: Selenium â€” find chapter name elements
         try:
             # Try the exact class combo from HTML source
             name_els = panel.find_elements(
@@ -1109,7 +1109,7 @@ if False:
             "chapters in this category","students in this category",
             "more chapters","no chapters","chapter","maths","mathematics",
             "view chapter details","chapter avg","avg weightage",
-            "x","close","->","←","×","✕","✖",
+            "x","close","->","â†","Ã—","âœ•","âœ–",
         }
         chapters = []
         seen     = set()
@@ -1117,7 +1117,7 @@ if False:
     
         for line in lines:
             if not line: continue
-            if line in ("->","←","×","✕","✖","x","X"): continue
+            if line in ("->","â†","Ã—","âœ•","âœ–","x","X"): continue
             if "chapters in this category" in line.lower(): continue
             if "students in this category" in line.lower(): continue
             if re.match(r"^\d+\s+chapters?", line, re.I): continue
@@ -1170,7 +1170,7 @@ if False:
                     return [], False
                 time.sleep(0.5)
     
-        # ── LAYER 1: JS find container with "chapters in this category" ──────────
+        # â”€â”€ LAYER 1: JS find container with "chapters in this category" â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         # CRITICAL: verify modal belongs to THIS label (e.g. "Brushup") before accepting
         chapters = []
         modal_text = ""
@@ -1208,7 +1208,7 @@ if False:
         except Exception as ex:
             print(f"      JS chapter modal error: {ex}")
     
-        # ── LAYER 2: Selenium anchor walk-up — ONLY if label verified ───────────
+        # â”€â”€ LAYER 2: Selenium anchor walk-up â€” ONLY if label verified â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         if not chapters:
             try:
                 anchors = driver.find_elements(By.XPATH,
@@ -1237,7 +1237,7 @@ if False:
             except Exception as e2:
                 print(f"      Anchor error: {e2}")
     
-        # ── LAYER 3: Standard modal selectors ────────────────────────────────────
+        # â”€â”€ LAYER 3: Standard modal selectors â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         if not chapters:
             try:
                 modal_info = driver.execute_script(JS_FIND_MODAL)
@@ -1277,7 +1277,7 @@ if False:
         """
         Find the +N more chapters button STRICTLY inside the section's own panel.
         Returns (element, text) or (None, "").
-        NEVER uses page-wide search — that caused wrong chapters for wrong sections.
+        NEVER uses page-wide search â€” that caused wrong chapters for wrong sections.
         
         Only Brushup has +1 more chapters. Reteach and On Track show all chapters
         inline with no overflow button.
@@ -1329,7 +1329,7 @@ if False:
                 except: pass
                 if ovf_btn: break
     
-        # ── NO PAGE-WIDE FALLBACK — that caused Brushup's modal to be read for all sections
+        # â”€â”€ NO PAGE-WIDE FALLBACK â€” that caused Brushup's modal to be read for all sections
         # If the panel has no overflow button, this section shows all chapters inline.
     
         if ovf_btn:
@@ -1338,13 +1338,13 @@ if False:
             print(f"      Found overflow in panel: '{t}'")
             return ovf_btn, t
     
-        print(f"      No overflow button in {label} panel — all chapters visible inline")
+        print(f"      No overflow button in {label} panel â€” all chapters visible inline")
         return None, ""
     
     
     def click_chapter_overflow(driver, panel, label):
         """
-        Click '+N more chapters' button — JS first, then XPath, then brute-force.
+        Click '+N more chapters' button â€” JS first, then XPath, then brute-force.
         """
         clicked = []
         ovf_btn = None
@@ -1421,7 +1421,7 @@ if False:
             t = ""
             try: t = driver.execute_script("return arguments[0].textContent.trim()", ovf_btn)
             except: t = el_text(ovf_btn)
-            print(f"        🔽 Clicking chapter overflow: '{t}'")
+            print(f"        ðŸ”½ Clicking chapter overflow: '{t}'")
             safe_click(driver, ovf_btn)
             clicked.append(t)
             time.sleep(0.8)
@@ -1472,7 +1472,7 @@ if False:
             """, label)
             if btn:
                 txt = driver.execute_script("return arguments[0].textContent.trim()", btn)
-                print(f"        🔽 Page-wide chapter overflow: '{txt}'")
+                print(f"        ðŸ”½ Page-wide chapter overflow: '{txt}'")
                 driver.execute_script("arguments[0].scrollIntoView({block:'center'})", btn)
                 time.sleep(0.4)
                 try: btn.click()
@@ -1529,21 +1529,21 @@ if False:
              span1="10"  span2="/ 80"
         Must read parent container's innerText to get the full value.
     
-        CRITICAL: All searches scoped to THIS card element only — never whole page.
+        CRITICAL: All searches scoped to THIS card element only â€” never whole page.
         """
         time.sleep(1.5)
         metrics = {"chapter_avg": "N/A", "avg_weightage": "N/A"}
     
-        # ══════════════════════════════════════════════════════════════════════════
+        # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
         #  PRIMARY STRATEGY: innerText-based extraction
         #
-        #  Most reliable approach — reads innerText of each metric box (rounded-2xl).
+        #  Most reliable approach â€” reads innerText of each metric box (rounded-2xl).
         #  innerText of the Avg Weightage box gives:
         #    "Avg Weightage\n10\n/ 80"
         #  We strip the label line, join the rest -> "10 / 80"
         #
         #  This avoids all leaf-node / children.length issues.
-        # ══════════════════════════════════════════════════════════════════════════
+        # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
         try:
             result = driver.execute_script("""
                 var cardEl = arguments[0];
@@ -1594,7 +1594,7 @@ if False:
                     if (lines.length === 0) continue;
                     var firstLine = lines[0].toLowerCase();
     
-                    // ── Chapter Avg box ──
+                    // â”€â”€ Chapter Avg box â”€â”€
                     if (firstLine.indexOf('chapter avg') >= 0 && avg === null) {
                         // Value is everything after the label line
                         var valueParts = lines.slice(1).filter(function(l) {
@@ -1610,7 +1610,7 @@ if False:
                         }
                     }
     
-                    // ── Avg Weightage box ──
+                    // â”€â”€ Avg Weightage box â”€â”€
                     if ((firstLine.indexOf('avg weightage') >= 0 || firstLine === 'weightage') && wt === null) {
                         // Value lines are everything after the label line
                         // e.g. lines = ["Avg Weightage", "10", "/ 80"]
@@ -1659,7 +1659,7 @@ if False:
                     }
                 }
     
-                // ── Fallback if boxes weren't found: scan all elements for labels ──
+                // â”€â”€ Fallback if boxes weren't found: scan all elements for labels â”€â”€
                 if ((avg === null || wt === null) && boxes.length < 2) {
                     debugInfo.push('label-scan');
                     var allEls = Array.from(container.querySelectorAll('*'));
@@ -1729,7 +1729,7 @@ if False:
                     }
                 }
     
-                // ── NUCLEAR FALLBACK: if wt is still missing or partial ("/ 80" without "10") ──
+                // â”€â”€ NUCLEAR FALLBACK: if wt is still missing or partial ("/ 80" without "10") â”€â”€
                 // Use the simplest possible approach: find element containing "Avg Weightage",
                 // get its parent's innerText, regex out the numbers after the label.
                 if (!wt || (wt && wt.indexOf('/') >= 0 && !/^[0-9]/.test(wt.trim()))) {
@@ -1776,7 +1776,7 @@ if False:
                     }
                 }
     
-                // ── Final sanitization in JS — reject wt if it's a chapter avg value ──
+                // â”€â”€ Final sanitization in JS â€” reject wt if it's a chapter avg value â”€â”€
                 if (wt) {
                     if (wt.toLowerCase().indexOf('chapter avg') >= 0) wt = null;
                     if (wt && /^[+-]?[0-9]+\\.?[0-9]*%$/.test(wt.trim())) wt = null;
@@ -1801,7 +1801,7 @@ if False:
         except Exception as ex:
             print(f"      JS metrics error: {ex}")
     
-        # ── Fallback: Card innerText line parsing ─────────────────────────────────
+        # â”€â”€ Fallback: Card innerText line parsing â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         if metrics["chapter_avg"] == "N/A" or metrics["avg_weightage"] == "N/A":
             try:
                 card_text = driver.execute_script("""
@@ -1856,11 +1856,11 @@ if False:
     
         metrics["avg_weightage"] = _sanitize_weightage(metrics["avg_weightage"])
     
-        # ── Python-side last resort: if weightage starts with "/" (missing number) ──
+        # â”€â”€ Python-side last resort: if weightage starts with "/" (missing number) â”€â”€
         # or is still N/A, do one more targeted JS extraction using sibling walk
         wt_val = metrics["avg_weightage"]
         if wt_val == "N/A" or (isinstance(wt_val, str) and wt_val.strip().startswith("/")):
-            print(f"      ⚠ Weightage incomplete ('{wt_val}'), running targeted re-extraction...")
+            print(f"      âš  Weightage incomplete ('{wt_val}'), running targeted re-extraction...")
             try:
                 wt_fix = driver.execute_script("""
                     var cardEl = arguments[0];
@@ -1900,14 +1900,14 @@ if False:
                     wt_fix = wt_fix.strip()
                     if not re.match(r'^[+-]?\d+\.?\d*%$', wt_fix):
                         metrics["avg_weightage"] = wt_fix
-                        print(f"      ✅ Re-extracted weightage: {wt_fix}")
+                        print(f"      âœ… Re-extracted weightage: {wt_fix}")
             except Exception as ex:
                 print(f"      Re-extraction error: {ex}")
     
         print(f"      Final: avg={metrics['chapter_avg']}  wt={metrics['avg_weightage']}")
         return metrics
     def test_login(driver, wait):
-        sep("SECTION 1 – Login & Page Load")
+        sep("SECTION 1 â€“ Login & Page Load")
         b = store["login_tests"]
         try:
             driver.get(LOGIN_URL)
@@ -1945,12 +1945,12 @@ if False:
             rec(b,"TC-L-005","Login fails","FAIL",str(e)); return False
     
     
-    # ══════════════════════════════════════════════════════════════════════════════
-    #  SECTION 2 — NAVIGATION
-    # ══════════════════════════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+    #  SECTION 2 â€” NAVIGATION
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     
     def test_navigation(driver, wait):
-        sep("SECTION 2 – Form Selection & Navigation")
+        sep("SECTION 2 â€“ Form Selection & Navigation")
         b = store["nav_tests"]
     
         # The first 4 dropdowns (Class, Section, Subject, Exam) are required.
@@ -1968,7 +1968,7 @@ if False:
             if not ok: return False
             time.sleep(0.4)
     
-        # Try CompareLeft and CompareRight — optional dropdowns
+        # Try CompareLeft and CompareRight â€” optional dropdowns
         compare_plan = [(4,"CompareLeft",VALUES.get("CompareLeft","")),
                         (5,"CompareRight",VALUES.get("CompareRight",""))]
         for idx,key,val in compare_plan:
@@ -1984,10 +1984,10 @@ if False:
                             "Selected" if ok else "Option not selectable")
                     else:
                         rec(b,tc,f"Dropdown '{key}'='{val}'","WARN",
-                            f"Option '{val}' not found in dropdown — skipping")
+                            f"Option '{val}' not found in dropdown â€” skipping")
                 else:
                     rec(b,tc,f"Dropdown '{key}'","INFO",
-                        f"Dropdown index {idx} not present — comparison not available")
+                        f"Dropdown index {idx} not present â€” comparison not available")
             except Exception as e:
                 rec(b,tc,f"Dropdown '{key}'","WARN",str(e))
             time.sleep(0.4)
@@ -2016,11 +2016,11 @@ if False:
             safe_click(driver, ov)
             rec(b,"TC-N-008","Overview tab clicked","PASS")
         else:
-            rec(b,"TC-N-008","Overview tab","WARN","Not found — may already be active")
+            rec(b,"TC-N-008","Overview tab","WARN","Not found â€” may already be active")
     
         time.sleep(1.5)
     
-        # ── Wait for section data to actually render ──────────────────────────────
+        # â”€â”€ Wait for section data to actually render â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         # The dashboard may take a few seconds to load data for this section.
         # Wait until we see section-specific content (Exam Comparison, Highlighted Students, etc.)
         try:
@@ -2031,12 +2031,12 @@ if False:
                     d.find_elements(By.XPATH, "//*[contains(text(),'Class Average')]"),
                 ])
             )
-            print("  ✅  Dashboard data loaded")
+            print("  âœ…  Dashboard data loaded")
         except:
-            print("  ⚠️  Dashboard data load timeout — proceeding anyway")
+            print("  âš ï¸  Dashboard data load timeout â€” proceeding anyway")
         time.sleep(1.0)
     
-        # ── Verify page header matches the selected section ──────────────────────
+        # â”€â”€ Verify page header matches the selected section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         try:
             hdr=driver.find_element(By.XPATH,"//*[contains(text(),'Overview of Section')]")
             hdr_text = el_text(hdr)
@@ -2062,15 +2062,15 @@ if False:
         return True
     
     
-    # ══════════════════════════════════════════════════════════════════════════════
-    #  SECTION 3 — EXAM COMPARISON
-    # ══════════════════════════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+    #  SECTION 3 â€” EXAM COMPARISON
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     
     def test_exam_comparison(driver):
-        sep("SECTION 3 – Exam Comparison Banner")
+        sep("SECTION 3 â€“ Exam Comparison Banner")
         b  = store["exam_tests"]
     
-        # ── Verify we're on the correct section's page ────────────────────────────
+        # â”€â”€ Verify we're on the correct section's page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         cur_url = driver.current_url
         sec = VALUES.get("Section","")
         if sec:
@@ -2085,27 +2085,27 @@ if False:
                         f"URL: ...{cur_url[-40:]}")
                 else:
                     rec(b,"TC-EC-SEC",f"Section {sec} verification","WARN",
-                        f"Section '{sec}' not found in URL or header — data may be stale")
+                        f"Section '{sec}' not found in URL or header â€” data may be stale")
             except:
                 pass
     
         pt = page_text(driver)
     
-        # ── TC-EC-001: Heading ────────────────────────────────────────────────────
+        # â”€â”€ TC-EC-001: Heading â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         try:
             h=driver.find_element(By.XPATH,"//*[contains(text(),'Exam Comparison')]")
             rec(b,"TC-EC-001","Exam Comparison heading visible","PASS",el_text(h))
         except Exception as e:
             rec(b,"TC-EC-001","Exam Comparison heading","WARN",str(e))
     
-        # ── TC-EC-002: Sub-label ──────────────────────────────────────────────────
+        # â”€â”€ TC-EC-002: Sub-label â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         try:
             s=driver.find_element(By.XPATH,"//*[contains(text(),'Change in') or contains(text(),'class average')]")
             rec(b,"TC-EC-002","Sub-label 'Change in class average'","PASS",el_text(s)[:60])
         except Exception as e:
             rec(b,"TC-EC-002","Sub-label","WARN",str(e))
     
-        # ── TC-EC-003: Banner color (orange OR green) ─────────────────────────────
+        # â”€â”€ TC-EC-003: Banner color (orange OR green) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         # Orange = decline (bg-[#D46B08])   Green = improvement (bg-[#389E0D] or bg-green)
         banner_el = None
         banner_color = "unknown"
@@ -2154,12 +2154,12 @@ if False:
         except Exception as e:
             rec(b,"TC-EC-003","Exam banner","WARN",str(e))
     
-        # ── TC-EC-004/005: Exam labels ────────────────────────────────────────────
+        # â”€â”€ TC-EC-004/005: Exam labels â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         rec(b,"TC-EC-004","Midterm label visible","PASS" if "Midterm" in pt else "WARN")
         rec(b,"TC-EC-005","Preboard label visible","PASS" if "Preboard" in pt else "WARN")
     
-        # ── TC-EC-006/007: Extract ACTUAL percentages from the banner element ─────
-        # CRITICAL: Do NOT use page-wide regex — it picks up student scores!
+        # â”€â”€ TC-EC-006/007: Extract ACTUAL percentages from the banner element â”€â”€â”€â”€â”€
+        # CRITICAL: Do NOT use page-wide regex â€” it picks up student scores!
         # Instead, scrape directly from the exam banner using JS.
         try:
             exam_data = driver.execute_script("""
@@ -2262,8 +2262,8 @@ if False:
                 print(f"      Banner labels: {labels}")
                 print(f"      Banner text: {banner_text[:100]}")
     
-                left_val = vals[0] if len(vals) >= 1 else "—"
-                right_val = vals[1] if len(vals) >= 2 else (vals[0] if len(vals) == 1 else "—")
+                left_val = vals[0] if len(vals) >= 1 else "â€”"
+                right_val = vals[1] if len(vals) >= 2 else (vals[0] if len(vals) == 1 else "â€”")
     
                 # Handle single-value case (NA -> XX.X%)
                 if len(vals) == 1:
@@ -2297,7 +2297,7 @@ if False:
             rec(b,"TC-EC-006","Left exam avg","WARN",str(ex))
             rec(b,"TC-EC-007","Right exam avg","WARN","See above")
     
-        # ── TC-EC-008: Trend badge ────────────────────────────────────────────────
+        # â”€â”€ TC-EC-008: Trend badge â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         # Look for trend text: "X.X points decline", "X.X points improvement", or trend arrow
         trend_found = False
         for pattern in [
@@ -2313,14 +2313,14 @@ if False:
                 break
     
         if not trend_found:
-            # Check for trend arrow in the banner (↑ or ↓)
+            # Check for trend arrow in the banner (â†‘ or â†“)
             try:
                 trend_el = driver.execute_script("""
                     var all = Array.from(document.querySelectorAll('*'));
                     for (var i = 0; i < all.length; i++) {
                         var e = all[i];
                         var t = (e.textContent || '').trim();
-                        if ((t === '↓' || t === '↑' || t === '⬇' || t === '⬆')
+                        if ((t === 'â†“' || t === 'â†‘' || t === 'â¬‡' || t === 'â¬†')
                                 && e.children.length === 0 && e.offsetParent !== null) {
                             return t;
                         }
@@ -2328,7 +2328,7 @@ if False:
                     return null;
                 """)
                 if trend_el:
-                    direction = "decline" if trend_el in ("↓", "⬇") else "improvement"
+                    direction = "decline" if trend_el in ("â†“", "â¬‡") else "improvement"
                     store["exam"]["trend"] = direction
                     rec(b,"TC-EC-008",f"Trend arrow: {trend_el} ({direction})","PASS")
                     trend_found = True
@@ -2338,15 +2338,15 @@ if False:
             # If left=NA, trend is "new data" not decline/improvement
             if store["exam"].get("left_pct") == "NA":
                 store["exam"]["trend"] = "first exam (baseline)"
-                rec(b,"TC-EC-008","Trend: first exam (left is NA — no prior data)","PASS",
+                rec(b,"TC-EC-008","Trend: first exam (left is NA â€” no prior data)","PASS",
                     "NA -> score means this is the baseline exam")
             else:
                 rec(b,"TC-EC-008","Trend badge","WARN","Not found as text")
     
     
-    # ══════════════════════════════════════════════════════════════════════════════
-    #  SECTIONS 4/5/6 — CHAPTER CARDS
-    # ══════════════════════════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+    #  SECTIONS 4/5/6 â€” CHAPTER CARDS
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     
     def test_chapter_section(driver, label):
         conf   = {"Reteach":"TC-RT","Brushup":"TC-BU","On Track":"TC-OT"}
@@ -2354,8 +2354,8 @@ if False:
         b      = store["chapters"][label]["tests"]
         cd     = store["chapters"][label]
     
-        sep(f"SECTION – {label}")
-        print(f"\n  ▶ {label}")
+        sep(f"SECTION â€“ {label}")
+        print(f"\n  â–¶ {label}")
     
         panel = find_chapter_section_panel(driver, label)
         if panel is None:
@@ -2425,7 +2425,7 @@ if False:
             cd["empty"] = True
             rec(b,f"{prefix}-004","Empty state","INFO","0 chapters confirmed"); return
     
-        # ── Find and click the overflow button, then READ the chapter modal ────────
+        # â”€â”€ Find and click the overflow button, then READ the chapter modal â”€â”€â”€â”€â”€â”€â”€â”€
         # The overflow opens a modal listing ALL chapters in this section
         ovf_btn, ovf_txt = _find_chapter_overflow_btn(driver, panel, label)
     
@@ -2438,7 +2438,7 @@ if False:
             cd["modal_chapters"]   = chapters_from_modal
     
             rec(b, f"{prefix}-OVF",
-                f"Overflow '{ovf_txt}' clicked — modal read",
+                f"Overflow '{ovf_txt}' clicked â€” modal read",
                 "PASS" if modal_ok else "WARN",
                 f"'{ovf_txt}' -> {len(chapters_from_modal)} chapters from modal")
     
@@ -2455,13 +2455,13 @@ if False:
         cards = find_chapter_cards(panel)
         rec(b,f"{prefix}-004",f"Chapter cards found",
             "PASS" if cards else "WARN", f"{len(cards)} cards: {[c['name'] for c in cards]}")
-        print(f"\n    📚 {label} — {len(cards)} chapters:")
+        print(f"\n    ðŸ“š {label} â€” {len(cards)} chapters:")
         for idx, card in enumerate(cards, 1):
             print(f"      #{idx}: {card['name']}")
     
         for idx, card in enumerate(cards, 1):
             tc = f"{prefix}-C{idx:02d}"
-            print(f"\n    ── Expanding: '{card['name']}'")
+            print(f"\n    â”€â”€ Expanding: '{card['name']}'")
             card_data = {"idx":idx,"name":card["name"],"chapter_avg":"N/A","avg_weightage":"N/A"}
             try:
                 scroll_to(driver, card["el"])
@@ -2477,7 +2477,7 @@ if False:
                 rec(b,tc,f"Card '{card['name']}' click","WARN",str(e))
                 cd["cards"].append(card_data); continue
     
-            # Read metrics STRICTLY from this card — not from any other card
+            # Read metrics STRICTLY from this card â€” not from any other card
             m = extract_chapter_metrics(driver, card["el"])
             card_data.update(m)
             rec(b,f"{tc}-AVG",f"  Chapter Avg % = '{m['chapter_avg']}'",
@@ -2499,17 +2499,17 @@ if False:
                 time.sleep(0.5)
             except: pass
     
-        print(f"\n  {'─'*62}")
-        print(f"  📊  {label.upper()} — {len(cd['cards'])} CHAPTERS")
-        print(f"  {'─'*62}")
+        print(f"\n  {'â”€'*62}")
+        print(f"  ðŸ“Š  {label.upper()} â€” {len(cd['cards'])} CHAPTERS")
+        print(f"  {'â”€'*62}")
         for c in cd["cards"]:
             print(f"    #{c['idx']:<3} {c['name']:<36} Avg:{c['chapter_avg']:>9}  Wt:{c['avg_weightage']:>12}")
-        print(f"  {'─'*62}")
+        print(f"  {'â”€'*62}")
     
     
-    # ══════════════════════════════════════════════════════════════════════════════
-    #  SECTION 7 — HIGHLIGHTED STUDENTS
-    # ══════════════════════════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+    #  SECTION 7 â€” HIGHLIGHTED STUDENTS
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     
     def test_student_category(driver, category):
         prefix = {"Weak":"TC-HS-W","Lagging":"TC-HS-L","Performing Well":"TC-HS-P"}[category]
@@ -2517,7 +2517,7 @@ if False:
         b      = sd["tests"]
     
         sep(f"  {category}")
-        print(f"\n  ▶ {category}")
+        print(f"\n  â–¶ {category}")
     
         # Heading
         try:
@@ -2558,18 +2558,18 @@ if False:
         else:
             rec(b,f"{prefix}-PANEL","Section panel found","PASS")
     
-        # Scrape visible students — try JS first, then Selenium
-        print(f"\n    📋 Scraping visible students…")
+        # Scrape visible students â€” try JS first, then Selenium
+        print(f"\n    ðŸ“‹ Scraping visible studentsâ€¦")
         visible = scrape_student_rows_js(driver, category)
         if not visible:
             visible = scrape_student_rows(panel)
         sd["visible"] = visible
     
         if visible:
-            print(f"    ✅  {len(visible)} visible students:")
+            print(f"    âœ…  {len(visible)} visible students:")
             for i,s in enumerate(visible,1):
                 ci=f"  ({s.get('class_info','')})" if s.get("class_info") else ""
-                print(f"      #{i}: {s['name']} — {s['pct']}{ci}")
+                print(f"      #{i}: {s['name']} â€” {s['pct']}{ci}")
                 rec(b,f"{prefix}-S{i:02d}",f"Visible #{i}: {s['name']}","PASS",
                     f"Score: {s['pct']}" + (f"  Class: {s['class_info']}" if s.get("class_info") else ""))
         else:
@@ -2582,27 +2582,27 @@ if False:
         visible_count  = len(visible)
     
         if declared_total > 0 and visible_count >= declared_total:
-            print(f"\n    ✅  All {declared_total} declared students are visible — no overflow expected")
+            print(f"\n    âœ…  All {declared_total} declared students are visible â€” no overflow expected")
             rec(b,f"{prefix}-OVF-001","Overflow button","INFO",
-                f"All {declared_total} students visible — no overflow needed")
+                f"All {declared_total} students visible â€” no overflow needed")
             sd["all"] = visible
             _print_student_summary(category, sd["all"]); return
     
-        print(f"\n    🔍 Looking for '+N more students' button…")
+        print(f"\n    ðŸ” Looking for '+N more students' buttonâ€¦")
         ovf_el, ovf_txt = find_student_overflow(driver, category, panel)
     
         if ovf_el is None:
             rec(b,f"{prefix}-OVF-001","Overflow button",
-                "INFO" if visible else "WARN","Not found — all students visible")
+                "INFO" if visible else "WARN","Not found â€” all students visible")
             sd["all"] = visible
             _print_student_summary(category, sd["all"]); return
     
         sd["overflow_txt"] = ovf_txt
         rec(b,f"{prefix}-OVF-001","Overflow button found","PASS",f"'{ovf_txt}'")
-        print(f"    ✅  Found: '{ovf_txt}'")
+        print(f"    âœ…  Found: '{ovf_txt}'")
     
         # Click overflow
-        print(f"\n    🔽  Clicking: '{ovf_txt}'")
+        print(f"\n    ðŸ”½  Clicking: '{ovf_txt}'")
         clicked = False
         for attempt in range(3):
             try:
@@ -2621,7 +2621,7 @@ if False:
             sd["all"]=visible; _print_student_summary(category,sd["all"]); return
     
         # Detect and scrape modal
-        print(f"\n    🔍  Detecting modal popup…")
+        print(f"\n    ðŸ”  Detecting modal popupâ€¦")
         modal_students, modal_found = find_and_scrape_modal(driver, category)
         sd["modal_opened"] = modal_found
     
@@ -2644,7 +2644,7 @@ if False:
             if modal_students:
                 sd["all"] = modal_students
             else:
-                # Modal opened but empty — keep visible + re-scrape page
+                # Modal opened but empty â€” keep visible + re-scrape page
                 after   = scrape_student_rows_js(driver, category) or scrape_student_rows(panel)
                 vis_set = {s["name"] for s in visible}
                 new_s   = [s for s in after if s["name"] not in vis_set]
@@ -2655,17 +2655,17 @@ if False:
         else:
             rec(b,f"{prefix}-MODAL-001","Modal","WARN","No modal detected after click")
             time.sleep(1.0)
-            # Re-scrape page — maybe inline rows appeared after click
+            # Re-scrape page â€” maybe inline rows appeared after click
             after   = scrape_student_rows_js(driver, category) or scrape_student_rows(panel)
             vis_set = {s["name"] for s in visible}
             new_s   = [s for s in after if s["name"] not in vis_set]
             sd["all"] = visible + new_s
     
-        # Final safety net — JS DOM scrape if we're short
+        # Final safety net â€” JS DOM scrape if we're short
         declared = sd.get("total", 0)
         captured = len(sd.get("all", []))
         if declared > 0 and captured < declared:
-            print(f"\n    ⚠️  Only {captured}/{declared} captured — JS DOM safety net…")
+            print(f"\n    âš ï¸  Only {captured}/{declared} captured â€” JS DOM safety netâ€¦")
             BORDER_MAP = {
                 "Weak":"border-red-400","Lagging":"border-orange-400","Performing Well":"border-green-400"
             }
@@ -2711,7 +2711,7 @@ if False:
             except Exception as ex:
                 print(f"    JS safety net error: {ex}")
     
-        # ── Cross-validate: captured count vs badge declared count ────────────────
+        # â”€â”€ Cross-validate: captured count vs badge declared count â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         captured = len(sd.get("all", []))
         declared = sd.get("total", 0)
         if declared > 0:
@@ -2719,10 +2719,10 @@ if False:
                 rec(b, f"{prefix}-VALIDATE", f"Count verified: {captured}/{declared} students",
                     "PASS", f"Badge says {declared}, captured {captured}")
             elif captured > declared:
-                print(f"    ⚠️  Captured {captured} but badge says {declared} — trimming excess!")
+                print(f"    âš ï¸  Captured {captured} but badge says {declared} â€” trimming excess!")
                 sd["all"] = sd["all"][:declared]
                 rec(b, f"{prefix}-VALIDATE", f"Count mismatch: captured {captured}, expected {declared}",
-                    "WARN", f"Trimmed to {declared} — possible cross-contamination from other category")
+                    "WARN", f"Trimmed to {declared} â€” possible cross-contamination from other category")
             else:
                 rec(b, f"{prefix}-VALIDATE", f"Count: captured {captured}/{declared}",
                     "WARN", f"Missing {declared - captured} students")
@@ -2731,22 +2731,22 @@ if False:
     
     
     def _print_student_summary(category, students):
-        print(f"\n  {'─'*68}")
-        print(f"  📊  {category.upper()} — {len(students)} STUDENTS TOTAL")
-        print(f"  {'─'*68}")
+        print(f"\n  {'â”€'*68}")
+        print(f"  ðŸ“Š  {category.upper()} â€” {len(students)} STUDENTS TOTAL")
+        print(f"  {'â”€'*68}")
         if not students:
-            print("  ⚠️  No students captured")
+            print("  âš ï¸  No students captured")
         else:
             print(f"  {'#':<4} {'Name':<40} {'Score':>8}  {'Class':<12}  Src")
             print(f"  {'-'*4} {'-'*40} {'-'*8}  {'-'*12}  ---")
             for i,s in enumerate(students,1):
                 print(f"  {i:<4} {s['name']:<40} {s.get('pct',''):>8}  "
                       f"{s.get('class_info',''):<12}  {s.get('src','')}")
-        print(f"  {'─'*68}")
+        print(f"  {'â”€'*68}")
     
     
     def test_all_students(driver, wait):
-        sep("SECTION 7 – Highlighted Students (Full Verification)")
+        sep("SECTION 7 â€“ Highlighted Students (Full Verification)")
         b = store["students"]["Weak"]["tests"]
         try:
             hd=driver.find_element(By.XPATH,"//*[contains(text(),'Highlighted Students')]")
@@ -2761,7 +2761,7 @@ if False:
             rec(b,"TC-HS-SUB","Sub-text","WARN",str(e))
     
         for cat in ["Weak","Lagging","Performing Well"]:
-            # ── Ensure no stale modal is open from previous category ──────────────
+            # â”€â”€ Ensure no stale modal is open from previous category â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
             try:
                 driver.find_element(By.TAG_NAME, "body").send_keys(Keys.ESCAPE)
                 time.sleep(0.5)
@@ -2773,16 +2773,16 @@ if False:
                     time.sleep(0.8)
                     driver.find_element(By.TAG_NAME, "body").send_keys(Keys.ESCAPE)
                     time.sleep(0.5)
-                    print(f"  ⚠️  Closed stale modal before testing {cat}")
+                    print(f"  âš ï¸  Closed stale modal before testing {cat}")
             except: pass
     
             test_student_category(driver, cat)
             time.sleep(0.5)
     
     
-    # ══════════════════════════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     #  PROFESSIONAL HTML REPORT CSS
-    # ══════════════════════════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     
     CSS = """
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
@@ -3004,14 +3004,14 @@ if False:
     @media(max-width:768px){.hero-grid{grid-template-columns:1fr}.scorecard{grid-template-columns:repeat(2,1fr)}.exam-banner{flex-direction:column}}
     """
     
-    # ══════════════════════════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     #  REPORT HTML BUILDERS
-    # ══════════════════════════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     
     def _sb(s):
-        m={"PASS":("pbg","cpass","✔"),"FAIL":("fbg","cfail","✘"),
-           "WARN":("wbg","cwarn","⚠"),"INFO":("ibg","cinfo","ℹ")}
-        bg,c,ic=m.get(s,("ibg","cinfo","ℹ"))
+        m={"PASS":("pbg","cpass","âœ”"),"FAIL":("fbg","cfail","âœ˜"),
+           "WARN":("wbg","cwarn","âš "),"INFO":("ibg","cinfo","â„¹")}
+        bg,c,ic=m.get(s,("ibg","cinfo","â„¹"))
         return f'<span class="sb {bg} {c}">{ic} {s}</span>'
     
     def _tbl(entries):
@@ -3038,8 +3038,8 @@ if False:
         """
         Build chapter data HTML for the report.
         Shows:
-          1. Chapters from Modal (if overflow was clicked) — with PASS badge per chapter
-          2. Inline Cards — expanded with Chapter Avg % and Avg Weightage
+          1. Chapters from Modal (if overflow was clicked) â€” with PASS badge per chapter
+          2. Inline Cards â€” expanded with Chapter Avg % and Avg Weightage
         """
         html = ""
         LABEL_CSS   = {"Reteach":"rt-lbl","Brushup":"bu-lbl","On Track":"ot-lbl"}
@@ -3061,7 +3061,7 @@ if False:
     
             ovf_tag = ""
             if ovf:
-                ovf_tag = f' <span class="ovf-tag">✅ {", ".join(ovf)} clicked</span>'
+                ovf_tag = f' <span class="ovf-tag">âœ… {", ".join(ovf)} clicked</span>'
     
             bg  = SECTION_BG[label]
             bd  = SECTION_BD[label]
@@ -3075,7 +3075,7 @@ if False:
                 f'{ovf_tag}'
                 f'</div>')
     
-            # ── Part A: Chapters from Modal ────────────────────────────────────────
+            # â”€â”€ Part A: Chapters from Modal â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
             modal_html = ""
             if modal_chs:
                 modal_rows = ""
@@ -3085,7 +3085,7 @@ if False:
                         f'<td><span class="ch-num">{i}</span></td>'
                         f'<td><span class="ch-name">{ch}</span></td>'
                         f'<td style="text-align:center">'
-                        f'<span class="sb pbg cpass">✔ PASS</span>'
+                        f'<span class="sb pbg cpass">âœ” PASS</span>'
                         f'</td>'
                         f'</tr>')
     
@@ -3093,7 +3093,7 @@ if False:
                     f'<div style="padding:12px 16px 4px;font-size:10px;font-weight:800;'
                     f'color:{color};text-transform:uppercase;letter-spacing:1px;'
                     f'display:flex;align-items:center;gap:8px">'
-                    f'📂 CHAPTERS FROM MODAL (+overflow clicked) — {len(modal_chs)} TOTAL'
+                    f'ðŸ“‚ CHAPTERS FROM MODAL (+overflow clicked) â€” {len(modal_chs)} TOTAL'
                     f'</div>'
                     f'<table class="ch-table">'
                     f'<thead><tr>'
@@ -3104,7 +3104,7 @@ if False:
                     f'<tbody>{modal_rows}</tbody>'
                     f'</table>')
     
-            # ── Part B: Inline Cards (expanded with metrics) ───────────────────────
+            # â”€â”€ Part B: Inline Cards (expanded with metrics) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
             inline_html = ""
             if cards:
                 inline_rows = ""
@@ -3134,7 +3134,7 @@ if False:
                     f'color:{color};text-transform:uppercase;letter-spacing:1px;'
                     f'display:flex;align-items:center;gap:8px;'
                     f'border-top:1px solid {bd}">'
-                    f'📊 INLINE CARDS (EXPANDED) — {len(cards)} CARDS'
+                    f'ðŸ“Š INLINE CARDS (EXPANDED) â€” {len(cards)} CARDS'
                     f'</div>'
                     f'<table class="ch-table">'
                     f'<thead><tr>'
@@ -3176,12 +3176,12 @@ if False:
             mopn  = sd["modal_opened"]
     
             pills = ""
-            if ovf:  pills += f'<span class="pill pp">✅ {ovf} clicked</span>'
-            if mopn: pills += f'<span class="pill pp">🪟 Modal opened · {mc} from modal</span>'
-            pills += f'<span class="pill pi">👁 {vc} visible · ✅ {len(stus)} total</span>'
+            if ovf:  pills += f'<span class="pill pp">âœ… {ovf} clicked</span>'
+            if mopn: pills += f'<span class="pill pp">ðŸªŸ Modal opened Â· {mc} from modal</span>'
+            pills += f'<span class="pill pi">ðŸ‘ {vc} visible Â· âœ… {len(stus)} total</span>'
     
             if not stus:
-                body = '<div class="s-empty">⚠ No students captured for this category</div>'
+                body = '<div class="s-empty">âš  No students captured for this category</div>'
             else:
                 stu_rows = ""
                 for i, s in enumerate(stus, 1):
@@ -3191,8 +3191,8 @@ if False:
                     is_vis   = i <= vc
                     is_modal = (i > vc and mopn) or "modal" in src
     
-                    tag = ('<span class="tag-vis">👁 visible</span>' if is_vis
-                           else '<span class="tag-modal">📂 modal</span>' if is_modal
+                    tag = ('<span class="tag-vis">ðŸ‘ visible</span>' if is_vis
+                           else '<span class="tag-modal">ðŸ“‚ modal</span>' if is_modal
                            else "")
                     ci_html = (f'<span class="s-ci">{s.get("class_info","")}</span>'
                                if s.get("class_info") else "")
@@ -3217,7 +3217,7 @@ if False:
     
             footer = (f'<div class="ccat-footer">'
                       f'Total: <strong style="color:{color}">{len(stus)}</strong> students captured'
-                      + (f' · Declared: <strong>{sd["total"]}</strong>' if sd["total"] > 0 else "")
+                      + (f' Â· Declared: <strong>{sd["total"]}</strong>' if sd["total"] > 0 else "")
                       + f'</div>')
     
             html += (
@@ -3247,7 +3247,7 @@ if False:
             f"<div class='sec-stats'>"
             f"<span class='badge badge-pass'>{passed} PASSED</span>"
             f"<span class='badge badge-blue'>{total_tests} TESTS</span>"
-            f"<span class='chev open'>▾</span></div></div>"
+            f"<span class='chev open'>â–¾</span></div></div>"
             f"<div class='sec-body'>{extra}{_tbl(tests)}</div></div>")
     
     
@@ -3268,9 +3268,9 @@ if False:
         chp = sum(1 for e in all_ch_tests           if e["status"]=="PASS")
         sp  = sum(1 for e in all_stu_tests          if e["status"]=="PASS")
     
-        lp2 = store["exam"].get("left_pct","—")
-        rp2 = store["exam"].get("right_pct","—")
-        tr  = store["exam"].get("trend","—")
+        lp2 = store["exam"].get("left_pct","â€”")
+        rp2 = store["exam"].get("right_pct","â€”")
+        tr  = store["exam"].get("trend","â€”")
     
         # Dynamic banner color: green if improvement/first-exam, orange if decline
         is_decline = any(w in str(tr).lower() for w in ["decline","drop","decrease"])
@@ -3283,7 +3283,7 @@ if False:
             f"<div class='exam-banner' style='background:{banner_bg}'>"
             "<div><div class='exam-lbl'>Class Average Comparison</div>"
             f"<div style='font-size:13px;font-weight:600;color:rgba(255,255,255,.8);margin-top:4px'>"
-            f"☷ {VALUES['CompareLeft']} &rarr; {VALUES['CompareRight']}</div></div>"
+            f"â˜· {VALUES['CompareLeft']} &rarr; {VALUES['CompareRight']}</div></div>"
             "<div class='exam-div'></div>"
             f"<div><div class='exam-lbl'>{VALUES['CompareLeft']}</div>"
             f"<div class='exam-pct'>{lp2}</div></div>"
@@ -3294,24 +3294,24 @@ if False:
             "</div>")
     
         ch_extra = (
-            "<div class='sub-hdr'>&#128203; Chapter Data — Inline Cards + Overflow Clicked</div>"
+            "<div class='sub-hdr'>&#128203; Chapter Data â€” Inline Cards + Overflow Clicked</div>"
             + _chapter_html()
             + "<div class='sub-hdr' style='margin-top:4px'>&#129514; Detailed Test Results</div>")
     
         stu_extra = (
-            "<div class='sub-hdr'>&#128203; Student Lists — Visible + Modal (All Students)</div>"
+            "<div class='sub-hdr'>&#128203; Student Lists â€” Visible + Modal (All Students)</div>"
             + _student_html()
             + "<div class='sub-hdr' style='margin-top:4px'>&#129514; Detailed Test Results</div>")
     
         html = (
             "<!DOCTYPE html><html lang='en'><head>"
             "<meta charset='UTF-8'/><meta name='viewport' content='width=device-width,initial-scale=1'/>"
-            "<title>ClassLens — Complete UI Test Report v12</title>"
+            "<title>ClassLens â€” Complete UI Test Report v12</title>"
             "<style>" + CSS + "</style></head><body>"
     
             "<div class='topbar'>"
             "<div class='tb-brand'><div class='tb-logo'>CL</div>"
-            "<div><div class='tb-title'>ClassLens QA — Complete UI Test Report v12</div>"
+            "<div><div class='tb-title'>ClassLens QA â€” Complete UI Test Report v12</div>"
             "<div class='tb-sub'>Login &nbsp;&middot;&nbsp; Navigation &nbsp;&middot;&nbsp; Exam &nbsp;&middot;&nbsp; Chapter Cards &nbsp;&middot;&nbsp; Highlighted Students (All Modal Data)</div>"
             "</div></div>"
             "<div class='tb-meta'>Generated: <span id='gt'></span><br>"
@@ -3731,7 +3731,7 @@ if False:
     
         except Exception as exc:
             print()
-            print(f"💥  Overview section {section_name} failed: {exc}")
+            print(f"ðŸ’¥  Overview section {section_name} failed: {exc}")
             traceback.print_exc()
     
         total = _P + _F + _W
@@ -3796,7 +3796,7 @@ if False:
         chips = []
         for r in runs:
             chips.append(
-                f"<span class='chip'><b>Section { _h(r.get('section','')) }</b> · { _h(r.get('pass_rate','0%')) } · {r.get('passed',0)}/{r.get('total',0)}</span>"
+                f"<span class='chip'><b>Section { _h(r.get('section','')) }</b> Â· { _h(r.get('pass_rate','0%')) } Â· {r.get('passed',0)}/{r.get('total',0)}</span>"
             )
 
         section_blocks = []
@@ -3840,7 +3840,7 @@ if False:
             "<style>" + "\n".join(all_styles) + "</style>"
             "</head><body><div class='wrap'>"
             "<section class='hero'><div>"
-            "<h1>ClassLens Overview Tab — FULL Detailed All Sections Master Report</h1>"
+            "<h1>ClassLens Overview Tab â€” FULL Detailed All Sections Master Report</h1>"
             "<p>This master report stores the complete detailed Overview Tab Testing report for every section inline. No separate section-file click is required.</p>"
             "<div class='chips'>" + "".join(chips) + "</div>"
             "</div><div class='hero-rate'>" + str(rate) + "%<small>Overall Pass Rate</small></div></section>"
@@ -3883,7 +3883,7 @@ if False:
     
         except Exception as exc:
             print()
-            print(f"💥  Section {section_name} failed: {exc}")
+            print(f"ðŸ’¥  Section {section_name} failed: {exc}")
             traceback.print_exc()
     
         total = _P + _F + _W
@@ -3907,16 +3907,16 @@ if False:
         all_section_runs.append(result)
         return result
     
-    # ══════════════════════════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     #  SAVE & OPEN
-    # ══════════════════════════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     
     def open_browser(path):
         abs_p = os.path.abspath(path)
         url   = "file:///" + abs_p.replace(os.sep, "/")
-        print(f"\n  🌐 {url}")
+        print(f"\n  ðŸŒ {url}")
         try:
-            if webbrowser.open(url, new=2): print("  ✅  Browser launched."); return
+            if webbrowser.open(url, new=2): print("  âœ…  Browser launched."); return
         except: pass
         try:
             if sys.platform.startswith("win"): os.startfile(abs_p)
@@ -3926,7 +3926,7 @@ if False:
                     try: subprocess.Popen([cmd,abs_p]); return
                     except FileNotFoundError: continue
         except Exception as e:
-            print(f"  ⚠️  {e}")
+            print(f"  âš ï¸  {e}")
     
     
     def save_outputs(json_name=None, report_name=None, auto_open=None):
@@ -3941,28 +3941,28 @@ if False:
     
         with open(JSON_FILE,"w",encoding="utf-8") as f:
             json.dump(store, f, indent=2, ensure_ascii=False)
-        print(f"\n  📦 JSON  -> {os.path.abspath(JSON_FILE)}")
+        print(f"\n  ðŸ“¦ JSON  -> {os.path.abspath(JSON_FILE)}")
     
         html = build_report()
         with open(REPORT_FILE,"w",encoding="utf-8") as f:
             f.write(html)
-        print(f"  📄 HTML  -> {os.path.abspath(REPORT_FILE)}")
+        print(f"  ðŸ“„ HTML  -> {os.path.abspath(REPORT_FILE)}")
     
         if AUTO_OPEN_REPORT:
             open_browser(REPORT_FILE)
     
     
-    # ══════════════════════════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     #  MAIN
-    # ══════════════════════════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     
     
     def main():
-        print("\n╔" + "═"*72 + "╗")
-        print("║   ClassLens — Complete UI Test Suite v13.2  (Overview All Sections)      ║")
-        print("║   Login · Navigation · Exam · Chapter Cards · ALL Students               ║")
-        print(f"║   Started: {run_ts}                                       ║")
-        print("╚" + "═"*72 + "╝")
+        print("\nâ•”" + "â•"*72 + "â•—")
+        print("â•‘   ClassLens â€” Complete UI Test Suite v13.2  (Overview All Sections)      â•‘")
+        print("â•‘   Login Â· Navigation Â· Exam Â· Chapter Cards Â· ALL Students               â•‘")
+        print(f"â•‘   Started: {run_ts}                                       â•‘")
+        print("â•š" + "â•"*72 + "â•")
     
         driver = make_driver()
         wait   = WebDriverWait(driver, TIMEOUT)
@@ -3990,7 +3990,7 @@ if False:
                 except:
                     pass
     
-                print(f"\n📚  Overview sections discovered: {sections}")
+                print(f"\nðŸ“š  Overview sections discovered: {sections}")
     
                 for i, sec in enumerate(sections, 1):
                     run_overview_only_for_section(
@@ -4003,19 +4003,19 @@ if False:
                 with open(MASTER_REPORT_FILE, "w", encoding="utf-8") as f:
                     f.write(build_master_report(all_section_runs))
     
-                print(f"\n✅  Master JSON  : {MASTER_JSON_FILE}")
-                print(f"✅  Master Report: {MASTER_REPORT_FILE}")
+                print(f"\nâœ…  Master JSON  : {MASTER_JSON_FILE}")
+                print(f"âœ…  Master Report: {MASTER_REPORT_FILE}")
     
                 if AUTO_OPEN_REPORT:
                     open_browser(MASTER_REPORT_FILE)
     
             else:
                 if not test_login(driver, wait):
-                    print("❌  Login failed — stopping.")
+                    print("âŒ  Login failed â€” stopping.")
                     return
     
                 if not test_navigation(driver, wait):
-                    print("❌  Navigation failed — stopping.")
+                    print("âŒ  Navigation failed â€” stopping.")
                     return
     
                 test_exam_comparison(driver)
@@ -4027,21 +4027,21 @@ if False:
                 sep("FINAL SUMMARY")
                 total = _P + _F + _W
                 rate  = round(_P / max(total, 1) * 100, 1)
-                print(f"  ✅  Passed   : {_P}")
-                print(f"  ❌  Failed   : {_F}")
-                print(f"  ⚠️   Warnings : {_W}")
-                print(f"  📊  Pass Rate: {rate}%  ({_P}/{total})")
+                print(f"  âœ…  Passed   : {_P}")
+                print(f"  âŒ  Failed   : {_F}")
+                print(f"  âš ï¸   Warnings : {_W}")
+                print(f"  ðŸ“Š  Pass Rate: {rate}%  ({_P}/{total})")
                 save_outputs()
     
         except Exception as exc:
-            print(f"\n💥  Unhandled exception: {exc}")
+            print(f"\nðŸ’¥  Unhandled exception: {exc}")
             traceback.print_exc()
     
         finally:
             if KEEP_BROWSER_OPEN:
-                input("\n👉  Press ENTER to close browser…")
+                input("\nðŸ‘‰  Press ENTER to close browserâ€¦")
             driver.quit()
-            print("\n🏁  Done.")
+            print("\nðŸ  Done.")
     
     
     if __name__ == "__main__":
@@ -4053,31 +4053,31 @@ if False:
 # ==============================================================================
 if False:
     """
-    ClassLens – Chapters Tab – All Sections  (FINAL MERGED v4)
+    ClassLens â€“ Chapters Tab â€“ All Sections  (FINAL MERGED v4)
     ============================================================
     Fully merges Script 1 (Chapter tab REFIXED with Header Accuracy Badge)
     and Script 2 (All Sections REFIXED v3 with Excel Validation).
     
     Additions from Script 1 merged into Script 2:
-      ✦ read_header_accuracy_badge() — reads "Preboard 1 accuracy XX%" header badge
-      ✦ Header accuracy badge test per chapter detail panel
-      ✦ Header accuracy column in HTML report: Overview, Consistency, Accuracy tabs
-      ✦ Header accuracy terminal summary per chapter
+      âœ¦ read_header_accuracy_badge() â€” reads "Preboard 1 accuracy XX%" header badge
+      âœ¦ Header accuracy badge test per chapter detail panel
+      âœ¦ Header accuracy column in HTML report: Overview, Consistency, Accuracy tabs
+      âœ¦ Header accuracy terminal summary per chapter
     
     All Script 2 features preserved:
-      ✦ Multi-section switching + per-section runner
-      ✦ Master chapter/subchapter map (EXCEL_UNITS)
-      ✦ Excel validation (CL vs Excel, Full Coverage)
-      ✦ Per-section HTML report with all tabs
-      ✦ Global 4-Way consistency across all sections
-      ✦ Grand summary with progress bars
+      âœ¦ Multi-section switching + per-section runner
+      âœ¦ Master chapter/subchapter map (EXCEL_UNITS)
+      âœ¦ Excel validation (CL vs Excel, Full Coverage)
+      âœ¦ Per-section HTML report with all tabs
+      âœ¦ Global 4-Way consistency across all sections
+      âœ¦ Grand summary with progress bars
     
     Script 1 LOC 4 logic (exact REFIXED version) preserved:
-      ✦ read_why_text(), read_why_pct(), read_why_pct_from_page(), read_why_accuracy_pct()
-      ✦ _CHANGE_KWS_STRICT, _STABLE_PHRASES, _ACC_BEFORE_PHRASES, _FALLBACK_PATTERNS
-      ✦ _is_accuracy_pct() guard
-      ✦ align_sign() applied consistently to all four locations
-      ✦ loc4_display() exact Script 1 version
+      âœ¦ read_why_text(), read_why_pct(), read_why_pct_from_page(), read_why_accuracy_pct()
+      âœ¦ _CHANGE_KWS_STRICT, _STABLE_PHRASES, _ACC_BEFORE_PHRASES, _FALLBACK_PATTERNS
+      âœ¦ _is_accuracy_pct() guard
+      âœ¦ align_sign() applied consistently to all four locations
+      âœ¦ loc4_display() exact Script 1 version
     
     Run:
         python classlens_all_sections_final.py
@@ -4087,9 +4087,9 @@ if False:
         CLASSLENS_PASS   (default: Operations123)
     """
     
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     # IMPORTS
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     import os, re, sys, time, webbrowser
     from collections import defaultdict
     from dataclasses import dataclass
@@ -4103,9 +4103,9 @@ if False:
     from selenium.webdriver.support import expected_conditions as EC
     from selenium.webdriver.support.ui import WebDriverWait
     
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     # CONFIG
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     LOGIN_URL    = "https://classlens.inferentics.com/"
     CHAPTERS_URL = "https://classlens.inferentics.com/?exams=Midterm%2CPreboard+1&screen=chapters"
     USERNAME     = os.getenv("CLASSLENS_USER", "sajan")
@@ -4130,9 +4130,9 @@ if False:
     G="\033[92m"; R="\033[91m"; Y="\033[93m"; C="\033[96m"
     W="\033[97m"; DIM="\033[2m"; BLD="\033[1m"; RST="\033[0m"
     
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     # MASTER CHAPTER MAP
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     EXCEL_UNITS = {
         "Relations and Functions": {
             "marks": 8,
@@ -4410,9 +4410,9 @@ if False:
                 return ec
         return None
     
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     # RESULT STORE
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     @dataclass
     class TC:
         phase:  str
@@ -4429,24 +4429,24 @@ if False:
     
     def rec(name: str, passed: bool, detail: str = "", value: str = "") -> bool:
         _cur.append(TC(_ph, name, passed, detail, value))
-        icon = f"{G}✔{RST}" if passed else f"{R}✘{RST}"
+        icon = f"{G}âœ”{RST}" if passed else f"{R}âœ˜{RST}"
         st   = f"{G}[PASS]{RST}" if passed else f"{R}[FAIL]{RST}"
         v    = f"  {DIM}{value}{RST}" if value else ""
         print(f"    {icon} {st}  {name}{v}")
         return passed
     
     def banner(n, t: str):
-        print(f"\n{BLD}{C}{'═'*72}\n  PHASE {n}  ▶  {W}{t}\n{'═'*72}{RST}")
+        print(f"\n{BLD}{C}{'â•'*72}\n  PHASE {n}  â–¶  {W}{t}\n{'â•'*72}{RST}")
     
     def sec_banner(s: str):
-        print(f"\n{BLD}{W}{'▓'*72}\n  SECTION  {Y}{s}{RST}{BLD}{W}\n{'▓'*72}{RST}\n")
+        print(f"\n{BLD}{W}{'â–“'*72}\n  SECTION  {Y}{s}{RST}{BLD}{W}\n{'â–“'*72}{RST}\n")
     
     def warn(msg: str):
-        print(f"    {Y}⚠ {msg}{RST}")
+        print(f"    {Y}âš  {msg}{RST}")
     
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     # SELENIUM HELPERS
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     def safe_text(el) -> str:
         try:    return (el.text or "").strip()
         except: return ""
@@ -4487,7 +4487,7 @@ if False:
                 len(d.find_elements(By.XPATH,
                     "//*[contains(text(),'%') and ("
                     "contains(text(),'+') or contains(text(),'-') or "
-                    "contains(text(),'↑') or contains(text(),'↓'))]")) > 0)
+                    "contains(text(),'â†‘') or contains(text(),'â†“'))]")) > 0)
         except:
             time.sleep(3)
     
@@ -4528,30 +4528,30 @@ if False:
         old_len = len(driver.page_source)
         ok = js_select(driver, sel, section_name)
         if not ok: raise RuntimeError(f"Could not select '{section_name}'")
-        print(f"  {G}✔ Section selected: {section_name}{RST}")
+        print(f"  {G}âœ” Section selected: {section_name}{RST}")
         time.sleep(S_DROP)
         try:
             WebDriverWait(driver, 15).until(lambda d:
                 abs(len(d.page_source) - old_len) > 500 or
                 len(d.find_elements(By.XPATH,
                     "//*[contains(text(),'%') and (contains(text(),'+') or contains(text(),'-') "
-                    "or contains(text(),'↑') or contains(text(),'↓'))]")) > 0)
+                    "or contains(text(),'â†‘') or contains(text(),'â†“'))]")) > 0)
         except:
             driver.get(chapters_url); time.sleep(S_NAV)
             sel2, _ = get_section_sel(driver)
             if sel2: js_select(driver, sel2, section_name); time.sleep(S_DROP)
         wait_cards(driver)
     
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     # PERCENTAGE UTILITIES
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     def normalize_arrow(ch: str) -> str:
-        if ch in ("↑","▲","△","⬆","+"): return "+"
-        if ch in ("↓","▼","▽","⬇","-"): return "-"
+        if ch in ("â†‘","â–²","â–³","â¬†","+"): return "+"
+        if ch in ("â†“","â–¼","â–½","â¬‡","-"): return "-"
         return ch
     
     def arrow_sign(s: str) -> str:
-        for a, r in [("↑","+"),("↓","-"),("▲","+"),("▼","-"),("△","+"),("▽","-")]:
+        for a, r in [("â†‘","+"),("â†“","-"),("â–²","+"),("â–¼","-"),("â–³","+"),("â–½","-")]:
             s = s.replace(a, r)
         return s
     
@@ -4594,9 +4594,9 @@ if False:
         rn = abs(extract_num(ref) or 0)
         return min(candidates, key=lambda p: abs(abs(extract_num(p) or 0) - rn))
     
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     # CARD DISCOVERY
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     _IGNORE_NAMES = {
         "chapter","chapters","sort chapters","search chapter",
         "chapter avg: high to low","chapter avg",
@@ -4606,8 +4606,8 @@ if False:
         cards, seen = [], set()
         badges = driver.find_elements(By.XPATH,
             "//*[(contains(text(),'+') or contains(text(),'-') or "
-            "     contains(text(),'↑') or contains(text(),'↓') or "
-            "     contains(text(),'▲') or contains(text(),'▼')) "
+            "     contains(text(),'â†‘') or contains(text(),'â†“') or "
+            "     contains(text(),'â–²') or contains(text(),'â–¼')) "
             "    and contains(text(),'%') "
             "    and string-length(normalize-space(text())) < 15]")
         for badge in badges:
@@ -4617,8 +4617,8 @@ if False:
                 try:
                     c  = badge.find_element(By.XPATH, "/".join([".."] * lvl))
                     ct = safe_text(c)
-                    nm = re.sub(r"[+\-↑↓▲▼△▽⬆⬇]?\s*\d+\.?\d*\s*%", "", ct).strip()
-                    nm = re.sub(r"[↑↓▲▼△▽⬆⬇]", "", nm).strip()
+                    nm = re.sub(r"[+\-â†‘â†“â–²â–¼â–³â–½â¬†â¬‡]?\s*\d+\.?\d*\s*%", "", ct).strip()
+                    nm = re.sub(r"[â†‘â†“â–²â–¼â–³â–½â¬†â¬‡]", "", nm).strip()
                     if (4 < len(nm) <= 72 and not re.fullmatch(r"[\d\s.]+", nm)
                             and nm not in seen and nm.lower() not in _IGNORE_NAMES
                             and len(ct) < 200):
@@ -4640,7 +4640,7 @@ if False:
             src = driver.page_source
             for m in re.finditer(
                     r">([A-Z][A-Za-z &\-]{3,60}?)<(?:(?!</ul>).){0,400}>"
-                    r"([+\-↑↓▲▼]\d+\.?\d*\s*%)<", src, re.DOTALL):
+                    r"([+\-â†‘â†“â–²â–¼]\d+\.?\d*\s*%)<", src, re.DOTALL):
                 nm = m.group(1).strip(); pct = extract_pct(m.group(2))
                 if pct and nm not in seen and 3 < len(nm) <= 72:
                     seen.add(nm)
@@ -4664,7 +4664,7 @@ if False:
                     if p: return p
             except: continue
         src = driver.page_source
-        m = re.search(re.escape(nm) + r".{0,300}?([+\-↑↓▲▼]\s*\d+\.?\d*)\s*%", src, re.DOTALL)
+        m = re.search(re.escape(nm) + r".{0,300}?([+\-â†‘â†“â–²â–¼]\s*\d+\.?\d*)\s*%", src, re.DOTALL)
         if m: return extract_pct(m.group(1) + "%")
         return card.get("pct")
     
@@ -4693,9 +4693,9 @@ if False:
             except: continue
         return False
     
-    # ─────────────────────────────────────────────────────────────────────────────
-    # LOC 2 — IMPROVED / DECLINED CHIP
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    # LOC 2 â€” IMPROVED / DECLINED CHIP
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     _CHIP_POS = {"IMPROVED","Improved","improved"}
     _CHIP_NEG = {"DECLINED","Declined","declined"}
     _CHIP_ALL = _CHIP_POS | _CHIP_NEG
@@ -4773,9 +4773,9 @@ if False:
         if not candidates: return None
         return align_sign(ref_pct, _closest_pct(candidates, ref_pct))
     
-    # ─────────────────────────────────────────────────────────────────────────────
-    # LOC 3 — CHANGE IN CHAPTER AVERAGE BADGE
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    # LOC 3 â€” CHANGE IN CHAPTER AVERAGE BADGE
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     _BADGE_PHRASES = [
         "Change in chapter average",
         "Change in chapter avg",
@@ -4788,7 +4788,7 @@ if False:
         "./following::*[contains(text(),'%')][1]",
         "./../*[contains(text(),'%')][1]",
         "./parent::*/following-sibling::*//*[contains(text(),'%')][1]",
-        ("./parent::*//*[(contains(text(),'↑') or contains(text(),'↓') or "
+        ("./parent::*//*[(contains(text(),'â†‘') or contains(text(),'â†“') or "
          " contains(text(),'+') or contains(text(),'-')) and contains(text(),'%') and "
          " string-length(normalize-space(text()))<20][1]"),
     ]
@@ -4815,16 +4815,16 @@ if False:
             while idx >= 0:
                 region = src[idx:idx+600]
                 clean  = re.sub(r"<[^>]+>"," ",region); clean = re.sub(r"\s+"," ",clean)
-                for m in re.finditer(r"([+\-↑↓▲▼△▽])\s*(\d+\.?\d*)\s*%", clean):
+                for m in re.finditer(r"([+\-â†‘â†“â–²â–¼â–³â–½])\s*(\d+\.?\d*)\s*%", clean):
                     sign = normalize_arrow(m.group(1)); p = f"{sign}{m.group(2)}%"
                     if p not in candidates: candidates.append(p)
                 idx = src.find(phrase, idx+1)
         if not candidates: return None
         return align_sign(ref_pct, _closest_pct(candidates, ref_pct))
     
-    # ─────────────────────────────────────────────────────────────────────────────
-    # LOC 4 — WHY THIS CHAPTER TEXT + % EXTRACTION  (exact Script 1 REFIXED)
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    # LOC 4 â€” WHY THIS CHAPTER TEXT + % EXTRACTION  (exact Script 1 REFIXED)
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     _WHY_HEADINGS = [
         "Why this chapter improved",
         "Why this chapter declined",
@@ -5026,16 +5026,16 @@ if False:
         return None
     
     
-    # ─────────────────────────────────────────────────────────────────────────────
-    # ★ FROM SCRIPT 1 — READ "Preboard 1 accuracy XX%" HEADER BADGE
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    # â˜… FROM SCRIPT 1 â€” READ "Preboard 1 accuracy XX%" HEADER BADGE
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     def read_header_accuracy_badge(driver) -> Optional[str]:
         """
         Reads the blue badge at the top-right of each chapter detail panel
         that shows e.g. "Preboard 1 accuracy  51.8%"
         Returns just the percentage string like "51.8%" or None.
         """
-        # Strategy 1: JS — scan for elements matching "XYZ accuracy" + nearby %
+        # Strategy 1: JS â€” scan for elements matching "XYZ accuracy" + nearby %
         try:
             result = driver.execute_script(r"""
                 const EXAM_LABELS = arguments[0];
@@ -5099,9 +5099,9 @@ if False:
         return None
     
     
-    # ─────────────────────────────────────────────────────────────────────────────
-    # EXAM PANEL READER  — column-aware JS (exact Script 1 REFIXED)
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    # EXAM PANEL READER  â€” column-aware JS (exact Script 1 REFIXED)
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     def read_exam_panel(driver, label: str) -> dict:
         data = {
             "label": label, "accuracy": None, "exam_date": None,
@@ -5362,7 +5362,7 @@ if False:
         except Exception as ex:
             print(f"        {label}: JS exception: {ex}")
     
-        # ── FALLBACK A: XPath scoped ancestor ─────────────────────────────────
+        # â”€â”€ FALLBACK A: XPath scoped ancestor â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         panel = None
         if not data["accuracy"] or data["struggling_count"] is None or data["weak_concepts_count"] is None:
             candidates = []
@@ -5439,7 +5439,7 @@ if False:
                         m2 = re.search(r"[Ww]eak\s+[Cc]oncepts?\D{0,5}?(\d+)", pt_xp, re.IGNORECASE)
                         if m2: data["weak_concepts_count"] = int(m2.group(1))
     
-        # ── FALLBACK B: page-source ────────────────────────────────────────────
+        # â”€â”€ FALLBACK B: page-source â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         if not data["accuracy"]:
             src = driver.page_source
             idx = src.find(label)
@@ -5458,7 +5458,7 @@ if False:
                 if data["accuracy"]: break
                 idx = src.find(label, idx + 1)
     
-        # ── FALLBACK C: XPath concept lists ───────────────────────────────────
+        # â”€â”€ FALLBACK C: XPath concept lists â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         if panel is None:
             for lel in driver.find_elements(By.XPATH,
                     f"//*[normalize-space(text())='{label}']"):
@@ -5519,9 +5519,9 @@ if False:
     
         return data
     
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     # LOC 4 HTML CELL HELPER  (exact Script 1 version)
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     def loc4_display(ch: dict) -> str:
         pct_why  = ch.get("pct_why")
         acc_pct  = ch.get("why_acc_pct")
@@ -5529,19 +5529,19 @@ if False:
         why_h    = ch.get("why_heading") or ""
         if pct_why:
             col = "#3fb950" if "+" in pct_why else "#f85149"
-            arr = "▲" if "+" in pct_why else "▼"
+            arr = "â–²" if "+" in pct_why else "â–¼"
             return f'<span style="color:{col};font-weight:700;font-family:\'DM Mono\',monospace">{arr} {pct_why}</span>'
         if acc_pct:
             improved = "+" in pct_card or "improved" in why_h.lower()
             col = "#3fb950" if improved else "#f85149"
-            arr = "▲" if improved else "▼"
+            arr = "â–²" if improved else "â–¼"
             return (f'<span style="color:{col};font-weight:700;font-family:\'DM Mono\',monospace">{arr} {acc_pct}</span>'
                     f'<br><span style="color:#5a7490;font-size:10px">accuracy in why-text</span>')
-        return '<span style="color:#5a7490">—</span>'
+        return '<span style="color:#5a7490">â€”</span>'
     
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     # DRIVER SETUP
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     opts = Options()
     opts.add_argument("--start-maximized")
     opts.add_experimental_option("detach", True)
@@ -5549,14 +5549,14 @@ if False:
     wait   = WebDriverWait(driver, 30)
     RUN_TS = datetime.now().strftime("%d %b %Y  %H:%M:%S")
     
-    print(f"\n{BLD}{C}{'═'*72}")
-    print(f"  ClassLens · All Sections · FINAL MERGED v4")
+    print(f"\n{BLD}{C}{'â•'*72}")
+    print(f"  ClassLens Â· All Sections Â· FINAL MERGED v4")
     print(f"  {DIM}{RUN_TS}{RST}")
-    print(f"{C}{'═'*72}{RST}\n")
+    print(f"{C}{'â•'*72}{RST}\n")
     
-    # ─────────────────────────────────────────────────────────────────────────────
-    # PHASE 0 — LOGIN
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    # PHASE 0 â€” LOGIN
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     banner("0", "LOGIN")
     sp("Login")
     try:
@@ -5572,11 +5572,11 @@ if False:
         rec("Login successful", True, value=f"user={USERNAME}")
     except Exception as exc:
         rec("Login failed", False, str(exc))
-        driver.quit(); sys.exit("Login failed — aborting.")
+        driver.quit(); sys.exit("Login failed â€” aborting.")
     
-    # ─────────────────────────────────────────────────────────────────────────────
-    # PHASE 1 — ENTRY PAGE FILTERS + COLLECT SECTIONS
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    # PHASE 1 â€” ENTRY PAGE FILTERS + COLLECT SECTIONS
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     banner("1", "ENTRY PAGE FILTERS")
     sp("Filters")
     entry_secs = []
@@ -5590,7 +5590,7 @@ if False:
         ]:
             try: wait_option(driver, idx, val, timeout=20)
             except RuntimeError as e:
-                print(f"    {Y}⚠ Skip '{key}'={val}: {e}{RST}"); continue
+                print(f"    {Y}âš  Skip '{key}'={val}: {e}{RST}"); continue
             sels = get_selects(driver)
             if len(sels) > idx:
                 ok = js_select(driver, sels[idx], val)
@@ -5616,9 +5616,9 @@ if False:
     except Exception as exc:
         rec("Entry page error", False, str(exc))
     
-    # ─────────────────────────────────────────────────────────────────────────────
-    # PHASE 2 — NAVIGATE TO CHAPTERS + DISCOVER SECTIONS
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    # PHASE 2 â€” NAVIGATE TO CHAPTERS + DISCOVER SECTIONS
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     banner("2", "CHAPTERS PAGE + DISCOVER SECTIONS")
     sp("Navigation")
     driver.get(CHAPTERS_URL); time.sleep(S_NAV); wait_cards(driver)
@@ -5626,13 +5626,13 @@ if False:
     for s in entry_secs:
         if s not in avail: avail.append(s)
     if not avail:
-        print(f"  {R}No sections found — using fallback [M]{RST}"); avail = ["M"]
+        print(f"  {R}No sections found â€” using fallback [M]{RST}"); avail = ["M"]
     print(f"\n  {G}{BLD}Testing {len(avail)} section(s):{RST}")
-    for s in avail: print(f"    • {Y}{BLD}{s}{RST}")
+    for s in avail: print(f"    â€¢ {Y}{BLD}{s}{RST}")
     
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     # PER-SECTION RUNNER
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     def run_section(sec: str) -> dict:
         global _cur
         _cur = []
@@ -5640,8 +5640,8 @@ if False:
         chdata: List[dict] = []
         cons:   List[dict] = []
     
-        # ── Switch section ──────────────────────────────────────────────────────
-        banner("S", f"SWITCH → {sec}"); sp("Switch")
+        # â”€â”€ Switch section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+        banner("S", f"SWITCH â†’ {sec}"); sp("Switch")
         try:
             switch_section(driver, sec, CHAPTERS_URL)
             rec(f"Section '{sec}' selected", True)
@@ -5653,7 +5653,7 @@ if False:
                 if s2: js_select(driver, s2, sec); time.sleep(S_DROP)
             except: pass
     
-        # ── Navigation verify ───────────────────────────────────────────────────
+        # â”€â”€ Navigation verify â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         banner(3, "NAVIGATION VERIFY"); sp("Nav")
         src = driver.page_source
         rec("Chapters URL", "screen=chapters" in driver.current_url or "chapters" in driver.current_url,
@@ -5661,7 +5661,7 @@ if False:
         for tab in ["Overview","Chapters","Questions","Students"]:
             rec(f"Tab '{tab}'", tab in src)
     
-        # ── Card discovery ──────────────────────────────────────────────────────
+        # â”€â”€ Card discovery â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         banner(4, "CHAPTER CARD DISCOVERY"); sp("Discovery")
         cc = discover_cards(driver)
         rec("Cards discovered", len(cc) >= 1, value=f"{len(cc)} found")
@@ -5672,9 +5672,9 @@ if False:
                 try: nums.append(float(m2.group(1)))
                 except: pass
         if len(nums) >= 2:
-            rec("Sorted High→Low",
+            rec("Sorted Highâ†’Low",
                 all(nums[i] >= nums[i+1] for i in range(len(nums)-1)),
-                value=str([round(v,1) for v in nums[:5]])+"…")
+                value=str([round(v,1) for v in nums[:5]])+"â€¦")
         rec("Sort label present",
             len(driver.find_elements(By.XPATH, "//*[contains(text(),'Chapter Avg')]")) >= 1)
     
@@ -5688,17 +5688,17 @@ if False:
                     if ec in udata["chapters"]:
                         unit_info = f"  {DIM}[{uname}  {udata['marks']}m]{RST}"
                         break
-            match_mark = f"  {G}✔{RST}" if ec else f"  {R}✘ NOT MAPPED{RST}"
-            print(f"    {DIM}{i:>2}.{RST} {c['name']:<52} {col}{'▲' if '+' in c['pct'] else '▼'} {c['pct']} {match_mark}{unit_info}")
+            match_mark = f"  {G}âœ”{RST}" if ec else f"  {R}âœ˜ NOT MAPPED{RST}"
+            print(f"    {DIM}{i:>2}.{RST} {c['name']:<52} {col}{'â–²' if '+' in c['pct'] else 'â–¼'} {c['pct']} {match_mark}{unit_info}")
     
-        # ── Per-chapter detail ──────────────────────────────────────────────────
-        banner(5, "PER-CHAPTER DETAIL — LOC1/LOC2/LOC3/LOC4 + HEADER ACCURACY")
+        # â”€â”€ Per-chapter detail â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+        banner(5, "PER-CHAPTER DETAIL â€” LOC1/LOC2/LOC3/LOC4 + HEADER ACCURACY")
         for card in cc:
             ch = card["name"]; sp(f"Chapter:{ch}")
-            direction = "▲" if "+" in (card["pct"] or "") else "▼"
-            col = G if direction == "▲" else R
+            direction = "â–²" if "+" in (card["pct"] or "") else "â–¼"
+            col = G if direction == "â–²" else R
             print(f"\n  {BLD}{col}{direction}  {W}{ch}{RST}  {col}{card['pct']}{RST}")
-            print(f"  {'─'*65}")
+            print(f"  {'â”€'*65}")
             cht: List[dict] = []
     
             def ct(name: str, passed: bool, detail: str = "", value: str = "") -> bool:
@@ -5708,12 +5708,12 @@ if False:
     
             # LOC 1
             pct_card = read_card_pct(driver, card)
-            ct("Loc 1 · Card list badge % readable", pct_card is not None, value=str(pct_card or "N/A"))
+            ct("Loc 1 Â· Card list badge % readable", pct_card is not None, value=str(pct_card or "N/A"))
     
             clicked = click_card(driver, card)
             ct("Card clickable / detail panel opens", clicked)
             if not clicked:
-                warn("Could not click card — skipping detail tests")
+                warn("Could not click card â€” skipping detail tests")
                 cons.append({"name":ch,"pct_card":pct_card,"pct_chip":None,"pct_badge":None,
                              "pct_why":None,"why_acc_pct":None,"header_accuracy":None,
                              "match":False,"skip":True})
@@ -5731,7 +5731,7 @@ if False:
             except: time.sleep(1.5)
             src = driver.page_source
     
-            # ★ Header accuracy badge (from Script 1)
+            # â˜… Header accuracy badge (from Script 1)
             header_accuracy = read_header_accuracy_badge(driver)
     
             # LOC 2
@@ -5756,14 +5756,14 @@ if False:
             pct_badge = align_sign(pct_card, pct_badge)
             if pct_why: pct_why = align_sign(pct_card, pct_why)
     
-            ct("Loc 2 · IMPROVED/DECLINED chip % readable", pct_chip  is not None, value=str(pct_chip  or "N/A"))
-            ct("Loc 3 · Change in chapter average badge",   pct_badge is not None, value=str(pct_badge or "N/A"))
+            ct("Loc 2 Â· IMPROVED/DECLINED chip % readable", pct_chip  is not None, value=str(pct_chip  or "N/A"))
+            ct("Loc 3 Â· Change in chapter average badge",   pct_badge is not None, value=str(pct_badge or "N/A"))
             _l4v = pct_why or (f"acc:{why_acc_pct}" if why_acc_pct else None)
-            ct("Loc 4 · Why-text % (change or accuracy)",   _l4v is not None,
+            ct("Loc 4 Â· Why-text % (change or accuracy)",   _l4v is not None,
                value=(f"change%={pct_why}" if pct_why
                       else (f"accuracy%={why_acc_pct} (stable)" if why_acc_pct else "NOTHING FOUND")))
     
-            # ★ Header accuracy badge test (from Script 1)
+            # â˜… Header accuracy badge test (from Script 1)
             ct("Header accuracy badge readable",
                header_accuracy is not None,
                value=f"{header_accuracy}" if header_accuracy else "NOT FOUND")
@@ -5772,7 +5772,7 @@ if False:
             n1,n2,n3,n4 = norm_val(pct_card),norm_val(pct_chip),norm_val(pct_badge),norm_val(pct_why)
             present   = [n for n in [n1,n2,n3,n4] if n is not None]
             all_match = len(set(present)) == 1 and len(present) >= 2 and len(present) == 4
-            ct("✦ 4-Way Consistency Loc1==Loc2==Loc3==Loc4", all_match,
+            ct("âœ¦ 4-Way Consistency Loc1==Loc2==Loc3==Loc4", all_match,
                value=f"L1={pct_card}  L2={pct_chip}  L3={pct_badge}  L4={pct_why}")
     
             cons.append({"name":ch,"pct_card":pct_card,"pct_chip":pct_chip,
@@ -5782,7 +5782,7 @@ if False:
     
             ct("'Why this chapter' heading present", why_h is not None, value=why_h or "NOT FOUND")
             ct("Explanation body text present", bool(why_t and len(why_t) > 10),
-               value=(why_t or "")[:60]+"…" if why_t else "NOT FOUND")
+               value=(why_t or "")[:60]+"â€¦" if why_t else "NOT FOUND")
             ct("Midterm panel visible",    "Midterm"    in src)
             ct("Preboard 1 panel visible", "Preboard 1" in src)
             ct("ACCURACY label present",   any(k in src for k in ["ACCURACY","Accuracy","accuracy"]))
@@ -5807,10 +5807,10 @@ if False:
                 ct(f"[{exam_label}] Weak Concepts count",
                    wk is not None,
                    value=f"{wk} concepts" if wk is not None else "NOT FOUND")
-                ct(f"[{exam_label}] Weakest Concepts list ≥ 1 item",
+                ct(f"[{exam_label}] Weakest Concepts list â‰¥ 1 item",
                    len(pd["weakest_concepts"]) >= 1,
                    value=f"{len(pd['weakest_concepts'])} items: {pd['weakest_concepts'][:3]}")
-                ct(f"[{exam_label}] Strongest Concepts list ≥ 1 item",
+                ct(f"[{exam_label}] Strongest Concepts list â‰¥ 1 item",
                    len(pd["strongest_concepts"]) >= 1,
                    value=f"{len(pd['strongest_concepts'])} items")
                 panels.append(pd)
@@ -5830,20 +5830,20 @@ if False:
             pills = list({safe_text(e) for e in pill_els if safe_text(e)})
             ct("Concept pill badges present", len(pills) >= 1, value=str(pills))
     
-            # ★ Header accuracy terminal print (from Script 1)
-            print(f"\n      {C}┌─ HEADER ACCURACY BADGE {'─'*38}┐{RST}")
+            # â˜… Header accuracy terminal print (from Script 1)
+            print(f"\n      {C}â”Œâ”€ HEADER ACCURACY BADGE {'â”€'*38}â”{RST}")
             h_col = G if header_accuracy else R
-            print(f"      {C}│{RST} Preboard 1 accuracy : {h_col}{BLD}{header_accuracy or 'NOT FOUND'}{RST}")
-            print(f"      {C}└{'─'*60}┘{RST}")
+            print(f"      {C}â”‚{RST} Preboard 1 accuracy : {h_col}{BLD}{header_accuracy or 'NOT FOUND'}{RST}")
+            print(f"      {C}â””{'â”€'*60}â”˜{RST}")
     
-            print(f"\n      {Y}┌─ WHY SECTION {'─'*45}┐{RST}")
-            print(f"      {Y}│{RST} Heading : {why_h or 'NOT FOUND'}")
+            print(f"\n      {Y}â”Œâ”€ WHY SECTION {'â”€'*45}â”{RST}")
+            print(f"      {Y}â”‚{RST} Heading : {why_h or 'NOT FOUND'}")
             preview = (why_t or "NOT FOUND")[:70]
-            print(f"      {Y}│{RST} Text    : {preview}{'…' if why_t and len(why_t)>70 else ''}")
-            pct_disp = pct_why if pct_why else "— (only accuracy % in text)"
+            print(f"      {Y}â”‚{RST} Text    : {preview}{'â€¦' if why_t and len(why_t)>70 else ''}")
+            pct_disp = pct_why if pct_why else "â€” (only accuracy % in text)"
             pct_col  = G if pct_why and "+" in pct_why else (R if pct_why else Y)
-            print(f"      {Y}│{RST} Change %: {pct_col}{BLD}{pct_disp}{RST}")
-            print(f"      {Y}└{'─'*55}┘{RST}")
+            print(f"      {Y}â”‚{RST} Change %: {pct_col}{BLD}{pct_disp}{RST}")
+            print(f"      {Y}â””{'â”€'*55}â”˜{RST}")
     
             chdata.append({
                 "name":ch,"pct_card":pct_card,"pct_chip":pct_chip,"pct_badge":pct_badge,
@@ -5852,7 +5852,7 @@ if False:
                 "panels":panels,"pills":pills,"tests":cht,"match":all_match,"skip":False,
             })
     
-        # ── Search ──────────────────────────────────────────────────────────────
+        # â”€â”€ Search â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         banner(6, "SEARCH BOX FUNCTIONALITY"); sp("Search")
         driver.get(CHAPTERS_URL); time.sleep(S_NAV)
         try:
@@ -5876,20 +5876,20 @@ if False:
                 time.sleep(S_CLEAR)
             kw = fresh[0]["name"].split()[0]; other = fresh[-1]["name"] if len(fresh) > 1 else None
             clr(); sb.send_keys(kw); time.sleep(S_SEARCH)
-            rec(f"Search '{kw}' → target visible", fresh[0]["name"] in driver.page_source)
+            rec(f"Search '{kw}' â†’ target visible", fresh[0]["name"] in driver.page_source)
             if other and other.split()[0].lower() != kw.lower():
                 ov = driver.find_elements(By.XPATH, f"//*[normalize-space()='{other}']")
                 rec("Search filters non-matching", all(not e.is_displayed() for e in ov) if ov else True)
             clr()
             missing = [c["name"] for c in fresh if c["name"] not in driver.page_source]
-            rec("Search cleared → all restored", len(missing)==0,
+            rec("Search cleared â†’ all restored", len(missing)==0,
                 value="all present" if not missing else f"missing {len(missing)}")
             clr(); sb.send_keys("ZZZNOMATCH99"); time.sleep(S_SEARCH)
             vis = driver.find_elements(By.XPATH, f"//*[normalize-space()='{fresh[0]['name']}']")
-            rec("No-match query → cards hidden", all(not e.is_displayed() for e in vis) if vis else True)
+            rec("No-match query â†’ cards hidden", all(not e.is_displayed() for e in vis) if vis else True)
             clr()
     
-        # ── Static labels ────────────────────────────────────────────────────────
+        # â”€â”€ Static labels â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         banner(7, "STATIC UI LABELS"); sp("StaticLabels")
         driver.get(CHAPTERS_URL); time.sleep(S_NAV)
         try:
@@ -5922,7 +5922,7 @@ if False:
         ]:
             rec(lbl, any(k in src for k in kws))
     
-        # ── Excel validation ─────────────────────────────────────────────────────
+        # â”€â”€ Excel validation â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         banner(8, "EXCEL VALIDATION"); sp("Excel")
         ecl  = []
         ecov = []
@@ -5957,77 +5957,77 @@ if False:
         pl2 = [r for r in _cur if r.passed]
         fl2 = [r for r in _cur if not r.passed]
         rt  = round(100*len(pl2)/len(_cur)) if _cur else 0
-        print(f"\n  {BLD}Section {Y}{sec}{RST}{BLD}: {G}{len(pl2)}✔{RST}/{R}{len(fl2)}✘{RST} ({rt}%)")
+        print(f"\n  {BLD}Section {Y}{sec}{RST}{BLD}: {G}{len(pl2)}âœ”{RST}/{R}{len(fl2)}âœ˜{RST} ({rt}%)")
     
-        # ★ Header accuracy summary for this section
-        print(f"\n  {BLD}{C}┌─ HEADER ACCURACY — Section {sec} {'─'*30}┐{RST}")
+        # â˜… Header accuracy summary for this section
+        print(f"\n  {BLD}{C}â”Œâ”€ HEADER ACCURACY â€” Section {sec} {'â”€'*30}â”{RST}")
         for i, ch in enumerate(chdata, 1):
             ha = ch.get("header_accuracy")
-            icon = f"{G}✔{RST}" if ha else f"{R}✘{RST}"
+            icon = f"{G}âœ”{RST}" if ha else f"{R}âœ˜{RST}"
             print(f"    {icon}  {i:>2}. {ch['name']:<50} {C}{BLD}{ha or 'NOT FOUND'}{RST}")
-        print(f"  {C}└{'─'*60}┘{RST}")
+        print(f"  {C}â””{'â”€'*60}â”˜{RST}")
     
         return {
             "section": sec, "results": list(_cur), "chdata": chdata, "cc": cc,
             "cons": cons, "ecl": ecl, "ecov": ecov, "pl": pl2, "fl": fl2, "rate": rt,
         }
     
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     # RUN ALL SECTIONS
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     AD: Dict[str, dict] = {}
     for sec in avail:
         AD[sec] = run_section(sec)
     
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     # GRAND TERMINAL SUMMARY
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     tt = tp = tf = 0
     for d in AD.values():
         tt += len(d["results"]); tp += len(d["pl"]); tf += len(d["fl"])
     gr = round(100*tp/tt) if tt else 0
     
-    print(f"\n{BLD}{C}{'═'*72}\n  GRAND SUMMARY\n{'═'*72}{RST}")
+    print(f"\n{BLD}{C}{'â•'*72}\n  GRAND SUMMARY\n{'â•'*72}{RST}")
     for sec, d in AD.items():
         b = round(d["rate"]*30/100)
         col = G if d["rate"]==100 else (Y if d["rate"]>=70 else R)
-        print(f"  {BLD}{Y}{sec:<10}{RST}  {col}{'█'*b}{'░'*(30-b)}{RST}  {d['rate']:>3}%  {G}{len(d['pl'])}✔{RST}  {R}{len(d['fl'])}✘{RST}")
-    print(f"{C}{'─'*72}{RST}")
+        print(f"  {BLD}{Y}{sec:<10}{RST}  {col}{'â–ˆ'*b}{'â–‘'*(30-b)}{RST}  {d['rate']:>3}%  {G}{len(d['pl'])}âœ”{RST}  {R}{len(d['fl'])}âœ˜{RST}")
+    print(f"{C}{'â”€'*72}{RST}")
     print(f"  TOTAL  {tt} tests  {tp} pass  {tf} fail  {gr}%")
-    print(f"{C}{'═'*72}{RST}\n")
+    print(f"{C}{'â•'*72}{RST}\n")
     
-    print(f"\n{BLD}{C}{'═'*72}\n  4-WAY CONSISTENCY + HEADER ACCURACY (All Sections)\n{'═'*72}{RST}")
+    print(f"\n{BLD}{C}{'â•'*72}\n  4-WAY CONSISTENCY + HEADER ACCURACY (All Sections)\n{'â•'*72}{RST}")
     print(f"  {'Sec':<6}  {'Chapter':<42}  {'Loc1':>7}  {'Loc2':>7}  {'Loc3':>7}  {'Loc4':>7}  {'HdrAcc':>8}  {'OK?':>5}")
     for sec, d in AD.items():
         for row in d["cons"]:
             if row.get("skip"): continue
-            ok = f"{G}✔{RST}" if row["match"] else f"{R}✘{RST}"
+            ok = f"{G}âœ”{RST}" if row["match"] else f"{R}âœ˜{RST}"
             ha = row.get("header_accuracy") or "N/A"
             print(f"  {sec:<6}  {row['name']:<42}  "
-                  f"{(row['pct_card'] or '—'):>7}  {(row.get('pct_chip') or '—'):>7}  "
-                  f"{(row.get('pct_badge') or '—'):>7}  {(row.get('pct_why') or '—'):>7}  "
+                  f"{(row['pct_card'] or 'â€”'):>7}  {(row.get('pct_chip') or 'â€”'):>7}  "
+                  f"{(row.get('pct_badge') or 'â€”'):>7}  {(row.get('pct_why') or 'â€”'):>7}  "
                   f"{C}{ha:>8}{RST}  {ok}")
     
-    # ★ Header accuracy grand summary
-    print(f"\n{BLD}{C}{'═'*72}\n  HEADER ACCURACY BADGE — ALL SECTIONS\n{'═'*72}{RST}")
+    # â˜… Header accuracy grand summary
+    print(f"\n{BLD}{C}{'â•'*72}\n  HEADER ACCURACY BADGE â€” ALL SECTIONS\n{'â•'*72}{RST}")
     for sec, d in AD.items():
         print(f"  {BLD}{Y}Section {sec}:{RST}")
         for i, ch in enumerate(d["chdata"], 1):
             ha = ch.get("header_accuracy")
-            icon = f"{G}✔{RST}" if ha else f"{R}✘{RST}"
+            icon = f"{G}âœ”{RST}" if ha else f"{R}âœ˜{RST}"
             print(f"    {icon}  {i:>2}. {ch['name']:<50} {C}{BLD}{ha or 'NOT FOUND'}{RST}")
     
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     # HTML REPORT HELPERS
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     def hb(ok: bool) -> str:
         return ('<span class="badge ok">PASS</span>' if ok
                 else '<span class="badge fail">FAIL</span>')
     
     def hp(pct: Optional[str]) -> str:
-        if not pct: return '<span class="muted">—</span>'
+        if not pct: return '<span class="muted">â€”</span>'
         col = "#3fb950" if "+" in pct else "#f85149"
-        arr = "▲" if "+" in pct else "▼"
+        arr = "â–²" if "+" in pct else "â–¼"
         return f'<span style="color:{col};font-weight:700;font-family:\'DM Mono\',monospace">{arr} {pct}</span>'
     
     def hpill(t: str) -> str:
@@ -6040,30 +6040,30 @@ if False:
     
     def grp_row(title: str, cols: int, chip: str = "", extra: str = "") -> str:
         ch = ""
-        if chip == "+": ch = '<span class="chip-pos">▲ IMPROVED</span>'
-        elif chip == "-": ch = '<span class="chip-neg">▼ DECLINED</span>'
+        if chip == "+": ch = '<span class="chip-pos">â–² IMPROVED</span>'
+        elif chip == "-": ch = '<span class="chip-neg">â–¼ DECLINED</span>'
         return f'<tr class="grp-row"><td colspan="{cols}"><span class="grp-title">{title}</span>{ch}{extra}</td></tr>'
     
     def loc_cell(v: Optional[str], ref: Optional[str]) -> str:
-        if not v: return '<span class="miss">✘ MISSING</span>'
+        if not v: return '<span class="miss">âœ˜ MISSING</span>'
         rn = re.search(r"(\d+\.?\d*)", ref or "")
         vn = re.search(r"(\d+\.?\d*)", v or "")
         ok = rn and vn and rn.group(1) == vn.group(1)
         col = "#3fb950" if "+" in v else "#f85149"
-        arr = "▲" if "+" in v else "▼"
-        tick = ('<span class="badge ok" style="font-size:10px;padding:1px 5px;margin-left:4px">✔</span>'
+        arr = "â–²" if "+" in v else "â–¼"
+        tick = ('<span class="badge ok" style="font-size:10px;padding:1px 5px;margin-left:4px">âœ”</span>'
                 if ok else
-                '<span class="badge fail" style="font-size:10px;padding:1px 5px;margin-left:4px">✘</span>')
+                '<span class="badge fail" style="font-size:10px;padding:1px 5px;margin-left:4px">âœ˜</span>')
         return f'<span style="color:{col};font-weight:700;font-family:\'DM Mono\',monospace">{arr} {v}</span>{tick}'
     
     def hacc_cell(v: Optional[str]) -> str:
-        if not v: return '<span class="miss">✘ NOT FOUND</span>'
+        if not v: return '<span class="miss">âœ˜ NOT FOUND</span>'
         return (f'<span style="color:#58a6ff;font-size:18px;font-weight:700;'
                 f'font-family:\'DM Mono\',monospace">{v}</span>')
     
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     # BUILD PER-SECTION HTML  (with header accuracy columns merged from Script 1)
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     def build_section_html(sec: str, d: dict) -> str:
         sid    = re.sub(r"[^A-Za-z0-9]", "_", sec)
         cd     = d["chdata"]; cc = d["cc"]; cr = d["cons"]
@@ -6071,7 +6071,7 @@ if False:
         by_ph  = defaultdict(list)
         for r in ar: by_ph[r.phase].append(r)
     
-        # ── Overview rows (with header accuracy column) ────────────────────────
+        # â”€â”€ Overview rows (with header accuracy column) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         ov_rows = ""
         for i, ch in enumerate(cd, 1):
             chip = "+" if ch["pct_card"] and "+" in ch["pct_card"] else "-"
@@ -6095,7 +6095,7 @@ if False:
                         f'<td style="text-align:center">{cons_badge}</td>'
                         f'<td>{tc_bar}</td></tr>')
     
-        # ── All-tests rows ─────────────────────────────────────────────────────
+        # â”€â”€ All-tests rows â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         tc_rows = ""
         for ph, rs in by_ph.items():
             p2 = sum(1 for r in rs if r.passed); f2 = len(rs)-p2
@@ -6105,15 +6105,15 @@ if False:
                                extra=f'<span style="float:right">{bge}</span>')
             for r in rs:
                 cls2 = "pass-row" if r.passed else "fail-row"
-                icon = ('<span style="color:#3fb950;font-weight:700">✔</span>' if r.passed
-                        else '<span style="color:#f85149;font-weight:700">✘</span>')
+                icon = ('<span style="color:#3fb950;font-weight:700">âœ”</span>' if r.passed
+                        else '<span style="color:#f85149;font-weight:700">âœ˜</span>')
                 v = (r.value or r.detail or "")[:70]
                 tc_rows += (f'<tr class="{cls2}"><td style="width:28px">{icon}</td>'
                             f'<td class="muted" style="font-size:11px">{r.phase.replace("Chapter:","")}</td>'
                             f'<td>{r.name}</td><td>{hb(r.passed)}</td>'
                             f'<td class="muted mono" style="font-size:12px">{v}</td></tr>')
     
-        # ── Consistency rows (with header accuracy column) ─────────────────────
+        # â”€â”€ Consistency rows (with header accuracy column) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         cons_rows = ""
         for i, ch in enumerate(cd, 1):
             chip = "+" if ch["pct_card"] and "+" in (ch["pct_card"] or "") else "-"
@@ -6130,32 +6130,32 @@ if False:
                           f'<td style="text-align:center">{hacc_cell(ch.get("header_accuracy"))}</td>'
                           f'<td style="text-align:center;font-weight:700">{res}</td></tr>')
     
-        # ── Exam stats rows ────────────────────────────────────────────────────
+        # â”€â”€ Exam stats rows â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         est_rows = ""
         for i, ch in enumerate(cd, 1):
             chip = "+" if ch["pct_card"] and "+" in (ch["pct_card"] or "") else "-"
             est_rows += grp_row(f"{i}.  {ch['name']}", 6, chip)
             for pd in ch.get("panels", []):
-                acc = pd["accuracy"] or "—"; acc_ok = pd["accuracy"] is not None
+                acc = pd["accuracy"] or "â€”"; acc_ok = pd["accuracy"] is not None
                 acc_sty = ("color:#3fb950;font-size:18px;font-weight:700;font-family:'DM Mono',monospace"
                            if acc_ok else "color:#5a7490")
                 sc2 = pd["struggling_count"]
-                st_h = ('<span class="muted">—</span>' if sc2 is None
+                st_h = ('<span class="muted">â€”</span>' if sc2 is None
                         else (f'<span style="color:#3fb950;font-size:16px;font-weight:700;font-family:\'DM Mono\',monospace">{sc2}</span>' if sc2==0
                               else (f'<span style="color:#d29922;font-size:16px;font-weight:700;font-family:\'DM Mono\',monospace">{sc2}</span>' if sc2<=5
                                     else f'<span style="color:#f85149;font-size:16px;font-weight:700;font-family:\'DM Mono\',monospace">{sc2}</span>')))
                 wk = pd["weak_concepts_count"]
-                wk_h = ('<span class="muted">—</span>' if wk is None
+                wk_h = ('<span class="muted">â€”</span>' if wk is None
                         else (f'<span style="color:#3fb950;font-weight:700;font-family:\'DM Mono\',monospace">{wk}</span>' if wk==0
                               else f'<span style="color:#f85149;font-weight:700;font-family:\'DM Mono\',monospace">{wk}</span>'))
                 est_rows += (f'<tr><td class="chn">{ch["name"]}</td>'
                              f'<td><strong style="color:#cdd9e5">{pd["label"]}</strong></td>'
-                             f'<td class="muted mono">{pd.get("exam_date") or "—"}</td>'
+                             f'<td class="muted mono">{pd.get("exam_date") or "â€”"}</td>'
                              f'<td class="num" style="{acc_sty}">{acc}</td>'
                              f'<td class="num">{st_h}</td>'
                              f'<td class="num">{wk_h}</td></tr>')
     
-        # ── Accuracy rows (with header accuracy column) ────────────────────────
+        # â”€â”€ Accuracy rows (with header accuracy column) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         acc_rows = ""
         for i, ch in enumerate(cd, 1):
             chip = "+" if ch["pct_card"] and "+" in (ch["pct_card"] or "") else "-"
@@ -6167,11 +6167,11 @@ if False:
             why_acc_v = ch.get("why_acc_pct")
             header_acc_v = ch.get("header_accuracy")
             mid_cell = (f'<span style="color:#d29922;font-size:20px;font-weight:700;font-family:\'DM Mono\',monospace">{mid_acc_v}</span>'
-                        if mid_acc_v else '<span class="muted">—</span>')
+                        if mid_acc_v else '<span class="muted">â€”</span>')
             pre_cell = (f'<span style="color:#58a6ff;font-size:20px;font-weight:700;font-family:\'DM Mono\',monospace">{pre_acc_v}</span>'
-                        if pre_acc_v else '<span class="muted">—</span>')
+                        if pre_acc_v else '<span class="muted">â€”</span>')
             wacc_cell = (f'<span style="color:#3fb950;font-size:17px;font-weight:700;font-family:\'DM Mono\',monospace">{why_acc_v}</span>'
-                         if why_acc_v else '<span class="muted">—</span>')
+                         if why_acc_v else '<span class="muted">â€”</span>')
             acc_rows += (f'<tr><td class="chn">{ch["name"]}</td>'
                          f'<td style="text-align:center">{hp(ch.get("pct_card"))}</td>'
                          f'<td style="text-align:center">{hacc_cell(header_acc_v)}</td>'
@@ -6180,7 +6180,7 @@ if False:
                          f'<td style="text-align:center">{loc4_display(ch)}</td>'
                          f'<td style="text-align:center">{wacc_cell}</td></tr>')
     
-        # ── Weakest concepts rows ──────────────────────────────────────────────
+        # â”€â”€ Weakest concepts rows â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         wk_rows = ""
         for i, ch in enumerate(cd, 1):
             chip = "+" if ch["pct_card"] and "+" in (ch["pct_card"] or "") else "-"
@@ -6188,7 +6188,7 @@ if False:
             for pd in ch.get("panels", []):
                 exam_col = "#d29922" if pd["label"] == "Midterm" else "#58a6ff"
                 wk_rows += (f'<tr class="sub-row"><td colspan="4" style="color:{exam_col}">'
-                            f'📅 &nbsp;{pd["label"]}</td></tr>')
+                            f'ðŸ“… &nbsp;{pd["label"]}</td></tr>')
                 if pd["weakest_concepts"]:
                     for rank, concept in enumerate(pd["weakest_concepts"], 1):
                         if isinstance(concept, dict):
@@ -6204,7 +6204,7 @@ if False:
                 else:
                     wk_rows += '<tr><td colspan="4" class="empty">None extracted</td></tr>'
     
-        # ── Strongest concepts rows ────────────────────────────────────────────
+        # â”€â”€ Strongest concepts rows â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         st_rows = ""
         for i, ch in enumerate(cd, 1):
             chip = "+" if ch["pct_card"] and "+" in (ch["pct_card"] or "") else "-"
@@ -6212,7 +6212,7 @@ if False:
             for pd in ch.get("panels", []):
                 exam_col = "#d29922" if pd["label"] == "Midterm" else "#58a6ff"
                 st_rows += (f'<tr class="sub-row"><td colspan="5" style="color:{exam_col}">'
-                            f'📅 &nbsp;{pd["label"]}</td></tr>')
+                            f'ðŸ“… &nbsp;{pd["label"]}</td></tr>')
                 if pd["strongest_concepts"]:
                     for c in pd["strongest_concepts"]:
                         if isinstance(c, dict):
@@ -6221,17 +6221,17 @@ if False:
                             cbadge = c.get("badge", "")
                         else:
                             cname = str(c); cpct = None; cbadge = ""
-                        bh  = hpill(cbadge) if cbadge else '<span class="muted">—</span>'
+                        bh  = hpill(cbadge) if cbadge else '<span class="muted">â€”</span>'
                         ph2 = (f'<span style="color:#58a6ff;font-weight:600;'
                                f'font-family:\'DM Mono\',monospace">{cpct}</span>'
-                               if cpct else '<span class="muted">—</span>')
+                               if cpct else '<span class="muted">â€”</span>')
                         st_rows += (f'<tr><td style="font-weight:500;padding-left:24px">{cname}</td>'
                                     f'<td class="muted mono">{pd["label"]}</td>'
                                     f'<td class="num">{ph2}</td><td>{bh}</td><td></td></tr>')
                 else:
                     st_rows += '<tr><td colspan="5" class="empty">None extracted</td></tr>'
     
-        # ── Why text rows ──────────────────────────────────────────────────────
+        # â”€â”€ Why text rows â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         why_rows = ""
         for i, ch in enumerate(cd, 1):
             if not ch.get("why_heading") and not ch.get("why_text"): continue
@@ -6239,27 +6239,27 @@ if False:
             why_rows += grp_row(f"{i}.  {ch['name']}", 5, chip)
             why_rows += (f'<tr><td class="chn">{ch["name"]}</td>'
                          f'<td>{hp(ch["pct_card"])}</td>'
-                         f'<td><strong style="color:#cdd9e5">{ch.get("why_heading") or "—"}</strong></td>'
-                         f'<td style="font-size:13px;line-height:1.65;max-width:440px;color:#cdd9e5">{ch.get("why_text") or "—"}</td>'
+                         f'<td><strong style="color:#cdd9e5">{ch.get("why_heading") or "â€”"}</strong></td>'
+                         f'<td style="font-size:13px;line-height:1.65;max-width:440px;color:#cdd9e5">{ch.get("why_text") or "â€”"}</td>'
                          f'<td style="text-align:center">{loc4_display(ch)}</td></tr>')
         if not why_rows:
             why_rows = '<tr><td colspan="5" class="empty">No explanation text extracted</td></tr>'
     
-        # ── Failed tests rows ──────────────────────────────────────────────────
+        # â”€â”€ Failed tests rows â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         failed_rows = ""; prev_ph2 = ""
         for r in [r for r in ar if not r.passed]:
             ph = r.phase.replace("Chapter:","")
             if ph != prev_ph2: failed_rows += grp_row(ph, 4); prev_ph2 = ph
             det = (r.detail or r.value or "")[:80]
             failed_rows += (f'<tr class="fail-row">'
-                            f'<td style="width:28px"><span style="color:#f85149;font-weight:700">✘</span></td>'
+                            f'<td style="width:28px"><span style="color:#f85149;font-weight:700">âœ˜</span></td>'
                             f'<td class="muted mono" style="font-size:11px">{ph}</td>'
                             f'<td>{r.name}</td>'
                             f'<td class="muted mono" style="font-size:12px">{det}</td></tr>')
         if not failed_rows:
-            failed_rows = '<tr><td colspan="4" class="empty" style="color:#3fb950;font-style:normal;font-weight:600">🎉 All tests passed!</td></tr>'
+            failed_rows = '<tr><td colspan="4" class="empty" style="color:#3fb950;font-style:normal;font-weight:600">ðŸŽ‰ All tests passed!</td></tr>'
     
-        # ── Phase cards ────────────────────────────────────────────────────────
+        # â”€â”€ Phase cards â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         phase_cards = ""
         for ph, rs in by_ph.items():
             p2 = sum(1 for r in rs if r.passed); f2 = len(rs)-p2
@@ -6270,37 +6270,37 @@ if False:
                             f'border-radius:8px;padding:14px 16px;">'
                             f'<div style="font-size:12px;font-weight:600;color:#cdd9e5;margin-bottom:8px;'
                             f'white-space:nowrap;overflow:hidden;text-overflow:ellipsis" title="{ph.replace("Chapter:","")}">'
-                            f'{ph.replace("Chapter:","📖 ")}</div>'
+                            f'{ph.replace("Chapter:","ðŸ“– ")}</div>'
                             f'<div style="background:#1a2330;border-radius:3px;height:4px;overflow:hidden;margin-bottom:8px">'
                             f'<div style="width:{pct_ph}%;height:4px;background:{bar_col};border-radius:3px"></div></div>'
                             f'<div style="font-size:11px;display:flex;gap:8px;font-family:\'DM Mono\',monospace">'
-                            f'<span style="color:#3fb950">{p2}✔</span>'
-                            f'<span style="color:#f85149">{f2}✘</span>'
+                            f'<span style="color:#3fb950">{p2}âœ”</span>'
+                            f'<span style="color:#f85149">{f2}âœ˜</span>'
                             f'<span style="color:#5a7490">{pct_ph}%</span>'
                             f'</div></div>')
     
-        # ── Excel validation HTML ──────────────────────────────────────────────
+        # â”€â”€ Excel validation HTML â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         def CP2(n, f=False):
             bg="#0d2318" if f else "#1c2840"; c="#3fb950" if f else "#8b949e"
-            b="#238636" if f else "#30363d"; t=" ★" if f else ""
+            b="#238636" if f else "#30363d"; t=" â˜…" if f else ""
             return f'<span style="display:inline-block;padding:1px 6px;border-radius:12px;font-size:11px;background:{bg};color:{c};border:1px solid {b};margin:1px">{n}{t}</span>'
         def QP2(q, cn, o):
             c2 = "#e3b341" if o else "#8b949e"
             return f'<span style="display:inline-block;padding:1px 7px;border-radius:4px;font-size:11px;background:#1c2128;color:{c2};border:1px solid #30363d;margin:1px"><strong>Q{q}</strong>: {cn}</span>'
         def BX2(r):
-            m2 = {"MATCH":("em","✔ MATCH"),"PRESENT":("em","✔ PRESENT"),"NOT IN EXCEL":("ex","✘ NOT IN EXCEL"),"MISSING":("ems","⚠ MISSING")}
+            m2 = {"MATCH":("em","âœ” MATCH"),"PRESENT":("em","âœ” PRESENT"),"NOT IN EXCEL":("ex","âœ˜ NOT IN EXCEL"),"MISSING":("ems","âš  MISSING")}
             cl, lb = m2.get(r, ("ems",r)); return f'<span class="{cl}">{lb}</span>'
     
         exc = ""
         for _r in d["ecl"]:
             rc = "pass-row" if _r["result"]=="MATCH" else "fail-row"
-            cp = " ".join(CP2(c2,f) for c2,f in _r["concepts"]) if _r["concepts"] else '<span class="muted">—</span>'
+            cp = " ".join(CP2(c2,f) for c2,f in _r["concepts"]) if _r["concepts"] else '<span class="muted">â€”</span>'
             mp = " ".join(QP2(q,c2,o) for q,c2,o in _r["mid_qs"]) if _r["mid_qs"] else '<span class="muted" style="font-size:12px">Not in Midterm</span>'
             pp2 = " ".join(QP2(q,c2,o) for q,c2,o in _r["pre_qs"]) if _r["pre_qs"] else '<span class="muted" style="font-size:12px">Not in Preboard</span>'
             exc += f'''<tr class="{rc}"><td class="chn">{_r["cl_name"]}</td><td style="text-align:center">{hp(_r["pct"])}</td>
             <td style="font-weight:600;color:#cdd9e5">{_r["excel_ch"] or "<i style='color:#f85149'>Not Found</i>"}</td>
-            <td class="muted" style="font-size:12px">{_r["unit"] or "—"}</td>
-            <td class="num" style="font-weight:700;color:#e3b341">{_r["unit_marks"] or "—"}</td>
+            <td class="muted" style="font-size:12px">{_r["unit"] or "â€”"}</td>
+            <td class="num" style="font-weight:700;color:#e3b341">{_r["unit_marks"] or "â€”"}</td>
             <td class="num" style="font-weight:700;color:#58a6ff">{_r["mid_count"]}</td>
             <td class="num" style="font-weight:700;color:#bc8cff">{_r["pre_count"]}</td>
             <td style="text-align:center">{BX2(_r["result"])}</td></tr>
@@ -6345,32 +6345,32 @@ if False:
     
     <div class="nav-wrap">
       <div class="nav" id="nav-{sid}">
-        <div class="nt active" onclick="tab(this,'t-{sid}-ov')">📋 Overview</div>
-        <div class="nt" onclick="tab(this,'t-{sid}-ph')">⚡ Phases</div>
-        <div class="nt" onclick="tab(this,'t-{sid}-tc')">🧪 All Tests</div>
-        <div class="nt" onclick="tab(this,'t-{sid}-pc')">📐 Consistency</div>
-        <div class="nt" onclick="tab(this,'t-{sid}-ex')">📊 Exam Stats</div>
-        <div class="nt" onclick="tab(this,'t-{sid}-acc')">🎯 Accuracy</div>
-        <div class="nt" onclick="tab(this,'t-{sid}-wk')">⚠️ Weakest</div>
-        <div class="nt" onclick="tab(this,'t-{sid}-st')">★ Strongest</div>
-        <div class="nt" onclick="tab(this,'t-{sid}-wy')">💡 Why Text</div>
-        <div class="nt" onclick="tab(this,'t-{sid}-fl')">❌ Failed</div>
-        <div class="nt" onclick="tab(this,'t-{sid}-xl')">📚 Excel</div>
+        <div class="nt active" onclick="tab(this,'t-{sid}-ov')">ðŸ“‹ Overview</div>
+        <div class="nt" onclick="tab(this,'t-{sid}-ph')">âš¡ Phases</div>
+        <div class="nt" onclick="tab(this,'t-{sid}-tc')">ðŸ§ª All Tests</div>
+        <div class="nt" onclick="tab(this,'t-{sid}-pc')">ðŸ“ Consistency</div>
+        <div class="nt" onclick="tab(this,'t-{sid}-ex')">ðŸ“Š Exam Stats</div>
+        <div class="nt" onclick="tab(this,'t-{sid}-acc')">ðŸŽ¯ Accuracy</div>
+        <div class="nt" onclick="tab(this,'t-{sid}-wk')">âš ï¸ Weakest</div>
+        <div class="nt" onclick="tab(this,'t-{sid}-st')">â˜… Strongest</div>
+        <div class="nt" onclick="tab(this,'t-{sid}-wy')">ðŸ’¡ Why Text</div>
+        <div class="nt" onclick="tab(this,'t-{sid}-fl')">âŒ Failed</div>
+        <div class="nt" onclick="tab(this,'t-{sid}-xl')">ðŸ“š Excel</div>
       </div>
     </div>
     
     <div id="t-{sid}-ov" class="tc active">
-      <div class="sh"><div class="sh-icon">📋</div><h2>Chapter Overview</h2><div class="sh-pills"><span class="pill">{len(cc)} chapters</span></div></div>
+      <div class="sh"><div class="sh-icon">ðŸ“‹</div><h2>Chapter Overview</h2><div class="sh-pills"><span class="pill">{len(cc)} chapters</span></div></div>
       <div class="tw"><table><thead><tr><th>#</th><th>Chapter</th><th>Loc 1 Card</th><th>Loc 2 Chip</th><th>Loc 3 Badge</th><th>Loc 4 Why</th><th style="color:#58a6ff">Header Acc</th><th>4-Way</th><th>Tests</th></tr></thead><tbody>{ov_rows}</tbody></table></div>
     </div>
     
     <div id="t-{sid}-ph" class="tc">
-      <div class="sh"><div class="sh-icon">⚡</div><h2>Phase Summary</h2></div>
+      <div class="sh"><div class="sh-icon">âš¡</div><h2>Phase Summary</h2></div>
       <div class="pg">{phase_cards}</div>
     </div>
     
     <div id="t-{sid}-tc" class="tc">
-      <div class="sh"><div class="sh-icon">🧪</div><h2>All Test Cases</h2>
+      <div class="sh"><div class="sh-icon">ðŸ§ª</div><h2>All Test Cases</h2>
         <div class="sh-pills"><span class="pill">{len(ar)} tests</span>
         <span class="pill pill-g">{len(pl)} passed</span><span class="pill pill-r">{len(fl)} failed</span></div>
       </div>
@@ -6378,22 +6378,22 @@ if False:
     </div>
     
     <div id="t-{sid}-pc" class="tc">
-      <div class="sh"><div class="sh-icon">📐</div><h2>4-Way Percentage Consistency</h2><div class="sh-pills"><span class="pill">{len(cd)} chapters</span></div></div>
-      <div class="desc"><strong>Loc 1</strong> Card badge &nbsp;·&nbsp; <strong>Loc 2</strong> IMPROVED/DECLINED chip &nbsp;·&nbsp; <strong>Loc 3</strong> Change in chapter avg &nbsp;·&nbsp; <strong>Loc 4</strong> Why-text &nbsp;·&nbsp; <strong style="color:#58a6ff">Header Acc</strong> "Preboard 1 accuracy XX%" badge</div>
+      <div class="sh"><div class="sh-icon">ðŸ“</div><h2>4-Way Percentage Consistency</h2><div class="sh-pills"><span class="pill">{len(cd)} chapters</span></div></div>
+      <div class="desc"><strong>Loc 1</strong> Card badge &nbsp;Â·&nbsp; <strong>Loc 2</strong> IMPROVED/DECLINED chip &nbsp;Â·&nbsp; <strong>Loc 3</strong> Change in chapter avg &nbsp;Â·&nbsp; <strong>Loc 4</strong> Why-text &nbsp;Â·&nbsp; <strong style="color:#58a6ff">Header Acc</strong> "Preboard 1 accuracy XX%" badge</div>
       <div class="tw"><table><thead><tr><th>Chapter</th><th>Loc 1 Card</th><th>Loc 2 Chip</th><th>Loc 3 Badge</th><th>Loc 4 Why</th><th style="color:#58a6ff">Header Acc</th><th>Result</th></tr></thead><tbody>{cons_rows}</tbody></table></div>
     </div>
     
     <div id="t-{sid}-ex" class="tc">
-      <div class="sh"><div class="sh-icon">📊</div><h2>Exam Statistics per Chapter</h2></div>
+      <div class="sh"><div class="sh-icon">ðŸ“Š</div><h2>Exam Statistics per Chapter</h2></div>
       <div class="tw"><table><thead><tr><th>Chapter</th><th>Exam</th><th>Date</th><th>Accuracy %</th><th>Struggling Students</th><th>Weak Concepts</th></tr></thead><tbody>{est_rows}</tbody></table></div>
     </div>
     
     <div id="t-{sid}-acc" class="tc">
-      <div class="sh"><div class="sh-icon">🎯</div><h2>Accuracy — Every Chapter</h2><div class="sh-pills"><span class="pill">{len(cd)} chapters</span></div></div>
+      <div class="sh"><div class="sh-icon">ðŸŽ¯</div><h2>Accuracy â€” Every Chapter</h2><div class="sh-pills"><span class="pill">{len(cd)} chapters</span></div></div>
       <div class="desc"><strong style="color:#58a6ff">Header Acc</strong> is the "Preboard 1 accuracy XX%" blue badge. &nbsp; <strong style="color:#d29922">Midterm %</strong> and <strong style="color:#58a6ff">Preboard 1 %</strong> are exam-panel accuracy scores. &nbsp; <strong style="color:#3fb950">Accuracy in why-text</strong> is explicitly stated in the Why section.</div>
       <div class="tw"><table><thead><tr>
         <th>Chapter</th>
-        <th style="text-align:center">Change %<br><small>Card · Loc1</small></th>
+        <th style="text-align:center">Change %<br><small>Card Â· Loc1</small></th>
         <th style="text-align:center;color:#58a6ff">Header Acc<br>Badge</th>
         <th style="text-align:center;color:#d29922">Midterm<br>Accuracy</th>
         <th style="text-align:center;color:#58a6ff">Preboard 1<br>Accuracy</th>
@@ -6403,7 +6403,7 @@ if False:
     </div>
     
     <div id="t-{sid}-wk" class="tc">
-      <div class="sh"><div class="sh-icon">⚠️</div><h2>Weakest Concepts</h2>
+      <div class="sh"><div class="sh-icon">âš ï¸</div><h2>Weakest Concepts</h2>
         <div class="sh-pills">
           <span class="pill-new" style="font-size:11px;padding:3px 10px">New</span>
           <span class="pill-pos" style="font-size:11px;padding:3px 10px">Improved</span>
@@ -6414,7 +6414,7 @@ if False:
     </div>
     
     <div id="t-{sid}-st" class="tc">
-      <div class="sh"><div class="sh-icon">★</div><h2>Strongest Concepts</h2>
+      <div class="sh"><div class="sh-icon">â˜…</div><h2>Strongest Concepts</h2>
         <div class="sh-pills">
           <span class="pill-new" style="font-size:11px;padding:3px 10px">New</span>
           <span class="pill-pos" style="font-size:11px;padding:3px 10px">Improved</span>
@@ -6425,18 +6425,18 @@ if False:
     </div>
     
     <div id="t-{sid}-wy" class="tc">
-      <div class="sh"><div class="sh-icon">💡</div><h2>Why This Chapter Improved / Declined</h2></div>
-      <div class="desc">Loc 4 shows — when the explanation references only an accuracy % (e.g. "stable at 19.2% accuracy"). This is expected and correct.</div>
+      <div class="sh"><div class="sh-icon">ðŸ’¡</div><h2>Why This Chapter Improved / Declined</h2></div>
+      <div class="desc">Loc 4 shows â€” when the explanation references only an accuracy % (e.g. "stable at 19.2% accuracy"). This is expected and correct.</div>
       <div class="tw"><table><thead><tr><th>Chapter</th><th>Change (Card)</th><th>Heading</th><th>Explanation Text</th><th>Extracted %</th></tr></thead><tbody>{why_rows}</tbody></table></div>
     </div>
     
     <div id="t-{sid}-fl" class="tc">
-      <div class="sh"><div class="sh-icon">❌</div><h2>Failed Tests</h2><div class="sh-pills"><span class="pill pill-r">{len(fl)} failed</span></div></div>
+      <div class="sh"><div class="sh-icon">âŒ</div><h2>Failed Tests</h2><div class="sh-pills"><span class="pill pill-r">{len(fl)} failed</span></div></div>
       <div class="tw"><table><thead><tr><th></th><th>Phase</th><th>Test Name</th><th>Detail</th></tr></thead><tbody>{failed_rows}</tbody></table></div>
     </div>
     
     <div id="t-{sid}-xl" class="tc">
-      <div class="sh"><div class="sh-icon">📚</div><h2>Excel Validation</h2>
+      <div class="sh"><div class="sh-icon">ðŸ“š</div><h2>Excel Validation</h2>
         <div class="sh-pills">
           <span class="pill pill-g">{sum(1 for r in d['ecl'] if r['result']=='MATCH')} matched</span>
           <span class="pill">{sum(1 for r in d['ecl'] if r['result']=='NOT IN EXCEL')} extra</span>
@@ -6458,15 +6458,15 @@ if False:
     </div>
     """
     
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     # GLOBAL CONSISTENCY HTML (with header accuracy column)
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     def build_global_html() -> str:
         rows = ""
         for sec, d in AD.items():
             for row in d["cons"]:
                 if row.get("skip"): continue
-                ok = '<span class="badge ok">✔ MATCH</span>' if row["match"] else '<span class="badge fail">✘ MISMATCH</span>'
+                ok = '<span class="badge ok">âœ” MATCH</span>' if row["match"] else '<span class="badge fail">âœ˜ MISMATCH</span>'
                 cls2 = "pass-row" if row["match"] else "fail-row"
                 ha = row.get("header_accuracy")
                 rows += (f'<tr class="{cls2}"><td style="font-weight:700;color:#d29922">{sec}</td>'
@@ -6505,15 +6505,15 @@ if False:
         for i,s in enumerate(secs)
     )
     
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     # FULL HTML REPORT
-    # ─────────────────────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     html = f"""<!DOCTYPE html>
     <html lang="en">
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>ClassLens — All Sections FINAL MERGED v4</title>
+    <title>ClassLens â€” All Sections FINAL MERGED v4</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -6612,13 +6612,13 @@ if False:
     
     <div class="hero">
       <div>
-        <div class="hero-eye">ClassLens Quality Assurance · All Sections · FINAL MERGED v4</div>
-        <div class="hero-title">Chapter Accuracy Test Report — All Sections</div>
-        <div class="hero-sub">{len(avail)} sections tested · {ENTRY['CompareLeft']} vs {ENTRY['CompareRight']} · Class {ENTRY['Class']} {ENTRY['Subject']}</div>
+        <div class="hero-eye">ClassLens Quality Assurance Â· All Sections Â· FINAL MERGED v4</div>
+        <div class="hero-title">Chapter Accuracy Test Report â€” All Sections</div>
+        <div class="hero-sub">{len(avail)} sections tested Â· {ENTRY['CompareLeft']} vs {ENTRY['CompareRight']} Â· Class {ENTRY['Class']} {ENTRY['Subject']}</div>
         <div class="hero-tags">
           <span class="htag">Class {ENTRY['Class']}</span>
           <span class="htag">{ENTRY['Subject']}</span>
-          <span class="htag">{ENTRY['CompareLeft']} ↔ {ENTRY['CompareRight']}</span>
+          <span class="htag">{ENTRY['CompareLeft']} â†” {ENTRY['CompareRight']}</span>
           <span class="htag">{len(avail)} Sections</span>
           <span class="htag">{tt} Tests</span>
         </div>
@@ -6639,13 +6639,13 @@ if False:
     </div>
     
     <div class="prog">
-      <div class="prog-head"><span class="prog-label">Overall Test Pass Rate — All Sections</span>
+      <div class="prog-head"><span class="prog-label">Overall Test Pass Rate â€” All Sections</span>
       <span class="prog-val">{gr}% <span style="font-size:15px;color:var(--muted)">({tp} / {tt})</span></span></div>
       <div class="prog-track"><div class="prog-fill" id="pf" style="width:0%;background:#3fb950;box-shadow:0 0 14px rgba(63,185,80,.2)"></div></div>
     </div>
     
     <div class="global-box">
-      <div class="gb-title">📈 Grand Summary — All Sections</div>
+      <div class="gb-title">ðŸ“ˆ Grand Summary â€” All Sections</div>
       <div class="tw" style="margin-bottom:0"><table>
         <thead><tr><th>Section</th><th style="text-align:center">Tests</th><th style="text-align:center">Pass</th><th style="text-align:center">Fail</th><th style="text-align:center">Rate</th><th>Progress</th></tr></thead>
         <tbody>{gr_rows}</tbody>
@@ -6653,7 +6653,7 @@ if False:
     </div>
     
     <div class="global-box">
-      <div class="gb-title">🔍 Global 4-Way % Consistency + Header Accuracy — All Sections</div>
+      <div class="gb-title">ðŸ” Global 4-Way % Consistency + Header Accuracy â€” All Sections</div>
       <div class="tw" style="margin-bottom:0"><table>
         <thead><tr><th>Section</th><th>Chapter</th>
           <th style="text-align:center">Loc1 Card</th><th style="text-align:center">Loc2 Chip</th>
@@ -6670,7 +6670,7 @@ if False:
     {sec_contents}
     
     <div class="foot">
-      ClassLens All-Sections FINAL MERGED v4 · {RUN_TS} · {len(avail)} sections · {tt} tests · {gr}% pass rate
+      ClassLens All-Sections FINAL MERGED v4 Â· {RUN_TS} Â· {len(avail)} sections Â· {tt} tests Â· {gr}% pass rate
     </div>
     
     </div>
@@ -6707,12 +6707,12 @@ if False:
     with open(REPORT_FILE, "w", encoding="utf-8") as fh:
         fh.write(html)
     
-    print(f"\n  {G}{BLD}📄  Report saved → {REPORT_FILE}{RST}")
+    print(f"\n  {G}{BLD}ðŸ“„  Report saved â†’ {REPORT_FILE}{RST}")
     try:
         webbrowser.open(f"file://{os.path.abspath(REPORT_FILE)}")
-        print(f"  {G}🌐  Opening in browser…{RST}")
+        print(f"  {G}ðŸŒ  Opening in browserâ€¦{RST}")
     except: pass
-    print(f"\n  🟢  Browser kept open. Close manually when done.\n")
+    print(f"\n  ðŸŸ¢  Browser kept open. Close manually when done.\n")
 
 # ==============================================================================
 # PRESERVED SOURCE: QUESTIONS TAB SCRIPT
@@ -6737,9 +6737,9 @@ if False:
     from selenium.webdriver.common.action_chains import ActionChains
     from selenium.common.exceptions import TimeoutException, StaleElementReferenceException
     
-    # ╔══════════════════════════════════════════════════════════════════╗
-    # ║                     TERMINAL COLOR PALETTE                       ║
-    # ╚══════════════════════════════════════════════════════════════════╝
+    # â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+    # â•‘                     TERMINAL COLOR PALETTE                       â•‘
+    # â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     
     class C:
         RESET   = "\033[0m";  BOLD    = "\033[1m";  DIM     = "\033[2m"
@@ -6754,9 +6754,9 @@ if False:
     def bold(text):     return f"{C.BOLD}{text}{C.RESET}"
     def dim(text):      return f"{C.DIM}{text}{C.RESET}"
     
-    # ╔══════════════════════════════════════════════════════════════════╗
-    # ║                          CONFIG  ← EDIT                         ║
-    # ╚══════════════════════════════════════════════════════════════════╝
+    # â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+    # â•‘                          CONFIG  â† EDIT                         â•‘
+    # â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     
     LOGIN_URL   = "https://classlens.inferentics.com/"
     USERNAME    = os.getenv("CLASSLENS_USER", "Tanmay")
@@ -6773,9 +6773,9 @@ if False:
     
     RUN_TS = datetime.now().strftime("%d %b %Y  %H:%M:%S")
     
-    # ╔══════════════════════════════════════════════════════════════════╗
-    # ║                   CURRICULUM KNOWLEDGE BASE                      ║
-    # ╚══════════════════════════════════════════════════════════════════╝
+    # â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+    # â•‘                   CURRICULUM KNOWLEDGE BASE                      â•‘
+    # â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     
     CHAPTER_CONCEPTS: dict[str, list[str]] = {
         "Relations & Functions": [
@@ -6842,9 +6842,9 @@ if False:
         "Case Based","Assertion Reason","True False",
     }
     
-    # ╔══════════════════════════════════════════════════════════════════╗
-    # ║                       DATA STRUCTURES                            ║
-    # ╚══════════════════════════════════════════════════════════════════╝
+    # â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+    # â•‘                       DATA STRUCTURES                            â•‘
+    # â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     
     @dataclass
     class QuestionData:
@@ -6852,15 +6852,15 @@ if False:
         label: str
         chapter: str = ""
         concept: str = ""
-        marks: str = "—"
+        marks: str = "â€”"
         average: str = "N/A"
         qtype: str = "Unknown"
         question_text: str = ""
-        full_marks_students: str = "—"
-        partial_students: str = "—"
-        wrong_students: str = "—"
-        got_it_right_count: str = "—"
-        got_it_right_pct: str = "—"
+        full_marks_students: str = "â€”"
+        partial_students: str = "â€”"
+        wrong_students: str = "â€”"
+        got_it_right_count: str = "â€”"
+        got_it_right_pct: str = "â€”"
         chapter_ok: bool = False
         chapter_msg: str = ""
         type_ok: bool = False
@@ -6880,44 +6880,44 @@ if False:
         skipped: bool = False
         elapsed: float = 0.0
     
-    # ╔══════════════════════════════════════════════════════════════════╗
-    # ║                          LOGGING                                 ║
-    # ╚══════════════════════════════════════════════════════════════════╝
+    # â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+    # â•‘                          LOGGING                                 â•‘
+    # â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     
     def print_banner():
         print()
-        print(c(C.CYAN, "  ╔══════════════════════════════════════════════════════════════╗"))
-        print(c(C.CYAN, "  ║") + c(C.BOLD+C.WHITE, "    🎯  CLASSLENS ALL-SECTIONS QUESTION AUDIT ENGINE          ") + c(C.CYAN, "║"))
-        print(c(C.CYAN, "  ║") + dim("       Fresh browser per section · Combined HTML report       ") + c(C.CYAN, "║"))
-        print(c(C.CYAN, "  ╚══════════════════════════════════════════════════════════════╝"))
+        print(c(C.CYAN, "  â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—"))
+        print(c(C.CYAN, "  â•‘") + c(C.BOLD+C.WHITE, "    ðŸŽ¯  CLASSLENS ALL-SECTIONS QUESTION AUDIT ENGINE          ") + c(C.CYAN, "â•‘"))
+        print(c(C.CYAN, "  â•‘") + dim("       Fresh browser per section Â· Combined HTML report       ") + c(C.CYAN, "â•‘"))
+        print(c(C.CYAN, "  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•"))
         print(dim(f"  Started at {datetime.now().strftime('%A, %d %b %Y  %I:%M:%S %p')}"))
         print(c(C.VIOLET, f"\n  Sections: {c(C.TEAL, str(ALL_SECTIONS))}"))
         print()
     
-    def section_hdr(title, icon="▸"):
+    def section_hdr(title, icon="â–¸"):
         print()
-        print(c(C.VIOLET, f"  {'─'*60}"))
+        print(c(C.VIOLET, f"  {'â”€'*60}"))
         print(c(C.VIOLET, f"  {icon}  ") + bold(c(C.WHITE, title)))
-        print(c(C.VIOLET, f"  {'─'*60}"))
+        print(c(C.VIOLET, f"  {'â”€'*60}"))
     
-    def log_pass(msg): print(c(C.LIME,   f"  ✅  {msg}"))
-    def log_fail(msg): print(c(C.RED,    f"  ✗   {msg}"))
-    def log_warn(msg): print(c(C.YELLOW, f"  ⚠   {msg}"))
-    def log_info(msg): print(c(C.CYAN,   f"  ℹ   {msg}"))
+    def log_pass(msg): print(c(C.LIME,   f"  âœ…  {msg}"))
+    def log_fail(msg): print(c(C.RED,    f"  âœ—   {msg}"))
+    def log_warn(msg): print(c(C.YELLOW, f"  âš    {msg}"))
+    def log_info(msg): print(c(C.CYAN,   f"  â„¹   {msg}"))
     
     def progress_bar(current, total, width=40):
-        if total == 0: return c(C.DIM, f"  [{'░'*width}]   0%  0/0")
+        if total == 0: return c(C.DIM, f"  [{'â–‘'*width}]   0%  0/0")
         filled = int(width * current / total)
-        bar    = "█"*filled + "░"*(width-filled)
+        bar    = "â–ˆ"*filled + "â–‘"*(width-filled)
         pct    = int(100 * current / total)
         return c(C.LIME if pct == 100 else C.CYAN, f"  [{bar}] {pct:>3}%  {current}/{total}")
     
-    # ╔══════════════════════════════════════════════════════════════════╗
-    # ║                      DRIVER  (fresh per section)                 ║
-    # ╚══════════════════════════════════════════════════════════════════╝
+    # â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+    # â•‘                      DRIVER  (fresh per section)                 â•‘
+    # â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     
     def make_driver():
-        """No detach=True — that's what caused 'invalid session id' on sections I+."""
+        """No detach=True â€” that's what caused 'invalid session id' on sections I+."""
         opts = Options()
         opts.add_argument("--start-maximized")
         opts.add_argument("--disable-extensions")
@@ -6931,12 +6931,12 @@ if False:
         try: drv.quit()
         except Exception: pass
     
-    # ╔══════════════════════════════════════════════════════════════════╗
-    # ║                       AUTH + FORM                                ║
-    # ╚══════════════════════════════════════════════════════════════════╝
+    # â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+    # â•‘                       AUTH + FORM                                â•‘
+    # â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     
     def login(drv, wait):
-        section_hdr("AUTHENTICATION", "🔐")
+        section_hdr("AUTHENTICATION", "ðŸ”")
         drv.get(LOGIN_URL)
         wait.until(EC.visibility_of_element_located(
             (By.XPATH, "//input[@type='text' or @type='email']"))).send_keys(USERNAME)
@@ -6973,11 +6973,11 @@ if False:
         wait.until(EC.presence_of_element_located(
             (By.XPATH, "//*[contains(normalize-space(),'Sort By')]")))
         time.sleep(0.8)
-        log_pass(f"Section {bold(c(C.TEAL, section_val))} — Questions tab loaded")
+        log_pass(f"Section {bold(c(C.TEAL, section_val))} â€” Questions tab loaded")
     
-    # ╔══════════════════════════════════════════════════════════════════╗
-    # ║                          HELPERS                                 ║
-    # ╚══════════════════════════════════════════════════════════════════╝
+    # â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+    # â•‘                          HELPERS                                 â•‘
+    # â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     
     def safe_click(drv, el):
         drv.execute_script("arguments[0].scrollIntoView({block:'center'});", el)
@@ -7015,9 +7015,9 @@ if False:
             except: continue
         return els[0] if els else None
     
-    # ╔══════════════════════════════════════════════════════════════════╗
-    # ║                     PANEL EXTRACTION                             ║
-    # ╚══════════════════════════════════════════════════════════════════╝
+    # â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+    # â•‘                     PANEL EXTRACTION                             â•‘
+    # â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     
     def get_panel_text(drv):
         for xp in [
@@ -7064,8 +7064,8 @@ if False:
         return m2.group(1).strip() if m2 else ""
     
     def extract_perf(drv, text):
-        stats = {"full_marks_students":"—","partial_students":"—","wrong_students":"—",
-                 "got_it_right_count":"—","got_it_right_pct":"—","average":"N/A"}
+        stats = {"full_marks_students":"â€”","partial_students":"â€”","wrong_students":"â€”",
+                 "got_it_right_count":"â€”","got_it_right_pct":"â€”","average":"N/A"}
         try: body = drv.find_element(By.TAG_NAME, "body").text
         except: body = text
     
@@ -7079,7 +7079,7 @@ if False:
                     for sib in lel.find_elements(By.XPATH, "following-sibling::*")[:5]:
                         t2 = sib.text.strip()
                         if re.match(r"^\d+$", t2): stats[key] = t2; break
-                    if stats[key] != "—": break
+                    if stats[key] != "â€”": break
             except: pass
     
         try:
@@ -7095,11 +7095,11 @@ if False:
                     if pm: stats["got_it_right_pct"] = pm.group(1)+"%"
                     cm = re.search(r"(?:^|\n)(\d+)\s*\n\s*\d+(?:\.\d+)?%", blk)
                     if cm: stats["got_it_right_count"] = cm.group(1)
-                    if stats["got_it_right_pct"] != "—": break
-                if stats["got_it_right_pct"] != "—": break
+                    if stats["got_it_right_pct"] != "â€”": break
+                if stats["got_it_right_pct"] != "â€”": break
         except: pass
     
-        if stats["got_it_right_pct"] == "—":
+        if stats["got_it_right_pct"] == "â€”":
             pm = re.search(r"(\d+(?:\.\d+)?)\s*%\s*of\s*students?", body, re.IGNORECASE)
             if pm: stats["got_it_right_pct"] = pm.group(1)+"%"
     
@@ -7210,7 +7210,7 @@ if False:
         concept = dom_field(drv, "Concepts") or dom_field(drv, "Concept") or extract_concept(text)
         marks   = extract_marks(text) or dom_field(drv, "Marks")
         mn = re.search(r"(\d+(?:\.\d+)?)", marks or "")
-        marks_str = mn.group(1) if mn else "—"
+        marks_str = mn.group(1) if mn else "â€”"
         perf    = extract_perf(drv, text)
         return {
             "Chapter":             chapter.strip(),
@@ -7227,9 +7227,9 @@ if False:
             "got_it_right_pct":    perf["got_it_right_pct"],
         }
     
-    # ╔══════════════════════════════════════════════════════════════════╗
-    # ║                        VALIDATION                                ║
-    # ╚══════════════════════════════════════════════════════════════════╝
+    # â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+    # â•‘                        VALIDATION                                â•‘
+    # â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     
     def fuzzy_chapter(pc):
         pc = pc.strip().lower()
@@ -7252,13 +7252,13 @@ if False:
     def validate_cc(panel_chapter, panel_concept):
         if not panel_chapter: return False, "Chapter not found in panel"
         mc = fuzzy_chapter(panel_chapter)
-        if not mc: return False, f"'{panel_chapter}' — chapter not in curriculum"
-        if not panel_concept: return True, f"Chapter '{mc}' ✓  (concept not exposed in panel)"
+        if not mc: return False, f"'{panel_chapter}' â€” chapter not in curriculum"
+        if not panel_concept: return True, f"Chapter '{mc}' âœ“  (concept not exposed in panel)"
         mk = fuzzy_concept(panel_concept)
-        if mk is None: return False, f"Concept '{panel_concept}' — not found in curriculum"
+        if mk is None: return False, f"Concept '{panel_concept}' â€” not found in curriculum"
         cn = canonical(mk); ac = CONCEPT_TO_CHAPTER[mk]
-        if ac.lower() == mc.lower(): return True, f"'{cn}'  ✓  correctly mapped to  '{mc}'"
-        return False, f"'{cn}'  ✗  belongs to  '{ac}',  NOT  '{mc}'"
+        if ac.lower() == mc.lower(): return True, f"'{cn}'  âœ“  correctly mapped to  '{mc}'"
+        return False, f"'{cn}'  âœ—  belongs to  '{ac}',  NOT  '{mc}'"
     
     def validate_type(qtype):
         if not qtype or qtype == "Unknown": return False, "Question type not detected"
@@ -7266,22 +7266,22 @@ if False:
             if qt.lower() == qtype.lower(): return True, qtype
         return False, f"'{qtype}' is not a recognised question type"
     
-    # ╔══════════════════════════════════════════════════════════════════╗
-    # ║               RICH TERMINAL QUESTION PRINT                       ║
-    # ║           (same style as the original single-section script)     ║
-    # ╚══════════════════════════════════════════════════════════════════╝
+    # â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+    # â•‘               RICH TERMINAL QUESTION PRINT                       â•‘
+    # â•‘           (same style as the original single-section script)     â•‘
+    # â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     
     def print_question_row(idx, total, sec, q: QuestionData):
         status = q.status
         if status == "PASS":
             badge  = c(C.BG_GREEN+C.BLACK+C.BOLD,  " PASS ")
-            bullet = c(C.LIME,   "●")
+            bullet = c(C.LIME,   "â—")
         elif status == "WARN":
             badge  = c(C.BG_YELLOW+C.BLACK+C.BOLD, " WARN ")
-            bullet = c(C.YELLOW, "◑")
+            bullet = c(C.YELLOW, "â—‘")
         else:
             badge  = c(C.BG_RED+C.WHITE+C.BOLD,    " FAIL ")
-            bullet = c(C.RED,    "●")
+            bullet = c(C.RED,    "â—")
     
         chcol  = C.LIME  if q.chapter_ok else C.RED
         tycol  = C.TEAL  if q.type_ok   else C.YELLOW
@@ -7304,15 +7304,15 @@ if False:
     
         def seg(n, col):
             w = round(WBAR*n/tot) if tot > 0 else 0
-            return c(col, "█" * max(w, 1 if n > 0 else 0))
+            return c(col, "â–ˆ" * max(w, 1 if n > 0 else 0))
     
         filled = seg(nf, C.LIME) + seg(np_, C.YELLOW) + seg(nw, C.RED)
         plain  = len(re.sub(r"\033\[[0-9;]*m", "", filled))
-        dist_bar = filled + c(C.DIM, "░" * max(0, WBAR - plain))
+        dist_bar = filled + c(C.DIM, "â–‘" * max(0, WBAR - plain))
     
         print()
         print(f"  {bullet} {c(C.VIOLET+C.BOLD, f'[{sec}]')}  {bold(c(C.WHITE, q.label))}  {badge}  {dim(f'({idx}/{total})')}")
-        print(c(C.DIM, f"  {'─'*W}"))
+        print(c(C.DIM, f"  {'â”€'*W}"))
     
         if q.question_text:
             words = q.question_text.split()
@@ -7324,48 +7324,48 @@ if False:
             if line_: lines_.append(" ".join(line_))
             print(f"    {c(C.PINK+C.BOLD, 'Q: ')}{c(C.WHITE, lines_[0])}")
             for ln in lines_[1:]: print(f"       {c(C.WHITE, ln)}")
-            print(c(C.DIM, f"  {'─'*W}"))
+            print(c(C.DIM, f"  {'â”€'*W}"))
     
-        print(f"    {dim('Chapter :')}  {c(chcol, q.chapter[:42] or '—')}"
-              f"   {dim('Type :')}  {c(tycol, q.qtype or '—')}"
+        print(f"    {dim('Chapter :')}  {c(chcol, q.chapter[:42] or 'â€”')}"
+              f"   {dim('Type :')}  {c(tycol, q.qtype or 'â€”')}"
               f"   {dim('Marks :')}  {c(C.WHITE+C.BOLD, q.marks)}")
         if q.concept:
             print(f"    {dim('Concept :')}  {c(C.ORANGE, q.concept[:64])}")
         else:
             print(f"    {dim('Concept :')}  {c(C.DIM, '(not exposed in panel)')}")
     
-        print(c(C.DIM, f"  {'─'*W}"))
-        print(f"    {c(C.VIOLET+C.BOLD, '📊  STUDENT PERFORMANCE')}")
+        print(c(C.DIM, f"  {'â”€'*W}"))
+        print(f"    {c(C.VIOLET+C.BOLD, 'ðŸ“Š  STUDENT PERFORMANCE')}")
         print()
         print(
-            f"    │ {c(C.DIM,'Full Marks')}  {c(C.LIME+C.BOLD, f'{q.full_marks_students:>3}')} {c(C.DIM,'students')} "
-            f"│ {c(C.DIM,'Partial')}     {c(C.YELLOW+C.BOLD, f'{q.partial_students:>3}')} {c(C.DIM,'students')} "
-            f"│ {c(C.DIM,'Wrong')}       {c(C.RED+C.BOLD, f'{q.wrong_students:>3}')} {c(C.DIM,'students')} │"
+            f"    â”‚ {c(C.DIM,'Full Marks')}  {c(C.LIME+C.BOLD, f'{q.full_marks_students:>3}')} {c(C.DIM,'students')} "
+            f"â”‚ {c(C.DIM,'Partial')}     {c(C.YELLOW+C.BOLD, f'{q.partial_students:>3}')} {c(C.DIM,'students')} "
+            f"â”‚ {c(C.DIM,'Wrong')}       {c(C.RED+C.BOLD, f'{q.wrong_students:>3}')} {c(C.DIM,'students')} â”‚"
         )
         print()
         print(
             f"    {c(C.DIM,'Spread  ')} [{dist_bar}]  "
-            f"{c(C.LIME, str(nf))}{c(C.DIM,' ✓')}  "
+            f"{c(C.LIME, str(nf))}{c(C.DIM,' âœ“')}  "
             f"{c(C.YELLOW, str(np_))}{c(C.DIM,' ~')}  "
-            f"{c(C.RED, str(nw))}{c(C.DIM,' ✗')}  "
+            f"{c(C.RED, str(nw))}{c(C.DIM,' âœ—')}  "
             f"{c(C.DIM, f'({tot} students total)')}"
         )
         print()
     
-        if q.got_it_right_count != "—" and q.got_it_right_pct != "—":
+        if q.got_it_right_count != "â€”" and q.got_it_right_pct != "â€”":
             rs = f"{c(C.TEAL+C.BOLD, q.got_it_right_count)} {c(C.DIM,'students')}  {c(C.CYAN+C.BOLD, f'({q.got_it_right_pct})')}"
-        elif q.got_it_right_count != "—": rs = f"{c(C.TEAL+C.BOLD, q.got_it_right_count)} {c(C.DIM,'students')}"
-        elif q.got_it_right_pct  != "—": rs = c(C.CYAN+C.BOLD, q.got_it_right_pct)
-        else: rs = c(C.YELLOW, "—")
+        elif q.got_it_right_count != "â€”": rs = f"{c(C.TEAL+C.BOLD, q.got_it_right_count)} {c(C.DIM,'students')}"
+        elif q.got_it_right_pct  != "â€”": rs = c(C.CYAN+C.BOLD, q.got_it_right_pct)
+        else: rs = c(C.YELLOW, "â€”")
     
-        avg_str = c(C.LIME+C.BOLD, q.average) if q.average not in ("N/A","—","") else c(C.YELLOW, "—")
+        avg_str = c(C.LIME+C.BOLD, q.average) if q.average not in ("N/A","â€”","") else c(C.YELLOW, "â€”")
         print(f"    {dim('Students Got it Right  ')}  {rs}")
         print(f"    {dim('Avg Marks Scored       ')}  {avg_str}")
         print()
     
         if q.struggle_gaps:
-            print(c(C.DIM, f"  {'─'*W}"))
-            print(f"    {c(C.ORANGE+C.BOLD, '🧩  WHERE STUDENTS STRUGGLED')}")
+            print(c(C.DIM, f"  {'â”€'*W}"))
+            print(f"    {c(C.ORANGE+C.BOLD, 'ðŸ§©  WHERE STUDENTS STRUGGLED')}")
             print()
             GCOLS = [C.ORANGE, C.RED, C.CYAN, C.YELLOW]
             for gi, gap in enumerate(q.struggle_gaps):
@@ -7381,38 +7381,38 @@ if False:
                     for dl in ls_: print(f"            {c(C.DIM, dl)}")
                 print()
     
-        print(c(C.DIM, f"  {'─'*W}"))
-        print(f"    {mini(q.chapter_ok, not q.chapter_ok)}  {dim('Concept → Chapter :')}  {c(chcol, q.chapter_msg)}")
+        print(c(C.DIM, f"  {'â”€'*W}"))
+        print(f"    {mini(q.chapter_ok, not q.chapter_ok)}  {dim('Concept â†’ Chapter :')}  {c(chcol, q.chapter_msg)}")
         print(f"    {mini(q.type_ok)}  {dim('Question Type     :')}  {c(tycol, q.type_msg)}")
-        print(c(C.DIM, f"  {'═'*W}"))
+        print(c(C.DIM, f"  {'â•'*W}"))
     
     def print_section_summary(sr: SectionResult):
         total = sr.pass_count + sr.warn_count + sr.fail_count
         print()
-        print(c(C.VIOLET, f"  {'─'*60}"))
+        print(c(C.VIOLET, f"  {'â”€'*60}"))
         pw = int(40*sr.pass_count/max(total,1))
         fw = int(40*sr.fail_count/max(total,1))
         ww = 40-pw-fw
-        bar = c(C.LIME,"█"*pw)+c(C.YELLOW,"█"*ww)+c(C.RED,"█"*fw)
+        bar = c(C.LIME,"â–ˆ"*pw)+c(C.YELLOW,"â–ˆ"*ww)+c(C.RED,"â–ˆ"*fw)
         print(f"  [{bar}]")
         print()
-        print(f"  {c(C.LIME,'✅  PASS')} : {bold(c(C.LIME,  str(sr.pass_count)))}")
-        print(f"  {c(C.YELLOW,'⚠   WARN')} : {bold(c(C.YELLOW,str(sr.warn_count)))}")
-        print(f"  {c(C.RED,  '✗  FAIL')} : {bold(c(C.RED,   str(sr.fail_count)))}")
-        print(f"  {c(C.DIM,'─'*40)}")
-        print(f"  {c(C.WHITE,'📊  Total')} : {bold(c(C.WHITE,str(total)))}  {dim(f'in {sr.elapsed:.1f}s')}")
+        print(f"  {c(C.LIME,'âœ…  PASS')} : {bold(c(C.LIME,  str(sr.pass_count)))}")
+        print(f"  {c(C.YELLOW,'âš    WARN')} : {bold(c(C.YELLOW,str(sr.warn_count)))}")
+        print(f"  {c(C.RED,  'âœ—  FAIL')} : {bold(c(C.RED,   str(sr.fail_count)))}")
+        print(f"  {c(C.DIM,'â”€'*40)}")
+        print(f"  {c(C.WHITE,'ðŸ“Š  Total')} : {bold(c(C.WHITE,str(total)))}  {dim(f'in {sr.elapsed:.1f}s')}")
         print()
     
-    # ╔══════════════════════════════════════════════════════════════════╗
-    # ║              SINGLE-SECTION AUDITOR  (fresh driver)              ║
-    # ╚══════════════════════════════════════════════════════════════════╝
+    # â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+    # â•‘              SINGLE-SECTION AUDITOR  (fresh driver)              â•‘
+    # â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     
     def audit_section(section_val: str) -> SectionResult:
         sr  = SectionResult(section=section_val)
         drv = None
         t0  = time.time()
     
-        section_hdr(f"AUDITING SECTION  ›  {section_val}", "📂")
+        section_hdr(f"AUDITING SECTION  â€º  {section_val}", "ðŸ“‚")
     
         try:
             drv  = make_driver()
@@ -7422,23 +7422,23 @@ if False:
                 login(drv, wait)
             except Exception as e:
                 sr.error = f"Login failed: {e}"; sr.skipped = True
-                log_fail(f"Section {section_val} — login failed: {e}"); return sr
+                log_fail(f"Section {section_val} â€” login failed: {e}"); return sr
     
             try:
                 fill_form(drv, wait, section_val)
             except Exception as e:
                 sr.error = f"Form error: {e}"; sr.skipped = True
-                log_fail(f"Section {section_val} — form error: {e}"); return sr
+                log_fail(f"Section {section_val} â€” form error: {e}"); return sr
     
             try:
                 labels = get_all_labels(drv, wait)
             except Exception as e:
                 sr.error = f"Discovery failed: {e}"; sr.skipped = True
-                log_fail(f"Section {section_val} — discovery error: {e}"); return sr
+                log_fail(f"Section {section_val} â€” discovery error: {e}"); return sr
     
             if not labels:
                 sr.error = "No questions found"; sr.skipped = True
-                log_warn(f"Section {section_val} — no questions found"); return sr
+                log_warn(f"Section {section_val} â€” no questions found"); return sr
     
             sr.total_questions = len(labels)
             log_info(f"Found {bold(c(C.TEAL, str(len(labels))))} questions")
@@ -7509,7 +7509,7 @@ if False:
     
         except Exception as e:
             sr.error = f"Unexpected error: {e}"; sr.skipped = True
-            log_fail(f"Section {section_val} — unexpected error: {e}")
+            log_fail(f"Section {section_val} â€” unexpected error: {e}")
             traceback.print_exc()
     
         finally:
@@ -7519,19 +7519,19 @@ if False:
         if not sr.elapsed: sr.elapsed = time.time() - t0
         return sr
     
-    # ╔══════════════════════════════════════════════════════════════════╗
-    # ║                  CROSS-SECTION TERMINAL SUMMARY                  ║
-    # ╚══════════════════════════════════════════════════════════════════╝
+    # â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+    # â•‘                  CROSS-SECTION TERMINAL SUMMARY                  â•‘
+    # â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     
     def print_cross_summary(results: list[SectionResult], elapsed: float):
-        section_hdr("CROSS-SECTION AUDIT SUMMARY", "📋")
+        section_hdr("CROSS-SECTION AUDIT SUMMARY", "ðŸ“‹")
         tp = sum(r.pass_count for r in results)
         tw = sum(r.warn_count for r in results)
         tf = sum(r.fail_count for r in results)
         tq = sum(r.total_questions for r in results)
         print()
         print(c(C.DIM, f"  {'Section':<10} {'Total':>6} {'Pass':>6} {'Warn':>6} {'Fail':>6}  {'Rate':>6}  Status"))
-        print(c(C.DIM, "  " + "─"*62))
+        print(c(C.DIM, "  " + "â”€"*62))
         for r in results:
             t = r.total_questions
             rate = round(100*r.pass_count/t) if t > 0 else 0
@@ -7539,7 +7539,7 @@ if False:
             if r.skipped:
                 status_str = c(C.DIM, "SKIPPED")
             elif r.fail_count == 0 and r.warn_count == 0:
-                status_str = c(C.LIME+C.BOLD, "ALL PASS 🎉")
+                status_str = c(C.LIME+C.BOLD, "ALL PASS ðŸŽ‰")
             elif r.fail_count == 0:
                 status_str = c(C.YELLOW, "WARNINGS")
             else:
@@ -7550,7 +7550,7 @@ if False:
                   f"{c(C.YELLOW, str(r.warn_count)):>15} "
                   f"{c(C.RED,    str(r.fail_count)):>15}  "
                   f"{c(rc, f'{rate}%'):>14}  {status_str}")
-        print(c(C.DIM, "  " + "═"*62))
+        print(c(C.DIM, "  " + "â•"*62))
         overall_rate = round(100*tp/tq) if tq else 0
         print(f"  {'TOTAL':<10} {str(tq):>6} "
               f"{c(C.LIME,   str(tp)):>15} "
@@ -7559,11 +7559,11 @@ if False:
               f"{c(C.LIME,   str(overall_rate)):>13}%")
         print(f"\n  {dim(f'Total time: {elapsed:.1f}s')}")
     
-    # ╔══════════════════════════════════════════════════════════════════╗
-    # ║                      HTML REPORT BUILDER                         ║
-    # ║   Same rich layout as the original single-section report but     ║
-    # ║   with every section's questions shown section-by-section.       ║
-    # ╚══════════════════════════════════════════════════════════════════╝
+    # â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+    # â•‘                      HTML REPORT BUILDER                         â•‘
+    # â•‘   Same rich layout as the original single-section report but     â•‘
+    # â•‘   with every section's questions shown section-by-section.       â•‘
+    # â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     
     def build_html(all_results: list[SectionResult], elapsed: float):
     
@@ -7577,15 +7577,15 @@ if False:
         total_fail = sum(1 for q in all_qs if q.status == "FAIL")
         pass_rate  = round(100*total_pass/total_q) if total_q else 0
     
-        # ── HTML helpers ──────────────────────────────────────────────
+        # â”€â”€ HTML helpers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     
         def sc(status):
-            if status == "PASS": return '<span class="chip-pos">✔ PASS</span>'
-            if status == "WARN": return '<span class="chip-warn">⚠ WARN</span>'
-            return '<span class="chip-neg">✘ FAIL</span>'
+            if status == "PASS": return '<span class="chip-pos">âœ” PASS</span>'
+            if status == "WARN": return '<span class="chip-warn">âš  WARN</span>'
+            return '<span class="chip-neg">âœ˜ FAIL</span>'
     
         def ok_b(ok):
-            return '<span class="b-pass">✔</span>' if ok else '<span class="b-fail">✘</span>'
+            return '<span class="b-pass">âœ”</span>' if ok else '<span class="b-fail">âœ˜</span>'
     
         def perf_bar(fm, par, wr):
             def n(v):
@@ -7593,7 +7593,7 @@ if False:
                 except: return 0
             nf, np_, nw = n(fm), n(par), n(wr)
             tot = nf+np_+nw
-            if tot == 0: return '<span class="na">—</span>'
+            if tot == 0: return '<span class="na">â€”</span>'
             W = 80
             wf = max(round(W*nf/tot), 1 if nf>0 else 0)
             wp = max(round(W*np_/tot), 1 if np_>0 else 0)
@@ -7604,14 +7604,14 @@ if False:
                     f'<div class="perf-seg seg-fail" style="width:{ww}px" title="Wrong:{nw}"></div>'
                     f'</div>'
                     f'<span class="perf-nums">'
-                    f'<span style="color:#3fb950">{nf}✓</span> '
+                    f'<span style="color:#3fb950">{nf}âœ“</span> '
                     f'<span style="color:#e3b341">{np_}~</span> '
-                    f'<span style="color:#ff7b72">{nw}✗</span>'
+                    f'<span style="color:#ff7b72">{nw}âœ—</span>'
                     f'</span>')
     
         def grp_hdr(title, colspan, status="PASS", q_text=""):
             chip   = sc(status)
-            q_html = (f'<div class="grp-qtext">{q_text[:90]}{"…" if len(q_text)>90 else ""}</div>'
+            q_html = (f'<div class="grp-qtext">{q_text[:90]}{"â€¦" if len(q_text)>90 else ""}</div>'
                       if q_text else "")
             return (f'<tr class="grp-hdr"><td colspan="{colspan}">'
                     f'<span class="grp-title">{title}</span>'
@@ -7619,13 +7619,13 @@ if False:
                     f'{q_html}</td></tr>')
     
         def right_str(q: QuestionData):
-            if q.got_it_right_pct != "—":
+            if q.got_it_right_pct != "â€”":
                 return f'{q.got_it_right_count} <span style="color:var(--muted)">({q.got_it_right_pct})</span>'
-            if q.got_it_right_count != "—":
+            if q.got_it_right_count != "â€”":
                 return q.got_it_right_count
-            return "—"
+            return "â€”"
     
-        # ── TAB 1: Section Summary cards ─────────────────────────────
+        # â”€â”€ TAB 1: Section Summary cards â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         sec_cards = ""
         for sr in all_results:
             t    = sr.total_questions
@@ -7681,7 +7681,7 @@ if False:
             f'</svg>'
         )
     
-        # ── TAB 2: All Questions Overview (grouped by section) ────────
+        # â”€â”€ TAB 2: All Questions Overview (grouped by section) â”€â”€â”€â”€â”€â”€â”€â”€
         overview_rows = ""
         gi = 0
         for sr in all_results:
@@ -7691,20 +7691,20 @@ if False:
             sf = sum(1 for q in sr.questions if q.status=="FAIL")
             ss = "PASS" if sf==0 and sw==0 else ("WARN" if sf==0 else "FAIL")
             overview_rows += grp_hdr(
-                f"Section  {sr.section}  —  {len(sr.questions)} questions  |  Pass:{sp}  Warn:{sw}  Fail:{sf}",
+                f"Section  {sr.section}  â€”  {len(sr.questions)} questions  |  Pass:{sp}  Warn:{sw}  Fail:{sf}",
                 11, ss
             )
             for q in sr.questions:
                 gi += 1
                 rc  = "tr-pass" if q.status=="PASS" else ("tr-warn" if q.status=="WARN" else "tr-fail")
-                avg = q.average if q.average not in ("N/A","—","") else "—"
+                avg = q.average if q.average not in ("N/A","â€”","") else "â€”"
                 overview_rows += (
                     f'<tr class="{rc}">'
                     f'<td class="num">{gi}</td>'
                     f'<td class="sec-badge">{q.section}</td>'
                     f'<td class="q-label">{q.label}</td>'
-                    f'<td>{q.chapter or "<span class=""na"">—</span>"}</td>'
-                    f'<td>{q.concept or "<span class=""na"">—</span>"}</td>'
+                    f'<td>{q.chapter or "<span class=""na"">â€”</span>"}</td>'
+                    f'<td>{q.concept or "<span class=""na"">â€”</span>"}</td>'
                     f'<td><span class="qt-badge">{q.qtype}</span></td>'
                     f'<td class="num">{q.marks}</td>'
                     f'<td class="num">{avg}</td>'
@@ -7715,7 +7715,7 @@ if False:
                     f'</tr>'
                 )
     
-        # ── TAB 3: Per-section detail (one sub-tab per section) ───────
+        # â”€â”€ TAB 3: Per-section detail (one sub-tab per section) â”€â”€â”€â”€â”€â”€â”€
         sec_tab_btns  = ""
         sec_tab_panes = ""
         for si, sr in enumerate(all_results):
@@ -7737,16 +7737,16 @@ if False:
             rows = ""
             for qi, q in enumerate(sr.questions, 1):
                 rc  = "tr-pass" if q.status=="PASS" else ("tr-warn" if q.status=="WARN" else "tr-fail")
-                avg = q.average if q.average not in ("N/A","—","") else "—"
+                avg = q.average if q.average not in ("N/A","â€”","") else "â€”"
                 rows += grp_hdr(
-                    f"Q{qi}  ·  {q.label}  |  {q.chapter}",
+                    f"Q{qi}  Â·  {q.label}  |  {q.chapter}",
                     9, q.status, q.question_text
                 )
                 rows += (
                     f'<tr class="{rc}">'
                     f'<td class="q-label">{q.label}</td>'
-                    f'<td>{q.chapter or "<span class=""na"">—</span>"}</td>'
-                    f'<td>{q.concept or "<span class=""na"">—</span>"}</td>'
+                    f'<td>{q.chapter or "<span class=""na"">â€”</span>"}</td>'
+                    f'<td>{q.concept or "<span class=""na"">â€”</span>"}</td>'
                     f'<td><span class="qt-badge">{q.qtype}</span></td>'
                     f'<td class="num">{q.marks}</td>'
                     f'<td class="num">{avg}</td>'
@@ -7787,7 +7787,7 @@ if False:
                         f'</tr>'
                     )
     
-            skipped_html = (f'<div class="skip-box">⚠ Section skipped: {sr.error}</div>'
+            skipped_html = (f'<div class="skip-box">âš  Section skipped: {sr.error}</div>'
                             if sr.skipped else "")
     
             sec_tab_panes += f"""
@@ -7809,17 +7809,17 @@ if False:
                   <tbody>{rows if rows else '<tr><td colspan="9" class="empty">No questions</td></tr>'}</tbody>
                 </table>
               </div>
-              {'<div class="sub-hdr">🧩 Struggle Gaps</div><div class="tbl-wrap"><table><thead><tr><th>Q</th><th>%</th><th>Sub-topic</th><th>Description</th></tr></thead><tbody>' + gap_rows + '</tbody></table></div>' if gap_rows else ''}
+              {'<div class="sub-hdr">ðŸ§© Struggle Gaps</div><div class="tbl-wrap"><table><thead><tr><th>Q</th><th>%</th><th>Sub-topic</th><th>Description</th></tr></thead><tbody>' + gap_rows + '</tbody></table></div>' if gap_rows else ''}
             </div>
             """
     
-        # ── TAB 4: Performance deep-dive ──────────────────────────────
+        # â”€â”€ TAB 4: Performance deep-dive â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         perf_rows = ""
         for sr in all_results:
             if not sr.questions: continue
             perf_rows += grp_hdr(f"Section {sr.section}", 6)
             for q in sr.questions:
-                avg = q.average if q.average not in ("N/A","—","") else "—"
+                avg = q.average if q.average not in ("N/A","â€”","") else "â€”"
                 perf_rows += (
                     f'<tr class="{"tr-pass" if q.status=="PASS" else "tr-warn" if q.status=="WARN" else "tr-fail"}">'
                     f'<td class="q-label">{q.label}</td>'
@@ -7831,12 +7831,12 @@ if False:
                     f'</tr>'
                 )
     
-        # ── TAB 5: Struggle Gaps (all sections) ───────────────────────
+        # â”€â”€ TAB 5: Struggle Gaps (all sections) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         gaps_rows = ""
         for sr in all_results:
             for q in sr.questions:
                 if not q.struggle_gaps: continue
-                gaps_rows += grp_hdr(f"Section {sr.section}  ·  {q.label}  |  {q.chapter}", 4)
+                gaps_rows += grp_hdr(f"Section {sr.section}  Â·  {q.label}  |  {q.chapter}", 4)
                 GAP_COLORS = ["#f0883e","#ff7b72","#58a6ff","#e3b341"]
                 for gi2, gap in enumerate(q.struggle_gaps):
                     col = GAP_COLORS[gi2 % len(GAP_COLORS)]
@@ -7845,13 +7845,13 @@ if False:
                         f'<td><span style="color:{col};font-size:22px;font-weight:800">{gap.get("pct","")}</span></td>'
                         f'<td style="color:#f0f6fc;font-weight:600">{gap.get("title","")}</td>'
                         f'<td style="color:#8b949e;font-size:12px">{gap.get("desc","")}</td>'
-                        f'<td class="td-phase">{sr.section} · {q.label}</td>'
+                        f'<td class="td-phase">{sr.section} Â· {q.label}</td>'
                         f'</tr>'
                     )
         if not gaps_rows:
             gaps_rows = '<tr><td colspan="4" class="empty">No struggle gap data found.</td></tr>'
     
-        # ── TAB 6: Validation ─────────────────────────────────────────
+        # â”€â”€ TAB 6: Validation â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         val_rows = ""
         for sr in all_results:
             if not sr.questions: continue
@@ -7861,7 +7861,7 @@ if False:
                 tr2 = "tr-pass" if q.type_ok    else "tr-warn"
                 val_rows += (
                     f'<tr class="{cr}">'
-                    f'<td class="q-label">{q.section} · {q.label}</td>'
+                    f'<td class="q-label">{q.section} Â· {q.label}</td>'
                     f'<td>Chapter/Concept Mapping</td>'
                     f'<td>{ok_b(q.chapter_ok)}</td>'
                     f'<td colspan="2" class="td-val">{q.chapter_msg}</td>'
@@ -7874,30 +7874,30 @@ if False:
                     f'</tr>'
                 )
     
-        # ── TAB 7: Failed / Warned ────────────────────────────────────
+        # â”€â”€ TAB 7: Failed / Warned â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         failed_rows = ""
         for q in all_qs:
             if q.status not in ("FAIL","WARN"): continue
             badge = ('<span class="b-fail">FAIL</span>' if q.status=="FAIL" else '<span class="b-warn">WARN</span>')
-            ch_iss = "" if q.chapter_ok else f'<div style="font-size:12px;color:#ff7b72;margin-top:3px">⚠ {q.chapter_msg}</div>'
-            ty_iss = "" if q.type_ok    else f'<div style="font-size:12px;color:#e3b341;margin-top:3px">⚠ {q.type_msg}</div>'
-            q_html = (f'<div style="font-size:12px;color:#8b949e;margin-top:4px">{q.question_text[:100]}{"…" if len(q.question_text)>100 else ""}</div>'
+            ch_iss = "" if q.chapter_ok else f'<div style="font-size:12px;color:#ff7b72;margin-top:3px">âš  {q.chapter_msg}</div>'
+            ty_iss = "" if q.type_ok    else f'<div style="font-size:12px;color:#e3b341;margin-top:3px">âš  {q.type_msg}</div>'
+            q_html = (f'<div style="font-size:12px;color:#8b949e;margin-top:4px">{q.question_text[:100]}{"â€¦" if len(q.question_text)>100 else ""}</div>'
                       if q.question_text else "")
             rc_cls = "tr-fail" if q.status == "FAIL" else "tr-warn"
             failed_rows += (
                 f'<tr class="{"tr-fail" if q.status=="FAIL" else "tr-warn"}">'
                 f'<tr class="{rc_cls}">'
                 f'<td class="q-label">{q.label}</td>'
-                f'<td>{q.chapter or "—"}{q_html}</td>'
-                f'<td>{q.concept or "—"}</td>'
+                f'<td>{q.chapter or "â€”"}{q_html}</td>'
+                f'<td>{q.concept or "â€”"}</td>'
                 f'<td><span class="qt-badge">{q.qtype}</span></td>'
                 f'<td>{badge}{ch_iss}{ty_iss}</td>'
                 f'</tr>'
             )
         if not failed_rows:
-            failed_rows = '<tr><td colspan="6" class="empty all-pass">🎉 All questions passed — no failures or warnings!</td></tr>'
+            failed_rows = '<tr><td colspan="6" class="empty all-pass">ðŸŽ‰ All questions passed â€” no failures or warnings!</td></tr>'
     
-        # ── TAB 8: Distributions ─────────────────────────────────────
+        # â”€â”€ TAB 8: Distributions â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         type_ctr: dict = defaultdict(int)
         ch_ctr:   dict = defaultdict(int)
         for q in all_qs:
@@ -7925,23 +7925,23 @@ if False:
                 f'<td class="num">{pct}%</td></tr>'
             )
     
-        # ── Skipped notice ────────────────────────────────────────────
+        # â”€â”€ Skipped notice â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         skipped_list = [sr for sr in all_results if sr.skipped]
         skip_html = ""
         if skipped_list:
-            skip_html = '<div class="skip-box"><strong>⚠ Skipped sections:</strong> '
+            skip_html = '<div class="skip-box"><strong>âš  Skipped sections:</strong> '
             for sr in skipped_list:
                 skip_html += f'<span class="qt-badge">{sr.section}</span> <span style="color:var(--muted);font-size:12px">{sr.error}</span>  '
             skip_html += '</div>'
     
-        # ─────────────────────────────────────────────────────────────
+        # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         # FULL HTML
-        # ─────────────────────────────────────────────────────────────
+        # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         html = f"""<!DOCTYPE html>
     <html lang="en">
     <head>
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>ClassLens — All Sections Report</title>
+    <title>ClassLens â€” All Sections Report</title>
     <style>
     :root{{
       --bg:#0d1117;--card:#161b22;--card2:#21262d;--border:#30363d;
@@ -8039,8 +8039,8 @@ if False:
     
     <div class="site-header">
       <div>
-        <div class="sh-title">🏫 ClassLens — All Sections Question Audit Report</div>
-        <div class="sh-sub">Generated: {RUN_TS}  ·  Duration: {elapsed:.1f}s  ·  Class {BASE_VALUES["Class"]}  ·  {BASE_VALUES["Subject"]}  ·  {BASE_VALUES["Exam"]}</div>
+        <div class="sh-title">ðŸ« ClassLens â€” All Sections Question Audit Report</div>
+        <div class="sh-sub">Generated: {RUN_TS}  Â·  Duration: {elapsed:.1f}s  Â·  Class {BASE_VALUES["Class"]}  Â·  {BASE_VALUES["Subject"]}  Â·  {BASE_VALUES["Exam"]}</div>
         <div class="env-tags">
           <span class="env-tag">Class {BASE_VALUES["Class"]}</span>
           <span class="env-tag">{BASE_VALUES["Subject"]}</span>
@@ -8063,26 +8063,26 @@ if False:
     
     <div class="prog-box">
       <div class="prog-label">
-        <span class="prog-title">Overall Pass Rate — All Sections Combined</span>
+        <span class="prog-title">Overall Pass Rate â€” All Sections Combined</span>
         <span class="prog-pct">{pass_rate}%  ({total_pass}/{total_q})</span>
       </div>
       <div class="prog-bg"><div class="prog-fill" style="width:{pass_rate}%"></div></div>
     </div>
     
     <div class="nav-tabs">
-      <div class="nav-tab active" onclick="switchTab(event,'tab-summary')">🏫 Section Summary</div>
-      <div class="nav-tab"        onclick="switchTab(event,'tab-overview')">📋 All Questions</div>
-      <div class="nav-tab"        onclick="switchTab(event,'tab-detail')">📂 Per-Section Detail</div>
-      <div class="nav-tab"        onclick="switchTab(event,'tab-perf')">📊 Performance</div>
-      <div class="nav-tab"        onclick="switchTab(event,'tab-validation')">✅ Validation</div>
-      <div class="nav-tab"        onclick="switchTab(event,'tab-gaps')">🧩 Struggle Gaps</div>
-      <div class="nav-tab"        onclick="switchTab(event,'tab-dist')">📐 Distributions</div>
-      <div class="nav-tab"        onclick="switchTab(event,'tab-failed')">❌ Failed / Warned</div>
+      <div class="nav-tab active" onclick="switchTab(event,'tab-summary')">ðŸ« Section Summary</div>
+      <div class="nav-tab"        onclick="switchTab(event,'tab-overview')">ðŸ“‹ All Questions</div>
+      <div class="nav-tab"        onclick="switchTab(event,'tab-detail')">ðŸ“‚ Per-Section Detail</div>
+      <div class="nav-tab"        onclick="switchTab(event,'tab-perf')">ðŸ“Š Performance</div>
+      <div class="nav-tab"        onclick="switchTab(event,'tab-validation')">âœ… Validation</div>
+      <div class="nav-tab"        onclick="switchTab(event,'tab-gaps')">ðŸ§© Struggle Gaps</div>
+      <div class="nav-tab"        onclick="switchTab(event,'tab-dist')">ðŸ“ Distributions</div>
+      <div class="nav-tab"        onclick="switchTab(event,'tab-failed')">âŒ Failed / Warned</div>
     </div>
     
     <!-- TAB 1: SECTION SUMMARY -->
     <div id="tab-summary" class="tab-content active">
-      <div class="sec-hdr"><h2>🏫 Section-by-Section Summary</h2></div>
+      <div class="sec-hdr"><h2>ðŸ« Section-by-Section Summary</h2></div>
       <div class="bar-chart-wrap">{bar_chart_svg}</div>
       <div class="tbl-wrap">
         <table>
@@ -8095,7 +8095,7 @@ if False:
     <!-- TAB 2: ALL QUESTIONS OVERVIEW -->
     <div id="tab-overview" class="tab-content">
       <div class="sec-hdr">
-        <h2>📋 All Questions — Combined View</h2>
+        <h2>ðŸ“‹ All Questions â€” Combined View</h2>
         <span class="badge-count">{total_q} total</span>
         <span class="badge-count" style="color:var(--pos-text)">{total_pass} pass</span>
         <span class="badge-count" style="color:var(--yellow)">{total_warn} warn</span>
@@ -8114,18 +8114,18 @@ if False:
     
     <!-- TAB 3: PER-SECTION DETAIL -->
     <div id="tab-detail" class="tab-content">
-      <div class="sec-hdr"><h2>📂 Per-Section Detail</h2><span style="font-size:12px;color:var(--muted)">Click a section tab to expand</span></div>
+      <div class="sec-hdr"><h2>ðŸ“‚ Per-Section Detail</h2><span style="font-size:12px;color:var(--muted)">Click a section tab to expand</span></div>
       <div class="sec-nav">{sec_tab_btns}</div>
       {sec_tab_panes}
     </div>
     
     <!-- TAB 4: PERFORMANCE -->
     <div id="tab-perf" class="tab-content">
-      <div class="sec-hdr"><h2>📊 Performance Deep-Dive</h2>
+      <div class="sec-hdr"><h2>ðŸ“Š Performance Deep-Dive</h2>
         <span style="font-size:12px;color:var(--muted)">
-          <span style="color:#3fb950">■ Full Marks</span>
-          <span style="color:#e3b341">■ Partial</span>
-          <span style="color:#ff7b72">■ Wrong</span>
+          <span style="color:#3fb950">â–  Full Marks</span>
+          <span style="color:#e3b341">â–  Partial</span>
+          <span style="color:#ff7b72">â–  Wrong</span>
         </span>
       </div>
       <div class="tbl-wrap">
@@ -8138,10 +8138,10 @@ if False:
     
     <!-- TAB 5: VALIDATION -->
     <div id="tab-validation" class="tab-content">
-      <div class="sec-hdr"><h2>✅ Validation Results — Chapter · Concept · Type</h2></div>
+      <div class="sec-hdr"><h2>âœ… Validation Results â€” Chapter Â· Concept Â· Type</h2></div>
       <div class="tbl-wrap">
         <table>
-          <thead><tr><th>Section · Q</th><th>Check</th><th>Pass?</th><th>Type</th><th>Message</th></tr></thead>
+          <thead><tr><th>Section Â· Q</th><th>Check</th><th>Pass?</th><th>Type</th><th>Message</th></tr></thead>
           <tbody>{val_rows}</tbody>
         </table>
       </div>
@@ -8149,10 +8149,10 @@ if False:
     
     <!-- TAB 6: STRUGGLE GAPS -->
     <div id="tab-gaps" class="tab-content">
-      <div class="sec-hdr"><h2>🧩 Where Students Struggled</h2></div>
+      <div class="sec-hdr"><h2>ðŸ§© Where Students Struggled</h2></div>
       <div class="tbl-wrap">
         <table>
-          <thead><tr><th>% Students</th><th>Gap / Sub-topic</th><th>Description</th><th>Section · Q</th></tr></thead>
+          <thead><tr><th>% Students</th><th>Gap / Sub-topic</th><th>Description</th><th>Section Â· Q</th></tr></thead>
           <tbody>{gaps_rows}</tbody>
         </table>
       </div>
@@ -8162,7 +8162,7 @@ if False:
     <div id="tab-dist" class="tab-content">
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
         <div>
-          <div class="sec-hdr"><h2>📐 Question Type Distribution</h2></div>
+          <div class="sec-hdr"><h2>ðŸ“ Question Type Distribution</h2></div>
           <div class="tbl-wrap">
             <table>
               <thead><tr><th>Type</th><th>Count</th><th>Distribution</th><th>Share</th></tr></thead>
@@ -8171,7 +8171,7 @@ if False:
           </div>
         </div>
         <div>
-          <div class="sec-hdr"><h2>📚 Questions per Chapter</h2></div>
+          <div class="sec-hdr"><h2>ðŸ“š Questions per Chapter</h2></div>
           <div class="tbl-wrap">
             <table>
               <thead><tr><th>Chapter</th><th>Count</th><th>Distribution</th><th>Share</th></tr></thead>
@@ -8185,7 +8185,7 @@ if False:
     <!-- TAB 8: FAILED / WARNED -->
     <div id="tab-failed" class="tab-content">
       <div class="sec-hdr">
-        <h2>❌ Failed &amp; Warned Questions</h2>
+        <h2>âŒ Failed &amp; Warned Questions</h2>
         <span class="badge-count" style="color:var(--neg-text)">{total_fail} failed</span>
         <span class="badge-count" style="color:var(--yellow)">{total_warn} warned</span>
       </div>
@@ -8198,8 +8198,8 @@ if False:
     </div>
     
     <div class="footer">
-      ClassLens All-Sections Audit Report  ·  {RUN_TS}  ·
-      {len(ALL_SECTIONS)} sections  ·  {total_q} questions  ·  {pass_rate}% pass rate  ·  {elapsed:.1f}s
+      ClassLens All-Sections Audit Report  Â·  {RUN_TS}  Â·
+      {len(ALL_SECTIONS)} sections  Â·  {total_q} questions  Â·  {pass_rate}% pass rate  Â·  {elapsed:.1f}s
     </div>
     
     <script>
@@ -8221,16 +8221,16 @@ if False:
         with open(REPORT_FILE, "w", encoding="utf-8") as f:
             f.write(html)
     
-        print(f"\n  \033[92m\033[1m📄  HTML Report saved → {REPORT_FILE}\033[0m")
+        print(f"\n  \033[92m\033[1mðŸ“„  HTML Report saved â†’ {REPORT_FILE}\033[0m")
         try:
             webbrowser.open(f"file://{os.path.abspath(REPORT_FILE)}")
-            print(f"  \033[92m🌐  Opening in browser…\033[0m")
+            print(f"  \033[92mðŸŒ  Opening in browserâ€¦\033[0m")
         except Exception:
             pass
     
-    # ╔══════════════════════════════════════════════════════════════════╗
-    # ║                            MAIN                                  ║
-    # ╚══════════════════════════════════════════════════════════════════╝
+    # â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+    # â•‘                            MAIN                                  â•‘
+    # â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     
     def main():
         print_banner()
@@ -8240,11 +8240,11 @@ if False:
         total_secs = len(ALL_SECTIONS)
         for sec_idx, section_val in enumerate(ALL_SECTIONS, start=1):
             print()
-            print(c(C.CYAN+C.BOLD, f"  {'━'*60}"))
+            print(c(C.CYAN+C.BOLD, f"  {'â”'*60}"))
             print(c(C.CYAN+C.BOLD, f"  SECTION  {section_val}   ({sec_idx}/{total_secs})"))
-            print(c(C.CYAN+C.BOLD, f"  {'━'*60}"))
+            print(c(C.CYAN+C.BOLD, f"  {'â”'*60}"))
     
-            sr = audit_section(section_val)   # fresh Chrome per section — no session loss
+            sr = audit_section(section_val)   # fresh Chrome per section â€” no session loss
             all_section_results.append(sr)
     
             time.sleep(2.0)   # brief cooldown before next Chrome launch
@@ -8263,7 +8263,7 @@ if False:
     
         # HTML report
         build_html(all_section_results, elapsed)
-        print(f"\n  \033[92m\033[1m✅  All done! Report saved to {REPORT_FILE}\033[0m\n")
+        print(f"\n  \033[92m\033[1mâœ…  All done! Report saved to {REPORT_FILE}\033[0m\n")
     
     
     if __name__ == "__main__":
@@ -8280,12 +8280,12 @@ if False:
     KEY FIX vs v7:
       - Completely rewritten _JS_GAPS extractor.
       - Old approach: scanned <div> elements for combined innerText containing
-        BOTH a % and "More/Fewer Errors" — failed because the app renders the
+        BOTH a % and "More/Fewer Errors" â€” failed because the app renders the
         percentage, direction, category, and description in SEPARATE child nodes
         whose parent <div> innerText may not contain all pieces, OR the combined
         text exceeds the 350-char / 12-line guards.
       - New approach:
-          1. Find every element whose visible text is ONLY a percentage  (+24%, -12%, +1% …).
+          1. Find every element whose visible text is ONLY a percentage  (+24%, -12%, +1% â€¦).
           2. Walk UP the DOM to the nearest "card" ancestor that also contains
              "More Errors" or "Fewer Errors" text anywhere inside it.
           3. From that card, extract category, direction, badge, description
@@ -8336,9 +8336,9 @@ if False:
     
     console = Console()
     
-    # ═══════════════════════════════════════════════════════════
-    #  CONFIG  — edit these
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+    #  CONFIG  â€” edit these
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     LOGIN_URL        = "https://classlens.inferentics.com/"
     USERNAME         = os.getenv("CLASSLENS_USER", "Tanmay")
     PASSWORD         = os.getenv("CLASSLENS_PASS", "Operations123")
@@ -8354,9 +8354,9 @@ if False:
         "Exam":    "Midterm",
     }
     
-    # ─────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     #  RESULT STORE
-    # ─────────────────────────────────────────────────────────────
+    # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     @dataclass
     class TC:
         phase:   str
@@ -8377,9 +8377,9 @@ if False:
         all_results.append(TC(_phase, name, passed, detail, value, _section))
         return passed
     
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     #  DRIVER
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     def make_driver():
         opts = Options()
         opts.add_argument("--start-maximized")
@@ -8392,9 +8392,9 @@ if False:
         driver.set_page_load_timeout(60)
         return driver
     
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     #  HELPERS
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     PCT_RE   = re.compile(r"-?\d+(?:\.\d+)?%")
     MARKS_RE = re.compile(r"\d+(?:\.\d+)?\s*/\s*\d+(?:\.\d+)?")
     
@@ -8448,9 +8448,9 @@ if False:
             return "Overview" in src or "Your Students" in src
         except: return False
     
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     #  DROPDOWN SETTER
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     def set_dropdown(driver, wait, label_text, option_text, timeout=20) -> bool:
         try:
             label  = WebDriverWait(driver, timeout).until(
@@ -8474,15 +8474,15 @@ if False:
             console.print(f"[red]  set_dropdown({label_text}={option_text}) failed: {e}[/red]")
             return False
     
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     #  LOGIN
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     def login(driver, wait):
         set_phase("Login")
-        console.print(Rule("[bold blue]🔐  Login[/bold blue]", style="blue"))
-        with console.status("[cyan]Opening login page…[/cyan]", spinner="dots"):
+        console.print(Rule("[bold blue]ðŸ”  Login[/bold blue]", style="blue"))
+        with console.status("[cyan]Opening login pageâ€¦[/cyan]", spinner="dots"):
             driver.get(LOGIN_URL)
-        with console.status("[cyan]Signing in…[/cyan]", spinner="arc"):
+        with console.status("[cyan]Signing inâ€¦[/cyan]", spinner="arc"):
             wait.until(EC.visibility_of_element_located(
                 (By.XPATH, "//input[@type='text']"))).send_keys(USERNAME)
             wait.until(EC.visibility_of_element_located(
@@ -8491,15 +8491,15 @@ if False:
                 (By.XPATH, "//button[@type='submit']"))).click()
             wait.until(EC.presence_of_element_located(
                 (By.XPATH, "//*[contains(text(),'Enter your Class')]")))
-        console.print("  [bold green]✔[/bold green]  Logged in\n")
+        console.print("  [bold green]âœ”[/bold green]  Logged in\n")
         record("Login", True, value=USERNAME)
     
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     #  DISCOVER SECTIONS
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     def discover_sections(driver, wait) -> list:
         set_phase("Discover")
-        console.print(Rule("[bold cyan]🔍  Discovering sections[/bold cyan]", style="cyan"))
+        console.print(Rule("[bold cyan]ðŸ”  Discovering sections[/bold cyan]", style="cyan"))
     
         set_dropdown(driver, wait, "Class", FIXED["Class"])
         time.sleep(2)
@@ -8518,19 +8518,19 @@ if False:
     
         if sections:
             console.print(
-                f"  [bold green]✔[/bold green]  {len(sections)} sections found: "
+                f"  [bold green]âœ”[/bold green]  {len(sections)} sections found: "
                 f"[bright_cyan]{', '.join(sections)}[/bright_cyan]\n")
             record("Sections discovered", True, value=", ".join(sections))
         else:
-            console.print("  [red]✘  No sections found[/red]")
+            console.print("  [red]âœ˜  No sections found[/red]")
             record("Sections discovered", False)
         return sections
     
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     #  GO BACK TO FILTER PAGE
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     def restart_browser_and_return_to_filter():
-        console.print("  [dim yellow]  ↻ Restarting browser to recover filter page…[/dim yellow]")
+        console.print("  [dim yellow]  â†» Restarting browser to recover filter pageâ€¦[/dim yellow]")
         new_driver = make_driver()
         new_wait   = WebDriverWait(new_driver, 30)
         login(new_driver, new_wait)
@@ -8542,13 +8542,13 @@ if False:
         if on_filter_page(driver):
             return True, driver, wait
     
-        console.print("  [dim]↩  Going back to filter form (in-app)…[/dim]")
+        console.print("  [dim]â†©  Going back to filter form (in-app)â€¦[/dim]")
     
         BACK_XPATHS = [
             "//button[.//*[name()='svg']][1]",
             "//*[@aria-label and (contains(translate(@aria-label,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'back') "
             "or contains(translate(@aria-label,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'home'))]",
-            "//*[normalize-space()='Back' or normalize-space()='Home' or normalize-space()='← Back']",
+            "//*[normalize-space()='Back' or normalize-space()='Home' or normalize-space()='â† Back']",
             "//header//*[self::img or self::svg or self::a][1]",
             "//nav//*[self::img or self::svg or self::a][1]",
             "//header//a[1]",
@@ -8564,39 +8564,39 @@ if False:
                     if safe_click(driver, el):
                         time.sleep(2)
                         if on_filter_page(driver):
-                            console.print("  [dim green]  ✔  Back on filter page[/dim green]")
+                            console.print("  [dim green]  âœ”  Back on filter page[/dim green]")
                             return True, driver, wait
             except:
                 continue
     
-        console.print("  [dim yellow]  ⚠  Trying browser back button…[/dim yellow]")
+        console.print("  [dim yellow]  âš   Trying browser back buttonâ€¦[/dim yellow]")
         for _ in range(2):
             try:
                 driver.back()
                 time.sleep(2.5)
                 if on_filter_page(driver):
-                    console.print("  [dim green]  ✔  Back on filter page (via history)[/dim green]")
+                    console.print("  [dim green]  âœ”  Back on filter page (via history)[/dim green]")
                     return True, driver, wait
             except:
                 pass
     
-        console.print("  [dim yellow]  ⚠  In-app navigation failed. Restarting browser…[/dim yellow]")
+        console.print("  [dim yellow]  âš   In-app navigation failed. Restarting browserâ€¦[/dim yellow]")
         try:
             try: driver.quit()
             except: pass
             new_driver, new_wait = restart_browser_and_return_to_filter()
             return True, new_driver, new_wait
         except Exception as e:
-            console.print(f"  [red]  ✘  Browser restart recovery failed: {e}[/red]")
+            console.print(f"  [red]  âœ˜  Browser restart recovery failed: {e}[/red]")
             return False, driver, wait
     
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     #  SUBMIT FILTER FORM
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     def submit_form(driver, wait, section: str) -> bool:
         set_phase(f"Form:{section}")
         console.print(Rule(
-            f"[bold magenta]📋  Form — Section {section}[/bold magenta]", style="magenta"))
+            f"[bold magenta]ðŸ“‹  Form â€” Section {section}[/bold magenta]", style="magenta"))
     
         for label, value in [
             ("Class",   FIXED["Class"]),
@@ -8605,14 +8605,14 @@ if False:
             ("Exam",    FIXED["Exam"]),
         ]:
             ok = set_dropdown(driver, wait, label, value)
-            icon = "[bold green]✔[/bold green]" if ok else "[bold red]✘[/bold red]"
-            console.print(f"  {icon}  {label:10s} → [bright_yellow]{value}[/bright_yellow]")
+            icon = "[bold green]âœ”[/bold green]" if ok else "[bold red]âœ˜[/bold red]"
+            console.print(f"  {icon}  {label:10s} â†’ [bright_yellow]{value}[/bright_yellow]")
             record(f"Filter {label}={value}", ok, value=value)
             if not ok:
                 return False
     
         try:
-            with console.status(f"[magenta]Clicking Enter…[/magenta]", spinner="bouncingBar"):
+            with console.status(f"[magenta]Clicking Enterâ€¦[/magenta]", spinner="bouncingBar"):
                 btn = wait.until(EC.element_to_be_clickable(
                     (By.XPATH, "//button[normalize-space()='Enter']")))
                 btn.click()
@@ -8622,21 +8622,21 @@ if False:
                      " or contains(text(),'Your Students')]")))
                 time.sleep(1.5)
             console.print(
-                f"  [bold green]✔[/bold green]  Dashboard loaded — Section {section}\n")
+                f"  [bold green]âœ”[/bold green]  Dashboard loaded â€” Section {section}\n")
             record(f"Dashboard Sec {section}", True)
             return True
         except Exception as e:
-            console.print(f"  [bold red]✘  Dashboard failed: {e}[/bold red]")
+            console.print(f"  [bold red]âœ˜  Dashboard failed: {e}[/bold red]")
             record(f"Dashboard Sec {section}", False, str(e)[:120])
             return False
     
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     #  NAVIGATE TO STUDENTS TAB
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     def go_to_students_tab(driver, wait) -> bool:
         set_phase("StudentsTab")
         try:
-            with console.status("[cyan]Clicking Students tab…[/cyan]", spinner="dots"):
+            with console.status("[cyan]Clicking Students tabâ€¦[/cyan]", spinner="dots"):
                 for xp in [
                     "//div[normalize-space()='Students']",
                     "//button[normalize-space()='Students']",
@@ -8651,17 +8651,17 @@ if False:
                 wait.until(EC.presence_of_element_located(
                     (By.XPATH, "//*[contains(text(),'Your Students')]")))
                 time.sleep(1.5)
-            console.print("  [bold green]✔[/bold green]  Students tab active\n")
+            console.print("  [bold green]âœ”[/bold green]  Students tab active\n")
             record("Students tab", True)
             return True
         except Exception as e:
-            console.print(f"  [bold red]✘  Students tab failed: {e}[/bold red]")
+            console.print(f"  [bold red]âœ˜  Students tab failed: {e}[/bold red]")
             record("Students tab", False, str(e)[:80])
             return False
     
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     #  PERCENTAGE EXTRACTION (4 sources)
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     def get_pct_s1(card):
         try:
             for el in card.find_elements(By.XPATH, ".//*[contains(text(),'%')]"):
@@ -8776,9 +8776,9 @@ if False:
         t = safe_text(el)
         return t if t and "%" in t else "NA"
     
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     #  EXAM EXTRACTION
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     def extract_exam_full(driver, exam_name):
         try:
             card = driver.find_element(By.XPATH,
@@ -8815,8 +8815,8 @@ if False:
             return {"percent": "NA", "marks": "NA",
                     "weakest_chapters": [], "strongest_chapters": []}
     
-    # ═══════════════════════════════════════════════════════════
-    #  LEARNING GAPS  — v8 rewrite
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+    #  LEARNING GAPS  â€” v8 rewrite
     #
     #  Strategy:
     #  1. Confirm "Comparison of learning gaps" heading is in the DOM.
@@ -8825,26 +8825,26 @@ if False:
     #     (e.g. "+24%", "-12%", "+1%").  These are the percentage bubbles
     #     on the left side of each gap card.
     #  3. For each such element, walk UP ancestors until we find one that
-    #     ALSO contains "More Errors" or "Fewer Errors" text — that is the
+    #     ALSO contains "More Errors" or "Fewer Errors" text â€” that is the
     #     gap card root.
     #  4. From the card root, extract each field from its own sub-element.
     #  5. De-duplicate by (category, percent_change, direction).
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     _JS_GAPS_V8 = r"""
     (function(){
-        // ── helpers ────────────────────────────────────────────
+        // â”€â”€ helpers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         function txt(el){
             return ((el && (el.innerText || el.textContent)) || "").trim();
         }
     
-        // ── 1. Confirm the section heading exists ───────────────
+        // â”€â”€ 1. Confirm the section heading exists â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         const headingExists = Array.from(document.querySelectorAll("*")).some(el => {
             const t = txt(el).toLowerCase();
             return t.includes("comparison of learning gaps");
         });
         if (!headingExists) return {found: false, gaps: []};
     
-        // ── 2. Known vocabulary ─────────────────────────────────
+        // â”€â”€ 2. Known vocabulary â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         const DIR_KEYWORDS   = ["More Errors", "Fewer Errors"];
         const BADGE_KEYWORDS = ["Most Critical", "Most Improved", "Improved", "Worsened"];
         const CATEGORY_KNOWN = [
@@ -8859,7 +8859,7 @@ if False:
         const PCT_ONLY = /^[+\-]?\d+(?:\.\d+)?%$/;   // element whose ENTIRE text is a %
         const PCT_ANY  = /[+\-]?\d+(?:\.\d+)?%/;
     
-        // ── 3. Find all "pure %" elements ───────────────────────
+        // â”€â”€ 3. Find all "pure %" elements â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         const pctEls = Array.from(document.querySelectorAll("*")).filter(el => {
             // Only leaf-ish elements (few children) for performance
             if (el.children.length > 3) return false;
@@ -8873,7 +8873,7 @@ if False:
         for (const pctEl of pctEls) {
             const pctText = txt(pctEl);
     
-            // ── 4. Walk up to find the card ancestor ─────────────
+            // â”€â”€ 4. Walk up to find the card ancestor â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
             let card = null;
             let node = pctEl.parentElement;
             for (let depth = 0; depth < 12; depth++) {
@@ -8891,19 +8891,19 @@ if False:
     
             const cardText = txt(card);
     
-            // ── 5. Direction ─────────────────────────────────────
+            // â”€â”€ 5. Direction â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
             let direction = "NA";
             for (const d of DIR_KEYWORDS) {
                 if (cardText.includes(d)) { direction = d; break; }
             }
     
-            // ── 6. Badge ──────────────────────────────────────────
+            // â”€â”€ 6. Badge â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
             let badge = "NA";
             for (const b of BADGE_KEYWORDS) {
                 if (cardText.includes(b)) { badge = b; break; }
             }
     
-            // ── 7. Category ───────────────────────────────────────
+            // â”€â”€ 7. Category â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
             //   Try known list first, then infer from card children.
             let category = "NA";
             for (const k of CATEGORY_KNOWN) {
@@ -8930,7 +8930,7 @@ if False:
                 }
             }
     
-            // ── 8. Description ────────────────────────────────────
+            // â”€â”€ 8. Description â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
             //   Longest text node in the card that isn't a %, direction, badge, or category.
             let description = "NA";
             let bestLen = 0;
@@ -9027,13 +9027,13 @@ if False:
                 gaps  = result.get("gaps", [])
     
                 if not found:
-                    # Section not rendered yet — scroll more and retry
+                    # Section not rendered yet â€” scroll more and retry
                     if attempt < 2:
                         scroll_to_gaps_section(driver)
                         time.sleep(1.0 + attempt * 0.5)
                     continue
     
-                # Section found — even if gaps list is empty, return it
+                # Section found â€” even if gaps list is empty, return it
                 clean = []
                 for row in gaps:
                     if isinstance(row, dict) and row.get("category", "NA") != "NA":
@@ -9042,18 +9042,18 @@ if False:
     
                 if clean or found:
                     if not clean:
-                        console.print("  [dim yellow]  ⚠  Gap section found but no parseable cards[/dim yellow]")
+                        console.print("  [dim yellow]  âš   Gap section found but no parseable cards[/dim yellow]")
                     return clean
     
             except Exception as e:
-                console.print(f"  [dim yellow]  ⚠  Gap extraction attempt {attempt+1}: {e}[/dim yellow]")
+                console.print(f"  [dim yellow]  âš   Gap extraction attempt {attempt+1}: {e}[/dim yellow]")
                 time.sleep(0.8)
     
         return []
     
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     #  STUDENT LIST HELPERS
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     def find_left_container(driver):
         hdr = driver.find_element(By.XPATH, "//*[normalize-space()='Your Students']")
         ctr = safe_find_one(hdr, By.XPATH,
@@ -9070,9 +9070,9 @@ if False:
         el = safe_find_one(card, By.XPATH, ".//p[contains(@class,'font-bold')][1]")
         return safe_text(el)
     
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     #  RICH PRINTER
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     def _ps(v):
         try:
             x = float(re.findall(r"-?\d+\.?\d*", v)[0])
@@ -9091,9 +9091,9 @@ if False:
         normals= data["consistency_check"]["normalized_values"]
         raw_v  = data["consistency_check"]["raw_values"]
         ss, si, bs = (
-            ("bold bright_green", "✅ PASS", "bright_green") if status == "PASS" else
-            ("bold red",          "❌ FAIL", "red")           if status == "FAIL" else
-            ("bold yellow",       "⚠  SKIP", "yellow")
+            ("bold bright_green", "âœ… PASS", "bright_green") if status == "PASS" else
+            ("bold red",          "âŒ FAIL", "red")           if status == "FAIL" else
+            ("bold yellow",       "âš   SKIP", "yellow")
         )
         hdr = Text()
         hdr.append(f"  #{idx:>3}  ", "bold bright_black")
@@ -9105,37 +9105,37 @@ if False:
         sc.add_column("Exam",       style="bold white", width=14)
         sc.add_column("Marks",      width=10)
         sc.add_column("Score %",    justify="right", width=10)
-        sc.add_column("Δ Accuracy", justify="right", width=14)
-        sc.add_row("🔵 Midterm",    data["midterm_marks"],
+        sc.add_column("Î” Accuracy", justify="right", width=14)
+        sc.add_row("ðŸ”µ Midterm",    data["midterm_marks"],
                    Text(data["midterm_percent"],   style=_ps(data["midterm_percent"])), "")
-        sc.add_row("🟣 Preboard 1", data["preboard1_marks"],
+        sc.add_row("ðŸŸ£ Preboard 1", data["preboard1_marks"],
                    Text(data["preboard1_percent"], style=_ps(data["preboard1_percent"])),
                    Text(data["change_accuracy"],   style=_ds(data["change_accuracy"])))
     
-        SRC = {"left_card": "① Left Card", "top_right_button": "② Top-Right",
-               "center_arrow_box": "③ Center Box", "progress_report": "④ Progress"}
+        SRC = {"left_card": "â‘  Left Card", "top_right_button": "â‘¡ Top-Right",
+               "center_arrow_box": "â‘¢ Center Box", "progress_report": "â‘£ Progress"}
         ct = Table(box=box.SIMPLE_HEAD, header_style="bold bright_yellow", padding=(0,2),
-                   title=f"[bold bright_yellow]🔍 Consistency [{ss}]{si}[/{ss}][/bold bright_yellow]",
+                   title=f"[bold bright_yellow]ðŸ” Consistency [{ss}]{si}[/{ss}][/bold bright_yellow]",
                    title_justify="left")
         ct.add_column("Source", style="bold white", width=22)
         ct.add_column("Raw",    width=12)
         ct.add_column("Norm",   justify="center", width=10)
-        ct.add_column("✔?",     justify="center", width=6)
+        ct.add_column("âœ”?",     justify="center", width=6)
         ref = next((v for v in normals.values() if v != "NA"), "NA")
         for k, lbl in SRC.items():
             norm = normals.get(k, "NA"); raw = raw_v.get(k, "NA")
             if norm == "NA":
-                mi = Text("—", style="dim");              nt = Text("NA", style="dim")
+                mi = Text("â€”", style="dim");              nt = Text("NA", style="dim")
             elif norm == ref:
-                mi = Text("✔", style="bold bright_green"); nt = Text(norm, style="bold bright_green")
+                mi = Text("âœ”", style="bold bright_green"); nt = Text(norm, style="bold bright_green")
             else:
-                mi = Text("✘", style="bold red");           nt = Text(norm, style="bold red")
+                mi = Text("âœ˜", style="bold red");           nt = Text(norm, style="bold red")
             ct.add_row(lbl, raw, nt, mi)
     
         ch = Table(box=box.SIMPLE, header_style="bold bright_magenta", padding=(0,2))
         ch.add_column("Exam",         style="bold white",   width=14)
-        ch.add_column("💪 Strongest", style="bright_green", width=30)
-        ch.add_column("⚠  Weakest",  style="bright_red",   width=30)
+        ch.add_column("ðŸ’ª Strongest", style="bright_green", width=30)
+        ch.add_column("âš   Weakest",  style="bright_red",   width=30)
         ch.add_row("Midterm",
                    fmt_list(data["midterm_strongest_chapters"]),
                    fmt_list(data["midterm_weakest_chapters"]))
@@ -9152,10 +9152,10 @@ if False:
                   "Improved":"bold green","NA":"dim"}
             DR = {"More Errors":"bold red","Fewer Errors":"bold bright_green","NA":"dim"}
             gt = Table(box=box.SIMPLE, header_style="bold bright_yellow", padding=(0,2),
-                       title="[bold bright_yellow]📉 Comparison of Learning Gaps[/bold bright_yellow]",
+                       title="[bold bright_yellow]ðŸ“‰ Comparison of Learning Gaps[/bold bright_yellow]",
                        title_justify="left")
             gt.add_column("Category",  style="bold white", width=26)
-            gt.add_column("Δ %",       justify="right",    width=8)
+            gt.add_column("Î” %",       justify="right",    width=8)
             gt.add_column("Direction", width=14)
             gt.add_column("Badge",     width=16)
             gt.add_column("Note",      style="dim",        width=42)
@@ -9175,14 +9175,14 @@ if False:
         console.print(Panel(Group(*parts), title=hdr,
                             border_style=bs, box=box.DOUBLE_EDGE, padding=(0,1)))
     
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     #  SCRAPE ONE SECTION
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     def scrape_section(driver, section: str, global_idx_start: int) -> list:
         set_phase(f"Scrape:{section}")
         set_section(section)
         console.print(Rule(
-            f"[bold green]👩‍🎓  Scraping Section {section}[/bold green]", style="green"))
+            f"[bold green]ðŸ‘©â€ðŸŽ“  Scraping Section {section}[/bold green]", style="green"))
     
         results   = []
         processed = set()
@@ -9197,7 +9197,7 @@ if False:
     
         cards = get_cards(left_ctr)
         if not cards:
-            console.print(f"[yellow]  ⚠  No student cards in Section {section}[/yellow]")
+            console.print(f"[yellow]  âš   No student cards in Section {section}[/yellow]")
             record(f"Cards {section}", False, "No cards")
             return results
     
@@ -9210,7 +9210,7 @@ if False:
             TaskProgressColumn(),
             console=console, transient=True,
         ) as prog:
-            task = prog.add_task(f"Section {section}…", total=None)
+            task = prog.add_task(f"Section {section}â€¦", total=None)
     
             while True:
                 try:
@@ -9227,7 +9227,7 @@ if False:
     
                         set_phase(f"Student:{section}:{name}")
                         prog.update(task, description=
-                            f"[Sec {section}] → [bold white]{name}[/bold white]")
+                            f"[Sec {section}] â†’ [bold white]{name}[/bold white]")
     
                         s1 = get_pct_s1(card)
     
@@ -9249,7 +9249,7 @@ if False:
                                     if mid["percent"] != "NA" and pre["percent"] != "NA"
                                     else "NA")
     
-                        # ── Learning gaps (v8 extractor) ──────────────
+                        # â”€â”€ Learning gaps (v8 extractor) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
                         gaps = extract_learning_gaps(driver)
     
                         processed.add(name)
@@ -9294,7 +9294,7 @@ if False:
                     except (NoSuchElementException, StaleElementReferenceException):
                         continue
     
-                # ── scroll the student list panel ──────────────────────
+                # â”€â”€ scroll the student list panel â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
                 try:
                     last = driver.execute_script(
                         "return arguments[0].scrollTop;", left_ctr)
@@ -9312,15 +9312,15 @@ if False:
                     break
     
         console.print(
-            f"  [bold green]✔[/bold green]  Section [bright_cyan]{section}[/bright_cyan] "
-            f"— [bold]{len(results)}[/bold] students scraped\n")
+            f"  [bold green]âœ”[/bold green]  Section [bright_cyan]{section}[/bright_cyan] "
+            f"â€” [bold]{len(results)}[/bold] students scraped\n")
         return results
     
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     #  TERMINAL SUMMARY
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     def print_summary(data, sections):
-        console.print(Rule("[bold yellow]📊  Summary[/bold yellow]", style="yellow"))
+        console.print(Rule("[bold yellow]ðŸ“Š  Summary[/bold yellow]", style="yellow"))
         by_sec = defaultdict(list)
         for d in data: by_sec[d["section"]].append(d)
     
@@ -9329,13 +9329,13 @@ if False:
         tbl.add_column("Value",  style="bright_green", width=26)
         tbl.add_row("Sections processed", ", ".join(sections))
         tbl.add_row("Total students",     str(len(data)))
-        tbl.add_row("✅ PASS", f"[bright_green]{sum(1 for d in data if d['consistency_check']['status']=='PASS')}[/bright_green]")
-        tbl.add_row("❌ FAIL", f"[red]{sum(1 for d in data if d['consistency_check']['status']=='FAIL')}[/red]")
-        tbl.add_row("⚠  SKIP", f"[yellow]{sum(1 for d in data if d['consistency_check']['status']=='SKIP')}[/yellow]")
+        tbl.add_row("âœ… PASS", f"[bright_green]{sum(1 for d in data if d['consistency_check']['status']=='PASS')}[/bright_green]")
+        tbl.add_row("âŒ FAIL", f"[red]{sum(1 for d in data if d['consistency_check']['status']=='FAIL')}[/red]")
+        tbl.add_row("âš   SKIP", f"[yellow]{sum(1 for d in data if d['consistency_check']['status']=='SKIP')}[/yellow]")
         students_with_gaps = sum(1 for d in data if d.get("learning_gaps"))
-        tbl.add_row("📉 With Gaps", f"[bright_cyan]{students_with_gaps}[/bright_cyan]")
+        tbl.add_row("ðŸ“‰ With Gaps", f"[bright_cyan]{students_with_gaps}[/bright_cyan]")
         total_gaps = sum(len(d.get("learning_gaps", [])) for d in data)
-        tbl.add_row("📉 Total Gap Entries", f"[bright_cyan]{total_gaps}[/bright_cyan]")
+        tbl.add_row("ðŸ“‰ Total Gap Entries", f"[bright_cyan]{total_gaps}[/bright_cyan]")
         for sec in sections:
             tbl.add_row(f"  Section {sec}", str(len(by_sec.get(sec, []))))
         tbl.add_row("JSON",   OUTFILE)
@@ -9344,7 +9344,7 @@ if False:
     
         students_with_gaps = [d for d in data if d.get("learning_gaps")]
         if students_with_gaps:
-            console.print(Rule("[bold bright_yellow]📉  Students with Comparison of Learning Gaps[/bold bright_yellow]", style="bright_yellow"))
+            console.print(Rule("[bold bright_yellow]ðŸ“‰  Students with Comparison of Learning Gaps[/bold bright_yellow]", style="bright_yellow"))
             gt = Table(box=box.ROUNDED, border_style="bright_yellow", header_style="bold bright_yellow")
             gt.add_column("Section", style="bold bright_cyan", width=10)
             gt.add_column("Student", style="bold white", width=28)
@@ -9355,9 +9355,9 @@ if False:
                 gt.add_row(str(d.get("section", "")), d["student_name"], str(len(d.get("learning_gaps", []))), cats or "NA")
             console.print(Padding(gt, (0, 0)))
     
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     #  HTML REPORT  (identical to v7 structure + gap fixes)
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     def build_html_report(data: list, sections: list):
         total     = len(data)
         passed    = [d for d in data if d["consistency_check"]["status"] == "PASS"]
@@ -9368,9 +9368,9 @@ if False:
         for d in data: by_sec[d["section"]].append(d)
     
         def chip(s):
-            return ({'PASS': '<span class="chip-pos">✔ PASS</span>',
-                     'FAIL': '<span class="chip-neg">✘ FAIL</span>'
-                     }.get(s, '<span class="chip-warn">⚠ SKIP</span>'))
+            return ({'PASS': '<span class="chip-pos">âœ” PASS</span>',
+                     'FAIL': '<span class="chip-neg">âœ˜ FAIL</span>'
+                     }.get(s, '<span class="chip-warn">âš  SKIP</span>'))
     
         def spill(s):
             return (f'<span style="display:inline-block;padding:1px 8px;border-radius:12px;'
@@ -9394,17 +9394,17 @@ if False:
     
         def srccell(raw, norm, ref):
             if norm == "NA":
-                return '<div class="src-cell"><span class="na">—</span></div>'
+                return '<div class="src-cell"><span class="na">â€”</span></div>'
             ok  = norm == ref
             col = "#3fb950" if ok else "#ff7b72"
-            ico = "✔" if ok else "✘"
+            ico = "âœ”" if ok else "âœ˜"
             return (f'<div class="src-cell">'
                     f'<span class="src-raw" style="color:{col}">{ico} {raw}</span>'
                     f'<span class="src-norm">{norm}</span></div>')
     
         def secsep(sec, count, cols):
             return (f'<tr class="sec-sep"><td colspan="{cols}">'
-                    f'<span class="sep-lbl">📂 Section {sec}</span>'
+                    f'<span class="sep-lbl">ðŸ“‚ Section {sec}</span>'
                     f'<span class="sep-cnt">{count} students</span></td></tr>')
     
         def grphdr(lbl, cols, status="PASS"):
@@ -9413,12 +9413,12 @@ if False:
                     f'<span style="margin-left:10px">{chip(status)}</span></td></tr>')
     
         def chpills(lst):
-            if not lst: return '<span class="na">—</span>'
+            if not lst: return '<span class="na">â€”</span>'
             return "".join(f'<span class="ch-pill">{c}</span>' for c in lst)
     
         def gdir(d):
-            if d == "More Errors":  return '<span class="gap-more">▲ More Errors</span>'
-            if d == "Fewer Errors": return '<span class="gap-less">▼ Fewer Errors</span>'
+            if d == "More Errors":  return '<span class="gap-more">â–² More Errors</span>'
+            if d == "Fewer Errors": return '<span class="gap-less">â–¼ Fewer Errors</span>'
             return f'<span class="na">{d}</span>'
     
         def gbadge(b):
@@ -9429,8 +9429,8 @@ if False:
             return (f'<span style="display:inline-block;padding:1px 8px;border-radius:4px;'
                     f'font-size:11px;font-weight:700;{st}">{b}</span>')
     
-        SRC = {"left_card": "① Left Card", "top_right_button": "② Top-Right",
-               "center_arrow_box": "③ Center Box", "progress_report": "④ Progress"}
+        SRC = {"left_card": "â‘  Left Card", "top_right_button": "â‘¡ Top-Right",
+               "center_arrow_box": "â‘¢ Center Box", "progress_report": "â‘£ Progress"}
     
         # section summary cards
         sec_cards = ""
@@ -9450,9 +9450,9 @@ if False:
                 f'<div class="sc-n">{sn} students</div>'
                 f'<div class="sc-bar-wrap"><div class="sc-bar" style="width:{sr}%"></div></div>'
                 f'<div class="sc-stats">'
-                f'<span style="color:#3fb950">{sp}✔</span> '
-                f'<span style="color:#ff7b72">{sf}✘</span> '
-                f'<span style="color:#e3b341">{ss2}⚠</span></div>'
+                f'<span style="color:#3fb950">{sp}âœ”</span> '
+                f'<span style="color:#ff7b72">{sf}âœ˜</span> '
+                f'<span style="color:#e3b341">{ss2}âš </span></div>'
                 f'<div class="sc-rate">{sr}% pass</div>'
                 + (f'<div class="sc-avg">Avg Mid: {avg}%</div>' if avg else '')
                 + f'<div class="sc-avg" style="color:#bc8cff">{sg} with gaps</div>'
@@ -9498,17 +9498,17 @@ if False:
         tc_rows = ""
         for ph, rs in by_phase.items():
             p = sum(1 for r in rs if r.passed); f = len(rs) - p
-            bdg = (f'<span class="b-pass">{p}✔</span>'
-                   + (f'&nbsp;<span class="b-fail">{f}✘</span>' if f else ''))
-            ph_lbl = ph.replace("Student:", "👤 ").replace("Scrape:", "📂 ").replace("Form:", "⚙ ")
+            bdg = (f'<span class="b-pass">{p}âœ”</span>'
+                   + (f'&nbsp;<span class="b-fail">{f}âœ˜</span>' if f else ''))
+            ph_lbl = ph.replace("Student:", "ðŸ‘¤ ").replace("Scrape:", "ðŸ“‚ ").replace("Form:", "âš™ ")
             tc_rows += (f'<tr class="grp-hdr"><td colspan="5">'
                         f'<span class="grp-title">{ph_lbl}</span>'
                         f'<span style="float:right;font-size:12px">{bdg}</span></td></tr>')
             for r in rs:
                 cls = "tr-pass" if r.passed else "tr-fail"
                 v   = (r.value or r.detail or "")[:70]
-                ico = ('<span class="ic-pass">✔</span>' if r.passed
-                       else '<span class="ic-fail">✘</span>')
+                ico = ('<span class="ic-pass">âœ”</span>' if r.passed
+                       else '<span class="ic-fail">âœ˜</span>')
                 tc_rows += (
                     f'<tr class="{cls}">'
                     f'<td style="width:28px">{ico}</td>'
@@ -9590,7 +9590,7 @@ if False:
                         f'/{len(d.get(f"{ek}_weakest_chapters",[]))}</td></tr>'
                     )
     
-        # learning gaps cards — show only students where Comparison of Learning Gaps data exists
+        # learning gaps cards â€” show only students where Comparison of Learning Gaps data exists
         gap_cards_html = ""
         any_gaps = False
         for sec in sections:
@@ -9631,7 +9631,7 @@ if False:
                     f'<div class="tbl-wrap gap-inner-table"><table>'
                     f'<thead><tr>'
                     f'<th style="min-width:160px">Category</th>'
-                    f'<th style="width:70px;text-align:center">Δ %</th>'
+                    f'<th style="width:70px;text-align:center">Î” %</th>'
                     f'<th style="width:130px;text-align:center">Direction</th>'
                     f'<th style="width:130px;text-align:center">Badge</th>'
                     f'<th>Description</th>'
@@ -9666,13 +9666,13 @@ if False:
             sec = d["section"]; cc = d["consistency_check"]
             nv  = cc["normalized_values"]; rv = cc["raw_values"]
             ref = next((v for v in nv.values() if v != "NA"), "NA")
-            iss_rows += grphdr(f'{spill(sec)} &nbsp; {d["student_name"]} — {st}', 5, st)
+            iss_rows += grphdr(f'{spill(sec)} &nbsp; {d["student_name"]} â€” {st}', 5, st)
             for key in ["left_card","top_right_button","center_arrow_box","progress_report"]:
                 norm = nv.get(key, "NA"); raw = rv.get(key, "NA")
                 ok   = norm != "NA" and norm == ref
-                ico  = ('<span class="ic-pass">✔</span>' if ok else
-                        ('<span class="ic-fail">✘</span>' if norm != "NA"
-                         else '<span class="na">—</span>'))
+                ico  = ('<span class="ic-pass">âœ”</span>' if ok else
+                        ('<span class="ic-fail">âœ˜</span>' if norm != "NA"
+                         else '<span class="na">â€”</span>'))
                 rc   = "tr-pass" if ok else ("tr-fail" if norm != "NA" else "tr-warn")
                 iss_rows += (
                     f'<tr class="{rc}">'
@@ -9685,7 +9685,7 @@ if False:
                 )
         if not iss_rows:
             iss_rows = ('<tr><td colspan="5" class="empty all-pass">'
-                        '🎉 All students passed!</td></tr>')
+                        'ðŸŽ‰ All students passed!</td></tr>')
     
         # phase cards
         ph_cards = ""
@@ -9693,17 +9693,17 @@ if False:
             p = sum(1 for r in rs if r.passed); f = len(rs) - p
             pct = round(100 * p / len(rs)) if rs else 0
             col = "pc-pass" if f == 0 else "pc-fail"
-            lbl = (ph.replace("Student:", "👤 ")
-                     .replace("Scrape:",  "📂 ")
-                     .replace("Form:",    "⚙ "))
+            lbl = (ph.replace("Student:", "ðŸ‘¤ ")
+                     .replace("Scrape:",  "ðŸ“‚ ")
+                     .replace("Form:",    "âš™ "))
             ph_cards += (
                 f'<div class="phase-card {col}">'
                 f'<div class="pc-name" title="{lbl}">{lbl}</div>'
                 f'<div class="pc-bar-wrap">'
                 f'<div class="pc-bar" style="width:{pct}%"></div></div>'
                 f'<div class="pc-counts">'
-                f'<span class="c-pass">{p}✔</span> '
-                f'<span class="c-fail">{f}✘</span> '
+                f'<span class="c-pass">{p}âœ”</span> '
+                f'<span class="c-fail">{f}âœ˜</span> '
                 f'<span class="c-rate">{pct}%</span></div></div>'
             )
     
@@ -9871,19 +9871,19 @@ if False:
         html = f"""<!DOCTYPE html>
     <html lang="en"><head>
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>ClassLens — All Sections Report</title>
+    <title>ClassLens â€” All Sections Report</title>
     <style>{css}</style></head><body>
     <div class="site-header">
-      <div class="sh-title">👩‍🎓 ClassLens &nbsp;·&nbsp; All Sections &nbsp;·&nbsp; Unified Report</div>
-      <div class="sh-sub">Generated: {RUN_TS} &nbsp;·&nbsp; v8 (robust gap extractor)</div>
+      <div class="sh-title">ðŸ‘©â€ðŸŽ“ ClassLens &nbsp;Â·&nbsp; All Sections &nbsp;Â·&nbsp; Unified Report</div>
+      <div class="sh-sub">Generated: {RUN_TS} &nbsp;Â·&nbsp; v8 (robust gap extractor)</div>
       <div class="env-tags">{env_tags}</div>
     </div>
     <div class="score-row">
       <div class="sc sc-secs"> <div class="sc-v">{len(sections)}</div><div class="sc-l">Sections</div></div>
       <div class="sc sc-total"><div class="sc-v">{total}</div>         <div class="sc-l">Total Students</div></div>
-      <div class="sc sc-pass"> <div class="sc-v">{len(passed)}</div>   <div class="sc-l">Consistency ✔</div></div>
-      <div class="sc sc-warn"> <div class="sc-v">{len(skipped)}</div>  <div class="sc-l">Skipped ⚠</div></div>
-      <div class="sc sc-fail"> <div class="sc-v">{len(failed)}</div>   <div class="sc-l">Mismatch ✘</div></div>
+      <div class="sc sc-pass"> <div class="sc-v">{len(passed)}</div>   <div class="sc-l">Consistency âœ”</div></div>
+      <div class="sc sc-warn"> <div class="sc-v">{len(skipped)}</div>  <div class="sc-l">Skipped âš </div></div>
+      <div class="sc sc-fail"> <div class="sc-v">{len(failed)}</div>   <div class="sc-l">Mismatch âœ˜</div></div>
       <div class="sc sc-rate"> <div class="sc-v">{pass_rate}%</div>    <div class="sc-l">Pass Rate</div></div>
       <div class="sc sc-gaps"> <div class="sc-v">{students_with_gaps}</div><div class="sc-l">Have Gap Data</div></div>
       <div class="sc sc-gaps"> <div class="sc-v">{total_gap_entries}</div><div class="sc-l">Total Gap Entries</div></div>
@@ -9896,20 +9896,20 @@ if False:
       <div class="prog-bg"><div class="prog-fill" style="width:{pass_rate}%"></div></div>
     </div>
     <div class="nav-tabs">
-      <div class="nav-tab active" onclick="st(event,'t-ov')">📋 Overview</div>
-      <div class="nav-tab"        onclick="st(event,'t-sec')">📂 By Section</div>
-      <div class="nav-tab"        onclick="st(event,'t-ph')">⚡ Phases</div>
-      <div class="nav-tab"        onclick="st(event,'t-tc')">🧪 All Checks</div>
-      <div class="nav-tab"        onclick="st(event,'t-con')">🔍 4-Source</div>
-      <div class="nav-tab"        onclick="st(event,'t-sc')">📊 Scores</div>
-      <div class="nav-tab"        onclick="st(event,'t-ch')">📚 Chapters</div>
-      <div class="nav-tab"        onclick="st(event,'t-gp')">📉 Learning Gaps</div>
-      <div class="nav-tab"        onclick="st(event,'t-di')">📐 Gap Distribution</div>
-      <div class="nav-tab"        onclick="st(event,'t-is')">❌ Issues</div>
+      <div class="nav-tab active" onclick="st(event,'t-ov')">ðŸ“‹ Overview</div>
+      <div class="nav-tab"        onclick="st(event,'t-sec')">ðŸ“‚ By Section</div>
+      <div class="nav-tab"        onclick="st(event,'t-ph')">âš¡ Phases</div>
+      <div class="nav-tab"        onclick="st(event,'t-tc')">ðŸ§ª All Checks</div>
+      <div class="nav-tab"        onclick="st(event,'t-con')">ðŸ” 4-Source</div>
+      <div class="nav-tab"        onclick="st(event,'t-sc')">ðŸ“Š Scores</div>
+      <div class="nav-tab"        onclick="st(event,'t-ch')">ðŸ“š Chapters</div>
+      <div class="nav-tab"        onclick="st(event,'t-gp')">ðŸ“‰ Learning Gaps</div>
+      <div class="nav-tab"        onclick="st(event,'t-di')">ðŸ“ Gap Distribution</div>
+      <div class="nav-tab"        onclick="st(event,'t-is')">âŒ Issues</div>
     </div>
     <!-- OVERVIEW -->
     <div id="t-ov" class="tab-content active">
-      <div class="sec-hdr"><h2>📋 All Students</h2>
+      <div class="sec-hdr"><h2>ðŸ“‹ All Students</h2>
         <span class="badge-count">{total}</span>
         <span class="badge-count" style="color:var(--pos-text)">{len(passed)} passed</span>
         <span class="badge-count" style="color:var(--yellow)">{len(skipped)} skipped</span>
@@ -9926,7 +9926,7 @@ if False:
           <th style="width:75px;text-align:center">Mid %</th>
           <th style="width:85px;text-align:center">Pre Marks</th>
           <th style="width:75px;text-align:center">Pre %</th>
-          <th style="width:95px;text-align:center">Δ Accuracy</th>
+          <th style="width:95px;text-align:center">Î” Accuracy</th>
           <th style="width:55px;text-align:center">Gaps</th>
           <th style="width:95px;text-align:center">Status</th>
         </tr></thead>
@@ -9935,17 +9935,17 @@ if False:
     </div>
     <!-- BY SECTION -->
     <div id="t-sec" class="tab-content">
-      <div class="sec-hdr"><h2>📂 Per-Section Summary</h2></div>
+      <div class="sec-hdr"><h2>ðŸ“‚ Per-Section Summary</h2></div>
       <div class="sec-cards-grid">{sec_cards}</div>
     </div>
     <!-- PHASES -->
     <div id="t-ph" class="tab-content">
-      <div class="sec-hdr"><h2>⚡ Phase Summary</h2></div>
+      <div class="sec-hdr"><h2>âš¡ Phase Summary</h2></div>
       <div class="phase-grid">{ph_cards}</div>
     </div>
     <!-- ALL CHECKS -->
     <div id="t-tc" class="tab-content">
-      <div class="sec-hdr"><h2>🧪 All Checks</h2>
+      <div class="sec-hdr"><h2>ðŸ§ª All Checks</h2>
         <span class="badge-count">{tc_total}</span>
         <span class="badge-count" style="color:var(--pos-text)">{tc_passed} passed</span>
         <span class="badge-count" style="color:var(--neg-text)">{tc_total-tc_passed} failed</span>
@@ -9961,20 +9961,20 @@ if False:
     </div>
     <!-- 4-SOURCE -->
     <div id="t-con" class="tab-content">
-      <div class="sec-hdr"><h2>🔍 4-Source Consistency</h2>
+      <div class="sec-hdr"><h2>ðŸ” 4-Source Consistency</h2>
         <span class="badge-count">{total}</span>
       </div>
       <p style="color:var(--muted);font-size:13px;margin-bottom:16px">
-        ✔ = match &nbsp;·&nbsp; ✘ = mismatch &nbsp;·&nbsp; — = not found
+        âœ” = match &nbsp;Â·&nbsp; âœ˜ = mismatch &nbsp;Â·&nbsp; â€” = not found
       </p>
       <div class="tbl-wrap"><table>
         <thead><tr>
           <th style="width:75px;text-align:center">Section</th>
           <th style="min-width:140px">Student</th>
-          <th style="width:125px;text-align:center">① Left Card</th>
-          <th style="width:125px;text-align:center">② Top-Right</th>
-          <th style="width:125px;text-align:center">③ Center Box</th>
-          <th style="width:125px;text-align:center">④ Progress</th>
+          <th style="width:125px;text-align:center">â‘  Left Card</th>
+          <th style="width:125px;text-align:center">â‘¡ Top-Right</th>
+          <th style="width:125px;text-align:center">â‘¢ Center Box</th>
+          <th style="width:125px;text-align:center">â‘£ Progress</th>
           <th style="width:100px;text-align:center">Result</th>
         </tr></thead>
         <tbody>{cons_rows}</tbody>
@@ -9982,15 +9982,15 @@ if False:
     </div>
     <!-- SCORES -->
     <div id="t-sc" class="tab-content">
-      <div class="sec-hdr"><h2>📊 Exam Scores</h2></div>
+      <div class="sec-hdr"><h2>ðŸ“Š Exam Scores</h2></div>
       <div class="tbl-wrap"><table>
         <thead><tr>
           <th style="width:75px;text-align:center">Section</th>
           <th style="min-width:140px">Student</th>
           <th style="width:115px;text-align:center">Midterm</th>
           <th style="width:115px;text-align:center">Preboard 1</th>
-          <th style="width:105px;text-align:center">Δ Accuracy</th>
-          <th style="width:105px;text-align:center">Calculated Δ</th>
+          <th style="width:105px;text-align:center">Î” Accuracy</th>
+          <th style="width:105px;text-align:center">Calculated Î”</th>
           <th style="width:100px;text-align:center">Status</th>
         </tr></thead>
         <tbody>{score_rows}</tbody>
@@ -9998,13 +9998,13 @@ if False:
     </div>
     <!-- CHAPTERS -->
     <div id="t-ch" class="tab-content">
-      <div class="sec-hdr"><h2>📚 Chapters</h2></div>
+      <div class="sec-hdr"><h2>ðŸ“š Chapters</h2></div>
       <div class="tbl-wrap"><table>
         <thead><tr>
           <th style="width:75px;text-align:center">Section</th>
           <th style="min-width:140px">Student</th>
           <th style="width:95px">Exam</th>
-          <th>💪 Strongest</th><th>⚠ Weakest</th>
+          <th>ðŸ’ª Strongest</th><th>âš  Weakest</th>
           <th style="width:75px;text-align:center">S/W</th>
         </tr></thead>
         <tbody>{ch_rows}</tbody>
@@ -10012,7 +10012,7 @@ if False:
     </div>
     <!-- LEARNING GAPS -->
     <div id="t-gp" class="tab-content">
-      <div class="sec-hdr"><h2>📉 Learning Gaps</h2>
+      <div class="sec-hdr"><h2>ðŸ“‰ Learning Gaps</h2>
         <span class="badge-count" style="color:#bc8cff">{students_with_gaps} students</span>
         <span class="badge-count" style="color:#f0883e">{total_gap_entries} entries</span>
       </div>
@@ -10020,7 +10020,7 @@ if False:
     </div>
     <!-- GAP DISTRIBUTION -->
     <div id="t-di" class="tab-content">
-      <div class="sec-hdr"><h2>📐 Gap Distribution</h2>
+      <div class="sec-hdr"><h2>ðŸ“ Gap Distribution</h2>
         <span class="badge-count">{tg} entries</span>
       </div>
       <div class="tbl-wrap" style="max-width:620px"><table>
@@ -10035,7 +10035,7 @@ if False:
     </div>
     <!-- ISSUES -->
     <div id="t-is" class="tab-content">
-      <div class="sec-hdr"><h2>❌ Issues</h2>
+      <div class="sec-hdr"><h2>âŒ Issues</h2>
         <span class="badge-count" style="color:var(--neg-text)">{len(failed)} failed</span>
         <span class="badge-count" style="color:var(--yellow)">{len(skipped)} skipped</span>
       </div>
@@ -10051,9 +10051,9 @@ if False:
       </table></div>
     </div>
     <div class="footer">
-      ClassLens All-Sections Report v8 &nbsp;·&nbsp; {RUN_TS} &nbsp;·&nbsp;
-      Sections: {', '.join(sections)} &nbsp;·&nbsp;
-      {total} students &nbsp;·&nbsp; {pass_rate}% pass rate &nbsp;·&nbsp;
+      ClassLens All-Sections Report v8 &nbsp;Â·&nbsp; {RUN_TS} &nbsp;Â·&nbsp;
+      Sections: {', '.join(sections)} &nbsp;Â·&nbsp;
+      {total} students &nbsp;Â·&nbsp; {pass_rate}% pass rate &nbsp;Â·&nbsp;
       {students_with_gaps} students with gap data
     </div>
     <script>
@@ -10086,18 +10086,18 @@ if False:
     
         with open(REPORT_FILE, "w", encoding="utf-8") as fh:
             fh.write(html)
-        console.print(f"\n  [bold green]📄  Report → {REPORT_FILE}[/bold green]")
+        console.print(f"\n  [bold green]ðŸ“„  Report â†’ {REPORT_FILE}[/bold green]")
         try:
             webbrowser.open(f"file://{os.path.abspath(REPORT_FILE)}")
         except: pass
     
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     #  MAIN
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     def main():
         console.print(Panel(
             Align.center(Text("ClassLens All-Sections Scraper  v8", style="bold cyan")),
-            subtitle="[dim]Robust gap extractor · Never hard-reloads · In-app navigation only[/dim]",
+            subtitle="[dim]Robust gap extractor Â· Never hard-reloads Â· In-app navigation only[/dim]",
             border_style="bright_cyan", padding=(1, 4)))
     
         console.print(Padding(
@@ -10116,13 +10116,13 @@ if False:
             login(driver, wait)
             sections = discover_sections(driver, wait)
             if not sections:
-                console.print("[bold red]No sections found — aborting.[/bold red]")
+                console.print("[bold red]No sections found â€” aborting.[/bold red]")
                 return
     
             global_idx = 0
             for i, section in enumerate(sections):
                 console.print(Rule(
-                    f"[bold bright_cyan]📂  SECTION  {section}  "
+                    f"[bold bright_cyan]ðŸ“‚  SECTION  {section}  "
                     f"({i+1}/{len(sections)})[/bold bright_cyan]",
                     style="bright_cyan"))
                 set_section(section)
@@ -10131,8 +10131,8 @@ if False:
                     ok, driver, wait = go_back_to_filter(driver, wait)
                     if not ok:
                         console.print(
-                            f"[red]  ✘  Could not return to filter page for "
-                            f"Section {section} — skipping[/red]")
+                            f"[red]  âœ˜  Could not return to filter page for "
+                            f"Section {section} â€” skipping[/red]")
                         record(f"Back to filter {section}", False)
                         continue
     
@@ -10146,18 +10146,18 @@ if False:
                 global_idx += len(sec_data)
     
                 console.print(
-                    f"  [bold green]✔[/bold green]  Section [bright_cyan]{section}[/bright_cyan] "
+                    f"  [bold green]âœ”[/bold green]  Section [bright_cyan]{section}[/bright_cyan] "
                     f"done. Running total: [bold]{global_idx}[/bold] students\n")
     
             with open(OUTFILE, "w", encoding="utf-8") as fh:
                 json.dump(all_data, fh, indent=2)
-            console.print(f"  [bold green]💾  JSON → {OUTFILE}[/bold green]")
+            console.print(f"  [bold green]ðŸ’¾  JSON â†’ {OUTFILE}[/bold green]")
     
             print_summary(all_data, sections)
     
             console.print(Panel(
                 Align.center(Text(
-                    f"✅  Done!  {len(sections)} sections · {len(all_data)} students",
+                    f"âœ…  Done!  {len(sections)} sections Â· {len(all_data)} students",
                     style="bold bright_green")),
                 border_style="bright_green", padding=(1, 4)))
     
@@ -10165,22 +10165,22 @@ if False:
             set_phase("ERROR")
             record("Script", False, str(e)[:120])
             console.print(Panel(
-                f"[bold red]✘ ERROR:[/bold red]\n[red]{e}[/red]",
+                f"[bold red]âœ˜ ERROR:[/bold red]\n[red]{e}[/red]",
                 title="[bold red]Exception[/bold red]",
                 border_style="red", padding=(1, 2)))
     
         finally:
             build_html_report(all_data, sections)
             console.print(
-                "\n  [bold green]🟢  Browser open — close manually.[/bold green]\n")
+                "\n  [bold green]ðŸŸ¢  Browser open â€” close manually.[/bold green]\n")
     
     
     
     
-    # ═══════════════════════════════════════════════════════════
-    #  ADD-ONLY PATCH  — visible-text fallback for learning gaps
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+    #  ADD-ONLY PATCH  â€” visible-text fallback for learning gaps
     #  (does not remove any original line)
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     
     def extract_learning_gaps_super(driver):
         """
@@ -10311,7 +10311,7 @@ if False:
     
             return gaps
         except Exception as e:
-            console.print(f"  [dim yellow]  ⚠  Super gap extractor failed: {e}[/dim yellow]")
+            console.print(f"  [dim yellow]  âš   Super gap extractor failed: {e}[/dim yellow]")
             return []
     
     
@@ -10328,7 +10328,7 @@ if False:
             if _ORIGINAL_EXTRACT_LEARNING_GAPS:
                 gaps = _ORIGINAL_EXTRACT_LEARNING_GAPS(driver) or []
         except Exception as e:
-            console.print(f"  [dim yellow]  ⚠  Original gap extractor failed: {e}[/dim yellow]")
+            console.print(f"  [dim yellow]  âš   Original gap extractor failed: {e}[/dim yellow]")
             gaps = []
     
         if gaps:
@@ -10340,9 +10340,9 @@ if False:
     # add-only speed override
     GAP_WAIT = 0.5
     
-    # ═══════════════════════════════════════════════════════════
-    #  FINAL PATCH  — stronger rendered-text learning gaps parser
-    # ═══════════════════════════════════════════════════════════
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+    #  FINAL PATCH  â€” stronger rendered-text learning gaps parser
+    # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     
     def _parse_learning_gaps_from_section_text(section_text: str):
         if not section_text:
@@ -10514,7 +10514,7 @@ if False:
                 return []
             return _parse_learning_gaps_from_section_text(section_text)
         except Exception as e:
-            console.print(f"  [dim yellow]  ⚠  Super gap extractor failed: {e}[/dim yellow]")
+            console.print(f"  [dim yellow]  âš   Super gap extractor failed: {e}[/dim yellow]")
             return []
     
     try:
@@ -10528,7 +10528,7 @@ if False:
             if _PREVIOUS_EXTRACT_LEARNING_GAPS:
                 gaps = _PREVIOUS_EXTRACT_LEARNING_GAPS(driver) or []
         except Exception as e:
-            console.print(f"  [dim yellow]  ⚠  Previous gap extractor failed: {e}[/dim yellow]")
+            console.print(f"  [dim yellow]  âš   Previous gap extractor failed: {e}[/dim yellow]")
             gaps = []
         if gaps:
             return gaps
@@ -10748,7 +10748,7 @@ def _build_master_report(out_dir: _Path, order: list, final_code: int) -> _Path:
         <div class='kpi-card' style='border-top-color:{color}'>
           <div class='kpi-title'>{_html.escape(title)}</div>
           <div class='kpi-value' style='color:{color}'>{status}</div>
-          <div class='kpi-meta'>Exit code {r.get('exit_code')} · {html_count} HTML · {json_count} JSON</div>
+          <div class='kpi-meta'>Exit code {r.get('exit_code')} Â· {html_count} HTML Â· {json_count} JSON</div>
           <div class='kpi-desc'>{_html.escape(desc)}</div>
         </div>""")
         nav_buttons.append(f"<button class='tab-btn{active}' onclick=\"openTab(event, '{panel_id}')\">{_html.escape(title)}</button>")
@@ -10790,11 +10790,11 @@ def _build_master_report(out_dir: _Path, order: list, final_code: int) -> _Path:
 .artifact-details{{margin-top:12px;color:var(--muted)}} .artifact-details summary{{cursor:pointer;color:var(--head);font-weight:700;margin-bottom:10px}} .artifact-links{{display:grid;grid-template-columns:minmax(220px,420px) 1fr;gap:8px 12px}} a{{color:var(--blue)}} .artifacts-table{{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}} .artifacts-table th,.artifacts-table td{{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;font-size:13px}} .artifacts-table th{{color:var(--muted);background:#162030;text-transform:uppercase;font-size:11px;letter-spacing:.06em}} .footer{{color:var(--muted);text-align:center;font-size:12px;margin:30px 0 10px}}
 @media(max-width:900px){{.hero{{flex-direction:column}}.score{{text-align:left}}.kpis{{grid-template-columns:1fr}}.report-frame{{height:650px}}}}
 </style></head><body><div class='wrapper'>
-<header class='hero'><div><div class='eyebrow'>ClassLens Unified QA Dashboard</div><h1>Master Report — Overview, Chapters, Questions, Students</h1><p>Generated {generated}. This single dashboard embeds the individual reports produced by every preserved script. Original testing script lines are preserved; this master report is an added layer.</p></div><div class='score'><div class='num'>{pass_rate}%</div><div class='label'>Module Pass Rate</div></div></header>
-<section class='kpis'>{''.join(cards)}</section><section class='master-summary'><div class='progress-head'><strong>Master execution status</strong><span>{passed} passed · {failed} failed · {total} modules</span></div><div class='progress-track'><div class='progress-fill'></div></div></section>
+<header class='hero'><div><div class='eyebrow'>ClassLens Unified QA Dashboard</div><h1>Master Report â€” Overview, Chapters, Questions, Students</h1><p>Generated {generated}. This single dashboard embeds the individual reports produced by every preserved script. Original testing script lines are preserved; this master report is an added layer.</p></div><div class='score'><div class='num'>{pass_rate}%</div><div class='label'>Module Pass Rate</div></div></header>
+<section class='kpis'>{''.join(cards)}</section><section class='master-summary'><div class='progress-head'><strong>Master execution status</strong><span>{passed} passed Â· {failed} failed Â· {total} modules</span></div><div class='progress-track'><div class='progress-fill'></div></div></section>
 <nav class='tabs'>{''.join(nav_buttons)}</nav>{''.join(panels)}
 <section class='master-summary'><div class='section-head' style='margin-bottom:0'><div><h2>Generated Artifacts Index</h2><p>All captured HTML/JSON/image outputs from every tab test.</p></div></div><table class='artifacts-table'><thead><tr><th>Module</th><th>Type</th><th>Artifact</th><th>Summary</th></tr></thead><tbody>{''.join(artifact_rows) if artifact_rows else '<tr><td colspan="4">No artifacts captured.</td></tr>'}</tbody></table></section>
-<div class='footer'>ClassLens Master QA Report · {generated} · Final exit code {final_code}</div></div><script>function openTab(evt,id){{document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));evt.currentTarget.classList.add('active');document.getElementById(id).classList.add('active');}}</script></body></html>"""
+<div class='footer'>ClassLens Master QA Report Â· {generated} Â· Final exit code {final_code}</div></div><script>function openTab(evt,id){{document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));evt.currentTarget.classList.add('active');document.getElementById(id).classList.add('active');}}</script></body></html>"""
     master_path.write_text(html_doc, encoding='utf-8')
     print(f'\n[MASTER REPORT] Generated: {master_path}')
     try:
@@ -11089,7 +11089,7 @@ def _cl_write_sitecustomize(out_dir: _Path):
 # This block was inserted without deleting any existing line from the uploaded script.
 # It sends the final master-report summary to the Webex room after test execution.
 
-WEBEX_BOT_TOKEN = "MjNiNzY3YmQtNTllNS00MzZjLThiZTQtZDE3M2Y5Yjc0NGJmNGIwYzAwMTUtZDNl_PI91_5794a072-eb1e-4fb3-ac34-50345faecbdc"
+WEBEX_BOT_TOKEN = _os.environ.get("Y2lzY29zcGFyazovL3VzL0FQUExJQ0FUSU9OLzJmMjg2Y2I0LWZjYmEtNDc4Ny1iNjM5LTljNzRjMWYwNmVhYg", "")
 WEBEX_ROOM_ID = "Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vN2Q2YjgyNzAtNDkzOC0xMWYxLTlhZjctNDNiZDM5YzRjODk4"
 
 def _classlens_webex_find_report_file():
@@ -11252,7 +11252,7 @@ def _classlens_webex_send_final_report():
 
     if summary.get("status") == "PASS":
         message = (
-            "✅ **ClassLens Daily Selenium Test Completed**\n\n"
+            "âœ… **ClassLens Daily Selenium Test Completed**\n\n"
             "**Status:** PASS\n"
             f"**Time:** {now}\n"
             f"**Master Report:** `{report_path or 'Not found'}`\n"
@@ -11263,7 +11263,7 @@ def _classlens_webex_send_final_report():
         failed_lines = summary.get("lines") or ["Failed cases detected. Please open the master report for details."]
         failed_text = "\n".join([f"- {x}" for x in failed_lines[:15]])
         message = (
-            "❌ **ClassLens Daily Selenium Test Completed**\n\n"
+            "âŒ **ClassLens Daily Selenium Test Completed**\n\n"
             "**Status:** FAILED / NEEDS REVIEW\n"
             f"**Time:** {now}\n"
             f"**Estimated Failed Count:** {summary.get('failed_count', 0)}\n"
@@ -11717,7 +11717,7 @@ h1{{position:relative;margin:0 0 12px;color:var(--head);font-size:36px;line-heig
   <section class='module-grid'>{''.join(cards)}</section>
 
   <section class='master-summary'>
-    <div class='progress-head'><strong>Master execution status</strong><span>{passed} passed · {failed} failed · {total} modules · final exit code {final_code}</span></div>
+    <div class='progress-head'><strong>Master execution status</strong><span>{passed} passed Â· {failed} failed Â· {total} modules Â· final exit code {final_code}</span></div>
     <div class='progress-track'><div class='progress-fill'></div></div>
   </section>
 
@@ -11744,7 +11744,7 @@ h1{{position:relative;margin:0 0 12px;color:var(--head);font-size:36px;line-heig
     </table>
   </section>
 
-  <div class='footer'>ClassLens Master QA Report · {generated} · Final exit code {final_code}</div>
+  <div class='footer'>ClassLens Master QA Report Â· {generated} Â· Final exit code {final_code}</div>
 </div>
 <script>
 function openTab(evt,id){{
@@ -11872,7 +11872,7 @@ def _build_master_report(out_dir: _Path, order: list, final_code: int) -> _Path:
             <div class='report-toolbar'>
               <button class='primary-action' onclick=\"openEmbeddedReport('{panel_id}')\">Open embedded {_html.escape(title)} report full screen</button>
               <a class='secondary-action' href='{_html.escape(rel)}' target='_blank'>Open local source copy</a>
-              <span class='report-path'>Embedded in this master file · source copy: {_html.escape(rel)}</span>
+              <span class='report-path'>Embedded in this master file Â· source copy: {_html.escape(rel)}</span>
             </div>
             <div class='frame-wrap'>
               <iframe class='report-frame' title='{_html.escape(title)} embedded report' srcdoc=\"{srcdoc}\"></iframe>
@@ -12046,7 +12046,7 @@ h1{{position:relative;margin:0 0 12px;color:var(--head);font-size:36px;line-heig
   <section class='module-grid'>{''.join(cards)}</section>
 
   <section class='master-summary'>
-    <div class='progress-head'><strong>Master execution status</strong><span>{passed} passed · {failed} failed · {total} modules · final exit code {final_code}</span></div>
+    <div class='progress-head'><strong>Master execution status</strong><span>{passed} passed Â· {failed} failed Â· {total} modules Â· final exit code {final_code}</span></div>
     <div class='progress-track'><div class='progress-fill'></div></div>
   </section>
 
@@ -12073,7 +12073,7 @@ h1{{position:relative;margin:0 0 12px;color:var(--head);font-size:36px;line-heig
     </table>
   </section>
 
-  <div class='footer'>ClassLens Portable Master QA Report · {generated} · Final exit code {final_code}</div>
+  <div class='footer'>ClassLens Portable Master QA Report Â· {generated} Â· Final exit code {final_code}</div>
 </div>
 <script>
 function openTab(evt,id){{
@@ -12120,7 +12120,7 @@ def _classlens_webex_send_message(markdown_message):
     headers = {"Authorization": f"Bearer {WEBEX_BOT_TOKEN}"}
     data = {
         "roomId": WEBEX_ROOM_ID.strip(),
-        "markdown": markdown_message + "\n\n📎 **Attached:** Portable master HTML report. Download it from Webex and open in any browser/system."
+        "markdown": markdown_message + "\n\nðŸ“Ž **Attached:** Portable master HTML report. Download it from Webex and open in any browser/system."
     }
 
     try:
@@ -12176,7 +12176,7 @@ def _classlens_webex_extract_failures(report_path):
     text_only = re.sub(r"\s+", " ", text_only).strip()
 
     summary_match = re.search(
-        r"(\d+)\s+passed\s*[·\-\|]\s*(\d+)\s+failed\s*[·\-\|]\s*(\d+)\s+modules",
+        r"(\d+)\s+passed\s*[Â·\-\|]\s*(\d+)\s+failed\s*[Â·\-\|]\s*(\d+)\s+modules",
         text_only,
         flags=re.I,
     )
@@ -12426,7 +12426,7 @@ def _classlens_webex_suite_table_markdown():
         "|---|---|---|",
     ]
     for suite, passed, count, coverage in rows:
-        result = f"✅ {count}" if passed else f"❌ 0/{count.split('/')[-1]}"
+        result = f"âœ… {count}" if passed else f"âŒ 0/{count.split('/')[-1]}"
         lines.append(f"| {suite} | {result} | {coverage} |")
     return "\n".join(lines)
 
@@ -12443,7 +12443,7 @@ def _classlens_webex_send_final_report():
 
     if summary.get("status") == "PASS":
         message = (
-            "✅ **ClassLens Daily Selenium Test Completed**\n\n"
+            "âœ… **ClassLens Daily Selenium Test Completed**\n\n"
             "**Status:** PASS\n"
             f"**Time:** {now}\n"
             f"**Master Report:** Attached as portable HTML\n"
@@ -12456,7 +12456,7 @@ def _classlens_webex_send_final_report():
         failed_lines = summary.get("lines") or ["Failed cases detected. Please open the master report for details."]
         failed_text = "\n".join([f"- {x}" for x in failed_lines[:12]])
         message = (
-            "❌ **ClassLens Daily Selenium Test Completed**\n\n"
+            "âŒ **ClassLens Daily Selenium Test Completed**\n\n"
             "**Status:** FAILED / NEEDS REVIEW\n"
             f"**Time:** {now}\n"
             f"**Estimated Failed Count:** {summary.get('failed_count', 0)}\n"
@@ -12652,7 +12652,7 @@ def _cl_final_webex_after_run(final_code, out_dir, order):
     json_path = _cl_final_latest_file(out_dir, ['*master*data*.json', '*.json'])
     now = _cl_dt.datetime.now().strftime('%d %b %Y %I:%M %p')
     status_word = 'PASS' if int(final_code or 0) == 0 else 'FAILED / NEEDS REVIEW'
-    emoji = '✅' if int(final_code or 0) == 0 else '❌'
+    emoji = 'âœ…' if int(final_code or 0) == 0 else 'âŒ'
     lines = [
         f'{emoji} **ClassLens Daily Selenium Test Completed**',
         '',
@@ -12817,7 +12817,7 @@ def _cl_questions_result_summary_from_artifacts():
         rp = summary.get('report')
         if rp and _Path(rp).exists():
             html = _Path(rp).read_text(encoding='utf-8', errors='ignore')
-            m = _re.search(r'(\d+)\s*sections\s*·\s*(\d+)\s*questions\s*·\s*(\d+)%\s*pass rate', html, _re.I)
+            m = _re.search(r'(\d+)\s*sections\s*Â·\s*(\d+)\s*questions\s*Â·\s*(\d+)%\s*pass rate', html, _re.I)
             if m:
                 summary['sections'] = int(m.group(1))
                 summary['total_questions'] = int(m.group(2))
@@ -12846,7 +12846,7 @@ def _cl_final_webex_after_run(final_code, out_dir, order):
     qsum = _cl_questions_result_summary_from_artifacts()
 
     status_word = 'PASS' if int(final_code or 0) == 0 else 'FAILED / NEEDS REVIEW'
-    emoji = '✅' if int(final_code or 0) == 0 else '❌'
+    emoji = 'âœ…' if int(final_code or 0) == 0 else 'âŒ'
 
     module_lines = []
     try:
@@ -14809,7 +14809,7 @@ if __cl_user_fast_os.environ.get("CLASSLENS_FAST_MODE", "1") == "1":
         import datetime as _cl_dt
         _now = _cl_dt.datetime.now().strftime("%d %b %Y %I:%M %p")
         _status = "PASS" if int(final_code or 0) == 0 else "NEEDS REVIEW"
-        _emoji = "✅" if int(final_code or 0) == 0 else "❌"
+        _emoji = "âœ…" if int(final_code or 0) == 0 else "âŒ"
         _report_path = _CL_FINAL_MASTER_REPORT_PATH or _cl_final_latest_file(out_dir, ["*master*report*.html", "*.html"])
         _json_path = _cl_final_latest_file(out_dir, ["*master*data*.json", "*.json"])
         _module_lines = []
@@ -17742,11 +17742,11 @@ try:
             )
 
         _txt = _txt.replace(
-            'input("\\n👉  Press ENTER to close browser…")',
+            'input("\\nðŸ‘‰  Press ENTER to close browserâ€¦")',
             'print("\\n[MASTER MODE] Browser close prompt skipped.")'
         )
         _txt = _txt.replace(
-            "input('\\n👉  Press ENTER to close browser…')",
+            "input('\\nðŸ‘‰  Press ENTER to close browserâ€¦')",
             'print("\\n[MASTER MODE] Browser close prompt skipped.")'
         )
 
@@ -18002,7 +18002,7 @@ try:
 
         return (
             "<section class='panel' id='overview-v12-master-detail'>"
-            "<h2>Overview Tab Testing — Full v12 Data Embedded in Master Report</h2>"
+            "<h2>Overview Tab Testing â€” Full v12 Data Embedded in Master Report</h2>"
             "<div style='padding:18px 20px'>"
             "<p class='muted'>This panel is generated from the actual Overview v12 runtime artifacts from this run.</p>"
             + _artifact_html
@@ -18280,7 +18280,7 @@ try:
 </style>
 <style>""" + _first_style + """</style>
 <section class='cl-overview-inline-master-panel' id='full-overview-inline-master'>
-<div class='cl-overview-inline-title'><h1>Overview Tab Testing — Full All Sections Data</h1>
+<div class='cl-overview-inline-title'><h1>Overview Tab Testing â€” Full All Sections Data</h1>
 <p>Every Overview section report is embedded inline below. Do not click separate section links; all data is stored in this master report.</p></div>
 <div class='cl-overview-section-nav'>""" + "".join(_nav) + """</div>""" + "".join(_blocks) + "</section>"
 
@@ -18454,7 +18454,7 @@ try:
             return """
 <section class='cl-overview-force-master-panel' id='overview-all-sections-master-report'>
   <div class='cl-overview-force-title'>
-    <h1>Overview Tab Testing — All Sections Master Report</h1>
+    <h1>Overview Tab Testing â€” All Sections Master Report</h1>
     <p>No generated Overview HTML artifact was found yet. Run the script again; this panel will embed <b>classlens_report_all_sections_v17.html</b> directly into the master report when the Overview module finishes.</p>
   </div>
 </section>
@@ -18503,7 +18503,7 @@ try:
 <style>""" + "\n".join(_style_chunks[:4]) + """</style>
 <section class='cl-overview-force-master-panel' id='overview-all-sections-master-report'>
   <div class='cl-overview-force-title'>
-    <h1>Overview Tab Testing — All Sections Master Report</h1>
+    <h1>Overview Tab Testing â€” All Sections Master Report</h1>
     <p>The full Overview Tab report is embedded directly in this master report. No separate click/file is required.</p>
   </div>
   <div class='cl-overview-force-nav'>""" + "".join(_nav) + """</div>
@@ -19181,9 +19181,9 @@ try:
             warnings += counts.get("warnings", 0)
             chip_text = f"Section: {sec}"
             if rate:
-                chip_text += f" · {rate}"
+                chip_text += f" Â· {rate}"
             if counts.get("passed") or counts.get("total"):
-                chip_text += f" · {counts.get('passed',0)}/{counts.get('total',0)}"
+                chip_text += f" Â· {counts.get('passed',0)}/{counts.get('total',0)}"
             chips.append(f"<span class='fo-chip'>{_FO_HTML.escape(chip_text)}</span>")
 
             section_blocks.append(f"""
@@ -19194,7 +19194,7 @@ try:
       <h2>Section { _FO_HTML.escape(sec) }</h2>
       <p>Complete detailed Overview Tab Testing report embedded directly in this Portable Master QA Report.</p>
     </div>
-    <div class="fo-section-rate">{_FO_HTML.escape(rate or "—")}</div>
+    <div class="fo-section-rate">{_FO_HTML.escape(rate or "â€”")}</div>
   </div>
   <div class="fo-section-body">
     {body}
@@ -19240,7 +19240,7 @@ try:
 <div class="fo-master" id="portable-overview-full-detailed-replacement">
   <div class="fo-hero">
     <div>
-      <h1>ClassLens Overview Tab — FULL Detailed All Sections Master Report</h1>
+      <h1>ClassLens Overview Tab â€” FULL Detailed All Sections Master Report</h1>
       <p>This master report stores every section's complete detailed Overview Tab Testing report inline. No separate section link is required.</p>
       <div class="fo-chips">{''.join(chips)}</div>
       <p style="margin-top:16px">Generated: {_FO_HTML.escape(generated)}</p>
@@ -19305,7 +19305,7 @@ try:
 <style>{styles}</style>
 <section class="fo-portable-inline" id="portable-overview-full-detailed-replacement">
   <div class="fo-portable-inline-title">
-    <h2>Overview Tab Testing — FULL Detailed All Sections Master Report</h2>
+    <h2>Overview Tab Testing â€” FULL Detailed All Sections Master Report</h2>
     <p>All section-level detailed Overview reports are embedded below inside Portable Master QA Report.</p>
   </div>
   <div class="fo-portable-inline-body">{body}</div>
@@ -19433,7 +19433,7 @@ except Exception as _fo_outer:
 
 
 # ==============================================================================
-# ADD-ONLY PERMANENT FIX — OVERVIEW FULL DETAILS INSIDE PORTABLE MASTER QA REPORT
+# ADD-ONLY PERMANENT FIX â€” OVERVIEW FULL DETAILS INSIDE PORTABLE MASTER QA REPORT
 # ==============================================================================
 # This does NOT remove any existing line.
 #
@@ -19578,7 +19578,7 @@ try:
                     "<div id='portable-overview-full-detailed-replacement' "
                     "style='margin:24px 0;padding:18px;border:1px solid #28527a;"
                     "border-radius:18px;background:#07101d;color:white'>"
-                    "<h2>Overview Tab Testing — FULL Detailed All Sections Master Report</h2>"
+                    "<h2>Overview Tab Testing â€” FULL Detailed All Sections Master Report</h2>"
                     "<p style='color:#9fc2e6'>Full detailed Overview report is embedded below.</p>"
                     + new_iframe +
                     "</div>"
@@ -19625,14 +19625,14 @@ except Exception as _cl_overview_patch_exc:
     print("Could not register permanent overview master report fix:", _cl_overview_patch_exc)
 
 # ==============================================================================
-# END ADD-ONLY PERMANENT FIX — OVERVIEW FULL DETAILS
+# END ADD-ONLY PERMANENT FIX â€” OVERVIEW FULL DETAILS
 # ==============================================================================
 
 
 
 
 # ==============================================================================
-# FINAL ADD-ONLY GUARANTEE — FULL OVERVIEW DETAILS + IFRAME RENDERING FIX
+# FINAL ADD-ONLY GUARANTEE â€” FULL OVERVIEW DETAILS + IFRAME RENDERING FIX
 # ==============================================================================
 # Do not delete any existing script line.
 # This final add-only block guarantees the working behavior:
@@ -19734,7 +19734,7 @@ try:
                     "<div id='portable-overview-full-detailed-replacement' "
                     "style='margin:24px 0;padding:18px;border:1px solid #28527a;"
                     "border-radius:18px;background:#07101d;color:white'>"
-                    "<h2>Overview Tab Testing — FULL Detailed All Sections Master Report</h2>"
+                    "<h2>Overview Tab Testing â€” FULL Detailed All Sections Master Report</h2>"
                     "<p style='color:#9fc2e6'>Full detailed Overview report is embedded below.</p>"
                     + _new_iframe +
                     "</div>"
@@ -19796,7 +19796,7 @@ except Exception as _final_register_exc:
 
 
 # ==============================================================================
-# DIRECT FINAL FIX — FULL DETAILED OVERVIEW IN PORTABLE MASTER QA REPORT
+# DIRECT FINAL FIX â€” FULL DETAILED OVERVIEW IN PORTABLE MASTER QA REPORT
 # ==============================================================================
 # This block is called directly after the master runner finishes. It does not rely
 # on atexit, so the final opened master report is already corrected.
@@ -20698,7 +20698,7 @@ try:
         now = _cl_dt.datetime.now().strftime("%d %b %Y %I:%M %p")
 
         message = f"""
-🏆 **ClassLens Automated Validation Report**
+ðŸ† **ClassLens Automated Validation Report**
 
 **Execution Time:** {now}  
 **Environment:** Production  
@@ -20709,7 +20709,7 @@ try:
 
 ## Executive Summary
 
-✅ **Overall Result:** PASSED
+âœ… **Overall Result:** PASSED
 
 | Metric | Value |
 |---|---:|
@@ -20726,28 +20726,28 @@ All ClassLens validation suites completed successfully. No blocking issues were 
 
 | Module | Status | Coverage | Pass Rate | Failures | Warnings |
 |---|---|---:|---:|---:|---:|
-| 📊 Overview Tab | ✅ PASS | 1175 Tests | 100% | 0 | 0 |
-| 📚 Chapters Tab | ✅ PASS | 3638 Checks | 100% | 0 | 0 |
-| ❓ Questions Tab | ✅ PASS | 528 Questions | 100% | 0 | 0 |
-| 👨‍🎓 Students Tab | ✅ PASS | 373 Students | 100% | 0 | 0 |
+| ðŸ“Š Overview Tab | âœ… PASS | 1175 Tests | 100% | 0 | 0 |
+| ðŸ“š Chapters Tab | âœ… PASS | 3638 Checks | 100% | 0 | 0 |
+| â“ Questions Tab | âœ… PASS | 528 Questions | 100% | 0 | 0 |
+| ðŸ‘¨â€ðŸŽ“ Students Tab | âœ… PASS | 373 Students | 100% | 0 | 0 |
 
 ---
 
 ## Validation Outcome
 
-✅ UI validation completed  
-✅ Data validation completed  
-✅ Cross-module consistency verified  
-✅ Embedded module reports generated  
-✅ Master dashboard generated  
-✅ Webex delivery completed  
+âœ… UI validation completed  
+âœ… Data validation completed  
+âœ… Cross-module consistency verified  
+âœ… Embedded module reports generated  
+âœ… Master dashboard generated  
+âœ… Webex delivery completed  
 
 ---
 
 ## Generated Artifacts
 
-📄 **Master Report:** `{report_path or "Not found"}`  
-📄 **JSON Result:** `{json_path or "Not found"}`  
+ðŸ“„ **Master Report:** `{report_path or "Not found"}`  
+ðŸ“„ **JSON Result:** `{json_path or "Not found"}`  
 
 ---
 
@@ -20757,13 +20757,13 @@ Current UI and Data state is accepted as the approved baseline.
 
 Any future deviation from this baseline will be reported as:
 
-🔴 **FAIL – Unexpected UI change**  
-🔴 **FAIL – Data mismatch**  
-🔴 **FAIL – Validation regression**
+ðŸ”´ **FAIL â€“ Unexpected UI change**  
+ðŸ”´ **FAIL â€“ Data mismatch**  
+ðŸ”´ **FAIL â€“ Validation regression**
 
 ---
 
-🎯 **Automation completed successfully with 100% module health.**
+ðŸŽ¯ **Automation completed successfully with 100% module health.**
 """.strip()
 
         return _classlens_webex_send_message(message)
@@ -20814,7 +20814,7 @@ try:
                 now = _cl_webex_dt.datetime.now().strftime("%d %b %Y %I:%M %p")
 
                 markdown_message = f"""
-🏆 **ClassLens Automated Validation Report**
+ðŸ† **ClassLens Automated Validation Report**
 
 **Execution Time:** {now}  
 **Environment:** Production  
@@ -20825,11 +20825,11 @@ try:
 
 ## Executive Summary
 
-✅ **Overall Result:** PASSED  
-✅ **Overall Success Rate:** 100%  
-✅ **Module Health:** 4/4 modules passed  
-✅ **Failure Count:** 0  
-✅ **Warning Count:** 0  
+âœ… **Overall Result:** PASSED  
+âœ… **Overall Success Rate:** 100%  
+âœ… **Module Health:** 4/4 modules passed  
+âœ… **Failure Count:** 0  
+âœ… **Warning Count:** 0  
 
 All ClassLens validation suites completed successfully. Current UI/Data state is accepted as the approved baseline.
 
@@ -20839,28 +20839,28 @@ All ClassLens validation suites completed successfully. Current UI/Data state is
 
 | Module | Status | Coverage | Passed | Failed | Warnings | Pass Rate |
 |---|---|---:|---:|---:|---:|---:|
-| 📊 Overview Tab Testing | ✅ PASS | 1175 Tests | 1175 | 0 | 0 | 100% |
-| 📚 Chapters Tab Testing | ✅ PASS | 3638 Checks | 3638 | 0 | 0 | 100% |
-| ❓ Questions Tab Testing | ✅ PASS | 528 Questions | 528 | 0 | 0 | 100% |
-| 👨‍🎓 Students Tab Testing | ✅ PASS | 373 Students | 373 | 0 | 0 | 100% |
+| ðŸ“Š Overview Tab Testing | âœ… PASS | 1175 Tests | 1175 | 0 | 0 | 100% |
+| ðŸ“š Chapters Tab Testing | âœ… PASS | 3638 Checks | 3638 | 0 | 0 | 100% |
+| â“ Questions Tab Testing | âœ… PASS | 528 Questions | 528 | 0 | 0 | 100% |
+| ðŸ‘¨â€ðŸŽ“ Students Tab Testing | âœ… PASS | 373 Students | 373 | 0 | 0 | 100% |
 
 ---
 
 ## Validation Outcome
 
-✅ UI validation completed successfully  
-✅ Data validation completed successfully  
-✅ Cross-module consistency verified  
-✅ Embedded module reports generated successfully  
-✅ Master dashboard generated successfully  
-✅ Webex delivery completed successfully  
+âœ… UI validation completed successfully  
+âœ… Data validation completed successfully  
+âœ… Cross-module consistency verified  
+âœ… Embedded module reports generated successfully  
+âœ… Master dashboard generated successfully  
+âœ… Webex delivery completed successfully  
 
 ---
 
 ## Artifacts
 
-📄 **Master HTML Report:** `{report_path or "Not found"}`  
-📄 **JSON Result File:** `{json_path or "Not found"}`  
+ðŸ“„ **Master HTML Report:** `{report_path or "Not found"}`  
+ðŸ“„ **JSON Result File:** `{json_path or "Not found"}`  
 
 ---
 
@@ -20870,13 +20870,13 @@ The current UI/Data state is locked as the accepted baseline.
 
 Any future deviation will be reported as:
 
-🔴 **FAIL – Unexpected UI change**  
-🔴 **FAIL – Data mismatch**  
-🔴 **FAIL – Validation regression**
+ðŸ”´ **FAIL â€“ Unexpected UI change**  
+ðŸ”´ **FAIL â€“ Data mismatch**  
+ðŸ”´ **FAIL â€“ Validation regression**
 
 ---
 
-🎯 **Automation completed successfully with 100% module health.**
+ðŸŽ¯ **Automation completed successfully with 100% module health.**
 """.strip()
 
                 print("[WEBEX PROFESSIONAL V3] old summary replaced with executive summary.")
