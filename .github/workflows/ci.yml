@@ -30,3 +30,15 @@ jobs:
         timeout 20m python -u testes.py --run-all --headless
         echo "Headless script finished/failed/timed out, but CI will pass."
         exit 0
+    - name: Upload test artifacts
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: classlens-test-logs
+        path: |
+          combined_preserved_sources/*.log
+          combined_preserved_sources/*.html
+          combined_preserved_sources/*.json
+          combined_preserved_sources/classlens_master_artifacts/
+        retention-days: 5
+        if-no-files-found: warn
