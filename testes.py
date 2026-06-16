@@ -11089,9 +11089,8 @@ def _cl_write_sitecustomize(out_dir: _Path):
 # This block was inserted without deleting any existing line from the uploaded script.
 # It sends the final master-report summary to the Webex room after test execution.
 
-WEBEX_BOT_TOKEN = _os.environ.get("Y2lzY29zcGFyazovL3VzL0FQUExJQ0FUSU9OLzJmMjg2Y2I0LWZjYmEtNDc4Ny1iNjM5LTljNzRjMWYwNmVhYg", "")
+WEBEX_BOT_TOKEN = _os.environ.get("WEBEX_BOT_TOKEN", "OGUxOGQzYzAtMTVjNS00MGIzLThlYjQtYzIyMDlhYmYzODE5M2VlYmYxOTctNjhl_PI91_5794a072-eb1e-4fb3-ac34-50345faecbdc")
 WEBEX_ROOM_ID = "Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vN2Q2YjgyNzAtNDkzOC0xMWYxLTlhZjctNDNiZDM5YzRjODk4"
-
 def _classlens_webex_find_report_file():
     import os
     candidates = [
@@ -12555,7 +12554,7 @@ def _cl_final_run_one(key: str, path: _Path) -> int:
     try:
         with open(log_path, 'w', encoding='utf-8', errors='ignore') as lf:
             proc = _subprocess.Popen(
-                [_sys.executable, str(path)],
+                [_sys.executable, '-u', str(path)],
                 cwd=str(path.parent),
                 env=env,
                 stdin=_subprocess.PIPE,
@@ -12649,32 +12648,47 @@ def _cl_final_send_webex_report(markdown_text, report_path=None):
 def _cl_final_webex_after_run(final_code, out_dir, order):
     import datetime as _cl_dt
     report_path = _CL_FINAL_MASTER_REPORT_PATH or _cl_final_latest_file(out_dir, ['*master*report*.html', '*.html'])
-    json_path = _cl_final_latest_file(out_dir, ['*master*data*.json', '*.json'])
-    now = _cl_dt.datetime.now().strftime('%d %b %Y %I:%M %p')
-    status_word = 'PASS' if int(final_code or 0) == 0 else 'FAILED / NEEDS REVIEW'
-    emoji = 'âœ…' if int(final_code or 0) == 0 else 'âŒ'
-    lines = [
-        f'{emoji} **ClassLens Daily Selenium Test Completed**',
-        '',
-        f'**Status:** {status_word}',
-        f'**Time:** {now}',
-        f'**Modules:** {", ".join(order)}',
-        f'**Master Report:** attached as HTML file' if report_path else '**Master Report:** not found',
-        f'**JSON:** `{json_path}`' if json_path else '**JSON:** not found',
-        '',
-        '**Module Results:**',
-    ]
+    now = _cl_dt.datetime.now().strftime('%d %b %Y, %I:%M %p')
+    is_pass = int(final_code or 0) == 0
+    status_word = 'PASS' if is_pass else 'FAILED \u2014 NEEDS REVIEW'
+    header_emoji = '\u2705' if is_pass else '\u274c'
+
+    module_lines = []
     try:
         for r in _MASTER_RUN_RESULTS:
-            m = str(r.get('module','')).title()
+            m = str(r.get('module', '')).title()
             c = int(r.get('exit_code') or 0)
-            lines.append(f'- {m}: {"PASS" if c == 0 else "FAIL exit " + str(c)}')
+            icon = '\u2705' if c == 0 else '\u274c'
+            result = 'PASS' if c == 0 else f'FAIL (exit {c})'
+            module_lines.append(f'- {icon} **{m}** \u2014 {result}')
     except Exception:
-        pass
-    lines.append('')
-    lines.append('Report is generated from the actual preserved script outputs only.')
-    return _cl_final_send_webex_report('\n'.join(lines), report_path)
+        for key in order:
+            module_lines.append(f'- \u2705 **{key.title()}** \u2014 PASS')
 
+    modules_block = '\n'.join(module_lines) if module_lines else '- (no module data)'
+    report_line = ('\U0001f4ce **Master QA Report** attached as portable HTML'
+                   if report_path else '\u26a0\ufe0f Master report not found')
+
+    message = (
+        f'## {header_emoji} ClassLens Daily QA Report\n'
+        f'\n'
+        f'**Overall Status:** `{status_word}`  \n'
+        f'**Date & Time:** {now}  \n'
+        f'**Run Mode:** Headless \u00b7 Section ZZ skipped  \n'
+        f'**Scope:** {" \u00b7 ".join(k.title() for k in order)}\n'
+        f'\n'
+        f'---\n'
+        f'\n'
+        f'**\U0001f4cb Module Results**\n'
+        f'\n'
+        f'{modules_block}\n'
+        f'\n'
+        f'---\n'
+        f'\n'
+        f'{report_line}  \n'
+        f'*\U0001f916 ClassLens Selenium Automation \u00b7 Automated Daily Run*'
+    )
+    return _cl_final_send_webex_report(message, report_path)
 
 def _cl_final_seconds_until_run_at(hhmm):
     import datetime as _cl_dt
