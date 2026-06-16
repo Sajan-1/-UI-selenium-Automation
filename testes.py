@@ -12650,44 +12650,70 @@ def _cl_final_webex_after_run(final_code, out_dir, order):
     report_path = _CL_FINAL_MASTER_REPORT_PATH or _cl_final_latest_file(out_dir, ['*master*report*.html', '*.html'])
     now = _cl_dt.datetime.now().strftime('%d %b %Y, %I:%M %p')
     is_pass = int(final_code or 0) == 0
-    status_word = 'PASS' if is_pass else 'FAILED \u2014 NEEDS REVIEW'
-    header_emoji = '\u2705' if is_pass else '\u274c'
 
-    module_lines = []
+    # Module icons
+    MODULE_ICONS = {
+        'overview': '\U0001f4ca',
+        'chapters': '\U0001f4d6',
+        'questions': '\U0001f4ac',
+        'students': '\U0001f468\u200d\U0001f393',
+    }
+
+    # Build module rows
+    module_rows = []
     try:
         for r in _MASTER_RUN_RESULTS:
-            m = str(r.get('module', '')).title()
+            key = str(r.get('module', '')).lower()
+            m = key.title()
             c = int(r.get('exit_code') or 0)
-            icon = '\u2705' if c == 0 else '\u274c'
-            result = 'PASS' if c == 0 else f'FAIL (exit {c})'
-            module_lines.append(f'- {icon} **{m}** \u2014 {result}')
+            icon = MODULE_ICONS.get(key, '\U0001f539')
+            status_icon = '\u2705' if c == 0 else '\u274c'
+            tag = 'PASS' if c == 0 else f'FAIL (exit {c})'
+            module_rows.append(f'{icon} **{m}**\u3000\u3000\u3000{status_icon} {tag}')
     except Exception:
         for key in order:
-            module_lines.append(f'- \u2705 **{key.title()}** \u2014 PASS')
+            icon = MODULE_ICONS.get(key.lower(), '\U0001f539')
+            module_rows.append(f'{icon} **{key.title()}**\u3000\u3000\u3000\u2705 PASS')
 
-    modules_block = '\n'.join(module_lines) if module_lines else '- (no module data)'
-    report_line = ('\U0001f4ce **Master QA Report** attached as portable HTML'
-                   if report_path else '\u26a0\ufe0f Master report not found')
+    module_block = '\n'.join(f'> {row}' for row in module_rows)
 
-    message = (
-        f'## {header_emoji} ClassLens Daily QA Report\n'
-        f'\n'
-        f'**Overall Status:** `{status_word}`  \n'
-        f'**Date & Time:** {now}  \n'
-        f'**Run Mode:** Headless \u00b7 Section ZZ skipped  \n'
-        f'**Scope:** {" \u00b7 ".join(k.title() for k in order)}\n'
-        f'\n'
-        f'---\n'
-        f'\n'
-        f'**\U0001f4cb Module Results**\n'
-        f'\n'
-        f'{modules_block}\n'
-        f'\n'
-        f'---\n'
-        f'\n'
-        f'{report_line}  \n'
-        f'*\U0001f916 ClassLens Selenium Automation \u00b7 Automated Daily Run*'
+    if is_pass:
+        status_banner = '## \u2705  ALL MODULES PASSED'
+    else:
+        status_banner = '## \u274c  ATTENTION: ONE OR MORE MODULES FAILED'
+
+    scope_str = ' \u00b7 '.join(k.title() for k in order)
+    report_note = (
+        '> \U0001f4ce **Master QA Report** attached as portable HTML\n'
+        '> \U0001f4a1 *Open the HTML file for full test evidence & screenshots*'
+        if report_path else
+        '> \u26a0\ufe0f Master report not generated'
     )
+
+    message = f"""\
+---
+### \U0001f916 ClassLens \u2014 Daily QA Automation Report
+---
+
+\U0001f4c5 **{now} IST**\u2003\u2003\u2699\ufe0f **Headless Mode**\u2003\u2003\U0001f4e6 **{scope_str}**
+
+---
+
+{status_banner}
+
+---
+
+### \U0001f4cb Test Module Results
+
+{module_block}
+
+---
+
+{report_note}
+
+---
+*\u23f0 Runs automatically at 10:30 AM IST every day \u00b7 ClassLens Selenium Suite*"""
+
     return _cl_final_send_webex_report(message, report_path)
 
 def _cl_final_seconds_until_run_at(hhmm):
