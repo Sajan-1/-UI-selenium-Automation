@@ -3,6 +3,7 @@
 # ADD-ONLY USER SPEED PATCH - inserted into runtime copy only
 # ==============================================================================
 import os as __cl_user_fast_os
+import re as _re
 if __cl_user_fast_os.environ.get("CLASSLENS_FAST_MODE", "1") == "1":
     try:
         import time as __cl_user_fast_time
@@ -177,6 +178,7 @@ KNOWN_QUESTION_TYPES = {
     "MCQ","VSA","SA","LA",
     "Multiple Choice","Very Short Answer","Short Answer","Long Answer",
     "Case Based","Assertion Reason","True False",
+    "CASE_STUDY","Case Study","Case_Study",
 }
 
 # ╔══════════════════════════════════════════════════════════════════╗
