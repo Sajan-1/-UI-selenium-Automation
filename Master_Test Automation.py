@@ -222,11 +222,19 @@ def test_students(driver, wait):
 
         cards = left_panel.find_elements(
             By.XPATH,
-            ".//div[contains(@class,'cursor-pointer') and contains(@class,'rounded-2xl')]"
+            ".//div[contains(@class,'cursor-pointer') and contains(@class,'rounded-2xl')"
+            " and .//p[contains(@class,'font-bold')]]"
         )
 
         for card in cards:
-            name = card.find_element(By.TAG_NAME, "p").text.strip()
+            try:
+                name = card.find_element(
+                    By.XPATH, ".//p[contains(@class,'font-bold')][1]"
+                ).text.strip()
+            except Exception:
+                name = card.text.strip().splitlines()[0] if card.text.strip() else ""
+            if not name:
+                continue
 
             if name in processed:
                 continue
