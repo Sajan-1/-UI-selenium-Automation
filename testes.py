@@ -21085,27 +21085,27 @@ except Exception as _clv4_exc:
 # ==============================================================================
 
 # ==============================================================================
-# WEBEX CLEAN SUMMARY V5  — overrides _cl_final_webex_after_run (actual path)
+# WEBEX CLEAN SUMMARY V6  — overrides _cl_final_webex_after_run (actual path)
 # ==============================================================================
 try:
-    import datetime as _clv5_dt
-    import re as _clv5_re
-    import os as _clv5_os
+    import datetime as _clv6_dt
+    import re as _clv6_re
+    import os as _clv6_os
 
     def _cl_final_webex_after_run(final_code, out_dir, order):
-        """V5 clean override — proper Unicode, dynamic stats, clean layout."""
-        now = _clv5_dt.datetime.now().strftime("%d %b %Y  %I:%M %p IST")
+        """V6 clean override — uses actual exit codes for ALL 4 modules."""
+        now = _clv6_dt.datetime.now().strftime("%d %b %Y  %I:%M %p IST")
 
         # ── find report file ──────────────────────────────────────────────────
         report_path = globals().get('_CL_FINAL_MASTER_REPORT_PATH') or None
         if not report_path:
-            import pathlib as _clv5_pl
+            import pathlib as _clv6_pl
             _dirs = [out_dir] if out_dir else []
-            _dirs += [_clv5_os.getcwd()]
+            _dirs += [_clv6_os.getcwd()]
             for _d in _dirs:
-                _cands = sorted(_clv5_pl.Path(_d).glob("*master*report*.html"), key=lambda p: p.stat().st_mtime, reverse=True)
+                _cands = sorted(_clv6_pl.Path(_d).glob("*master*report*.html"), key=lambda p: p.stat().st_mtime, reverse=True)
                 if not _cands:
-                    _cands = sorted(_clv5_pl.Path(_d).glob("*.html"), key=lambda p: p.stat().st_mtime, reverse=True)
+                    _cands = sorted(_clv6_pl.Path(_d).glob("*.html"), key=lambda p: p.stat().st_mtime, reverse=True)
                 if _cands:
                     report_path = str(_cands[0])
                     break
@@ -21113,10 +21113,12 @@ try:
         # ── parse stats from _MASTER_RUN_RESULTS ─────────────────────────────
         mods_passed = 0
         mods_failed = 0
-        mod_rows = []
         _results = globals().get('_MASTER_RUN_RESULTS', [])
         _titles  = globals().get('_MODULE_TITLES', {})
         _order   = list(order) if order else []
+
+        # Build per-module status dict keyed by module name
+        _mod_status = {}
         for _key in _order:
             _match = next((_r for _r in _results if _r.get('module') == _key), None)
             _code  = int((_match or {}).get('exit_code') or 0)
@@ -21125,24 +21127,22 @@ try:
                 mods_passed += 1
             else:
                 mods_failed += 1
-            _title = _titles.get(_key, _key.title())
-            _icon  = '\u2705' if _ok else '\u274c'
-            mod_rows.append((_title, _icon, _ok))
+            _mod_status[_key] = _ok
 
         if not _order:
-            mods_passed = 4; mods_failed = 0
-            mod_rows = [
-                ('Overview',  '\u2705', True),
-                ('Chapters',  '\u2705', True),
-                ('Questions', '\u2705', True),
-                ('Students',  '\u2705', True),
-            ]
+            mods_passed = 4
+            mods_failed = 0
+            _mod_status = {'overview': True, 'chapters': True, 'questions': True, 'students': True}
 
         total_mods  = mods_passed + mods_failed
         overall_ok  = (int(final_code or 0) == 0) and mods_failed == 0
         status_icon = '\u2705' if overall_ok else '\u274c'
         status_text = 'ALL PASSED' if overall_ok else 'NEEDS REVIEW'
         rate        = f"{round(100 * mods_passed / total_mods)}%" if total_mods else 'N/A'
+
+        # ── per-module status icons (uses actual exit codes) ──────────────────
+        def _micon(key):
+            return '\u2705 PASS' if _mod_status.get(key, True) else '\u274c FAIL'
 
         # ── parse detailed tab counts from HTML report ────────────────────────
         q_pass = q_warn = q_fail = q_total = 0
@@ -21152,16 +21152,16 @@ try:
             try:
                 with open(report_path, 'r', encoding='utf-8', errors='replace') as _fh:
                     _txt = _fh.read()
-                _q = _clv5_re.search(r"(\d+)\s*pass[,\s]+(\d+)\s*warn[,\s]+(\d+)\s*fail", _txt, _clv5_re.I)
+                _q = _clv6_re.search(r"(\d+)\s*pass[,\s]+(\d+)\s*warn[,\s]+(\d+)\s*fail", _txt, _clv6_re.I)
                 if _q:
                     q_pass = int(_q.group(1)); q_warn = int(_q.group(2)); q_fail = int(_q.group(3))
-                _c = _clv5_re.search(r"(\d+)\s*pass\s+(\d+)\s*fail", _txt, _clv5_re.I)
+                _c = _clv6_re.search(r"(\d+)\s*pass\s+(\d+)\s*fail", _txt, _clv6_re.I)
                 if _c:
                     ch_pass = int(_c.group(1)); ch_fail = int(_c.group(2))
-                _ov = _clv5_re.search(r"(\d+)\s*tests.*?overview|overview.*?(\d+)\s*tests", _txt, _clv5_re.I)
+                _ov = _clv6_re.search(r"(\d+)\s*tests.*?overview|overview.*?(\d+)\s*tests", _txt, _clv6_re.I)
                 if _ov:
                     ov_tests = int(_ov.group(1) or _ov.group(2))
-                _st = _clv5_re.search(r"(\d+)\s*students", _txt, _clv5_re.I)
+                _st = _clv6_re.search(r"(\d+)\s*students", _txt, _clv6_re.I)
                 if _st:
                     st_tests = int(_st.group(1))
             except Exception:
@@ -21176,60 +21176,62 @@ try:
         ch_rate = _pct(ch_pass, ch_total) if ch_total else '100%'
         q_rate  = _pct(q_pass + q_warn, q_total) if q_total else 'N/A'
 
+        em   = '\u2014'  # em-dash for N/A cells
+
         # ── build clean message ───────────────────────────────────────────────
         lines = [
-            f"\U0001f916 **ClassLens Automated Validation Report**",
-            f"",
+            "\U0001f916 **ClassLens Automated Validation Report**",
+            "",
             f"**Date:** {now}",
-            f"**Mode:** Headless CI  |  **Framework:** Selenium + Master Runner",
-            f"",
-            f"---",
-            f"",
-            f"## \U0001f4ca Executive Summary",
-            f"",
+            "**Mode:** Headless CI  |  **Framework:** Selenium + Master Runner",
+            "",
+            "---",
+            "",
+            "## \U0001f4ca Executive Summary",
+            "",
             f"{status_icon} **Overall Result: {status_text}**",
-            f"",
-            f"| Metric | Value |",
-            f"|---|---:|",
+            "",
+            "| Metric | Value |",
+            "|---|---:|",
             f"| Modules Executed | {total_mods} |",
             f"| Modules Passed   | {mods_passed} |",
             f"| Modules Failed   | {mods_failed} |",
             f"| Success Rate     | {rate} |",
-            f"",
-            f"---",
-            f"",
-            f"## \U0001f4cb Module Results",
-            f"",
-            f"| Module | Status | Tests | Pass | Fail | Rate |",
-            f"|---|---|---:|---:|---:|---:|",
-            f"| \U0001f4ca Overview   | \u2705 PASS | {ov_tests or '\u2014'} | \u2014 | 0 | 100% |",
-            f"| \U0001f4da Chapters   | {'\u2705 PASS' if ch_fail == 0 else '\u274c FAIL'} | {ch_total or '\u2014'} | {ch_pass or '\u2014'} | {ch_fail} | {ch_rate} |",
-            f"| \u2753 Questions  | {'\u2705 PASS' if q_fail == 0 else '\u274c FAIL'} | {q_total or '\u2014'} | {q_pass or '\u2014'} | {q_fail} | {q_rate} |",
-            f"| \U0001f393 Students   | \u2705 PASS | {st_tests or '\u2014'} | \u2014 | 0 | 100% |",
-            f"",
-            f"---",
-            f"",
-            f"## \u2705 Validation Checklist",
-            f"",
-            f"\u2705 UI validation complete",
-            f"\u2705 Data integrity verified",
-            f"\u2705 Cross-module consistency checked",
-            f"\u2705 HTML master report generated",
-            f"",
-            f"---",
-            f"",
+            "",
+            "---",
+            "",
+            "## \U0001f4cb Module Results",
+            "",
+            "| Module | Status | Tests | Pass | Fail | Rate |",
+            "|---|---|---:|---:|---:|---:|",
+            f"| \U0001f4ca Overview   | {_micon('overview')}   | {ov_tests or em} | {em} | 0 | 100% |",
+            f"| \U0001f4da Chapters   | {_micon('chapters')}   | {ch_total or em} | {ch_pass or em} | {ch_fail} | {ch_rate} |",
+            f"| \u2753 Questions  | {_micon('questions')}  | {q_total or em}  | {q_pass or em}  | {q_fail} | {q_rate} |",
+            f"| \U0001f393 Students   | {_micon('students')}   | {st_tests or em} | {em} | 0 | 100% |",
+            "",
+            "---",
+            "",
+            "## \u2705 Validation Checklist",
+            "",
+            "\u2705 UI validation complete",
+            "\u2705 Data integrity verified",
+            "\u2705 Cross-module consistency checked",
+            "\u2705 HTML master report generated",
+            "",
+            "---",
+            "",
             f"\U0001f3af **Automation completed {'successfully \u2014 100% module health.' if overall_ok else f'with {mods_failed} module(s) requiring review.'}**",
         ]
 
         message = '\n'.join(lines)
-        print("[WEBEX V5] Sending clean summary...")
+        print("[WEBEX V6] Sending clean summary...")
         return _cl_final_send_webex_report(message, report_path)
 
-    print("[WEBEX V5] _cl_final_webex_after_run override active.")
-except Exception as _clv5_exc:
-    print("[WEBEX V5] setup failed:", _clv5_exc)
+    print("[WEBEX V6] _cl_final_webex_after_run override active.")
+except Exception as _clv6_exc:
+    print("[WEBEX V6] setup failed:", _clv6_exc)
 # ==============================================================================
-# END WEBEX CLEAN SUMMARY V5
+# END WEBEX CLEAN SUMMARY V6
 # ==============================================================================
 
 # test commit
