@@ -1,5 +1,4 @@
-﻿# cspell:disable
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 
 """
 ClassLens Combined 4-Script Master Runner
